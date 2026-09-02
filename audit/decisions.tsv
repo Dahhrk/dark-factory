@@ -1,3 +1,4 @@
 ts	phase	decision	why	evidence	result
 2026-09-02T21:26+01:00	gate-0	spend cap confirmed	required before Cloud Agent / overnight	user confirmed in Chief of Staff chat	unblocked
 2026-09-02T21:30+01:00	maintain	Engineer one-off maintain dry-run	BOTS.md one-off before daily schedule	Control-Glass/tmp/verify-glass home-idle.png+aria (idle) and mark-ready.png+aria (ready); 2/2 clean; no PR; doctor ok	pass; daily 8am weekdays armed
+2026-09-02T22:56+01:00	maintain	pause Grok Engineer daily maintain	Cursor Automation already owns maintain-verify-glass; do not duplicate	Engineer confirmed pause of 8am weekday routine	paused

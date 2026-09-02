@@ -1,17 +1,39 @@
-# Still you — 5 minutes
+# Still you — human only
 
-Agent cannot open your billing or Grok schedule UI. Do these once:
+Agent finished repo gates. Full map: [CURSOR-SETTINGS.md](CURSOR-SETTINGS.md) · self-improve: [SELF-IMPROVE.md](SELF-IMPROVE.md).
 
-1. **Spend cap** — Cursor Settings → Cloud Agents / billing → set on-demand cap  
-2. **Pin `/poteto-mode`** — type it → Alt+Enter  
-3. **Save Automations** that opened — `encode-lessons-weekly` (Friday), `morning-catchup`, confirm `maintain-verify-glass` → workspace Control-Glass  
-4. **Dr Eggbot** — paste maintain from `automations/grok-bot/PASTE-NOW.md` → one-off → schedule daily  
-5. **Cloud snapshot** — Cloud Agents env that can `npm i` + Playwright for Control-Glass  
+## Do now (order)
 
-Then first overnight: [TRUST-NEXT.md](TRUST-NEXT.md)
+### A — Land the PRs (review, don’t self-merge as author)
 
-## Already set by agent
+1. Merge / approve **Control-Glass** PR: visual parity + anti-ai-ui + daylight UI + cloud `environment.json`  
+2. Merge / approve **dark-factory** PR: kitchen settings, SELF-IMPROVE, bootstrap anti-ai templates  
 
-- Remotes, CI green, Bugbot (you), branch protection (green `ci` / `kitchen-ci` required)  
-- PR encode-lessons template, design skills, encode-lessons drafts  
-- Chief + Dr Eggbot (you)
+### B — Website / app toggles
+
+3. **[Spending](https://cursor.com/dashboard?tab=spending)** — confirm spend cap (you said done)  
+4. **[Agents](https://cursor.com/agents)** — first **Build** for `Dahhrk/Control-Glass` after (1) lands  
+5. **[Bugbot](https://cursor.com/dashboard?tab=bugbot)** — confirm Control-Glass on  
+6. **Automations** — schedules **Enabled** (not only Saved): maintain → Control-Glass; encode-lessons Friday; morning-catchup  
+7. **Pin `/poteto-mode`** — Alt+Enter  
+
+### C — Grok (if not done)
+
+8. **Engineer** bot via Dr Eggbot — one-off maintain → schedule daily (`automations/grok-bot/PASTE-NOW.md`)  
+
+### D — First overnight (required before Autopilot)
+
+9. Follow [TRUST-NEXT.md](TRUST-NEXT.md) — one small Control-Glass task, `decisions.tsv`, morning `/show-me-your-work`  
+
+## Already done by agents (once PRs land)
+
+- `anti-ai-ui` + `visual-parity` CI on Control-Glass  
+- Always-on anti-AI UI rule + Feature Map Looks  
+- Daylight print home (nightglass banned mechanically)  
+- Cloud `environment.json` (install-only)  
+- Kitchen SELF-IMPROVE + bootstrap copies anti-ai gate for new products  
+- Factory OS user rule names the UI gate  
+
+## Do not enable yet
+
+Benny · Autopilot fleet · Orchestrate  

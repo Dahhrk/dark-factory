@@ -22,5 +22,11 @@ Agents: copy nearest pattern; edit the open file; take the path that compiles; a
 - [ ] Optional: `npx skills add dmmulroy/anti-slop --skill install-anti-slop`
 - [ ] `BUGBOT.md` committed
 - [ ] `/create-verification-skill` produced a real `control-*` CLI + Feature Map (four H2s)
+- [ ] `npm run anti-ai-ui` wired (copy `templates/product-bootstrap/check-anti-ai-ui.mjs`) + CI step
+- [ ] UI products: visual-parity baselines after first Look is approved (see Control-Glass)
 
-Smell three times → red build.
+Smell twice → red build (encode). Smell three times without encode = process failure.
+
+## Self-improve
+
+Weekly encode-lessons (kitchen `automations/cursor/encode-lessons-weekly.md`). Cadence: kitchen `docs/SELF-IMPROVE.md`.

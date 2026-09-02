@@ -9,7 +9,7 @@ try {
 }
 
 const ctx = [
-  "Kitchen repo (dark-factory). Product work → glass or scripts/new-product.ps1.",
+  "Kitchen repo (dark-factory). Product work → ~/Projects/Control-Glass or scripts/new-product.ps1.",
   "Entry: /poteto-mode. Done means checkable. Keep invariants.",
   "No Autopilot here. No /create-verification-skill for a real app here.",
   "Storage: docs/storage-layout.md. Naming: docs/naming.md. Guardrails always on.",
