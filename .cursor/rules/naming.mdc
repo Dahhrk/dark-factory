@@ -1,0 +1,14 @@
+---
+description: Naming — poteto-mode, verify/control, Dune, Conventional Commits
+alwaysApply: true
+---
+
+# Naming
+
+- Entry: `/poteto-mode`. Do not enumerate `/how` then `/architect` then `/arena` unless asked.
+- Product eyes: `verify-<app>` + `control-<app>` CLI. Kitchen uses `verify-factory` only.
+- Feature Map: kebab file names and sub-feature IDs.
+- Commits/PRs: Conventional Commits `type(scope): subject`. PR body: Why, Scope, Tradeoffs, Blast Radius, Verification.
+- Architecture: **Dune** (method only — never claim Electron source). Product file: `.cursor/dune.md`.
+- Slack line: Benny. Outer loop: Grok Bot routines.
+- Borrowed names stay hers — see `docs/naming.md`. Storage: `docs/storage-layout.md`.

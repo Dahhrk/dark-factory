@@ -1,0 +1,15 @@
+---
+description: Guardrails — evidence, secrets, no Autopilot skip, encode lessons
+alwaysApply: true
+---
+
+# Guardrails (kitchen)
+
+1. **Evidence:** Green build / typecheck / self-report is not done. Match the check to the change.
+2. **Secrets:** Never commit `.env`, webhook keys, Slack tokens, Tailscale keys. Prefer connectors; use `local/` for scratch (gitignored).
+3. **Scope:** This repo is the kitchen. Product verify/CI/Autopilot live in private product repos (`Control-Glass`, etc.).
+4. **Trust curve:** No Autopilot / overnight fleet until product has working `control-*` + Feature Map + hard CI. One verified loop first.
+5. **Encode lessons:** Same review comment twice → lint / CI / skill / map — not a third reminder.
+6. **Authors do not certify themselves.** Fresh verifier for land; author does not merge on own verdict.
+7. **Prompt shape:** outcome + `Done means` + `Keep`. Router picks ceremony.
+8. **Visibility:** `VISIBILITY.md` — do not put real product Feature Maps here.

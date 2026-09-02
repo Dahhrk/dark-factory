@@ -1,0 +1,12 @@
+---
+description: Overnight and Autopilot contracts for dark-factory
+alwaysApply: true
+---
+
+# Overnight
+
+A duration is not a finish condition. Unattended work needs a predicate, a fresh worktree, permission to commit, rows in `audit/decisions.tsv`, and an escape hatch.
+
+Use `/loop until done` only with that contract. Autopilot-full is for independent queue items. Autopilot-stack is for coupled work the human lands. Orchestrate is multi-day; do not use it because a task sounds large.
+
+Morning audit: `/show-me-your-work` and the Attention section before re-reading the night.
