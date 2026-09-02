@@ -4,10 +4,12 @@ What agents can stage vs what only you can enable. Board: [SETUP-STATUS.md](SETU
 
 ## Cursor Cloud Agents (YOU)
 
-1. Cursor Settings ΓåÆ Cloud Agents ΓåÆ **ON**
-2. Set an on-demand **spend cap** (do not copy lab spend)
-3. Prefer cloud workers for Autopilot; bots coordinate, cloud works
-4. Snapshot env that can `npm i`, run app, record proof (on `Control-Glass` once verify works)
+Full checklist: [CURSOR-SETTINGS.md](CURSOR-SETTINGS.md).
+
+1. App: Cloud Agents **ON** · Web: [Spending](https://cursor.com/dashboard?tab=spending) on-demand + **spend cap** (do not copy lab spend)
+2. Prefer cloud workers for heavy maintain; bots coordinate, cloud works
+3. Snapshot env that can `npm i`, run app, record proof (on `Control-Glass` once verify works)
+4. [Agents](https://cursor.com/agents) for runs; Automations in Glass UI for schedules
 
 ## Grok Bot (YOU)
 
@@ -34,7 +36,7 @@ Opt+Enter on `/poteto-mode` autocomplete so every turn reminds the agent.
 
 ## Done means (this doc)
 
-- [ ] Cloud Agents ON + spend cap  
+- [ ] Cloud Agents ON + spend cap ([CURSOR-SETTINGS.md](CURSOR-SETTINGS.md))  
 - [ ] At least one Cursor automation saved (maintain-verify)  
 - [ ] Grok Bot pstack installed OR deferred with reason  
 - [ ] `/poteto-mode` pinned  
