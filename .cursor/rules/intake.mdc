@@ -1,0 +1,13 @@
+---
+description: How to treat intake/QUEUE.md
+globs: intake/**
+alwaysApply: false
+---
+
+# Intake
+
+`intake/QUEUE.md` is the outer-loop pile. Each item needs a goal, a done-means, a source, and a playbook hint.
+
+Do not start work from a row that is still `inbox`. Promote to `ready` only when done-means is checkable. One owner per ready item. Never two agents on the same row without a worktree split.
+
+After a run, move the row to `done` or `blocked` with an evidence pointer (PR URL, log path, or decision-log time).

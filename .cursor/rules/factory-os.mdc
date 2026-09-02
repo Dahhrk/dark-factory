@@ -1,0 +1,20 @@
+---
+description: Kitchen defaults — poteto-mode entry, evidence, small units
+alwaysApply: true
+---
+
+# dark-factory OS
+
+This repo is the kitchen. Product work happens in other repos or worktrees unless the user names a path.
+
+**Storage:** [docs/storage-layout.md](docs/storage-layout.md) — public kitchen vs private products. New private app: `scripts/new-product.ps1`.
+
+For non-trivial work, use `/poteto-mode` or `subagent_type: "poteto-agent"`. Do not enumerate `/how` then `/architect` then `/arena` unless asked to override.
+
+Prompt shape: goal + `Done means <checkable>` + `Keep <invariants>`. Mode is sticky. Say `new task` on a subject change.
+
+A green build is not done. Match the check to the change. If you skip a playbook step, keep it visible with `skip: <reason>`.
+
+One verifiable unit per commit. Isolate writers. Prefer a Cloud Agent for fan-out; a local worktree is for one-laptop isolation, not a 20-agent farm. Do not merge on the author agent's verdict. Product work needs a control CLI + feature map (`/create-verification-skill`), maintained daily.
+
+Trivial copy/config edits skip the factory. Read `~/.cursor/rules/pstack-models.mdc` for model roles. `auto` means inherit parent, not a model slug.

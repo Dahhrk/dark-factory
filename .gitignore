@@ -1,0 +1,28 @@
+# Local agent noise
+.audit/
+*.tsv.bak
+worktrees/
+.worktrees/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Machine-local scratch (never publish)
+local/*
+!local/.gitkeep
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Dependencies if this repo later grows an app
+node_modules/
+dist/
+build/
+__pycache__/
+.venv/

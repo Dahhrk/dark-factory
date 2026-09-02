@@ -1,0 +1,36 @@
+# Kitchen CI — visibility / secrets / path scrub
+
+name: kitchen-ci
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  visibility:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fail on absolute Windows user paths in tracked files
+        run: |
+          set -euo pipefail
+          if git grep -nE 'C:\\Users\\' -- .; then
+            echo "::error::Absolute C:\\Users\\ paths found. Use ~/Projects/... instead."
+            exit 1
+          fi
+      - name: Fail on secret-looking tokens in tracked files
+        run: |
+          set -euo pipefail
+          if git grep -nE 'xox[baprs]-|ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|sk-[A-Za-z0-9]{20,}' -- .; then
+            echo "::error::Secret-looking token pattern found in tracked files"
+            exit 1
+          fi
+      - name: Required kitchen files present
+        run: |
+          test -f VISIBILITY.md
+          test -f PUBLIC.md
+          test -f docs/storage-layout.md
+          test -f docs/SETUP-STATUS.md
+          test -f audit/decisions.tsv
+          head -n1 audit/decisions.tsv | grep -qx $'ts\tphase\tdecision\twhy\tevidence\tresult'
