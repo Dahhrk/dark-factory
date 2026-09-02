@@ -23,4 +23,6 @@ repro and fix until image diff is zero. never edit the baseline.
 
 - [lauren-design.md](lauren-design.md)  
 - [feature-maps.md](feature-maps.md) — drive the same surface  
+- [SELF-IMPROVE.md](SELF-IMPROVE.md) — encode second smells into CI  
+- Control-Glass: `npm run visual-parity` (committed baselines under `tests/visual/baselines/`)  
 - StyleX story in [loops-you-can-trust.md](loops-you-can-trust.md)  

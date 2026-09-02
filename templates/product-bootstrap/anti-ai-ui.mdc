@@ -1,0 +1,29 @@
+---
+description: No AI-template UI — skills first, named direction, mechanical CI bans
+alwaysApply: true
+---
+
+# Anti AI-template UI
+
+Soft skills alone failed. Visual tropes are gated by `npm run anti-ai-ui` (`scripts/check-anti-ai-ui.mjs`) and this rule.
+
+## Before any UI / CSS / landing work
+
+1. Read `.agents/skills/frontend-design/SKILL.md` and `.agents/skills/make-interfaces-feel-better/SKILL.md`.
+2. For marketing / landing / promotional surfaces, also read `.agents/skills/landing-page-design/SKILL.md`.
+3. Pick **one named direction** (e.g. daylight print, industrial utility, editorial magazine). Write it in the PR or commit body. Do not ship an unnamed “nice dark UI”.
+
+## Forbidden as a first default
+
+- Font stacks led by Inter, Roboto, Open Sans, Arial, Helvetica Neue, or generic `system-ui` / `-apple-system` as the primary face.
+- Purple / indigo AI tokens and purple-to-indigo gradient tropes (see script header bans).
+- Three equal marketing cards in a row as the hero composition.
+- Cream paper + terracotta accent + display serif cliché.
+- **Nightglass:** dark field + film-grain / noise overlay + neon mint or cyan as the default “AI tool” night mode.
+
+Prefer daylight, print, or utility looks when unsure. Neon accents and grain are not a substitute for a direction.
+
+## Proof
+
+- Feature Map **Looks** section: read a control-glass screenshot; confirm brand-first composition and no banned tropes.
+- CI: `npm run anti-ai-ui` must stay green. Second smell of the same trope → extend the script, not another soft reminder.
