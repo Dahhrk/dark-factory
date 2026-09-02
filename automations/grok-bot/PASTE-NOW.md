@@ -1,11 +1,11 @@
 # Grok Bot — paste these now
 
-You said Grok Bot is installed. Paste each routine into Grok Bot (one-off test first, then schedule).
+Full bot list + charters: **[BOTS.md](./BOTS.md)** (create Chief of Staff + Engineer on Get started).
 
-Kitchen queue path for intake: `~/Projects/dark-factory/intake/QUEUE.md`  
+Kitchen queue: `~/Projects/dark-factory/intake/QUEUE.md`  
 Private product: `~/Projects/Control-Glass`
 
-## 1. Daily maintain-verify (engineer bot)
+## 1. Daily maintain-verify (Engineer bot)
 
 **When:** Daily schedule (pick a quiet hour). Prefer Cloud Agent for the heavy work.
 
@@ -29,7 +29,7 @@ If doctor fails, stop and report — do not invent evidence.
 
 **When:** Friday afternoon.
 
-**Prompt:** use `automations/cursor/weekly-prune.md` (can be Cursor Automation or Grok Bot).
+**Prompt:** use `automations/grok-bot/weekly-prune.md` (or Cursor Automation).
 
 ## Coordinator rule
 

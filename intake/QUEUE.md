@@ -2,19 +2,6 @@
 
 ## inbox
 
-### [inbox] Confirm spend cap
-- done means: Cursor billing shows an on-demand spend cap
-- owner: you
-
-### [inbox] Enable Bugbot on Control-Glass
-- done means: cursor.com/dashboard Bugbot lists Dahhrk/Control-Glass enabled
-- owner: you
-
-### [inbox] Paste Grok Bot daily maintain (optional)
-- source: automations/grok-bot/PASTE-NOW.md
-- done means: routine exists in Grok Bot and one dry-run completed
-- owner: you
-
 ### [inbox] First overnight (limited)
 - playbook: autonomous run
 - goal: one overnight predicate on Control-Glass
@@ -28,6 +15,22 @@
 _(empty)_
 
 ## done
+
+### [done] Engineer daily maintain
+- source: automations/grok-bot/PASTE-NOW.md
+- done means: routine exists in Grok Bot and one dry-run completed
+- owner: Engineer
+- evidence: 2026-09-02 21:30 London live control-glass pass on Criminal; home clean, mark-ready clean; tmp/verify-glass home-idle + mark-ready png/aria; PR none; daily 8am weekdays scheduled after this pass
+- keep: draft PRs only; no merge; no Autopilot
+
+### [done] Confirm spend cap
+- done means: Cursor billing shows an on-demand spend cap
+- owner: you
+- evidence: user confirmed 2026-09-02 in Chief of Staff chat
+
+### [done] Bugbot on Control-Glass
+- source: you
+- evidence: user confirmed enabled
 
 ### [done] Remotes + green CI
 - evidence: https://github.com/Dahhrk/dark-factory (public), https://github.com/Dahhrk/Control-Glass (private); kitchen-ci success; Control-Glass ci drive smoke success
