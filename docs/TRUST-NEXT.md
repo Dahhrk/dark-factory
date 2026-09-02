@@ -6,8 +6,9 @@ Mechanical Dune/CI/remotes close the install gap. Trust without reading code is 
 
 1. **Spend cap** — Cursor Settings → billing / Cloud Agents → set an on-demand cap. Do not copy lab spend.
 2. **Automations** — daily `maintain-verify-glass` workspace = `~/Projects/Control-Glass`.
-3. **Remotes green** — public `dark-factory` + private `Control-Glass`; Actions pass; Bugbot on the private repo.
-4. **Optional** — Grok Bot paste from `automations/grok-bot/PASTE-NOW.md`.
+3. **Remotes green** — public [Dahhrk/dark-factory](https://github.com/Dahhrk/dark-factory) + private [Dahhrk/Control-Glass](https://github.com/Dahhrk/Control-Glass); Actions pass.
+4. **Bugbot** — enable `Dahhrk/Control-Glass` at [cursor.com/dashboard](https://cursor.com/dashboard) → Integrations / Bugbot (needs your Cursor login; no CLI key in this kitchen).
+5. **Optional** — Grok Bot paste from `automations/grok-bot/PASTE-NOW.md`.
 
 ## First overnight (required before Autopilot)
 
