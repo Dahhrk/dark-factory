@@ -37,12 +37,6 @@ All bots read `~/projects/registry.md` for project-specific details. Updated via
 
 Harvey owns the outer loop. Tony owns the inner loop. They don't cross.
 
-### Full Autopilot
-
-Task → Harvey routes → Tony spawns Cloud Agent with `/poteto-mode` + `/loop until done` → agent verifies against project's verify skill → PR to Gordon → human merges.
-
-Overnight: Harvey queues tasks, Tony runs them in isolated worktrees with decision logs.
-
 ### Multi-model tools
 
 - `/interrogate` — adversarial multi-model review (Tony pre-screens, Gordon final-reviews)
