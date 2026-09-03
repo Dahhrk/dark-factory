@@ -50,6 +50,16 @@ grokbot-fleet enforces at the MCP level:
 - No destructive production actions
 - Fork before upstream
 
+## Full Autopilot (target state)
+
+> **NOT ENABLED — gate: [docs/TRUST-NEXT.md](../../docs/TRUST-NEXT.md)**
+>
+> How-to only. Do not Autopilot-full / overnight fleet until that gate is green. Board: [SETUP-STATUS.md](../../docs/SETUP-STATUS.md) · [GAP-MATRIX.md](../../docs/GAP-MATRIX.md).
+
+Task → Harvey routes → Tony spawns Cloud Agent with `/poteto-mode` + `/loop until done` → agent verifies against the project's verify skill → PR to Gordon → human merges.
+
+Overnight: Harvey queues tasks, Tony runs them in isolated worktrees with decision logs.
+
 ## Already elsewhere (not Grok bots)
 
 | Name | Where |
