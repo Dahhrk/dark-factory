@@ -1,0 +1,4 @@
+# Paths under automations/ that do not require an audit/decisions.tsv
+# change in the same PR. One relative path prefix per line. # comments ok.
+# Example:
+# automations/grok-bot/cursor-handoff/public/

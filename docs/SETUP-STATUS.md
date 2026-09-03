@@ -1,5 +1,7 @@
 # Setup status — trust stack closeout
 
+Canonical bot roster: [automations/grok-bot/BOTS.md](../automations/grok-bot/BOTS.md). Gap audit: [GAP-MATRIX.md](GAP-MATRIX.md).
+
 ## Gate board (honest)
 
 | Gate | Status | Evidence |
@@ -9,21 +11,21 @@
 | **2 Verify + Feature Map** | **DONE** | `verify-glass` + drive smoke + Looks |
 | **3 Dune CI** | **DONE** | Hard CI + branch protection |
 | **4 Design (skills)** | **DONE** | noodle + Emil + Elaya |
-| **4b Design (mechanical)** | **PR** | `anti-ai-ui` + `visual-parity` on Control-Glass branch |
-| **5 Outer loop / Grok Bot** | **DONE** (you) | Chief + Dr Eggbot — Engineer schedule optional |
-| **6 Cursor Automations** | **ENABLE** | Saved — schedules must be **Enabled** |
-| **7 Autopilot** | **BLOCKED** | One overnight first |
+| **4b Design (mechanical)** | **DONE** | `anti-ai-ui` + `visual-parity` on Control-Glass main |
+| **5 Outer loop / Grok Bot** | **DONE** (you) | Harvey + fleet — Engineer schedule optional |
+| **6 Cursor Automations** | **ENABLE** | Saved is not enough — schedules must be **Enabled** in the UI |
+| **7 Autopilot** | **BLOCKED** | One overnight with `decisions.tsv` evidence first ([TRUST-NEXT.md](TRUST-NEXT.md)) |
 | **8 /automate-me** | **OPTIONAL** | Later |
 | **9 Remotes** | **DONE** | [dark-factory](https://github.com/Dahhrk/dark-factory) · [Control-Glass](https://github.com/Dahhrk/Control-Glass) |
-| **Bugbot** | **DONE** (you) | Enabled |
-| **Self-improve docs** | **PR** | [SELF-IMPROVE.md](SELF-IMPROVE.md) |
+| **Bugbot** | **UNPROVEN** | Toggle may be on; zero Bugbot review comments on Control-Glass PRs via API until one exists |
+| **Self-improve docs** | **DONE** | [SELF-IMPROVE.md](SELF-IMPROVE.md) |
 
 ## Still you
 
-[STILL-YOU.md](STILL-YOU.md) — land PRs, Enable automations, cloud Build, pin poteto, overnight.
+[STILL-YOU.md](STILL-YOU.md) — Enable automations, Bugbot proof comment, overnight.
 
 ## Do not enable yet
 
 Benny · Autopilot fleet · Orchestrate
 
-See: [TRUST-NEXT.md](TRUST-NEXT.md) · [match-ceiling.md](match-ceiling.md) · [SELF-IMPROVE.md](SELF-IMPROVE.md)
+See: [TRUST-NEXT.md](TRUST-NEXT.md) · [match-ceiling.md](match-ceiling.md) · [GAP-MATRIX.md](GAP-MATRIX.md) · [SELF-IMPROVE.md](SELF-IMPROVE.md)
