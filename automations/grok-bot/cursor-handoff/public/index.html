@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chief handoff</title>
+    <style>
+      body {
+        margin: 2rem auto;
+        max-width: 36rem;
+        font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+      }
+      label,
+      button {
+        display: block;
+        margin-top: 0.85rem;
+      }
+      input,
+      textarea,
+      select {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 0.25rem;
+        padding: 0.45rem;
+      }
+      button {
+        margin-top: 1.25rem;
+        padding: 0.55rem 0.9rem;
+      }
+      #out {
+        margin-top: 1rem;
+        min-height: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Chief handoff</h1>
+    <p>Posts a ticket to Chief of Staff. Key stays on this computer.</p>
+    <form id="f">
+      <label>
+        Objective
+        <textarea name="objective" rows="3" required>
+unique Glass-inspired Control-Glass home, not AI slop</textarea>
+      </label>
+      <label>
+        Done means
+        <textarea name="done_means" rows="3" required>
+named direction + Figma file + control-glass idle then ready + anti-ai-ui green</textarea>
+      </label>
+      <label>
+        Keep
+        <textarea name="keep" rows="3" required>
+testids and copy; no nightglass; no Lauren clone; do not merge</textarea>
+      </label>
+      <label>
+        Owner
+        <select name="owner">
+          <option value="Figma Engineer">Figma Engineer</option>
+          <option value="Engineer">Engineer</option>
+        </select>
+      </label>
+      <label>
+        Product
+        <input name="product" value="Control-Glass" required />
+      </label>
+      <button type="submit">Send to Chief</button>
+      <button type="button" id="ping">Ping (silent)</button>
+    </form>
+    <p id="out"></p>
+    <script>
+      const out = document.getElementById("out");
+      async function post(body) {
+        out.textContent = "sending…";
+        const res = await fetch("/handoff", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+        });
+        out.textContent = res.ok ? `woke (${res.status})` : `failed (${res.status})`;
+      }
+      document.getElementById("f").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const data = new FormData(e.target);
+        post(Object.fromEntries(data.entries()));
+      });
+      document.getElementById("ping").addEventListener("click", () => {
+        post({
+          objective: "ping",
+          done_means: "ignore",
+          keep: "silence",
+          owner: "Chief of Staff",
+          product: "none",
+        });
+      });
+    </script>
+  </body>
+</html>
