@@ -6,11 +6,11 @@ Agent finished repo gates it can encode. Full map: [CURSOR-SETTINGS.md](CURSOR-S
 
 ### A — Cursor toggles (P0)
 
-1. **Automations** — schedules **Enabled** (not only Saved): maintain-verify-glass → Control-Glass; encode-lessons Friday; morning-catchup  
-2. **[Bugbot](https://cursor.com/dashboard?tab=bugbot)** — confirm Control-Glass on, then open a PR that draws a real Bugbot comment (gate stays **UNPROVEN** until that comment exists)  
-3. **[Spending](https://cursor.com/dashboard?tab=spending)** — confirm spend cap still set  
-4. **[Agents](https://cursor.com/agents)** — Cloud Build/snapshot for `Dahhrk/Control-Glass` when you need overnight  
-5. **Pin `/poteto-mode`** — Alt+Enter  
+1. ~~Automations~~ — Active (maintain / encode-lessons / morning-catchup)  
+2. ~~Bugbot~~ — proven on Control-Glass [#8](https://github.com/Dahhrk/Control-Glass/pull/8) (`cursor[bot]` review + inline findings)  
+3. ~~Spending~~ — **$200** on-demand cap confirmed  
+4. ~~Cloud Build~~ — Control-Glass `bld-20260903-5f242bc9…` **Success** (Recurring, 3 Sept 22:23)  
+5. ~~Pin `/poteto-mode`~~ — Custom Mode pinned  
 
 ### B — Grok (if not done)
 
@@ -22,12 +22,13 @@ Agent finished repo gates it can encode. Full map: [CURSOR-SETTINGS.md](CURSOR-S
 
 ## Already done by agents
 
-- Control-Glass hard CI (`anti-ai-ui`, `visual-parity`, drive smoke) on main  
-- Kitchen SELF-IMPROVE + visibility CI  
-- Gap-matrix P1 encode (Autopilot banners, dune-footguns, decisions-tsv PR gate) on `feat/gap-encode-p1`  
+- Control-Glass hard CI on **main**: `anti-ai-ui`, `visual-parity`, `dune-footguns` (no `useEffect` / no comments in `src/`), boundaries, drive smoke (#8 merged)  
+- Kitchen SELF-IMPROVE + visibility CI + decisions.tsv PR gate  
+- Gap matrix refreshed 3 Sep (footguns/Bugbot/cloud no longer listed as missing)  
 
 ## Do not enable yet
 
-Benny · Autopilot fleet · Orchestrate  
+Benny · Autopilot fleet · Orchestrate · GitHub auto-merge (until overnight + required review)
 
-**skip (human):** overnight run · Automations Enable click · Bugbot dashboard proof  
+**skip (human):** overnight run only  
+ 
