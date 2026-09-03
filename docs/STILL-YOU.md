@@ -1,39 +1,33 @@
 # Still you — human only
 
-Agent finished repo gates. Full map: [CURSOR-SETTINGS.md](CURSOR-SETTINGS.md) · self-improve: [SELF-IMPROVE.md](SELF-IMPROVE.md).
+Agent finished repo gates it can encode. Full map: [CURSOR-SETTINGS.md](CURSOR-SETTINGS.md) · board: [SETUP-STATUS.md](SETUP-STATUS.md) · gaps: [GAP-MATRIX.md](GAP-MATRIX.md).
 
 ## Do now (order)
 
-### A — Land the PRs (review, don’t self-merge as author)
+### A — Cursor toggles (P0)
 
-1. Merge / approve **Control-Glass** PR: visual parity + anti-ai-ui + daylight UI + cloud `environment.json`  
-2. Merge / approve **dark-factory** PR: kitchen settings, SELF-IMPROVE, bootstrap anti-ai templates  
+1. **Automations** — schedules **Enabled** (not only Saved): maintain-verify-glass → Control-Glass; encode-lessons Friday; morning-catchup  
+2. **[Bugbot](https://cursor.com/dashboard?tab=bugbot)** — confirm Control-Glass on, then open a PR that draws a real Bugbot comment (gate stays **UNPROVEN** until that comment exists)  
+3. **[Spending](https://cursor.com/dashboard?tab=spending)** — confirm spend cap still set  
+4. **[Agents](https://cursor.com/agents)** — Cloud Build/snapshot for `Dahhrk/Control-Glass` when you need overnight  
+5. **Pin `/poteto-mode`** — Alt+Enter  
 
-### B — Website / app toggles
+### B — Grok (if not done)
 
-3. **[Spending](https://cursor.com/dashboard?tab=spending)** — confirm spend cap (you said done)  
-4. **[Agents](https://cursor.com/agents)** — first **Build** for `Dahhrk/Control-Glass` after (1) lands  
-5. **[Bugbot](https://cursor.com/dashboard?tab=bugbot)** — confirm Control-Glass on  
-6. **Automations** — schedules **Enabled** (not only Saved): maintain → Control-Glass; encode-lessons Friday; morning-catchup  
-7. **Pin `/poteto-mode`** — Alt+Enter  
+6. Sync fleet via grokbot-fleet / Dr Strange — roster is [BOTS.md](../automations/grok-bot/BOTS.md) (canonical)  
 
-### C — Grok (if not done)
+### C — First overnight (required before Autopilot)
 
-8. **Engineer** bot via Dr Eggbot — one-off maintain → schedule daily (`automations/grok-bot/PASTE-NOW.md`)  
+7. Follow [TRUST-NEXT.md](TRUST-NEXT.md) — one small Control-Glass task, `audit/decisions.tsv`, morning `/show-me-your-work`  
 
-### D — First overnight (required before Autopilot)
+## Already done by agents
 
-9. Follow [TRUST-NEXT.md](TRUST-NEXT.md) — one small Control-Glass task, `decisions.tsv`, morning `/show-me-your-work`  
-
-## Already done by agents (once PRs land)
-
-- `anti-ai-ui` + `visual-parity` CI on Control-Glass  
-- Always-on anti-AI UI rule + Feature Map Looks  
-- Daylight print home (nightglass banned mechanically)  
-- Cloud `environment.json` (install-only)  
-- Kitchen SELF-IMPROVE + bootstrap copies anti-ai gate for new products  
-- Factory OS user rule names the UI gate  
+- Control-Glass hard CI (`anti-ai-ui`, `visual-parity`, drive smoke) on main  
+- Kitchen SELF-IMPROVE + visibility CI  
+- Gap-matrix P1 encode (Autopilot banners, dune-footguns, decisions-tsv PR gate) on `feat/gap-encode-p1`  
 
 ## Do not enable yet
 
 Benny · Autopilot fleet · Orchestrate  
+
+**skip (human):** overnight run · Automations Enable click · Bugbot dashboard proof  

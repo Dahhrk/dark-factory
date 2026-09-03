@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Fail on absolute Windows user paths in tracked files
         run: |
           set -euo pipefail
@@ -34,3 +36,51 @@ jobs:
           test -f docs/SETUP-STATUS.md
           test -f audit/decisions.tsv
           head -n1 audit/decisions.tsv | grep -qx $'ts\tphase\tdecision\twhy\tevidence\tresult'
+      - name: Status/automation edits need a decisions.tsv row
+        if: github.event_name == 'pull_request'
+        run: |
+          set -euo pipefail
+          BASE="${{ github.event.pull_request.base.sha }}"
+          HEAD="${{ github.event.pull_request.head.sha }}"
+          mapfile -t CHANGED < <(git diff --name-only "$BASE"..."$HEAD")
+          ALLOWLIST=".github/decisions-touch-allowlist"
+          is_allowed() {
+            local f="$1"
+            [[ -f "$ALLOWLIST" ]] || return 1
+            while IFS= read -r line || [[ -n "$line" ]]; do
+              [[ -z "$line" || "$line" =~ ^[[:space:]]*# ]] && continue
+              line="${line#"${line%%[![:space:]]*}"}"
+              line="${line%"${line##*[![:space:]]}"}"
+              [[ -z "$line" ]] && continue
+              case "$f" in
+                "$line"|"$line"/*) return 0 ;;
+              esac
+            done < "$ALLOWLIST"
+            return 1
+          }
+          triggers=()
+          for f in "${CHANGED[@]}"; do
+            case "$f" in
+              automations/*|docs/SETUP-STATUS.md|docs/STILL-YOU.md) ;;
+              *) continue ;;
+            esac
+            if is_allowed "$f"; then
+              echo "allowlisted (no decisions.tsv required): $f"
+              continue
+            fi
+            triggers+=("$f")
+          done
+          if [[ ${#triggers[@]} -eq 0 ]]; then
+            echo "No status/automation trigger paths in this PR."
+            exit 0
+          fi
+          echo "Trigger paths:"
+          printf '  %s\n' "${triggers[@]}"
+          for f in "${CHANGED[@]}"; do
+            if [[ "$f" == "audit/decisions.tsv" ]]; then
+              echo "decisions.tsv changed in the same PR — ok"
+              exit 0
+            fi
+          done
+          echo "::error::PR touches status/automation paths but not audit/decisions.tsv. Append a row (or allowlist under .github/decisions-touch-allowlist)."
+          exit 1
