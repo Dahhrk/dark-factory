@@ -61,6 +61,10 @@ Write-Host @"
 
 Created private product: $Target
 
+Gate pack is in scripts/ (anti-ai-ui, boundaries, dune-footguns, and the rest).
+-WithDesignSkills still installs noodle. -WithAntiSlop still installs anti-slop.
+Install does not add visual-parity (needs baselines).
+
 Next:
   1. File → Open Folder → $Target
   2. /create-verification-skill

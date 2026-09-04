@@ -13,17 +13,21 @@ Soft skills alone failed. Visual tropes are gated by `npm run anti-ai-ui` (`scri
 2. For marketing / landing / promotional surfaces, also read `.agents/skills/landing-page-design/SKILL.md`.
 3. Pick **one named direction** (e.g. daylight print, industrial utility, editorial magazine). Write it in the PR or commit body. Do not ship an unnamed “nice dark UI”.
 
-## Forbidden as a first default
+## Mechanical bans (CI fails)
+
+Keep this list in sync with the header of `scripts/check-anti-ai-ui.mjs`.
 
 - Font stacks led by Inter, Roboto, Open Sans, Arial, Helvetica Neue, or generic `system-ui` / `-apple-system` as the primary face.
-- Purple / indigo AI tokens and purple-to-indigo gradient tropes (see script header bans).
-- Three equal marketing cards in a row as the hero composition.
-- Cream paper + terracotta accent + display serif cliché.
-- **Nightglass:** dark field + film-grain / noise overlay + neon mint or cyan as the default “AI tool” night mode.
+- Playfair Display / Libre Baskerville as the AI-default display serif.
+- Purple / indigo AI tokens and purple-to-indigo gradient tropes.
+- Nightglass: film-grain / noise (`feTurbulence`, `fractalNoise`) plus neon mint or cyan hexes.
+- Cream / near-cream paper: `#F4F1EA`, `#F5F0E8`, `#FAF7F2`, and hexes near that paper tone.
+- Terracotta accents: `#C2410C`, `#B45309`, `#EA580C`, `#D97706`, and `orange-600` / `orange-700` / `amber-700` utility classes.
+- Three-card hero grids: `grid-cols-3` with card, `hero-cards` / `three-card` tokens, or equal 3-column `1fr` grids in a hero+card file.
 
 Prefer daylight, print, or utility looks when unsure. Neon accents and grain are not a substitute for a direction.
 
 ## Proof
 
-- Feature Map **Looks** section: read a control-glass screenshot; confirm brand-first composition and no banned tropes.
+- Feature Map Looks section on the product: read a `control-*` screenshot. Confirm brand-first composition and no banned tropes.
 - CI: `npm run anti-ai-ui` must stay green. Second smell of the same trope → extend the script, not another soft reminder.
