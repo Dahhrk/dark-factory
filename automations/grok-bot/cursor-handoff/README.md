@@ -30,3 +30,12 @@ node ~/Projects/dark-factory/automations/grok-bot/cursor-handoff/server.mjs
 ```
 
 Open `http://127.0.0.1:8788/`. Send a ping first (button on the page). HTTP 200 means Chief woke and stayed silent.
+
+### Host binding
+
+The server binds to `127.0.0.1` by default (loopback only). Override with `HANDOFF_HOST` if needed, but the `POST /handoff` endpoint rejects requests from non-loopback remote addresses regardless of bind host.
+
+| Env var          | Default       | Purpose                  |
+| ---------------- | ------------- | ------------------------ |
+| `HANDOFF_PORT`   | `8788`        | Listen port              |
+| `HANDOFF_HOST`   | `127.0.0.1`   | Listen host (loopback)   |

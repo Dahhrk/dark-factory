@@ -4,3 +4,4 @@ ts	phase	decision	why	evidence	result
 2026-09-02T22:56+01:00	maintain	pause Grok Engineer daily maintain	Cursor Automation already owns maintain-verify-glass; do not duplicate	Engineer confirmed pause of 8am weekday routine	paused
 2026-09-03T21:45+01:00	encode	gap-matrix P1 structural encode	Autopilot docs ahead of trust; dune footguns + decisions.tsv PR gate	feat/gap-encode-p1 Control-Glass+kitchen; banners→TRUST-NEXT; npm run dune-footguns; kitchen-ci same-PR row rule	pushed; human owns Enable/overnight/Bugbot
 2026-09-04T00:35+01:00	bots	roster+registry drift fix	Riddler missing from kitchen BOTS; gates missing dune-footguns	profiles on disk + Control-Glass package.json	aligned pending sync_profiles
+2026-09-04T10:22+01:00	encode	handoff server bind localhost + CI gate	0.0.0.0 bind + no auth flagged ≥2x by Cursor Security Review (PR #5, #6); still on main	server.mjs 0.0.0.0 on main; security review comments on PR #5 + #6	draft PR; CI step no-0.0.0.0-listen added
