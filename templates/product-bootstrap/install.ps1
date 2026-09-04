@@ -23,7 +23,18 @@ Copy-Item -Force (Join-Path $PSScriptRoot "anti-ai-ui.mdc") (Join-Path $rulesDir
 
 $scriptsDir = Join-Path $destRoot "scripts"
 New-Item -ItemType Directory -Force -Path $scriptsDir | Out-Null
-Copy-Item -Force (Join-Path $PSScriptRoot "check-anti-ai-ui.mjs") (Join-Path $scriptsDir "check-anti-ai-ui.mjs")
+$gatesDir = Join-Path $PSScriptRoot "gates"
+if (-not (Test-Path $gatesDir)) { throw "Gate pack missing: $gatesDir" }
+Get-ChildItem -Path $gatesDir -Filter "*.mjs" | ForEach-Object {
+  Copy-Item -Force $_.FullName (Join-Path $scriptsDir $_.Name)
+}
+
+$pkg = Join-Path $destRoot "package.json"
+$wire = Join-Path $PSScriptRoot "wire-package-scripts.mjs"
+if ((Test-Path $pkg) -and (Test-Path $wire)) {
+  & node $wire $pkg
+  if ($LASTEXITCODE -ne 0) { throw "wire-package-scripts.mjs failed ($LASTEXITCODE)" }
+}
 
 $agentsSrc = Join-Path $PSScriptRoot "AGENTS.product.md"
 $privateSrc = Join-Path $PSScriptRoot "PRIVATE.product.md"
@@ -33,8 +44,8 @@ if (Test-Path $agentsSrc) {
   (Get-Content $privateSrc -Raw) -replace '\{\{PRODUCT\}\}', $name | Set-Content -NoNewline (Join-Path $destRoot "PRIVATE.md")
 }
 
-Write-Host "Copied BUGBOT.md, .cursor/dune.md, .cursor/settings.json, .cursor/rules/anti-ai-ui.mdc, scripts/check-anti-ai-ui.mjs, AGENTS.md, PRIVATE.md"
-Write-Host "Wire package.json script anti-ai-ui + CI step after create-verification-skill (see Control-Glass)."
+Write-Host "Copied BUGBOT.md, .cursor/dune.md, .cursor/settings.json, .cursor/rules/anti-ai-ui.mdc, gates/*.mjs -> scripts/, AGENTS.md, PRIVATE.md"
+Write-Host "Wired package.json gate scripts when package.json exists. No visual-parity (needs baselines)."
 
 Push-Location $TargetRepo
 try {
