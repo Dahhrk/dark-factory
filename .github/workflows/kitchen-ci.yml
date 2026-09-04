@@ -36,6 +36,15 @@ jobs:
           test -f docs/SETUP-STATUS.md
           test -f audit/decisions.tsv
           head -n1 audit/decisions.tsv | grep -qx $'ts\tphase\tdecision\twhy\tevidence\tresult'
+      - name: No 0.0.0.0 listen binds in handoff server
+        run: |
+          set -euo pipefail
+          TARGET="automations/grok-bot/cursor-handoff/server.mjs"
+          if grep -nE 'listen\s*\([^)]*"0\.0\.0\.0"' "$TARGET"; then
+            echo "::error::${TARGET} binds 0.0.0.0 — must use 127.0.0.1 or HANDOFF_HOST."
+            exit 1
+          fi
+          echo "ok: no 0.0.0.0 listen bind in ${TARGET}"
       - name: Status/automation edits need a decisions.tsv row
         if: github.event_name == 'pull_request'
         run: |

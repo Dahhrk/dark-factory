@@ -24,6 +24,7 @@ const logPath = path.join(
 );
 const publicDir = path.join(here, "public");
 const PORT = Number(process.env.HANDOFF_PORT ?? 8788);
+const HOST = process.env.HANDOFF_HOST ?? "127.0.0.1";
 
 function readConfig() {
   if (!fs.existsSync(configPath)) {
@@ -70,8 +71,14 @@ async function wake(payload) {
   }
 }
 
+function isLoopback(addr) {
+  if (!addr) return false;
+  if (addr === "127.0.0.1" || addr === "::1" || addr === "::ffff:127.0.0.1") return true;
+  return false;
+}
+
 const server = http.createServer(async (req, res) => {
-  const url = new URL(req.url ?? "/", `http://127.0.0.1:${PORT}`);
+  const url = new URL(req.url ?? "/", `http://${HOST}:${PORT}`);
 
   if (req.method === "GET" && url.pathname === "/health") {
     send(res, 200, "ok");
@@ -85,6 +92,10 @@ const server = http.createServer(async (req, res) => {
   }
 
   if (req.method === "POST" && url.pathname === "/handoff") {
+    if (!isLoopback(req.socket.remoteAddress)) {
+      send(res, 403, "forbidden: non-loopback origin");
+      return;
+    }
     const chunks = [];
     for await (const c of req) chunks.push(c);
     let payload;
@@ -118,6 +129,6 @@ const server = http.createServer(async (req, res) => {
   send(res, 404, "not found");
 });
 
-server.listen(PORT, "0.0.0.0", () => {
-  process.stdout.write(`cursor-handoff http://127.0.0.1:${PORT}/\n`);
+server.listen(PORT, HOST, () => {
+  process.stdout.write(`cursor-handoff http://${HOST}:${PORT}/\n`);
 });
