@@ -7,3 +7,4 @@
 2026-09-04T00:54+01:00	bots	Harvey sync_profiles wake failed 401	cursor-handoff webhook auth rejected	POST status 401 body_len 44; key/url present in local config	blocked; refresh webhook key or message Harvey in Grok
 2026-09-04T05:52+01:00	overnight	Flashpeek overnight authorized (not Autopilot fleet)	Dark /poteto-mode Done means Phase1 APIs + Phase2 pack-shelf UI; draft PRs only	Harvey→Tony queue; PR#1 already on main; companion phase2; TRUST-NEXT still not green	running; Dark plates on wake
 
+2026-09-04T05:52+01:00	overnight	Flashpeek overnight authorized (not Autopilot fleet)	Dark /poteto-mode Done means Phase1 APIs + Phase2 pack-shelf UI; draft PRs only	Harvey→Tony queue; PR#1 already on main; companion phase2; TRUST-NEXT still not green	running; Dark plates on wake
