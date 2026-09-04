@@ -9,4 +9,6 @@ A duration is not a finish condition. Unattended work needs a predicate, a fresh
 
 Use `/loop until done` only with that contract. Autopilot-full is for independent queue items. Autopilot-stack is for coupled work the human lands. Orchestrate is multi-day; do not use it because a task sounds large.
 
+Cloud Agent overnight PRs stay **draft**. Do not merge them. Append `audit/decisions.tsv` for each decision. Autopilot stays blocked until [TRUST-NEXT](../../docs/TRUST-NEXT.md) is green.
+
 Morning audit: `/show-me-your-work` and the Attention section before re-reading the night.

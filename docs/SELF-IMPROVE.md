@@ -20,13 +20,16 @@ Preferred strength order: [quality-ladder.md](quality-ladder.md). Principle: enc
 | Boundaries | `npm run boundaries` + probe |
 | Anti-slop / TS footguns | oxlint + `tools/oxlint/anti-slop` |
 | Anti AI-template UI | `npm run anti-ai-ui` |
+| Soft tropes (mechanical) | cream / near-cream paper, terracotta hex + class, 3-card hero grids (same script) |
 | Visual parity (pixel) | `npm run visual-parity` |
-| Eyes drive | `npm run ci:drive` / `control-glass` |
+| Eyes drive | `npm run ci:drive` or `control-glass` |
 | Soft review | `BUGBOT.md` + Bugbot dashboard |
 | Always-on UI rule | `.cursor/rules/anti-ai-ui.mdc` |
+| Kitchen bootstrap gate pack | `templates/product-bootstrap/gates/` via `scripts/sync-bootstrap-gates.ps1` |
 
-New UI tropes: **second smell → extend `check-anti-ai-ui.mjs`**, not another reminder.  
-New pixel regressions: fail parity → fix UI **or** titled baseline-update PR (never silent PNG edit).
+New UI tropes: **second smell → extend `check-anti-ai-ui.mjs`**, not another reminder.
+Authors do not certify themselves. That rule still lives on the product (fresh verifier, author does not merge on own verdict).
+New pixel regressions: fail parity → fix UI or titled baseline-update PR (never silent PNG edit).
 
 ## Cadence
 

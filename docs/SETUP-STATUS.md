@@ -14,10 +14,10 @@ Canonical bot roster: [automations/grok-bot/BOTS.md](../automations/grok-bot/BOT
 | **4b Design (mechanical)** | **DONE** | `anti-ai-ui` + `visual-parity` on Control-Glass main |
 | **5 Outer loop / Grok Bot** | **DONE** (you) | Harvey + fleet — Engineer schedule optional |
 | **6 Cursor Automations** | **ENABLE** | Saved is not enough — schedules must be **Enabled** in the UI |
-| **7 Autopilot** | **BLOCKED** | One overnight with `decisions.tsv` evidence first ([TRUST-NEXT.md](TRUST-NEXT.md)) |
+| **7 Autopilot** | **BLOCKED** | Overnight plated locally. Flashpeek #2 closed, #6 closing. Cloud On-Demand blocked. TRUST-NEXT still not green ([TRUST-NEXT.md](TRUST-NEXT.md)). |
 | **8 /automate-me** | **OPTIONAL** | Later |
 | **9 Remotes** | **DONE** | [dark-factory](https://github.com/Dahhrk/dark-factory) · [Control-Glass](https://github.com/Dahhrk/Control-Glass) |
-| **Bugbot** | **UNPROVEN** | Toggle may be on; zero Bugbot review comments on Control-Glass PRs via API until one exists |
+| **Bugbot** | **UNPROVEN** | Toggle may be on; zero Bugbot review comments on Control-Glass PRs via API until one exists. Autopilot still **BLOCKED**. |
 | **Self-improve docs** | **DONE** | [SELF-IMPROVE.md](SELF-IMPROVE.md) |
 
 ## Still you
