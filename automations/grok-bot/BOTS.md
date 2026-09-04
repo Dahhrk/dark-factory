@@ -10,13 +10,14 @@ Bot profiles are managed through [grokbot-fleet](https://github.com/Dahhrk/grokb
 | Tony Stark | Marvel | Engineering Lead — spawns Cloud Agents, validates |
 | Walter White | Breaking Bad | Frontend Authority — design direction, purity |
 | Stewie Griffin | Family Guy | Tooling & Infrastructure — CI, gates, harness |
+| The Riddler | Batman | QA & Verification — proof before Gordon |
 | Gordon Ramsay | Hell's Kitchen | Code Reviewer — BUGBOT.md, every PR |
 | Ted | Ted (2012) | Friday Ops — encode-lessons, prune, bug farmer |
 | Dr Strange | Marvel | Bot Factory & Fleet Operator — creates bots, registry, MCP |
 
 ## How to update bots
 
-1. Edit YAML in `~/grokbot-fleet/profiles/`
+1. Edit YAML in `~/Documents/dev-projects/grokbot-fleet/profiles/`
 2. Run `sync_profiles` via grokbot-fleet MCP (or tell Dr Strange: "sync profiles")
 3. Done
 
@@ -45,7 +46,7 @@ Harvey owns the outer loop. Tony owns the inner loop. They don't cross.
 
 ## Routines
 
-Routine YAML files live in `~/grokbot-fleet/routines/`. Synced via `sync_routines`.
+Routine YAML files live in `~/Documents/dev-projects/grokbot-fleet/routines/`. Synced via `sync_routines`.
 
 | Routine | Bot | Trigger | Purpose |
 |---------|-----|---------|---------|
@@ -55,6 +56,7 @@ Routine YAML files live in `~/grokbot-fleet/routines/`. Synced via `sync_routine
 | Dispatch | Harvey | When messaged | Route tasks to specialists |
 | Bot Health Check | Harvey | Every 6 hours | Fleet health monitoring |
 | Daily Verification | Tony | 7:00 AM daily | Run all project gates |
+| PR Proof | The Riddler | After Tony / before Gordon | QA proof loop before Gordon reviews |
 | PR Review Trigger | Gordon | PR opened | Auto-review on new PRs |
 | Friday Ops | Ted | Friday 10:00 AM | Encode-lessons, prune, bug farm |
 | Auto-update Fleet | Dr Strange / grokbot-fleet | 6:00 AM daily | Pull latest fleet server code |
@@ -74,7 +76,7 @@ grokbot-fleet enforces at the MCP level:
 >
 > How-to only. Do not Autopilot-full / overnight fleet until that gate is green. Board: [SETUP-STATUS.md](../../docs/SETUP-STATUS.md) · [GAP-MATRIX.md](../../docs/GAP-MATRIX.md).
 
-Task → Harvey routes → Tony spawns Cloud Agent with `/poteto-mode` + `/loop until done` → agent verifies against the project's verify skill → PR to Gordon → human merges.
+Task → Harvey routes → Tony spawns Cloud Agent with `/poteto-mode` + `/loop until done` → Riddler proof → Gordon → human merges.
 
 Overnight: Harvey queues tasks, Tony runs them in isolated worktrees with decision logs.
 
