@@ -7,6 +7,7 @@ Borrowed pieces keep **Lauren’s names** (same). Product-specific pieces follow
 | Name | What |
 |------|------|
 | `/poteto-mode` | Entry (sticky Custom Mode) |
+| `/lauren-mode` | Her **private** personal mode (not in marketplace) |
 | `pstack` | Public OS plugin |
 | `cursor-team-kit` | Companion plugin (`deslop`, `control-ui`, `control-cli`, …) |
 | Feature Map | `references/features/` four H2s |
@@ -30,9 +31,12 @@ The private product folder is **Control-Glass**, named after her skill `control-
 |-------------|------|
 | `control-glass` / Glass | `control-glass` / **Control-Glass** (`~/Projects/Control-Glass`) |
 | `verify-atlas` / Atlas (fictional public) | `verify-glass` |
+| `/lauren-mode` (private prefs on pstack) | `/brooklyn-mode` on Control-Glass → still routes to `/poteto-mode` |
+| `/control-grok-bot` | `control-glass` / `control-flashpeek` |
 | Grok Bot private monorepo | `~/Projects/Control-Glass` (private remote) |
 | Essays / talks | `dark-factory/docs` |
 | `verification-skill-example` | `examples/` + `templates/product-bootstrap/` |
+| Triage subscribe routine | [triage-subscribe.md](triage-subscribe.md) (fail closed without Slack) |
 
 A later product that is not named after an existing `control-*` skill should rename `verify-*` / `control-*` / `<APP>_*` env to match, same rule she uses.
 
