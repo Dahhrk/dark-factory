@@ -45,9 +45,9 @@ Product-demo pattern (public MTS interview, [YT A63sedG-p5Q](https://www.youtube
 ## Routine: evening PR shepherd
 
 - **When:** Evening local (before bed / overnight window).
-- **Do:** List open draft PRs for products you trust agents on. For each: CI status, whether `Done means` evidence exists, whether a fresh verifier (not the author agent) should look. Prefer `spawn a cloud agent` for babysit/fix — bot stays coordinator.
-- **Write:** At most one queue row per stuck PR (`playbook hint: investigation` or babysit). Never merge. Never Autopilot-full until [TRUST-NEXT.md](TRUST-NEXT.md) is green.
-- **Keep:** Authors do not certify themselves.
+- **Do:** List **boarded** draft PRs (see [fleet-board.md](fleet-board.md)). For each: Stage Working vs Watching, whether last tick was CLEAN, CI/Bugbot/security, whether visual proof is a real hosted artifact. Prefer `spawn a cloud agent` or **reply on the existing** agent for that PR stream — one agent per PR; bot stays coordinator.
+- **Write:** Advance Watching 1/3→3/3 only on consecutive CLEAN ticks; Ready for review → Riddler/Gordon queue. At most one new inbox row per stuck PR. Never merge. Never Autopilot-full until [TRUST-NEXT.md](TRUST-NEXT.md) is green.
+- **Keep:** Authors do not certify themselves. Agent finished ≠ Done. Done = merged only.
 
 ## Routine: morning briefing
 
@@ -82,4 +82,4 @@ Product-demo pattern (public MTS interview, [YT A63sedG-p5Q](https://www.youtube
 
 ## Related
 
-- [BOTS.md](../automations/grok-bot/BOTS.md) · [make-bot-ui.md](make-bot-ui.md) · [spend-and-cloud.md](spend-and-cloud.md) · [TRUST-NEXT.md](TRUST-NEXT.md) · [workshop-grok-bot.md](workshop-grok-bot.md)
+- [BOTS.md](../automations/grok-bot/BOTS.md) · [make-bot-ui.md](make-bot-ui.md) · [spend-and-cloud.md](spend-and-cloud.md) · [TRUST-NEXT.md](TRUST-NEXT.md) · [fleet-board.md](fleet-board.md) · [workshop-grok-bot.md](workshop-grok-bot.md)

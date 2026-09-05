@@ -38,6 +38,8 @@ All bots read `~/projects/registry.md` for project-specific details. Updated via
 
 Harvey owns the outer loop. Tony owns the inner loop. They don't cross.
 
+**Fleet board:** Working → Watching (CLEAN ladder) → Ready for review ≠ merge. Recipe: [docs/fleet-board.md](../../docs/fleet-board.md). Do **not** import marketplace Engineer Bot as CoS (Tony+Harvey fused) — keep Riddler → Gordon → human land.
+
 **Triage shape:** subscribe → keyword → agent with `/brooklyn-mode`/`/poteto-mode` + `control-*` → still broken on main? Encode: [docs/triage-subscribe.md](../../docs/triage-subscribe.md). Fail closed without Slack. Do not enable Autopilot from this alone.
 
 ### Multi-model tools
