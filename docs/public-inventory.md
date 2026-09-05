@@ -56,9 +56,9 @@ npx skills add poteto/noodle --skill make-interfaces-feel-better
 npx skills add poteto/noodle --skill interaction-design
 ```
 
-See [lauren-design.md](lauren-design.md).
+See [design-notes.md](design-notes.md).
 
-Other poteto repos: [github-poteto.md](github-poteto.md) (`how`, `brainmaxxing`, `verification-skill-example`, `benny-avatars`).
+Other poteto repos: [github-sources.md](github-sources.md) (`how`, `brainmaxxing`, `verification-skill-example`, `benny-avatars`).
 
 ## Adjacent (not Lauren, useful)
 

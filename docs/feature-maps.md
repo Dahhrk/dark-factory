@@ -180,7 +180,7 @@ This kitchen’s `verify-factory/features/kitchen.md` is a **health check**, not
 | [workshop](workshop-grok-bot.md) | She scrolled these files. Trust slide. “???” Slack screenshot. |
 | [pstack guide Pt. 1](pstack-guide-pt1.md) | Four H2s named. CLI families. Cloud, not worktree farms. |
 | [new-to-pstack.md](new-to-pstack.md) | `/create-verification-skill` emits this. Daily maintain. |
-| [github-poteto.md](github-poteto.md) | Atlas example is the public copy with the serial numbers filed off. |
+| [github-sources.md](github-sources.md) | Atlas example is the public copy with the serial numbers filed off. |
 | [dune-method.md](dune-method.md) | Attributes + structure are layer 1–2. The map is layer 3 unless the CLI is real. |
 | [four-loops.md](four-loops.md) | Autopilot without this page is the 600-PR cleanup bill. |
 

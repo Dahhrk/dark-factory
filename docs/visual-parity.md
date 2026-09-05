@@ -1,6 +1,6 @@
 # Visual parity
 
-Source: pstack playbook [`visual-parity`](https://github.com/cursor/plugins/blob/main/pstack/skills/poteto-mode/playbooks/visual-parity.md). Part of [lauren-design.md](lauren-design.md).
+Source: pstack playbook [`visual-parity`](https://github.com/cursor/plugins/blob/main/pstack/skills/poteto-mode/playbooks/visual-parity.md). Part of [design-notes.md](design-notes.md).
 
 Pixel-exact UI equivalence. The **baseline is the spec**. You do not edit it to cheat.
 
@@ -21,7 +21,7 @@ repro and fix until image diff is zero. never edit the baseline.
 
 ## Related
 
-- [lauren-design.md](lauren-design.md)  
+- [design-notes.md](design-notes.md)  
 - [feature-maps.md](feature-maps.md) — drive the same surface  
 - [SELF-IMPROVE.md](SELF-IMPROVE.md) — encode second smells into CI  
 - Control-Glass: `npm run visual-parity` (committed baselines under `tests/visual/baselines/`)  

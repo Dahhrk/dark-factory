@@ -2,7 +2,7 @@
 
 From [Loops You Can Trust](loops-you-can-trust.md). Official pack: [pstack/automations/benny](https://github.com/cursor/plugins/tree/main/pstack/automations/benny).
 
-This kitchen does **not** run Benny. Benny lives in a **product** repo that already has a control CLI + Feature Map. Point Cursor at `FOR_AGENTS.md` only after that exists. Draft PRs only. Do not merge. Do not enable automations until she (you) explicitly ask.
+This kitchen does **not** run Benny. Benny lives in a **product** repo that already has a control CLI + Feature Map. Point Cursor at `FOR_AGENTS.md` only after that exists. Draft PRs only. Do not merge. Do not enable automations until you explicitly ask.
 
 ## The two automations
 

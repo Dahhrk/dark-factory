@@ -1,10 +1,10 @@
 # If you are new to pstack
 
-Her newcomer post, in order. Official page: [01-setup.md](https://github.com/cursor/plugins/blob/main/pstack/docs/guide/01-setup.md). Models section: [Pick your models](https://github.com/cursor/plugins/blob/main/pstack/docs/guide/01-setup.md#pick-your-models). What a finished skill looks like: [poteto/verification-skill-example](https://github.com/poteto/verification-skill-example). Longer recipe: [pstack-guide-pt1.md](pstack-guide-pt1.md).
+Public newcomer post, in order. Official page: [01-setup.md](https://github.com/cursor/plugins/blob/main/pstack/docs/guide/01-setup.md). Models section: [Pick your models](https://github.com/cursor/plugins/blob/main/pstack/docs/guide/01-setup.md#pick-your-models). What a finished skill looks like: [poteto/verification-skill-example](https://github.com/poteto/verification-skill-example). Longer recipe: [pstack-guide-pt1.md](pstack-guide-pt1.md).
 
 This kitchen already has a model map at `~/.cursor/rules/pstack-models.mdc`. You still have to install the plugins in a Cursor chat. `/create-verification-skill` belongs on a **product** repo, not here.
 
-## The three commands she tells newcomers
+## The three commands for newcomers
 
 ```text
 /add-plugin pstack
@@ -18,9 +18,9 @@ Then, every day, without you in the chair:
 /maintain-verification-skill
 ```
 
-That last one is a **Grok Bot routine or a Cursor automation**, not a sticky note. She said so in the same post. [Dr Eggbot](https://x.ai/bot/93gOz3op1UQdBdbekQFLK) will create the engineer bot that owns create + daily maintain if you want a packaged version.
+That last one is a **Grok Bot routine or a Cursor automation**, not a sticky note. The same post says so. [Dr Eggbot](https://x.ai/bot/93gOz3op1UQdBdbekQFLK) will create the engineer bot that owns create + daily maintain if you want a packaged version.
 
-Also install `/add-plugin cursor-team-kit` (she expects `/deslop`, `control-ui`, `control-cli`; pstack does not bundle them).
+Also install `/add-plugin cursor-team-kit` (`/deslop`, `control-ui`, `control-cli`; pstack does not bundle them).
 
 Start a **new chat** after `/setup-pstack`. The model rule only applies to new sessions.
 
@@ -34,7 +34,7 @@ Start a **new chat** after `/setup-pstack`. The model rule only applies to new s
 
 ## What the example actually is
 
-[verification-skill-example](https://github.com/poteto/verification-skill-example) is labeled **private reference**, heavily fictionalized. Atlas / Harbor Labs / `control-atlas` are made up. The shape is what she wants copied.
+[verification-skill-example](https://github.com/poteto/verification-skill-example) is labeled **private reference**, heavily fictionalized. Atlas / Harbor Labs / `control-atlas` are made up. The shape is what to copy.
 
 ```text
 .cursor/skills/verify-atlas/
@@ -45,9 +45,9 @@ Start a **new chat** after `/setup-pstack`. The model rule only applies to new s
     *.md                            # ~30 feature files
 ```
 
-The CLI source is missing on purpose. Pt. 1 still says **Build the Lever**: a real `control-<app>` agents can run (`--help`, `--dry-run`, JSON). Copy the skill + map shape from the example; let `/create-verification-skill` emit the driver, or write it. Markdown-only verify is not the loop she trusts.
+The CLI source is missing on purpose. Pt. 1 still says **Build the Lever**: a real `control-<app>` agents can run (`--help`, `--dry-run`, JSON). Copy the skill + map shape from the example; let `/create-verification-skill` emit the driver, or write it. Markdown-only verify is not a trusted loop.
 
-Why not a wiki (her words):
+Why not a wiki (from the public post):
 
 - **Scoped.** One feature file for the change, not the whole corpus.
 - **Actionable.** Same four questions every file.

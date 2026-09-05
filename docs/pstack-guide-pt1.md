@@ -4,7 +4,7 @@
 
 Source: [x.com/poteto/status/2094457600259842065](https://x.com/poteto/status/2094457600259842065) â†’ [X article](https://x.com/i/article/2094151284949688320) Â· [grokbot.sh mirror](https://www.grokbot.sh/blog/the-complete-guide-to-pstack-pt-1) (31 Aug / 1 Sep 2026). Speaker claims, not an audited ledger. Labels: [evidence-standard.md](evidence-standard.md). Control twin: [atlas-control.md](atlas-control.md).
 
-Related: [deepcoding](deepcoding.md) (Jan 22 â€” frontload) â†’ [Coding is Dead](coding-is-dead.md) (Jan 23 â€” factory must grow) â†’ [How I Use Cursor](how-i-use-cursor.md) (May) â†’ [Loops You Can Trust](https://x.com/poteto/status/2069824386283319343) (Grove / breakfast-factory origin of control-glass) â†’ [workshop](workshop-grok-bot.md) (12 Aug live) â†’ [feature maps](feature-maps.md) (files she scrolled). Example skill: [poteto/verification-skill-example](https://github.com/poteto/verification-skill-example). Newcomer commands: [new-to-pstack.md](new-to-pstack.md). Her other public repos: [github-poteto.md](github-poteto.md).
+Related: [deepcoding](deepcoding.md) (Jan 22 â€” frontload) â†’ [Coding is Dead](coding-is-dead.md) (Jan 23 â€” factory must grow) â†’ [How I Use Cursor](how-i-use-cursor.md) (May) â†’ [Loops You Can Trust](https://x.com/poteto/status/2069824386283319343) (Grove / breakfast-factory origin of control-glass) â†’ [workshop](workshop-grok-bot.md) (12 Aug live) â†’ [feature maps](feature-maps.md) (files she scrolled). Example skill: [poteto/verification-skill-example](https://github.com/poteto/verification-skill-example). Newcomer commands: [new-to-pstack.md](new-to-pstack.md). Her other public repos: [github-sources.md](github-sources.md).
 
 ## What she added that earlier posts did not
 

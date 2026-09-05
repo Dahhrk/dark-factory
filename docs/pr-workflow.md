@@ -2,7 +2,7 @@
 
 Source: pstack playbooks [`opening-a-pr`](https://github.com/cursor/plugins/blob/main/pstack/skills/poteto-mode/playbooks/opening-a-pr.md), [`babysit`](https://github.com/cursor/plugins/blob/main/pstack/skills/poteto-mode/playbooks/babysit.md), [`shipping`](https://github.com/cursor/plugins/blob/main/pstack/skills/poteto-mode/playbooks/shipping.md), [`autopilot-full`](https://github.com/cursor/plugins/blob/main/pstack/skills/poteto-mode/playbooks/autopilot-full.md), [`autopilot-stack`](https://github.com/cursor/plugins/blob/main/pstack/skills/poteto-mode/playbooks/autopilot-stack.md). Workshop + [four-loops.md](four-loops.md). Architecture: [nine-layers.md](nine-layers.md) ┬╖ [orchestration.md](orchestration.md).
 
-This is how she contributes across **many PRs / many projects** without reading every line.
+This is how you contribute across **many PRs / many projects** without reading every line.
 
 ## Lifecycle states
 
