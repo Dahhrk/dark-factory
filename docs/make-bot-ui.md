@@ -2,7 +2,7 @@
 
 Source: pstack skill [`/make-bot-ui`](https://github.com/cursor/plugins/blob/main/pstack/skills/make-bot-ui/SKILL.md). Grok Bot install: `grokbot://app/v1/plugin/add?id=9717366`.
 
-A **custom page** (dashboard, swipe UI, buttons) whose actions wake a Grok Bot over a **webhook**. Example she gave: IG-style inbox — each swipe POSTs JSON; the bot drafts a DM or shares to Slack.
+A **custom page** (dashboard, swipe UI, buttons) whose actions wake a Grok Bot over a **webhook**. Example: IG-style inbox — each swipe POSTs JSON; the bot drafts a DM or shares to Slack.
 
 This is outer-loop **UI**, not product Feature Maps. Key never lives in the browser or chat.
 

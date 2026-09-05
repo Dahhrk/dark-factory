@@ -56,7 +56,7 @@ How *their* app carries the five rules. Your product needs the same jobs, not th
 | **Host** | Behavior stays **in the box** behind **one typed contract**. | 2, 3 |
 | **Package boundary** | Same lesson at the top of the tree. | 2 |
 
-Layout she showed:
+Layout from the workshop:
 
 - Framework: `sand/dune`
 - Application: `sand/src`
@@ -70,13 +70,13 @@ Portable translation (the old four moves, now aligned):
 4. **Ban the local footgun** — `any`, comments-as-policy, god services, banned React APIs. Compile or lint. Rules 2 and 5.
 5. **Blessed scaffold** — generator so the lazy completion is house style. Rule 1.
 
-She would change stacks for driveability (CDP, simulator). A mean compiler is cheaper than another skill.
+Change stacks for driveability (CDP, simulator) when the current stack cannot be driven. A mean compiler is cheaper than another skill.
 
 ## Atomic history, on the recording
 
 Same talk, **Pretext Virt** project view (workshop chrome: Overview / Notes / **Agents** / **PRs 16** / Context). One theme split across many PRs — TanStack / Solid virtualization collapsed onto a **React plane contract**:
 
-| Status | Example titles (her numbers) |
+| Status | Example titles (workshop numbers) |
 |--------|------------------------------|
 | CI failing (2) | `composer: remove the composer_pretext_virtualization flag definition` · `rules: rewrite composer virtualization-ownership onto the React plane contract` |
 | Merged (13) | `recital: settle the standalone-root scroll-stability sample before asserting (PRE-7)` · `composer: remove the @tanstack/solid-virtual dependency` · `composer: delete the dead TanStack virtualization source` · `composer: collapse the transcript virtualization fork to the React plane` · `recital: delete the gate-off and TanStack-only test suites` |

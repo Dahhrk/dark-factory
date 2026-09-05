@@ -79,7 +79,7 @@ Smell three times ΓåÆ red build. That is the gardener.
 
 ## Gate 4 ΓÇö Design craft (optional, **product**)
 
-Cherry-pick ΓÇö do **not** clone noodle as the OS ([github-poteto.md](github-poteto.md)):
+Cherry-pick ΓÇö do **not** clone noodle as the OS ([github-sources.md](github-sources.md)):
 
 ```bash
 npx skills add poteto/noodle --skill frontend-design
@@ -87,7 +87,7 @@ npx skills add poteto/noodle --skill make-interfaces-feel-better
 npx skills add poteto/noodle --skill interaction-design
 ```
 
-Use Design Mode + [lauren-design.md](lauren-design.md) ┬╖ [visual-parity.md](visual-parity.md). Adjacent packs: [adjacent-taste.md](adjacent-taste.md).
+Use Design Mode + [design-notes.md](design-notes.md) ┬╖ [visual-parity.md](visual-parity.md). Adjacent packs: [adjacent-taste.md](adjacent-taste.md).
 
 ## Gate 5 ΓÇö Outer loop
 

@@ -12,7 +12,7 @@ Attitude ([three-virtues.md](three-virtues.md)): if you did the errand twice, as
 
 Workshop pattern ([workshop-grok-bot.md](workshop-grok-bot.md)): talk to a **Chief of Staff** bot. Specialists own domains (separate memory, separate accountability). Give a group chat an **objective**, not a pre-split task list. Approval line is **reversibility** — drafts and research finish alone; anything the outside world sees, or that moves money, parks for you.
 
-0xCodez’s [10-step article](https://x.com/0xCodez/status/2089676836619878567) is his Grok Bot product tutorial, not her manuscript. Steal the charter shape (own / good looks like / never do without asking), not his marketing.
+0xCodez’s [10-step article](https://x.com/0xCodez/status/2089676836619878567) is his Grok Bot product tutorial, not a first-party manuscript. Steal the charter shape (own / good looks like / never do without asking), not his marketing.
 
 ## Routine: Slack bug farmer
 

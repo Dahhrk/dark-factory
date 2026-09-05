@@ -1,6 +1,6 @@
 # Gap matrix â€” public pstack vs this kitchen
 
-Audit date: **3 Sep 2026**. Labels per [evidence-standard.md](evidence-standard.md). Interactive board: Cursor canvas `lauren-match-research.canvas.tsx`.
+Audit date: **3 Sep 2026**. Labels per [evidence-standard.md](evidence-standard.md). Interactive board: kitchen research canvas.
 
 **Priority:** P0 = human click/decide Â· P1 = encode in structure Â· P2 = later Â· â€” = closed/ok Â· Never = do not chase.
 

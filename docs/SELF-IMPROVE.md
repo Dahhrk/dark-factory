@@ -58,5 +58,5 @@ Outer-loop triage recipe: [triage-subscribe.md](triage-subscribe.md). Spend / se
 ## Related
 
 - [CURSOR-SETTINGS.md](CURSOR-SETTINGS.md) · [STILL-YOU.md](STILL-YOU.md)  
-- [lauren-design.md](lauren-design.md) · [visual-parity.md](visual-parity.md)  
+- [design-notes.md](design-notes.md) · [visual-parity.md](visual-parity.md)  
 - [nine-layers.md](nine-layers.md) layer 8 · [SETUP-STATUS.md](SETUP-STATUS.md)  
