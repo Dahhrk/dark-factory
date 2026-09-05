@@ -48,10 +48,12 @@ Taste, product priority, spend, merge rights, Slack credentials. Humans set refe
 ## Trust curve (do not skip)
 
 1. Watch one loop  
-2. One overnight you would merge by hand — [TRUST-NEXT.md](TRUST-NEXT.md)  
+2. One overnight you would merge by hand — [TRUST-NEXT.md](TRUST-NEXT.md) (Control-Glass; Cursor Models OK if Other Models empty)  
 3. Parallel Cloud Agents  
 4. Limited Autopilot  
 5. Dark factory scale  
+
+Outer-loop triage shape Lauren pointed at: [triage-subscribe.md](triage-subscribe.md). Spend / self-host: [spend-and-cloud.md](spend-and-cloud.md).
 
 ## Related
 

@@ -38,6 +38,8 @@ All bots read `~/projects/registry.md` for project-specific details. Updated via
 
 Harvey owns the outer loop. Tony owns the inner loop. They don't cross.
 
+**Public triage shape (Lauren, 5 Sep 2026):** subscribe → keyword → Cloud Agent with personal mode + `control-*` → still broken on main? Encode: [docs/triage-subscribe.md](../../docs/triage-subscribe.md). Fail closed without Slack. Do not enable Autopilot from this alone.
+
 ### Multi-model tools
 
 - `/interrogate` — adversarial multi-model review (Tony pre-screens, Gordon final-reviews)
