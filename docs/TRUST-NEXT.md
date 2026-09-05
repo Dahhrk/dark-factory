@@ -12,17 +12,20 @@ Mechanical Dune/CI/remotes close the install gap. Trust without reading code is 
 
 ## First overnight (required before Autopilot)
 
-In a Control-Glass chat (Cloud Agent or fresh worktree):
+Must be **Control-Glass** (not Flashpeek, not kitchen-only). Cloud Agent preferred; **local worktree / Cursor Models Agent counts** if Other Models or On-Demand is empty — say so in the Keep line and still plate + hand-merge in the morning.
 
 ```text
-/poteto-mode going to bed. <one small task>.
-Done means <checkable predicate via control-glass or CI>.
+/brooklyn-mode /poteto-mode going to bed. <one small Control-Glass task>.
+Done means <checkable predicate via control-glass or CI>; draft PR only.
 Keep decision log rows in ~/Projects/dark-factory/audit/decisions.tsv.
 Commit without asking. If stuck, stop and write why.
+Cursor Models only if Other Models empty. No Autopilot. No merge.
 /loop until done.
 ```
 
-Morning: `/show-me-your-work` — Attention list before re-reading the night.
+Morning: `/show-me-your-work` — Attention list before re-reading the night. **You** merge or kill. Author agent does not certify itself.
+
+Flashpeek overnight / API-key waits do **not** green this gate.
 
 ## Still off until Slack is real
 

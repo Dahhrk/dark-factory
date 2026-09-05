@@ -8,12 +8,17 @@ Account and forge notes that sit beside pstack. Not a Lauren essay — distilled
 - Do **not** scale with local worktree farms (~10 agent ceiling, disk)  
 - Snapshot an environment that can install deps, run the app, record video  
 - First build slow; later runs from snapshot  
+- **Self-Hosted Machines** (Cursor, Sep 2026): agent loop stays in Cursor; tools can run on **My Machines** (`agent worker start`) or sandbox pools (Modal, E2B, Lambda, …). Moves **compute**, not model billing. Solo default: My Machines if needed; skip AWS/Modal pools until trust + spend allow. Docs: [cursor.com/blog/self-hosted-machines](https://cursor.com/blog/self-hosted-machines).
 
 ## Spend
 
 Workshop: she has lab-feeling tokens. **Do not copy the spend.** Set an **on-demand spend cap** before Autopilot. Reframe cost as ROI: hire someone vs make the repo naive-agent-safe. Cost–intelligence sweet spot, not biggest model.
 
-pstack can spawn several frontier agents per task — use when a plausible diff is not enough. Mechanical swarm → fast code model in `pstack-models.mdc`.
+Two pools (individual plans): **Cursor Models** (Grok / Composer family) and **Other Models** (Claude / GPT / …). When Other Models is empty, stay on Cursor Models + local Agent. Self-host does **not** refill Other Models.
+
+**When On-Demand / Other Models cap hits:** stop new Cloud Agents that need that pool; day encode local; raise cap only for one named predicate; log a `decisions.tsv` spend row; Autopilot stays off.
+
+pstack can spawn several frontier agents per task — use when a plausible diff is not enough. Mechanical swarm → fast code model in `pstack-models.mdc`. Daytime / empty Other Models → prefer Cursor Models / `inherit-parent`.
 
 ## Bugbot
 
