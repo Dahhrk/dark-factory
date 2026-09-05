@@ -54,15 +54,19 @@ Routine YAML files live in `~/Documents/dev-projects/grokbot-fleet/routines/`. S
 |---------|-----|---------|---------|
 | Context Farm GitHub | Harvey | 8:00 AM daily | Outer loop — farm GitHub signals |
 | Context Farm Social | Ted | 8:30 AM daily | Outer loop — scan web + X for signals |
-| Daily Standup | Harvey | 9:00 AM daily | Team status digest |
+| Needs-you sweep | Harvey | Morning (+ optional mid-afternoon) | Attention list — human blockers only ([outer-loop.md](../../docs/outer-loop.md)) |
+| Daily Standup / morning briefing | Harvey | 9:00 AM daily | Team status + overnight digest |
 | Dispatch | Harvey | When messaged | Route tasks to specialists |
 | Bot Health Check | Harvey | Every 6 hours | Fleet health monitoring |
 | Daily Verification | Tony | 7:00 AM daily | Run all project gates |
+| Evening PR shepherd | Tony / Harvey | Evening local | Draft PR CI + evidence check; spawn Cloud Agents; never merge |
 | PR Proof | The Riddler | After Tony / before Gordon | QA proof loop before Gordon reviews |
 | PR Review Trigger | Gordon | PR opened | Auto-review on new PRs |
 | Friday Ops | Ted | Friday 10:00 AM | Encode-lessons, prune, bug farm |
 | Auto-update Fleet | Dr Strange / grokbot-fleet | 6:00 AM daily | Pull latest fleet server code |
 | Weekly Profile Backup | Dr Strange / grokbot-fleet | Sunday 3:00 AM | Snapshot bot profiles |
+
+Draft shapes for needs-you / evening shepherd / morning briefing: [docs/outer-loop.md](../../docs/outer-loop.md). Wire YAML in grokbot-fleet only when you want them live.
 
 ## Guardrails
 

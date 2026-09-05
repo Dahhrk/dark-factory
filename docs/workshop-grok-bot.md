@@ -162,7 +162,9 @@ The tweet text attributes these lines to her. They match the workshopâ€™s *
 - ~90% of routine automated
 - a **Chief of Staff** agent that knows the other bots and manages them
 
-His linked [10-step article](https://x.com/0xCodez/status/2089676836619878567) is a product tutorial (install, charter, connect tools, login handoff, record-once, routines, specialists, group chat, reversibility line, weekly prune). Useful for Grok Bot mechanics. It is not pstack and it is not her voice. Kitchen drafts that steal the *pattern*: [outer-loop.md](outer-loop.md).
+His linked [10-step article](https://x.com/0xCodez/status/2089676836619878567) is a product tutorial (install, charter, connect tools, login handoff, record-once, routines, specialists, group chat, reversibility line, weekly prune). Useful for Grok Bot mechanics. It is not pstack and it is not a first-party essay. Kitchen drafts that steal the *pattern*: [outer-loop.md](outer-loop.md).
+
+**MTS product demo** ([YT A63sedG-p5Q](https://www.youtube.com/watch?v=A63sedG-p5Q), ~29m) is a different recording from this workshop: live named bots + cadence routines + cost–intelligence talk. Steal routine shapes into [outer-loop.md](outer-loop.md); spend bias into [spend-and-cloud.md](spend-and-cloud.md). Do not treat it as a second install checklist.
 
 ## How this sits on the essays
 
