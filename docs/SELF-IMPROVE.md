@@ -59,4 +59,5 @@ Outer-loop triage recipe: [triage-subscribe.md](triage-subscribe.md). Spend / se
 
 - [CURSOR-SETTINGS.md](CURSOR-SETTINGS.md) · [STILL-YOU.md](STILL-YOU.md)  
 - [design-notes.md](design-notes.md) · [visual-parity.md](visual-parity.md)  
+- [adjacent-growth.md](adjacent-growth.md) — measure → promote → playbook (growth layer)  
 - [nine-layers.md](nine-layers.md) layer 8 · [SETUP-STATUS.md](SETUP-STATUS.md)  

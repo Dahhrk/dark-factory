@@ -42,4 +42,5 @@ Workshop: if it is not a **10**, `/loop` and keep going. Skill maintenance needs
 
 - [feature-maps.md](feature-maps.md) — evals keep maps honest  
 - [automate-me.md](automate-me.md) — mode skills are vibe-checked with you; evals for mechanical skills  
-- [workshop-grok-bot.md](workshop-grok-bot.md)
+- [workshop-grok-bot.md](workshop-grok-bot.md)  
+- [adjacent-growth.md](adjacent-growth.md) — expert-panel / copy hillclimb (marketing layer; not a substitute for this playbook)

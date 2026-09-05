@@ -50,9 +50,11 @@ Use to bootstrap [dune-method.md](dune-method.md) rules 1–2. Never claim “we
 | Motion / microinteraction jank | Emil |
 | TS agent slop in types | anti-slop |
 | Folder/import CI | Dune / korallis-style |
+| Signal brief / copy panel / growth playbook | [adjacent-growth.md](adjacent-growth.md) |
 
 ## Related
 
 - [design-notes.md](design-notes.md)
+- [adjacent-growth.md](adjacent-growth.md) — growth / signal patterns (not look)
 - [public-inventory.md](public-inventory.md)
 - [dune-method.md](dune-method.md)
