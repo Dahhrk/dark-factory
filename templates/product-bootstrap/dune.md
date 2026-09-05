@@ -1,6 +1,6 @@
 # Dune (apply on this product)
 
-Lauren’s **Dune** contract — five rules + agent assumptions.  
+**Dune** contract — five rules + agent assumptions.
 **Not** Dune Electron source. Method only. Full write-up: dark-factory `docs/dune-method.md`.
 
 ## Agent contract (design inputs)

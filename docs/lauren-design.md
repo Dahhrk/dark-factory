@@ -1,3 +1,5 @@
+> Source archive — public posts/talks. This kitchen is inspired by that work; not affiliated.
+
 # How Lauren designs
 
 She is a **design engineer with verification**, not a marketing art director. Product UI + proof. Adjacent packs (Elaya, Emil) fix look/feel; they are not her factory.
@@ -6,21 +8,21 @@ Sources: pstack `experience-first` + `visual parity` playbooks; [poteto/noodle](
 
 ## Mental model
 
-- Ship **less, better** — few polished features beat ten rough ones.
-- **Prototype before committing** — throwaway HTML beats production guesses.
+- Ship **less, better** â€” few polished features beat ten rough ones.
+- **Prototype before committing** â€” throwaway HTML beats production guesses.
 - Best spec is **code** / running UI, not a long Plan.
 - Sweat transitions, alignment, spacing, feedback, empty/error states.
-- Done = **rendered** proof (screenshot, image diff, `control-ui`), not “JSX looks nice in chat.”
+- Done = **rendered** proof (screenshot, image diff, `control-ui`), not â€œJSX looks nice in chat.â€
 
 ## Her loop
 
 ```text
 1. Decide the experience (few surfaces, clear delight)
-2. /architect or prototype — cheap sketches
-3. /arena if several visual directions — pick / graft
+2. /architect or prototype â€” cheap sketches
+3. /arena if several visual directions â€” pick / graft
 4. Build with frontend-design + make-interfaces-feel-better
-5. Design Mode on the live app — point at what feels off
-6. visual parity or control-ui — screenshot / pixel proof
+5. Design Mode on the live app â€” point at what feels off
+6. visual parity or control-ui â€” screenshot / pixel proof
 7. /deslop + ship
 ```
 
@@ -58,7 +60,7 @@ Also: team-kit `deslop`; pstack `/unslop` for prose. Neither replaces visual pro
 
 ## Design Mode
 
-Agents Window browser → `Cmd/Ctrl+Shift+D`. Click / draw / talk. Agent gets xpath, component, computed styles, fiber props, **and** a screenshot of that state. Refine in the running app. Cursor often recommends a fast model (e.g. Composer) for this loop.
+Agents Window browser â†’ `Cmd/Ctrl+Shift+D`. Click / draw / talk. Agent gets xpath, component, computed styles, fiber props, **and** a screenshot of that state. Refine in the running app. Cursor often recommends a fast model (e.g. Composer) for this loop.
 
 ## Lauren vs Elaya vs Emil
 
@@ -67,19 +69,19 @@ Agents Window browser → `Cmd/Ctrl+Shift+D`. Click / draw / talk. Agent gets xp
 | Center | Product UI + proof | Landing / brand look | Motion / feel |
 | Spec | Running app + image diff | Fonts, spacing table, copy bans | Easing, springs, library choice |
 | Tooling | pstack + Design Mode + control-ui | `landing-page-design` | `emil-design-eng` pack |
-| Default move | Prototype → verify | Visual constitution | Animate correctly |
+| Default move | Prototype â†’ verify | Visual constitution | Animate correctly |
 
-Use Elaya for a marketing site. Use Emil for janky motion. Use Lauren’s stack when shipping **product** under Autopilot.
+Use Elaya for a marketing site. Use Emil for janky motion. Use Laurenâ€™s stack when shipping **product** under Autopilot.
 
 ## What she does not do
 
-- One-shot “make a beautiful landing page”
-- Trust “looks good in the diff”
+- One-shot â€œmake a beautiful landing pageâ€
+- Trust â€œlooks good in the diffâ€
 - Soft style guides alone without CI / harness
 - Plan forever instead of a throwaway prototype
 
 ## Related
 
 - [setup-everything.md](setup-everything.md) Gate 4
-- [feature-maps.md](feature-maps.md) — agent drives the same UI
+- [feature-maps.md](feature-maps.md) â€” agent drives the same UI
 - [public-inventory.md](public-inventory.md)

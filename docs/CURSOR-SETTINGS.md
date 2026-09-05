@@ -52,7 +52,7 @@ Docs: [Cloud environment setup](https://cursor.com/docs/cloud-agent/setup).
 | Control-Glass | `.cursor/environment.json` | install only (`npm ci` + Playwright) |
 | Control-Glass | `npm run anti-ai-ui` / `visual-parity` | mechanical UI trust (after PR lands) |
 | both | `.cursor/hooks.json` + hooks | secrets-scan, shell-guard, session-context |
-| user | `~/.cursor/rules/pstack-models.mdc` | Lauren/jacobgold map |
+| user | `~/.cursor/rules/pstack-models.mdc` | jacobgold model map |
 | user | `~/.cursor/rules/poteto-factory-os.mdc` | always-on OS |
 
 ## Related

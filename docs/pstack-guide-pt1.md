@@ -1,14 +1,16 @@
+> Source archive — public posts/talks. This kitchen is inspired by that work; not affiliated.
+
 # The Complete Guide to pstack, Pt. 1
 
-Source: [x.com/poteto/status/2094457600259842065](https://x.com/poteto/status/2094457600259842065) → [X article](https://x.com/i/article/2094151284949688320) · [grokbot.sh mirror](https://www.grokbot.sh/blog/the-complete-guide-to-pstack-pt-1) (31 Aug / 1 Sep 2026). Speaker claims, not an audited ledger. Labels: [evidence-standard.md](evidence-standard.md). Control twin: [atlas-control.md](atlas-control.md).
+Source: [x.com/poteto/status/2094457600259842065](https://x.com/poteto/status/2094457600259842065) â†’ [X article](https://x.com/i/article/2094151284949688320) Â· [grokbot.sh mirror](https://www.grokbot.sh/blog/the-complete-guide-to-pstack-pt-1) (31 Aug / 1 Sep 2026). Speaker claims, not an audited ledger. Labels: [evidence-standard.md](evidence-standard.md). Control twin: [atlas-control.md](atlas-control.md).
 
-Related: [deepcoding](deepcoding.md) (Jan 22 — frontload) → [Coding is Dead](coding-is-dead.md) (Jan 23 — factory must grow) → [How I Use Cursor](how-i-use-cursor.md) (May) → [Loops You Can Trust](https://x.com/poteto/status/2069824386283319343) (Grove / breakfast-factory origin of control-glass) → [workshop](workshop-grok-bot.md) (12 Aug live) → [feature maps](feature-maps.md) (files she scrolled). Example skill: [poteto/verification-skill-example](https://github.com/poteto/verification-skill-example). Newcomer commands: [new-to-pstack.md](new-to-pstack.md). Her other public repos: [github-poteto.md](github-poteto.md).
+Related: [deepcoding](deepcoding.md) (Jan 22 â€” frontload) â†’ [Coding is Dead](coding-is-dead.md) (Jan 23 â€” factory must grow) â†’ [How I Use Cursor](how-i-use-cursor.md) (May) â†’ [Loops You Can Trust](https://x.com/poteto/status/2069824386283319343) (Grove / breakfast-factory origin of control-glass) â†’ [workshop](workshop-grok-bot.md) (12 Aug live) â†’ [feature maps](feature-maps.md) (files she scrolled). Example skill: [poteto/verification-skill-example](https://github.com/poteto/verification-skill-example). Newcomer commands: [new-to-pstack.md](new-to-pstack.md). Her other public repos: [github-poteto.md](github-poteto.md).
 
 ## What she added that earlier posts did not
 
 - Throughput claim is now **2,000 PRs/month** to production, with quality held while Grok Bot lands hundreds of PRs a day from engineers and non-engineers.
-- Her job title for herself: **gardener / maintainer**. Refactor foundations while the building is occupied. The public metaphor: [thousand-gardens.md](thousand-gardens.md). The invest order: [organic-architecture.md](organic-architecture.md) — refactor and a mean compiler beat `AGENTS.md`.
-- Thesis of Part 1: **verification is all you need.** A good verification skill is critical infrastructure. Done well she claims **100–1000x** team output, including non-engineers.
+- Her job title for herself: **gardener / maintainer**. Refactor foundations while the building is occupied. The public metaphor: [thousand-gardens.md](thousand-gardens.md). The invest order: [organic-architecture.md](organic-architecture.md) â€” refactor and a mean compiler beat `AGENTS.md`.
+- Thesis of Part 1: **verification is all you need.** A good verification skill is critical infrastructure. Done well she claims **100â€“1000x** team output, including non-engineers.
 - **Build the Lever** means a **CLI**, not more markdown. Agents run `control-<app>` instead of writing throwaway click scripts.
 - **Do not scale with local worktrees.** They eat disk; ~10 agents is the local ceiling. Parallelism is **Cursor Cloud Agents**. She says a later post will cover hundreds of cloud subagents.
 - **Grok Bots are coordinators.** They spawn cloud agents so the bot's context and computer stay free. Cursor gets the full model panel.
@@ -16,9 +18,9 @@ Related: [deepcoding](deepcoding.md) (Jan 22 — frontload) → [Coding is Dead]
 - Pin `/poteto-mode` as a **Custom Mode** (Opt+Enter on autocomplete) so every turn reminds the agent.
 - Treat the verify skill like **oncall infra**. Maintain at least daily.
 
-## Part 1 — Verification is all you need
+## Part 1 â€” Verification is all you need
 
-Verification = the agent can close its own loop. You are no longer the human conveyor belt (screenshot → paste error → wait).
+Verification = the agent can close its own loop. You are no longer the human conveyor belt (screenshot â†’ paste error â†’ wait).
 
 ```text
 /add-plugin pstack
@@ -33,7 +35,7 @@ Optional: add [Dr Eggbot](https://x.ai/bot/93gOz3op1UQdBdbekQFLK), ask it to cre
 
 She would unironically **change tech stacks** to get a rich runtime: CDP for Electron/web, iOS simulator, or a sidecar (lldb, custom package). The harder the app is to drive, the less productive agents are.
 
-### Make it reproducible — the CLI
+### Make it reproducible â€” the CLI
 
 Principle: [Build the Lever](https://github.com/cursor/plugins/blob/main/pstack/skills/principle-build-the-lever/SKILL.md). Markdown is not enough.
 
@@ -93,11 +95,11 @@ The codebase is the real memory. The map is the compact, token-cheap projection.
 
 Run `/maintain-verification-skill` **at least daily**. Agents will also patch the map as they work; maintain catches drift.
 
-Canonical public shape: [verification-skill-example](https://github.com/poteto/verification-skill-example) (~30 feature files, Atlas / Harbor Labs, fictional). The live Glass files she scrolled in the workshop, including Driving conventions and `wait-settle` ≠ turn-done: [feature-maps.md](feature-maps.md).
+Canonical public shape: [verification-skill-example](https://github.com/poteto/verification-skill-example) (~30 feature files, Atlas / Harbor Labs, fictional). The live Glass files she scrolled in the workshop, including Driving conventions and `wait-settle` â‰  turn-done: [feature-maps.md](feature-maps.md).
 
 ## How she types it
 
-Pin `/poteto-mode` (Opt+Enter → Custom Mode). In Grok Bot, install [pstack plugin](https://x.ai/bot/plugin/9717366) then `/poteto-mode`.
+Pin `/poteto-mode` (Opt+Enter â†’ Custom Mode). In Grok Bot, install [pstack plugin](https://x.ai/bot/plugin/9717366) then `/poteto-mode`.
 
 **Feature**
 
@@ -105,7 +107,7 @@ Pin `/poteto-mode` (Opt+Enter → Custom Mode). In Grok Bot, install [pstack plu
 /poteto-mode build. use /control-app to verify your changes and show me a video and screenshots as proof
 ```
 
-Grok Bot variant — bot supervises, cloud agent works:
+Grok Bot variant â€” bot supervises, cloud agent works:
 
 ```text
 spawn a cloud agent to use /poteto-mode to build. use /control-app to verify your changes and show me a video and screenshots as proof
@@ -123,7 +125,7 @@ then do a targeted fix and use /control-app + a /swarm to confirm the win
 
 **User reports**
 
-Put the verify skill inside Grok Bot routines or [Cursor Automations](https://cursor.com/docs/cloud-agent/automations). Slack feedback → cloud agent tries to repro via Feature Map. Auto-fix only after the skill is good enough.
+Put the verify skill inside Grok Bot routines or [Cursor Automations](https://cursor.com/docs/cloud-agent/automations). Slack feedback â†’ cloud agent tries to repro via Feature Map. Auto-fix only after the skill is good enough.
 
 ## Invest like infra
 

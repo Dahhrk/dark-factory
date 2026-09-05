@@ -1,6 +1,6 @@
 # Dune method (for product repos)
 
-Dune is Lauren's Grok Bot Electron architecture. You do not install it here. You apply the **contract** on each product repo the factory points at.
+Dune is the Grok Bot Electron architecture method from public talks. You do not install it here. You apply the **contract** on each product repo the factory points at.
 
 Live source: 12 Aug 2026 [workshop](workshop-grok-bot.md) screen-share of the internal **Dune / Agent-friendly architecture** page (tldraw + docs). Spoken layers match. Written thesis a month earlier: [organic architecture](organic-architecture.md).
 
@@ -40,7 +40,7 @@ If your repo rewards those five, you get organic architecture. If your repo make
 | 4 | **New product work adds isolated files rather than branches in shared roots.** | God files, shared switch statements, central registries that every feature edits. |
 | 5 | **Exceptions are narrow, explicit, and reviewed as architecture changes.** | A comment, a one-off `any`, a silent allowlist. Exceptions are PRs to the trellis, not to the feature. |
 
-Workshop comment ban sits under rule 5: agents fossilize “this PR is bad” into “Lauren said never do this.” Context dies; the fragment stays. So comments are not a place exceptions live.
+Workshop comment ban sits under rule 5: agents fossilize “this PR is bad” into “never do this.” Context dies; the fragment stays. So comments are not a place exceptions live.
 
 Gardening ([thousand-gardens.md](thousand-gardens.md)): every weed you pull becomes a rule so it cannot grow back. That is rule 5 firing.
 

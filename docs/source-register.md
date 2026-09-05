@@ -1,6 +1,6 @@
 # Source register
 
-Primary > official Cursor > secondary recap. When they conflict, prefer inspectable code or Lauren’s primary post. Evidence labels: [evidence-standard.md](evidence-standard.md).
+Primary > official Cursor > secondary recap. When they conflict, prefer inspectable code or the primary public post. Evidence labels: [evidence-standard.md](evidence-standard.md).
 
 ## Primary
 

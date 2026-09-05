@@ -1,4 +1,4 @@
-# Setup everything (recreate her public factory)
+# Setup everything
 
 Ordered path. Cap spend before Autopilot. Kitchen stays kitchen ΓÇö steps marked **product** run in the repo you name in `intake/QUEUE.md`.
 
@@ -11,7 +11,7 @@ Full ceiling: [match-ceiling.md](match-ceiling.md). Map: [global-vs-private.md](
 | Need | Why |
 |------|-----|
 | Cursor **Pro+ / Ultra** (solo) or **Teams** | Cloud agents + Autopilot burn past free pools. Check [Grok Bot / Cursor plans](https://cursor.com/docs) for current names. |
-| **Cloud Agents ON** | Her 24/7 factory. Laptop closed. |
+| **Cloud Agents ON** | 24/7 agents. Laptop closed. |
 | **On-demand spend cap** | Do not copy lab spend ([workshop](workshop-grok-bot.md)). |
 | **GitHub** + `gh` CLI | Ship PRs. |
 | **Bugbot** on the product repo | Soft layer 3 ΓÇö still useful; hard CI is stronger. |
@@ -30,7 +30,7 @@ In a Cursor chat (any workspace, then again on the product if needed):
 /setup-pstack
 ```
 
-Use the [Lauren/jacobgold map](https://github.com/cursor/plugins/blob/main/pstack/docs/guide/01-setup.md#pick-your-models) already seeded at `~/.cursor/rules/pstack-models.mdc`, or re-answer the wizard. **Start a new chat** after setup.
+Use the [jacobgold model map](https://github.com/cursor/plugins/blob/main/pstack/docs/guide/01-setup.md#pick-your-models) already seeded at `~/.cursor/rules/pstack-models.mdc`, or re-answer the wizard. **Start a new chat** after setup.
 
 Grok Bot: install pstack via `grokbot://app/v1/plugin/add?id=9717366` (or marketplace equivalent).
 
@@ -119,7 +119,7 @@ Then limited Autopilot-full (independent PRs) or Autopilot-stack (you land). Nev
 /automate-me
 ```
 
-Personal `-mode` on top of pstack ([automate-me.md](automate-me.md)). Do not stay a Lauren cosplay forever.
+Personal `-mode` on top of pstack ([automate-me.md](automate-me.md)). Ours is `/brooklyn-mode`.
 
 ## Do not
 

@@ -1,13 +1,12 @@
-# Naming — use her names for what we take
+# Naming
 
-Borrowed pieces keep **Lauren’s names** (same). Product-specific pieces follow her **patterns**.
+Inspired by the public pstack / agent-factory ecosystem. Keep **upstream skill and playbook names** so agents hit the real tools. Our product nouns are ours.
 
-## Same names (hers)
+## Upstream names (do not rename)
 
 | Name | What |
 |------|------|
-| `/poteto-mode` | Entry (sticky Custom Mode) |
-| `/lauren-mode` | Her **private** personal mode (not in marketplace) |
+| `/poteto-mode` | pstack entry (sticky Custom Mode) |
 | `pstack` | Public OS plugin |
 | `cursor-team-kit` | Companion plugin (`deslop`, `control-ui`, `control-cli`, …) |
 | Feature Map | `references/features/` four H2s |
@@ -15,38 +14,31 @@ Borrowed pieces keep **Lauren’s names** (same). Product-specific pieces follow
 | `/maintain-verification-skill` | Daily map hygiene |
 | `control-<app>` | Agent CLI lever |
 | `verify-<app>` | Project verify skill |
-| **Dune** | Architecture contract (five rules) — **method only; never her Electron source** |
-| Benny | Slack triage → draft fix |
-| Autopilot | Full / stack playbooks |
-| Build the Lever | CLI over markdown manuals |
+| **Dune** | Architecture method (five rules) — method only; no third-party Electron source |
+| Benny | Slack triage pack in pstack (fail closed here until Slack is real) |
+| Autopilot | Full / stack playbooks (gated — [TRUST-NEXT.md](TRUST-NEXT.md)) |
 | Bugbot / `BUGBOT.md` | Soft review layer |
 | Conventional Commits | PR titles |
-| dark factory | Metaphor → this kitchen repo name |
 
-## Same patterns (her product noun, by request)
+## Our names
 
-The private product folder is **Control-Glass**, named after her skill `control-glass`. This is our project. It is not her on-disk Glass worktree. Eyes stay `verify-glass` / `control-glass` / `GLASS_*` so they keep her pattern. Atlas stays the fictional public example only.
+| Ours | Notes |
+|------|--------|
+| **dark-factory** | This public kitchen |
+| **Control-Glass** | First private product (`~/Projects/Control-Glass`) |
+| `verify-glass` / `control-glass` | Eyes for Control-Glass (pattern matches `control-<app>`) |
+| `/brooklyn-mode` | Our personal prefs skill on Control-Glass; still routes to `/poteto-mode`. Private personal modes exist upstream; ours is this one. |
+| Flashpeek | Separate private product; own `control-flashpeek` when used |
+| Triage subscribe | [triage-subscribe.md](triage-subscribe.md) — fail closed without Slack |
 
-| Her example | Ours |
-|-------------|------|
-| `control-glass` / Glass | `control-glass` / **Control-Glass** (`~/Projects/Control-Glass`) |
-| `verify-atlas` / Atlas (fictional public) | `verify-glass` |
-| `/lauren-mode` (private prefs on pstack) | `/brooklyn-mode` on Control-Glass → still routes to `/poteto-mode` |
-| `/control-grok-bot` | `control-glass` / `control-flashpeek` |
-| Grok Bot private monorepo | `~/Projects/Control-Glass` (private remote) |
-| Essays / talks | `dark-factory/docs` |
-| `verification-skill-example` | `examples/` + `templates/product-bootstrap/` |
-| Triage subscribe routine | [triage-subscribe.md](triage-subscribe.md) (fail closed without Slack) |
+Atlas in public examples is a fictional teaching app only.
 
-A later product that is not named after an existing `control-*` skill should rename `verify-*` / `control-*` / `<APP>_*` env to match, same rule she uses.
+A later product should use `verify-*` / `control-*` / `<APP>_*` matching its own noun.
 
 ## Do not invent parallel brands
 
-Say **Dune**, not “Dune.”  
-Say **Feature Map**, not “feature docs.”  
-Say **`/poteto-mode`**, not a custom skill shopping list.  
-Say **Benny**, not “Slack bot pack” once enabled.
+Say **Dune**, **Feature Map**, **`/poteto-mode`**, **Benny** (when enabled) — the upstream words. Do not invent a second shopping list of mode names for the same jobs.
 
-Steer mid-run by her principle **names**: prove it works, laziness protocol, encode lessons in structure, …
+Steer mid-run by principle names: prove it works, laziness protocol, encode lessons in structure, …
 
-[principles.md](principles.md) · [her-system-map.md](her-system-map.md)
+[principles.md](principles.md) · [system-map.md](system-map.md)

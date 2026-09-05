@@ -1,18 +1,31 @@
 ﻿# dark-factory
 
-**Public teaching kitchen** modeled on Lauren Tan’s (@poteto) *public* surface. She does **not** publish a factory repo — her public OS is **pstack**; her real factory is private. We mirror that: this repo teaches; **`Control-Glass`** is the private factory.
+**Public teaching kitchen** for a personal software factory. Inspired by public Cursor / pstack agent-factory talks and essays — not affiliated with those authors, and not a copy of any private factory.
 
-→ Map: **[docs/her-system-map.md](docs/her-system-map.md)** · **[PUBLIC.md](PUBLIC.md)** · **[docs/naming.md](docs/naming.md)**  
-→ Private product: `~/Projects/Control-Glass` (`control-glass` / `verify-glass` — our folder, named after her skill)  
-→ Visibility: [VISIBILITY.md](VISIBILITY.md)
+This repo teaches recipes. Product work lives elsewhere (private apps under `~/Projects`).
 
-Personal software factory recipes. The factory metaphor is hers: [Coding is Dead](docs/coding-is-dead.md) · [How I Use Cursor](docs/how-i-use-cursor.md) (“dark factory”). Load-bearing recipe: control CLI + Feature Map + cloud agents ([Pt. 1](docs/pstack-guide-pt1.md)).
+| Layer | Where |
+|-------|--------|
+| Kitchen (public) | this repo — docs, automations drafts, bootstrap templates |
+| Product (private) | e.g. `~/Projects/Control-Glass`, `~/Projects/Flashpeek` |
+| Eyes | `verify-<app>` + `control-<app>` CLI + Feature Map |
+| Entry | `/poteto-mode` (pstack) · personal prefs: `/brooklyn-mode` on Control-Glass |
 
-This repo is the **kitchen**, not a product. Product work happens in other repos. You are the head chef: pick the next target, define done, turn repeated review comments into red CI.
+→ [docs/system-map.md](docs/system-map.md) · [PUBLIC.md](PUBLIC.md) · [docs/naming.md](docs/naming.md) · [docs/storage-layout.md](docs/storage-layout.md) · [VISIBILITY.md](VISIBILITY.md)
 
-## Recreate her factory
+You are the head chef: pick the next target, define done, turn repeated review comments into red CI.
 
-You can match her **public OS**. You cannot download Dune source or her org config. Full path: [docs/setup-everything.md](docs/setup-everything.md). Board: [docs/SETUP-STATUS.md](docs/SETUP-STATUS.md). Ceiling: [docs/match-ceiling.md](docs/match-ceiling.md).
+## Status (honest)
+
+| Area | State |
+|------|--------|
+| Plugins / models / Dune-style CI on Control-Glass | In place |
+| Feature Map + `control-glass` / visual + anti-AI UI gates | In place |
+| Kitchen visibility CI + bootstrap gate pack | In place |
+| Grok Bot fleet (coordinate only) | Wired; profiles local |
+| Autopilot / Benny / Orchestrate | **Off** until trust overnight on Control-Glass |
+| Other Models / On-Demand | Cap when empty — prefer Cursor Models + local ([spend-and-cloud.md](docs/spend-and-cloud.md)) |
+| Trust next | [TRUST-NEXT.md](docs/TRUST-NEXT.md) · board [SETUP-STATUS.md](docs/SETUP-STATUS.md) |
 
 ## First 15 minutes
 
@@ -22,11 +35,11 @@ You can match her **public OS**. You cannot download Dune source or her org conf
 /setup-pstack
 ```
 
-New chat after setup. **Say no** to `/create-verification-skill` here — run it on `Control-Glass`.
+New chat after setup. **Do not** run `/create-verification-skill` in this kitchen — run it on a product repo (e.g. Control-Glass).
 
 ```text
-/poteto-mode new task. read README.md and docs/her-system-map.md.
-Done means you can list public OS vs public teaching vs private factory.
+/poteto-mode new task. read README.md and docs/system-map.md.
+Done means you can list kitchen vs private product vs eyes.
 Do not change any files.
 ```
 
@@ -38,30 +51,38 @@ Done means <checkable>.
 Keep <invariants>.
 ```
 
-## Layout (start here)
+Non-trivial product work: outcome + Done means + Keep. Green build ≠ done. Match the check to the change (`control-*`, CI gate, fixture).
+
+## Layout
 
 | Path | Job |
 |------|-----|
-| [docs/her-system-map.md](docs/her-system-map.md) | Her layers → ours |
-| [docs/naming.md](docs/naming.md) | **Her names** for borrowed pieces |
+| [docs/system-map.md](docs/system-map.md) | Layers: public OS → kitchen → private product |
+| [docs/naming.md](docs/naming.md) | Upstream skill names vs our product nouns |
 | [docs/storage-layout.md](docs/storage-layout.md) | Disk paths |
-| [PUBLIC.md](PUBLIC.md) | Short visitor map |
-| [docs/operating-manual.md](docs/operating-manual.md) | Full OS + read order |
 | [docs/SETUP-STATUS.md](docs/SETUP-STATUS.md) | Gate board |
-| [examples/](examples/) | Public examples (Atlas analog) |
-| [templates/product-bootstrap/](templates/product-bootstrap/) | **Dune** + BUGBOT onto products |
-| [automations/](automations/) | Cursor + Grok Bot drafts |
-| Private factory | `~/Projects/Control-Glass` |
+| [docs/TRUST-NEXT.md](docs/TRUST-NEXT.md) | Trust overnight before Autopilot |
+| [docs/triage-subscribe.md](docs/triage-subscribe.md) | Outer-loop triage recipe (fail closed without Slack) |
+| [docs/spend-and-cloud.md](docs/spend-and-cloud.md) | Caps, Cursor Models, self-hosted workers |
+| [examples/](examples/) | Public examples (Atlas-style) |
+| [templates/product-bootstrap/](templates/product-bootstrap/) | Dune-method + BUGBOT + gate pack onto products |
+| [automations/](automations/) | Cursor Automation drafts + Grok Bot roster |
+| [scripts/new-product.ps1](scripts/new-product.ps1) | Scaffold a private product under `~/Projects` |
 
-Essays and full distill index: see older layout sections in git history / `docs/` directory listing. Key essays: [deepcoding](docs/deepcoding.md), [coding-is-dead](docs/coding-is-dead.md), [how-i-use-cursor](docs/how-i-use-cursor.md), [feature-maps](docs/feature-maps.md), [four-loops](docs/four-loops.md), [pstack-guide-pt1](docs/pstack-guide-pt1.md).
+Remotes: public [Dahhrk/dark-factory](https://github.com/Dahhrk/dark-factory) · private products on GitHub as needed.
 
 ## What this is not
 
-- Not a claim of 1000 PRs/month from plugins alone  
+- Not a claim of huge PR volume from plugins alone  
 - Not Autopilot on day one  
-- No public GitHub remote until you say **publish it**
+- Not private Feature Maps, secrets, or real product ops in this repo ([VISIBILITY.md](VISIBILITY.md))  
+- Not affiliated with any third-party private factory  
 
-## Sources
+## Inspiration / sources
 
-- [pstack](https://github.com/cursor/plugins/tree/main/pstack) · [verification-skill-example](https://github.com/poteto/verification-skill-example)  
+Public materials that informed this kitchen (read the distill pages for detail):
+
+- [pstack](https://github.com/cursor/plugins/tree/main/pstack) · [cursor-team-kit](https://github.com/cursor/plugins/tree/main/cursor-team-kit)  
+- [verification-skill-example](https://github.com/poteto/verification-skill-example)  
+- Essay / talk notes under `docs/` (source archive headers on those pages)  
 - Full register: [docs/source-register.md](docs/source-register.md)

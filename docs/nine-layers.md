@@ -52,9 +52,9 @@ flowchart LR
 
 A green build is compilation evidence, not a behavioural verdict.
 
-## Four pieces she named (SELF-REPORTED, Aug 2026)
+## Four pieces named in public talks (SELF-REPORTED, Aug 2026)
 
-1. `pstack` (`/lauren-mode` internal → public `/poteto-mode`)
+1. `pstack` (public `/poteto-mode`)
 2. Grok Bot outer-loop routines
 3. `/goal`, `/loop`, `/swarm` inside Full Autopilot
 4. Cursor Cloud Agents 24/7

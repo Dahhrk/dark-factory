@@ -1,10 +1,10 @@
 # Operating manual
 
-Reconstructed from Lauren Tan's public system. PR counts are speaker claims.
+Inspired by public pstack / Cursor agent-factory talks. PR counts are speaker claims.
 
-**Essays (read in order):** [deepcoding](deepcoding.md) → [Coding is Dead](coding-is-dead.md) → [How I Use Cursor](how-i-use-cursor.md) → [Loops You Can Trust](loops-you-can-trust.md) → [organic architecture](organic-architecture.md) → [workshop](workshop-grok-bot.md) → [feature maps](feature-maps.md) → [four loops](four-loops.md) → [pstack guide Pt. 1](pstack-guide-pt1.md) → [thousand gardens](thousand-gardens.md) → [three virtues](three-virtues.md) → [new-to-pstack](new-to-pstack.md).
+**Essays (read in order):** [deepcoding](deepcoding.md) â†’ [Coding is Dead](coding-is-dead.md) â†’ [How I Use Cursor](how-i-use-cursor.md) â†’ [Loops You Can Trust](loops-you-can-trust.md) â†’ [organic architecture](organic-architecture.md) â†’ [workshop](workshop-grok-bot.md) â†’ [feature maps](feature-maps.md) â†’ [four loops](four-loops.md) â†’ [pstack guide Pt. 1](pstack-guide-pt1.md) â†’ [thousand gardens](thousand-gardens.md) â†’ [three virtues](three-virtues.md) â†’ [new-to-pstack](new-to-pstack.md).
 
-**Full OS distill (after essays):** [her-system-map](her-system-map.md) · [evidence-standard](evidence-standard.md) · [nine-layers](nine-layers.md) · [storage-layout](storage-layout.md) · [timeline](timeline.md) → [prompting-model](prompting-model.md) → [global-vs-private](global-vs-private.md) → [pstack-inventory](pstack-inventory.md) → [principles](principles.md) → [orchestration](orchestration.md) → [pr-workflow](pr-workflow.md) → [evals](evals.md) → [atlas-control](atlas-control.md) · [feature-maps](feature-maps.md) → [quality-ladder](quality-ladder.md) · [SELF-IMPROVE](SELF-IMPROVE.md) · [why-throughput](why-throughput.md) → [make-bot-ui](make-bot-ui.md) → [automate-me](automate-me.md) → [spend-and-cloud](spend-and-cloud.md) → [visual-parity](visual-parity.md) · [lauren-design](lauren-design.md) · [adjacent-taste](adjacent-taste.md) → [dune-method](dune-method.md) · [benny-line](benny-line.md) · [outer-loop](outer-loop.md) → **install:** [setup-everything](setup-everything.md) · [SETUP-STATUS](SETUP-STATUS.md) · [STILL-YOU](STILL-YOU.md) · [match-ceiling](match-ceiling.md) · [source-register](source-register.md).
+**Full OS distill (after essays):** [system-map](system-map.md) Â· [evidence-standard](evidence-standard.md) Â· [nine-layers](nine-layers.md) Â· [storage-layout](storage-layout.md) Â· [timeline](timeline.md) â†’ [prompting-model](prompting-model.md) â†’ [global-vs-private](global-vs-private.md) â†’ [pstack-inventory](pstack-inventory.md) â†’ [principles](principles.md) â†’ [orchestration](orchestration.md) â†’ [pr-workflow](pr-workflow.md) â†’ [evals](evals.md) â†’ [atlas-control](atlas-control.md) Â· [feature-maps](feature-maps.md) â†’ [quality-ladder](quality-ladder.md) Â· [SELF-IMPROVE](SELF-IMPROVE.md) Â· [why-throughput](why-throughput.md) â†’ [make-bot-ui](make-bot-ui.md) â†’ [automate-me](automate-me.md) â†’ [spend-and-cloud](spend-and-cloud.md) â†’ [visual-parity](visual-parity.md) Â· [lauren-design](lauren-design.md) Â· [adjacent-taste](adjacent-taste.md) â†’ [dune-method](dune-method.md) Â· [benny-line](benny-line.md) Â· [outer-loop](outer-loop.md) â†’ **install:** [setup-everything](setup-everything.md) Â· [SETUP-STATUS](SETUP-STATUS.md) Â· [STILL-YOU](STILL-YOU.md) Â· [match-ceiling](match-ceiling.md) Â· [source-register](source-register.md).
 
 ## The four loops
 
@@ -15,7 +15,7 @@ Named in the [19 Aug post](four-loops.md). The rest of this manual is how to run
 3. **Overnight loop.** `/loop` until a predicate. Decision log in `audit/decisions.tsv`.
 4. **Cloud runtime.** Cursor Cloud Agents and/or Grok Bot's cloud computer. Laptop can be closed.
 
-Plugins: `/add-plugin pstack` and `/add-plugin cursor-team-kit` (for `/deslop`, `control-ui`, `control-cli`). Then `/setup-pstack` ([pick your models](https://github.com/cursor/plugins/blob/main/pstack/docs/guide/01-setup.md#pick-your-models)). Newcomer sequence: [new-to-pstack.md](new-to-pstack.md). Her GitHub: [github-poteto.md](github-poteto.md).
+Plugins: `/add-plugin pstack` and `/add-plugin cursor-team-kit` (for `/deslop`, `control-ui`, `control-cli`). Then `/setup-pstack` ([pick your models](https://github.com/cursor/plugins/blob/main/pstack/docs/guide/01-setup.md#pick-your-models)). Newcomer sequence: [new-to-pstack.md](new-to-pstack.md). Public GitHub sources: [github-sources.md](github-sources.md).
 
 ## Daily rhythm
 
@@ -23,11 +23,11 @@ Plugins: `/add-plugin pstack` and `/add-plugin cursor-team-kit` (for `/deslop`, 
 |------|--------|---------|
 | Morning | Audit decisions, not every line | `/show-me-your-work catch me up on last night` |
 | Intake | Read `intake/QUEUE.md`, promote one `ready` row | Edit the queue. Do not start coding yet. |
-| Point | One goal, one done-means. Local: worktree. Scale: spawn a cloud agent | `/poteto-mode …` (Opt+Enter pins Custom Mode) |
+| Point | One goal, one done-means. Local: worktree. Scale: spawn a cloud agent | `/poteto-mode â€¦` (Opt+Enter pins Custom Mode) |
 | Maintain | Keep the product verify skill honest | `/maintain-verification-skill` (daily) |
 | Expensive design | Settle shape first | `/architect with checkpoint` then `/interrogate` |
 | Independent chores | One owner per PR, fresh verifier | `/poteto-mode full autopilot on this queue` |
-| Coupled work | Verified stack, you land it | `/poteto-mode … stack them, don't ship` |
+| Coupled work | Verified stack, you land it | `/poteto-mode â€¦ stack them, don't ship` |
 | Leave | Overnight contract | See README |
 
 ## Playbook cheat sheet
@@ -53,15 +53,15 @@ Steer mid-run with principle names ([principles.md](principles.md)): `prove it w
 Full checklist with Done means: [setup-everything.md](setup-everything.md).
 
 1. Account: cloud agents + spend cap + Bugbot ([match-ceiling.md](match-ceiling.md)).
-2. `/add-plugin pstack` + `cursor-team-kit` + `/setup-pstack` → new chat. Inventory: [pstack-inventory.md](pstack-inventory.md) · [public-inventory.md](public-inventory.md). Spend/Bugbot: [spend-and-cloud.md](spend-and-cloud.md).
-3. One product repo: `/create-verification-skill` → a **CLI** (`control-<app>`), not just markdown, plus a Feature Map (four H2s + driving conventions). See [feature-maps.md](feature-maps.md) and Pt. 1.
+2. `/add-plugin pstack` + `cursor-team-kit` + `/setup-pstack` â†’ new chat. Inventory: [pstack-inventory.md](pstack-inventory.md) Â· [public-inventory.md](public-inventory.md). Spend/Bugbot: [spend-and-cloud.md](spend-and-cloud.md).
+3. One product repo: `/create-verification-skill` â†’ a **CLI** (`control-<app>`), not just markdown, plus a Feature Map (four H2s + driving conventions). See [feature-maps.md](feature-maps.md) and Pt. 1.
 4. Daily `/maintain-verification-skill`. Treat it like oncall infra. Skill changes: [evals.md](evals.md).
 5. Dune contract on that repo: conventional path is cheaper than a shortcut; forbidden imports fail CI; one writer per durable value; new work is isolated files; exceptions are architecture PRs. See [dune-method.md](dune-method.md). Optional: [adjacent-taste.md](adjacent-taste.md).
 6. Pin `/poteto-mode` as a Custom Mode. Bots coordinate; **cloud agents** do the work. PR ops: [pr-workflow.md](pr-workflow.md).
 7. Cloud environment snapshot that can run the app and record video. Do not scale with local worktree farms.
-8. Outer-loop routines (Slack → repro). Optional [make-bot-ui.md](make-bot-ui.md). Auto-fix only after verify is trustworthy.
+8. Outer-loop routines (Slack â†’ repro). Optional [make-bot-ui.md](make-bot-ui.md). Auto-fix only after verify is trustworthy.
 9. One overnight with a predicate, then limited Autopilot.
-10. Optional UI craft: [lauren-design.md](lauren-design.md) · [visual-parity.md](visual-parity.md). Then [automate-me.md](automate-me.md).
+10. Optional UI craft: [lauren-design.md](lauren-design.md) Â· [visual-parity.md](visual-parity.md). Then [automate-me.md](automate-me.md).
 
 ## Token rule
 

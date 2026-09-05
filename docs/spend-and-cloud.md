@@ -1,10 +1,10 @@
 # Spend, cloud, Bugbot, Origin
 
-Account and forge notes that sit beside pstack. Not a Lauren essay — distilled from Pt. 1, workshop token honesty, and playbook forge rules.
+Account and forge notes that sit beside pstack. Distilled from Pt. 1, workshop token honesty, and playbook forge rules.
 
 ## Cloud Agents
 
-- Her factory runtime: bots **coordinate**, cloud agents **work**, laptop closed ([four-loops.md](four-loops.md), [pstack-guide-pt1.md](pstack-guide-pt1.md))  
+- Runtime: bots **coordinate**, cloud agents **work**, laptop closed ([four-loops.md](four-loops.md), [pstack-guide-pt1.md](pstack-guide-pt1.md))
 - Do **not** scale with local worktree farms (~10 agent ceiling, disk)  
 - Snapshot an environment that can install deps, run the app, record video  
 - First build slow; later runs from snapshot  
@@ -12,7 +12,7 @@ Account and forge notes that sit beside pstack. Not a Lauren essay — distilled
 
 ## Spend
 
-Workshop: she has lab-feeling tokens. **Do not copy the spend.** Set an **on-demand spend cap** before Autopilot. Reframe cost as ROI: hire someone vs make the repo naive-agent-safe. Cost–intelligence sweet spot, not biggest model.
+Workshop token honesty: lab-feeling pools are not a template. **Do not copy the spend.** Set an **on-demand spend cap** before Autopilot. Reframe cost as ROI: hire someone vs make the repo naive-agent-safe. Cost–intelligence sweet spot, not biggest model.
 
 Two pools (individual plans): **Cursor Models** (Grok / Composer family) and **Other Models** (Claude / GPT / …). When Other Models is empty, stay on Cursor Models + local Agent. Self-host does **not** refill Other Models.
 

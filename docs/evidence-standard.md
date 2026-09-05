@@ -1,3 +1,5 @@
+> Source archive — public posts/talks. This kitchen is inspired by that work; not affiliated.
+
 # Evidence standard
 
 How kitchen docs label claims about Lauren Tan (`@poteto`). Companion to [match-ceiling.md](match-ceiling.md). From the 2 Sep 2026 research dossier.
@@ -18,11 +20,11 @@ Public claims (not an audited ledger):
 
 - ~**1,000 PRs in one month** (Aug 2026 four-loops post).
 - On track to **double**; Pt. 1 says the system enabled **~2,000 PRs/month** to production with high confidence.
-- Compile London talk title (scheduled **16 Sep 2026**): “I Shipped 2,000 PRs Last Month” — upcoming as of 2 Sep; not published evidence yet.
+- Compile London talk title (scheduled **16 Sep 2026**): â€œI Shipped 2,000 PRs Last Monthâ€ â€” upcoming as of 2 Sep; not published evidence yet.
 
-At 1,000 PRs / 30 days ≈ **33/day** (one every ~43 minutes around the clock). At 2,000 ≈ **67/day** (~every 22 minutes). That cannot be a sequential one-human-one-terminal workflow. It implies many small units moving concurrently through automation.
+At 1,000 PRs / 30 days â‰ˆ **33/day** (one every ~43 minutes around the clock). At 2,000 â‰ˆ **67/day** (~every 22 minutes). That cannot be a sequential one-human-one-terminal workflow. It implies many small units moving concurrently through automation.
 
-**Not publicly verified:** complete PR history, authorship split (Lauren / agent / team / migration / maintenance), revert rate, unique-change count, exact definition of “shipped,” cloud spend, peak concurrency.
+**Not publicly verified:** complete PR history, authorship split (Lauren / agent / team / migration / maintenance), revert rate, unique-change count, exact definition of â€œshipped,â€ cloud spend, peak concurrency.
 
 The factory is still worth copying under a **conservative** reading of the count. Copy the inspectable mechanisms ([nine-layers.md](nine-layers.md)), not the number.
 
@@ -30,4 +32,4 @@ The factory is still worth copying under a **conservative** reading of the count
 
 Desk hardware, private repo names, production branch rules, exact monthly cloud cost, every internal `/lauren-mode` skill, unpublished pstack guide parts after Pt. 1, audited acceptance/escape-defect rates.
 
-The documented “workspace” is digital: Cursor, Cloud Agent VMs, Grok Bot, GitHub PRs, repo-local skills/hooks, control tools, CI, issue channels, artifacts, ledgers.
+The documented â€œworkspaceâ€ is digital: Cursor, Cloud Agent VMs, Grok Bot, GitHub PRs, repo-local skills/hooks, control tools, CI, issue channels, artifacts, ledgers.

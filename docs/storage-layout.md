@@ -1,8 +1,8 @@
 # Storage layout (public vs private)
 
-How Lauren's stack is stored in the wild, and how **this machine** mirrors it. Do not collapse these layers into one repo.
+How the public pstack / agent-factory stack is stored in the wild, and how **this machine** mirrors it. Do not collapse these layers into one repo.
 
-## Her pattern (evidence)
+## Public pattern (evidence)
 
 | Layer | Store | Updates |
 |-------|--------|---------|
