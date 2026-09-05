@@ -18,6 +18,6 @@ Keep: do not Autopilot fleet; do not merge; do not invent smells; if nothing rep
 
 ## Why this exists
 
-CI already blocks known footguns on every PR (`anti-ai-ui`, `visual-parity`, boundaries, anti-slop). This routine is how **new** footguns become next week’s hard rules — Lauren’s “weed → rule” loop, scheduled.
+CI already blocks known footguns on every PR (`anti-ai-ui`, `visual-parity`, boundaries, anti-slop). This routine is how **new** footguns become next week’s hard rules — the gardener weed → rule loop, scheduled.
 
 Cadence + trust curve: [docs/SELF-IMPROVE.md](../../docs/SELF-IMPROVE.md).

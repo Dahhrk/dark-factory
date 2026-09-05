@@ -1,6 +1,6 @@
 # Atlas control surface (public twin)
 
-**VERIFIED PUBLIC IMPLEMENTATION** shape: [poteto/verification-skill-example](https://github.com/poteto/verification-skill-example). Fictional product (Atlas / Harbor Labs). Not private Glass source. Live twin she scrolled: [feature-maps.md](feature-maps.md). Pt. 1: [pstack-guide-pt1.md](pstack-guide-pt1.md).
+**VERIFIED PUBLIC IMPLEMENTATION** shape: [poteto/verification-skill-example](https://github.com/poteto/verification-skill-example). Fictional product (Atlas / Harbor Labs). Not private Glass source. Workshop Feature Map twin: [feature-maps.md](feature-maps.md). Pt. 1: [pstack-guide-pt1.md](pstack-guide-pt1.md).
 
 ## Why it matters
 

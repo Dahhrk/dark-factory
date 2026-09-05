@@ -1,6 +1,6 @@
 # Bugbot / agent review bans
 
-Aligned with Lauren's gardener + Dune contract. Soft layer — promote repeats into hard CI.
+Aligned with the gardener loop + Dune contract. Soft layer — promote repeats into hard CI.
 
 ## Hard preferences (ask for CI if missing)
 

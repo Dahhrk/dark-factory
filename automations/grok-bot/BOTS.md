@@ -29,7 +29,7 @@ Use `CreateAgent` via grokbot-fleet (or ask Dr Strange: "I need a bot for X"). W
 
 All bots read `~/projects/registry.md` for project-specific details. Updated via grokbot-fleet / Dr Strange. No bot profiles need re-pasting when a new project is added.
 
-## Two loops (Lauren pattern)
+## Two loops
 
 | Loop | Tool | What it does |
 |------|------|-------------|
@@ -38,7 +38,7 @@ All bots read `~/projects/registry.md` for project-specific details. Updated via
 
 Harvey owns the outer loop. Tony owns the inner loop. They don't cross.
 
-**Public triage shape (Lauren, 5 Sep 2026):** subscribe → keyword → Cloud Agent with personal mode + `control-*` → still broken on main? Encode: [docs/triage-subscribe.md](../../docs/triage-subscribe.md). Fail closed without Slack. Do not enable Autopilot from this alone.
+**Triage shape:** subscribe → keyword → agent with `/brooklyn-mode`/`/poteto-mode` + `control-*` → still broken on main? Encode: [docs/triage-subscribe.md](../../docs/triage-subscribe.md). Fail closed without Slack. Do not enable Autopilot from this alone.
 
 ### Multi-model tools
 

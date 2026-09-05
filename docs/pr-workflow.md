@@ -62,7 +62,7 @@ Green Γëá safe. CI green Γëá foreign verdict.
 
 ## Autopilot-full (independent queue)
 
-- Operator names items that stay hers (she clicks)  
+- Operator names items they keep (the operator clicks)
 - Explicit go ΓåÆ arm `/goal` for the program  
 - **One cloud owner per PR**: build ΓåÆ proof ΓåÆ deslop ΓåÆ no-comments ΓåÆ rebase ΓåÆ babysit ΓåÆ **merge only after root swarm-verify**  
 - True parallel; never stack independent work  

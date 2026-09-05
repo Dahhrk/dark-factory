@@ -53,7 +53,7 @@ Taste, product priority, spend, merge rights, Slack credentials. Humans set refe
 4. Limited Autopilot  
 5. Dark factory scale  
 
-Outer-loop triage shape Lauren pointed at: [triage-subscribe.md](triage-subscribe.md). Spend / self-host: [spend-and-cloud.md](spend-and-cloud.md).
+Outer-loop triage recipe: [triage-subscribe.md](triage-subscribe.md). Spend / self-host: [spend-and-cloud.md](spend-and-cloud.md).
 
 ## Related
 

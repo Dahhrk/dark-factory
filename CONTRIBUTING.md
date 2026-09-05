@@ -20,4 +20,4 @@ Product verify/CI belongs in private app repos. Bootstrap: `templates/product-bo
 
 ## Attribution
 
-Modeled on Lauren Tan’s (@poteto) **public** system (pstack, essays). Not affiliated. Do not claim Dune source or private xAI internals.
+Inspired by public pstack / Cursor agent-factory talks and essays. Not affiliated. Do not claim Dune source or private third-party internals.

@@ -9,6 +9,7 @@ alwaysApply: true
 - Product eyes: `verify-<app>` + `control-<app>` CLI. Kitchen uses `verify-factory` only.
 - Feature Map: kebab file names and sub-feature IDs.
 - Commits/PRs: Conventional Commits `type(scope): subject`. PR body: Why, Scope, Tradeoffs, Blast Radius, Verification.
-- Architecture: **Dune** (method only — never claim Electron source). Product file: `.cursor/dune.md`.
-- Slack line: Benny. Outer loop: Grok Bot routines.
-- Borrowed names stay hers — see `docs/naming.md`. Storage: `docs/storage-layout.md`.
+- Architecture: **Dune** (method only — never claim third-party Electron source). Product file: `.cursor/dune.md`.
+- Slack line: Benny (fail closed until Slack is real). Outer loop: Grok Bot routines.
+- Keep upstream skill names; our product nouns are ours — see `docs/naming.md`. Storage: `docs/storage-layout.md`.
+- Prose: this kitchen is **inspired by** public pstack / agent-factory talks. Do not name-drop authors in commits, comments, or PR bodies unless citing a specific public URL in Sources.
