@@ -87,7 +87,7 @@ npx skills add poteto/noodle --skill make-interfaces-feel-better
 npx skills add poteto/noodle --skill interaction-design
 ```
 
-Use Design Mode + [design-notes.md](design-notes.md) ┬╖ [visual-parity.md](visual-parity.md). Adjacent packs: [adjacent-taste.md](adjacent-taste.md).
+Use Design Mode + [design-notes.md](design-notes.md) ┬╖ [visual-parity.md](visual-parity.md). Adjacent packs: [adjacent-taste.md](adjacent-taste.md) · [adjacent-craft.md](adjacent-craft.md).
 
 ## Gate 5 ΓÇö Outer loop
 

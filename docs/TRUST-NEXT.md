@@ -33,6 +33,8 @@ Benny — fix tracker YAML only after a real channel; fail closed without creden
 
 ## Autopilot
 
-Only after one overnight with evidence you would merge by hand. Then limited Autopilot-full on independent items. Never author-agent merges on its own verdict.
+Only after one overnight with evidence you would merge by hand. Then limited Autopilot-full on independent items. Never author-agent merges on own verdict.
+
+Fleet board (Working → Watching CLEAN ladder → Ready for review): [fleet-board.md](fleet-board.md). **Ready ≠ merge** — Riddler → Gordon → you. Do not install marketplace Engineer Bot as CoS.
 
 See: [match-ceiling.md](match-ceiling.md) · [SETUP-STATUS.md](SETUP-STATUS.md) · [overnight.mdc](../.cursor/rules/overnight.mdc)
