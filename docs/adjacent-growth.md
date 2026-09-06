@@ -92,4 +92,4 @@ Do **not** enable Benny, Autopilot, or Orchestrate from this page.
 
 - [ericosiu/ai-marketing-skills](https://github.com/ericosiu/ai-marketing-skills) (MIT)
 - [singlebrain.com](https://singlebrain.com/) (architecture pitch; commercial)
-- Related kitchen: [evals.md](evals.md) · [adjacent-taste.md](adjacent-taste.md) · [SELF-IMPROVE.md](SELF-IMPROVE.md) · [outer-loop.md](outer-loop.md) · [TRUST-NEXT.md](TRUST-NEXT.md)
+- Related kitchen: [evals.md](evals.md) · [adjacent-taste.md](adjacent-taste.md) · [adjacent-craft.md](adjacent-craft.md) · [SELF-IMPROVE.md](SELF-IMPROVE.md) · [outer-loop.md](outer-loop.md) · [TRUST-NEXT.md](TRUST-NEXT.md)

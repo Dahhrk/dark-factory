@@ -51,10 +51,12 @@ Use to bootstrap [dune-method.md](dune-method.md) rules 1–2. Never claim “we
 | TS agent slop in types | anti-slop |
 | Folder/import CI | Dune / korallis-style |
 | Signal brief / copy panel / growth playbook | [adjacent-growth.md](adjacent-growth.md) |
+| Domain glossary / deepen-modules survey | [adjacent-craft.md](adjacent-craft.md) (Matt Pocock) |
 
 ## Related
 
 - [design-notes.md](design-notes.md)
 - [adjacent-growth.md](adjacent-growth.md) — growth / signal patterns (not look)
+- [adjacent-craft.md](adjacent-craft.md) — engineering craft packs (not look)
 - [public-inventory.md](public-inventory.md)
 - [dune-method.md](dune-method.md)

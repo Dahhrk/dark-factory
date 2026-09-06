@@ -20,6 +20,10 @@ Two pools (individual plans): **Cursor Models** (Grok / Composer family) and **O
 
 pstack can spawn several frontier agents per task — use when a plausible diff is not enough. Mechanical swarm → fast code model in `pstack-models.mdc`. Daytime / empty Other Models → prefer Cursor Models / `inherit-parent`.
 
+### Cost–intelligence (SELF-REPORTED)
+
+Public MTS product demo cited Cursorbench-style numbers: a fast Cursor-family model in the same quality band as a max frontier judge at roughly **~1/6 the $/task** (speaker claim — not an audited ledger). Use it as a **bias toward Cursor Models for day work**, not as a license to spawn fleets. Workshop line still holds: hunt the sweet spot, do not copy lab spend. Source pointer: [YT A63sedG-p5Q](https://www.youtube.com/watch?v=A63sedG-p5Q) · workshop tokens in [workshop-grok-bot.md](workshop-grok-bot.md).
+
 ## Bugbot
 
 - Soft layer 3 ([dune-method.md](dune-method.md) four layers)  

@@ -23,6 +23,7 @@ How the public pstack stack maps onto **your** life. Storage paths: [storage-lay
 | PR / Autopilot | [pr-workflow.md](pr-workflow.md) | After eyes + CI |
 | Design craft | [design-notes.md](design-notes.md), [visual-parity.md](visual-parity.md) | noodle cherry-picks + Design Mode |
 | Adjacent look/feel | [adjacent-taste.md](adjacent-taste.md) | Optional |
+| Adjacent craft | [adjacent-craft.md](adjacent-craft.md) | Optional |
 | Benny | [benny-line.md](benny-line.md) | After verify |
 | Your -mode | [automate-me.md](automate-me.md) | After chat history |
 | Skill quality | [evals.md](evals.md) | Before promoting skill edits |

@@ -17,17 +17,20 @@ Exception states: `BLOCKED` ┬╖ `SUPERSEDED` ┬╖ `STALE_SHA` ┬╖ `ABAND
 
 Benny auto-fixes stay **draft** until a stronger gate; planned pstack work opens **ready** ([benny-line.md](benny-line.md)).
 
+Fleet babysit vocabulary (Working / Watching CLEAN ladder / Ready ≠ merge): [fleet-board.md](fleet-board.md). Inspired by public Engineer Bot marketplace rules — adapt into Tony/Harvey; do not install as CoS.
+
 ## Opening a PR (end of every build playbook)
 
 - Worktree off main; one writer per branch  
 - Commit liberally; rebase into small ordered commits before PR  
 - Before commit: `/deslop` (team-kit), `/no-comments`  
 - Titles: Conventional Commits `type(scope): subject` ΓÇö imperative, no trailing period  
-- Body sections (drop if empty): **Why**, **Scope**, **Tradeoffs**, **Blast Radius**, **Verification** ΓÇö not ΓÇ£Summary / Test planΓÇ¥ boilerplate. Attach screenshots/video when they prove a claim  
+- Body sections (drop if empty): **Why**, **Scope**, **Tradeoffs**, **Blast Radius**, **Verification** — not “Summary / Test plan” boilerplate. Attach screenshots/video when they prove a claim. **Visual proof:** real product chrome / hosted artifact you (or Riddler) open yourself; captions and mocks ≠ proof; put media in the PR body, not committed into the branch ([fleet-board.md](fleet-board.md))  
 - Forge: `gh` default; Prefer **Origin** if `origin` resolves the repo. **Never require Graphite (`gt`)**  
 - Prefer **five narrow PRs** to one fat one. Stacks = base-branch chain (child targets parent)  
-- Open **ready**, never draft (cloud tools often default draft ΓÇö set `draft: false` / `gh pr ready`)  
-- Opening a PR does **not** start babysit. Finish the stack, then babysit once  
+- **One cloud agent per PR stream** — steer/reply for CI and re-proof; fresh launch only for a new task or rewrite ([fleet-board.md](fleet-board.md))  
+- Open **ready**, never draft (cloud tools often default draft — set `draft: false` / `gh pr ready`)  
+- Opening a PR does **not** start babysit. Finish the stack, then babysit once. **Board-first:** queue/board row before dig or launch.  
 
 ## Babysit (merge-ready, does **not** merge)
 

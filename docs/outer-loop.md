@@ -6,13 +6,15 @@ Paste these into Grok Bot after you connect Slack / X / GitHub. They write into 
 
 Part 1 says: once `/control-<app>` is good, put it in these routines. Auto-fix only after repro is trustworthy. Optional: [Dr Eggbot](https://x.ai/bot/93gOz3op1UQdBdbekQFLK) creates the engineer bot that owns verify + daily maintain.
 
-Bots **coordinate**. They `spawn a cloud agent` so the bot computer stays free.
+Bots **coordinate**. They `spawn a cloud agent` so the bot computer stays free. Do not burn the CoS context window on coding.
 
 Attitude ([three-virtues.md](three-virtues.md)): if you did the errand twice, ask “how can a bot do this instead of me?” before you do it a third time.
 
 Workshop pattern ([workshop-grok-bot.md](workshop-grok-bot.md)): talk to a **Chief of Staff** bot. Specialists own domains (separate memory, separate accountability). Give a group chat an **objective**, not a pre-split task list. Approval line is **reversibility** — drafts and research finish alone; anything the outside world sees, or that moves money, parks for you.
 
-0xCodez’s [10-step article](https://x.com/0xCodez/status/2089676836619878567) is his Grok Bot product tutorial, not a first-party manuscript. Steal the charter shape (own / good looks like / never do without asking), not his marketing.
+Product-demo pattern (public MTS interview, [YT A63sedG-p5Q](https://www.youtube.com/watch?v=A63sedG-p5Q)): named specialist bots + **cadence routines** (needs-you sweep, evening PR shepherd, morning briefing). Chat can surface PR cards; heavy work still leaves the bot via Cloud Agents. UX metaphor is iMessage-like — personalities, not a dashboard. Steal the **routine shapes** below; keep our roster in [BOTS.md](../automations/grok-bot/BOTS.md).
+
+0xCodez’s [10-step article](https://x.com/0xCodez/status/2089676836619878567) is a Grok Bot product tutorial, not a first-party manuscript. Steal the charter shape (own / good looks like / never do without asking), not the marketing.
 
 ## Routine: Slack bug farmer
 
@@ -32,6 +34,26 @@ Workshop pattern ([workshop-grok-bot.md](workshop-grok-bot.md)): talk to a **Chi
 - **When:** New issue labeled `bug` or a review comment containing `broken` / `regression`.
 - **Do:** Capture repo, number, author, and the exact claim. Check whether a queue row already exists.
 - **Write:** `inbox` row with `source: github`. Never comment on the issue unless asked.
+
+## Routine: needs-you sweep
+
+- **When:** Morning (e.g. with standup) and optionally mid-afternoon.
+- **Do:** Scan parked items that need a human: approval, secrets, spend-cap, merge/kill, Slack reply. List only what blocks agents.
+- **Write:** A short **Attention** block at the top of `intake/QUEUE.md` (or a `decisions.tsv` wake row). Do not invent urgency.
+- **Keep:** Fail closed without the channel/tool; do not unlock Benny from this alone.
+
+## Routine: evening PR shepherd
+
+- **When:** Evening local (before bed / overnight window).
+- **Do:** List **boarded** draft PRs (see [fleet-board.md](fleet-board.md)). For each: Stage Working vs Watching, whether last tick was CLEAN, CI/Bugbot/security, whether visual proof is a real hosted artifact. Prefer `spawn a cloud agent` or **reply on the existing** agent for that PR stream — one agent per PR; bot stays coordinator.
+- **Write:** Advance Watching 1/3→3/3 only on consecutive CLEAN ticks; Ready for review → Riddler/Gordon queue. At most one new inbox row per stuck PR. Never merge. Never Autopilot-full until [TRUST-NEXT.md](TRUST-NEXT.md) is green.
+- **Keep:** Authors do not certify themselves. Agent finished ≠ Done. Done = merged only.
+
+## Routine: morning briefing
+
+- **When:** Morning local (pair with Daily Standup on Harvey).
+- **Do:** Digest overnight: new queue rows, draft PRs, failed CI, Attention leftovers. One paragraph + bullets. Point at evidence paths (`control-*` artifacts, Actions URLs).
+- **Write:** Standup note or top of `intake/QUEUE.md`. Spot-check one claim by hand when overnight ran.
 
 ## Routine: weekly prune
 
@@ -57,3 +79,7 @@ Workshop pattern ([workshop-grok-bot.md](workshop-grok-bot.md)): talk to a **Chi
 - keep:
 - owner: none
 ```
+
+## Related
+
+- [BOTS.md](../automations/grok-bot/BOTS.md) · [make-bot-ui.md](make-bot-ui.md) · [spend-and-cloud.md](spend-and-cloud.md) · [TRUST-NEXT.md](TRUST-NEXT.md) · [fleet-board.md](fleet-board.md) · [workshop-grok-bot.md](workshop-grok-bot.md)

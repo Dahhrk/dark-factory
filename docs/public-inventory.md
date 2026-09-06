@@ -62,7 +62,7 @@ Other poteto repos: [github-sources.md](github-sources.md) (`how`, `brainmaxxing
 
 ## Adjacent (useful, not pstack core)
 
-Full notes: [adjacent-taste.md](adjacent-taste.md) (look/feel) · [adjacent-growth.md](adjacent-growth.md) (signal / panel / growth playbook). Spend/forge: [spend-and-cloud.md](spend-and-cloud.md).
+Full notes: [adjacent-taste.md](adjacent-taste.md) (look/feel) · [adjacent-growth.md](adjacent-growth.md) (signal / panel / growth playbook) · [adjacent-craft.md](adjacent-craft.md) (engineering craft). Spend/forge: [spend-and-cloud.md](spend-and-cloud.md).
 
 | Pack | Job |
 |------|-----|
@@ -70,6 +70,7 @@ Full notes: [adjacent-taste.md](adjacent-taste.md) (look/feel) · [adjacent-grow
 | [elayadesign/ai-design-skills](https://github.com/elayadesign/ai-design-skills) | Landing-page anti-template look |
 | [emilkowalski/skills](https://github.com/emilkowalski/skills) | Motion / feel |
 | [ericosiu/ai-marketing-skills](https://github.com/ericosiu/ai-marketing-skills) | Patterns only — see [adjacent-growth.md](adjacent-growth.md) |
+| [mattpocock/skills](https://github.com/mattpocock/skills) | Patterns only — see [adjacent-craft.md](adjacent-craft.md) |
 | korallis scaffolding / Factory no-use-effect | Community Dune-*method* fills |
 
 ## Cursor builtins she wires
