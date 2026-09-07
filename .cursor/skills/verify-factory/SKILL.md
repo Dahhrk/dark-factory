@@ -20,16 +20,19 @@ All of these must exist:
 - `docs/outer-loop.md`
 - `docs/dune-method.md`
 - `intake/QUEUE.md`
-- `audit/decisions.tsv` (header row: `time phase decision reason evidence result`)
+- `audit/decisions.tsv` (header row: `ts phase decision why evidence result`)
+- `audit/smells.tsv` (header row: `ts source workspace smell n action evidence`)
 - `.cursor/rules/factory-os.mdc`
 - `.cursor/rules/overnight.mdc`
+
+`node scripts/close-loop.mjs doctor` must exit 0.
 
 Report missing paths as `BLOCKED`.
 
 ## Drive
 
-1. Read `intake/QUEUE.md`. Count rows in inbox / ready / blocked / done.
-2. Confirm `audit/decisions.tsv` still has the header and is tab-separated.
+1. Read `intake/QUEUE.md`. Count rows in inbox / ready / done. Count blocked only if that heading exists.
+2. Confirm `audit/decisions.tsv` still has the header `ts	phase	decision	why	evidence	result` and is tab-separated.
 3. Ask the user (or check chat) whether `/add-plugin pstack` and `/add-plugin cursor-team-kit` have been run. If unknown, mark `INCONCLUSIVE` for plugins — do not invent a yes.
 
 ## Evidence
