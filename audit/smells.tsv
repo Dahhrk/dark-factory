@@ -2,7 +2,7 @@ ts	source	workspace	smell	n	action	evidence
 2026-09-07T00:19:03.866Z	local	gmod-crowd-lod	look-proof-unfilled	1	note	local/LOOK_PROOF.md missing after doctor+fail-smoke
 2026-09-07T00:19:03.997Z	local	gmod-join-clinic	join-proof-unfilled	1	note	local/JOIN_PROOF.md missing
 2026-09-07T00:19:04.122Z	local	dark-factory	automations-enable-unproven	1	note	SETUP-STATUS gate 6 still ENABLE; no decisions.tsv maintain row
-2026-09-07T00:19:04.236Z	local	dark-factory	close-loop-uncommitted	1	note	close-loop files dirty on kitchen main
+2026-09-07T00:32:40.846Z	local	dark-factory	close-loop-uncommitted	1	encode	https://github.com/Dahhrk/dark-factory/pull/19
 2026-09-07T00:19:04.342Z	local	control-glass	overnight-unrun	1	note	TRUST-NEXT never green; Autopilot BLOCKED
 2026-09-07T00:21:17.400Z	local	dark-factory	verify-factory-header	2	encode	header now ts why
 2026-09-07T00:21:17.679Z	local	dark-factory	setup-click-stale-prompt	2	encode	SETUP-CLICK matches weekly
