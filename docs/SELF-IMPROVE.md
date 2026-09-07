@@ -5,13 +5,15 @@ This is the operating contract for **structural** learning. Soft skills alone do
 ## The loop
 
 ```text
-Smell (review / Bugbot / screenshot / overnight Attention)
-  → appeared twice?
-    → encode as architecture / type / lint / CI / hook / Feature Map / skill
-    → next agent hits a red wall
+Every turn captures (record when a correction, failed check, or same workaround happens)
+  → second smell of the same workspace+smell
+    → encode same day as lint / CI / hook / Feature Map
+    → mark the row encode on audit/smells.tsv
+Weekly gardener reads audit/smells.tsv via `node scripts/close-loop.mjs status`.
 ```
 
 Preferred strength order: [quality-ladder.md](quality-ladder.md). Principle: encode-lessons-in-structure.
+The ledger is the one writer. Friday is backup. Do not invent inbox rows for Grok bots.
 
 ## What is already mechanical (Control-Glass)
 
@@ -35,11 +37,12 @@ New pixel regressions: fail parity → fix UI or titled baseline-update PR (neve
 
 | When | What |
 |------|------|
+| Every turn | `node scripts/close-loop.mjs record` if a correction / failed check / same workaround |
+| Smell #2 | Encode same day, then `node scripts/close-loop.mjs encode` |
 | Daily | `/maintain-verification-skill` (automation **Enabled**) |
 | Every UI PR | Named direction + Looks + `anti-ai-ui` + `visual-parity` |
-| Friday | [encode-lessons-weekly](../automations/cursor/encode-lessons-weekly.md) — gardener draft PRs |
+| Friday | [encode-lessons-weekly](../automations/cursor/encode-lessons-weekly.md) reads `audit/smells.tsv` |
 | After overnight | `/show-me-your-work` → Attention → encode or kill |
-| Smell #2 | Same day: extend the gate |
 
 ## What agents cannot invent
 

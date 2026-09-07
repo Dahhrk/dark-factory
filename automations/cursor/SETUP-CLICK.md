@@ -40,12 +40,13 @@ Save → Enable.
 
 ```text
 You are the gardener for Control-Glass + dark-factory.
-Read: recent merged PRs on Dahhrk/Control-Glass, Bugbot comments, BUGBOT.md, .cursor/dune.md, intake/QUEUE.md, audit/decisions.tsv.
+Working directory: kitchen root (~/Projects/dark-factory).
 Done means:
-1) List smells that appeared more than once (imports, any, suppressions, missing proof, AI-template UI / nightglass, map drift, visual-parity baseline cheats).
-2) For each repeat: open at most one draft PR that encodes it as lint, CI (`anti-ai-ui` / `visual-parity` / boundaries), Feature Map, skill, or BUGBOT hard preference — not more prose.
-3) Append rows to ~/Projects/dark-factory/audit/decisions.tsv (ts phase decision why evidence result).
-Keep: do not Autopilot fleet; do not merge; do not invent smells; if nothing repeated, write "clean week" and stop.
+1) Run `node scripts/close-loop.mjs status`. Those REPEAT rows are the queue.
+2) For each REPEAT: encode it as lint, CI, hook, or Feature Map — not more prose. Then `node scripts/close-loop.mjs encode --workspace <slug> --smell <slug> --evidence <what landed>`.
+3) Append a row to audit/decisions.tsv only when a gate lands (ts phase decision why evidence result).
+4) If status is empty: write "clean week" and stop.
+Keep: do not Autopilot fleet; do not merge; do not invent smells.
 ```
 
 ---
