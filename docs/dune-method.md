@@ -119,6 +119,8 @@ Architecture without eyes is still a human conveyor belt. Eyes: [feature-maps.md
 
 That must produce a **CLI** (`control-<app>`) plus `references/features/` — not markdown instructions alone. Public twin: [pstack-guide-pt1.md](pstack-guide-pt1.md) and [poteto/verification-skill-example](https://github.com/poteto/verification-skill-example).
 
+When the runtime cannot be driven headless (game client, engine mount APIs, etc.), `doctor` proves tree/shape/loader; the Feature Map proof bar is a **real** session. Do not invent a fake harness that cannot see the real statuses.
+
 `/maintain-verification-skill` at least daily. This kitchen's `verify-factory` skill only proves the kitchen, not the product.
 
 ## Adjacent gardener tools (not Dune)
