@@ -31,7 +31,7 @@ How the public pstack / agent-factory stack is stored in the wild, and how **thi
   local/                  gitignored — your scratch / webhook drafts
   .cursor/skills/verify-factory/   kitchen health only
 
-~/Projects/Control-Glass/     PRIVATE PRODUCT #1
+~/Projects/Control-Glass/     PRIVATE PRODUCT #1 (web)
   src/                    app
   .cursor/skills/verify-glass/   real CLI + Feature Map
   BUGBOT.md  .cursor/dune.md
@@ -39,9 +39,29 @@ How the public pstack / agent-factory stack is stored in the wild, and how **thi
   PRIVATE.md              visibility contract
   (secrets via env / Cursor — never committed)
 
-~/Projects/<next-app>/    PRIVATE PRODUCT #N
-  same shape via: dark-factory/scripts/new-product.ps1
+~/Projects/gmod-join-clinic/  PRODUCT #2 (non-web, lean public tip)
+  lua/                    addon runtime (public git)
+  docs/DESIGN.md          public design notes
+  .cursor/ + tools/       eyes on disk, gitignored — see lean-public-tip.md
+  PRIVATE.md              visibility contract (local)
+
+~/Projects/<next-app>/    PRODUCT #N
+  web default: dark-factory/scripts/new-product.ps1 (Vite)
+  non-web: folder + bootstrap pieces by hand — do not force Vite
 ```
+
+## Non-web products
+
+`new-product.ps1` scaffolds a React/Vite app. Skip it when the runtime is not a web UI (Lua addon, CLI-only, engine plugin, etc.).
+
+Minimum instead:
+
+1. `mkdir ~/Projects/<name>` + `git init`
+2. Copy applicable pieces from `templates/product-bootstrap/` (Dune, BUGBOT, AGENTS, PRIVATE — skip anti-ai-ui if there is no web UI)
+3. Open that folder → `/create-verification-skill`
+4. If the remote is **public** but eyes stay author-local, follow [lean-public-tip.md](lean-public-tip.md)
+
+Do **not** add a second scaffold script until a second non-web product needs the same steps. Smell twice → encode.
 
 ## Rules that keep the match
 
@@ -49,8 +69,9 @@ How the public pstack / agent-factory stack is stored in the wild, and how **thi
 2. **Kitchen never gets `/create-verification-skill` for a real app.** Product path only.
 3. **Feature Maps with real selectors stay private** until scrubbed for an Atlas-style example.
 4. **One writer per durable store** — product state in product repo; queue/decisions in kitchen.
-5. **New product** = new folder under `Projects/`, bootstrap from kitchen, then create-verify in *that* chat.
+5. **New product** = new folder under `Projects/`, bootstrap from kitchen (Vite script *or* non-web hand path), then create-verify in *that* chat.
 6. **Publish** only: kitchen docs + `templates/` + `examples/` (+ optional scrubbed verify example later).
+7. **Kitchen never invents a product.** Join Clinic / Glass app code stay in their product repos.
 
 ## Visibility labels
 
@@ -58,10 +79,12 @@ How the public pstack / agent-factory stack is stored in the wild, and how **thi
 |------|----------------|------------|
 | `dark-factory` | Public OK | [VISIBILITY.md](../VISIBILITY.md) |
 | `Control-Glass` | **Private** | `Control-Glass/PRIVATE.md` |
+| `gmod-join-clinic` | **Public** (lean tip) | `gmod-join-clinic/PRIVATE.md` (local) + [lean-public-tip.md](lean-public-tip.md) |
 | `~/.cursor/rules` | Local machine | — |
 
 ## Related
 
+- [lean-public-tip.md](lean-public-tip.md)
 - [global-vs-private.md](global-vs-private.md)
 - [match-ceiling.md](match-ceiling.md)
 - [SETUP-STATUS.md](SETUP-STATUS.md)

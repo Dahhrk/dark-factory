@@ -21,3 +21,4 @@ Safe default: **public** GitHub remote.
 - Anything that drives a private production app  
 
 Private factory: `~/Projects/Control-Glass` (`PRIVATE.md` on that repo).
+Lean public product example: `~/Projects/gmod-join-clinic` — [docs/lean-public-tip.md](docs/lean-public-tip.md).

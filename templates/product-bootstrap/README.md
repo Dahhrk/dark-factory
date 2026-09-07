@@ -2,6 +2,8 @@
 
 Do **not** run inside dark-factory. Use `-TargetRepo` or `scripts/new-product.ps1`.
 
+For **non-web** products, skip the Vite script — copy only the pieces that apply (often Dune + BUGBOT + AGENTS + PRIVATE; skip anti-ai-ui). Layout: `docs/storage-layout.md`. Public lean tip: `docs/lean-public-tip.md`.
+
 ## Contents
 
 | Path | Job |

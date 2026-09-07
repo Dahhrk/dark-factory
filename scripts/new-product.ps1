@@ -1,4 +1,7 @@
 # New private product under ~/Projects — matches docs/storage-layout.md
+# Web/Vite only. Non-web (Lua, CLI, engine plugin): skip this script —
+# folder + templates/product-bootstrap pieces by hand. See docs/storage-layout.md
+# and docs/lean-public-tip.md. Do not add -Kind until a second non-web product.
 param(
   [Parameter(Mandatory = $true)]
   [string]$Name,
