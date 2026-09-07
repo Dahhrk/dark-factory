@@ -1,0 +1,14 @@
+---
+description: Close the smell loop every turn — record, then encode on REPEAT
+alwaysApply: true
+---
+
+# Close-loop
+
+Every turn (local Cursor and Grok handoff into this kitchen):
+
+- If the human corrected you, a check failed, or you used the same workaround again: `node scripts/close-loop.mjs record --source local --workspace <slug> --smell <slug> --evidence <text>`
+- If `node scripts/close-loop.mjs status` shows a REPEAT: encode it into lint / CI / hook / Feature Map this turn, then `node scripts/close-loop.mjs encode --workspace <slug> --smell <slug> --evidence <text>`. Do not write another reminder.
+- If nothing happened: do not invent a smell. You may say `close-loop: clean`.
+- Do not encode taste, spend, merge rights, or Slack secrets.
+- Friday encode-lessons is backup. Same ledger (`audit/smells.tsv`).

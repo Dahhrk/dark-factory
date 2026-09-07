@@ -10,7 +10,7 @@ Follow `.cursor/skills/verify-factory/SKILL.md` Launch → Doctor → Drive → 
 
 ## Observable proof
 
-Doctor paths exist. Queue sections parse. Decision log keeps its header. Plugin install is reported as yes, no, or inconclusive — never guessed.
+Doctor paths exist. Smell ledger (`audit/smells.tsv`) passes `node scripts/close-loop.mjs doctor`. Queue sections parse. Decision log keeps its header. Plugin install is reported as yes, no, or inconclusive — never guessed.
 
 ## Cleanup
 

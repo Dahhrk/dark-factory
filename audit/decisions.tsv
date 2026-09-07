@@ -11,3 +11,9 @@ ts	phase	decision	why	evidence	result
 2026-09-05T17:05+01:00	encode	scrub operating prose to inspired-by	keep upstream skill names; drop author name-drops from kitchen ops docs	README naming system-map PUBLIC AGENTS triage	docs updated; essay archives keep source headers
 2026-09-05T19:10+01:00	eval	verify-glass baseline drive (blinded packs)	user asked to run evals now; no skill variant planted	south=agent grok pass tmp/glass-south; north=parent shell pass tmp/glass-north; fable+gpt judge blocked unpaid invoice; rubric local/glass-drive-rubric.md	baseline PASS; promote current eyes; multi-model matrix deferred
 2026-09-06T00:55+01:00	encode	fleet-board + BOTS roster pointers	Engineer Bot CLEAN/board-first adapted into kitchen; BOTS.md points at fleet-board	docs/fleet-board.md + automations/grok-bot/BOTS.md on PR #17	encoded; Autopilot still BLOCKED until TRUST-NEXT
+2026-09-07T00:50+01:00	encode	close-loop smell ledger	every turn captures / second smell encodes	scripts/close-loop.mjs + hooks + smells.tsv	local+grok share one writer
+2026-09-07T01:20+01:00	encode	verify-factory header + SETUP-CLICK prompt	kitchen audit found doctor/header drift and stale Friday paste	verify-factory SKILL.md + SETUP-CLICK.md match ledger and weekly prompt	encoded
+2026-09-07T01:27+01:00	encode	restamp GAP-MATRIX stale cells	grok audit proved 8 bots, YAML drafts not live, Bugbot proven, 4 Glass features	docs/GAP-MATRIX.md 7 Sep	encoded
+2026-09-07T01:31+01:00	encode	close-loop PR opened	kitchen ledger was dirty on main	https://github.com/Dahhrk/dark-factory/pull/19	ready PR; you merge
+2026-09-07T01:34+01:00	setup	automation forms opened not Enabled	agent cannot Enable on the account	SETUP-CLICK three prefills + SETUP-STATUS gate 6	ENABLE still you
+2026-09-07T01:42+01:00	overnight	Control-Glass looks Feature Map	TRUST-NEXT first overnight-shaped unit	https://github.com/Dahhrk/Control-Glass/pull/17	draft; you merge in the morning

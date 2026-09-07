@@ -36,6 +36,8 @@ jobs:
           test -f docs/SETUP-STATUS.md
           test -f audit/decisions.tsv
           head -n1 audit/decisions.tsv | grep -qx $'ts\tphase\tdecision\twhy\tevidence\tresult'
+          test -f audit/smells.tsv
+          head -n1 audit/smells.tsv | grep -qx $'ts\tsource\tworkspace\tsmell\tn\taction\tevidence'
       - name: No 0.0.0.0 listen binds in handoff server
         run: |
           set -euo pipefail
