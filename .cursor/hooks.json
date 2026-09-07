@@ -4,6 +4,17 @@
     "sessionStart": [
       {
         "command": "node .cursor/hooks/session-context.mjs"
+      },
+      {
+        "command": "node .cursor/hooks/close-loop-session.mjs",
+        "failClosed": false
+      }
+    ],
+    "stop": [
+      {
+        "command": "node .cursor/hooks/close-loop-stop.mjs",
+        "loop_limit": 1,
+        "failClosed": false
       }
     ],
     "beforeSubmitPrompt": [

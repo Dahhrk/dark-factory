@@ -1,0 +1,13 @@
+ts	source	workspace	smell	n	action	evidence
+2026-09-07T00:19:03.866Z	local	gmod-crowd-lod	look-proof-unfilled	1	note	local/LOOK_PROOF.md missing after doctor+fail-smoke
+2026-09-07T00:19:03.997Z	local	gmod-join-clinic	join-proof-unfilled	1	note	local/JOIN_PROOF.md missing
+2026-09-07T00:19:04.122Z	local	dark-factory	automations-enable-unproven	1	note	SETUP-STATUS gate 6 still ENABLE; no decisions.tsv maintain row
+2026-09-07T00:32:40.846Z	local	dark-factory	close-loop-uncommitted	1	encode	https://github.com/Dahhrk/dark-factory/pull/19
+2026-09-07T00:19:04.342Z	local	control-glass	overnight-unrun	1	note	TRUST-NEXT never green; Autopilot BLOCKED
+2026-09-07T00:21:17.400Z	local	dark-factory	verify-factory-header	2	encode	header now ts why
+2026-09-07T00:21:17.679Z	local	dark-factory	setup-click-stale-prompt	2	encode	SETUP-CLICK matches weekly
+2026-09-07T00:27:23.658Z	local	gmod-workshop-puller	pull-proof-unfilled	1	note	doctor green, local/PULL_PROOF.md missing
+2026-09-07T00:27:23.739Z	local	flashpeek	visual-parity-no-baselines	1	note	tests/visual/baselines has no home pngs
+2026-09-07T00:28:22.104Z	local	dark-factory	gap-matrix-stale	2	encode	GAP-MATRIX 7 Sep restamp
+2026-09-07T00:28:22.374Z	local	dark-factory	grok-routines-not-live	1	note	11 YAML drafts, fleet MCP not listening
+2026-09-07T00:43:12.300Z	local	kitchen	shell-guard-fail-closed	1	note	git push and gh pr create blocked: hook returned no output; opened https://github.com/Dahhrk/Control-Glass/pull/17 via GitHub

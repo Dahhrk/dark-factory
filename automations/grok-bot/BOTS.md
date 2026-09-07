@@ -12,7 +12,7 @@ Bot profiles are managed through [grokbot-fleet](https://github.com/Dahhrk/grokb
 | Stewie Griffin | Family Guy | Tooling & Infrastructure — CI, gates, harness |
 | The Riddler | Batman | QA & Verification — proof before Gordon |
 | Gordon Ramsay | Hell's Kitchen | Code Reviewer — BUGBOT.md, every PR |
-| Ted | Ted (2012) | Friday Ops — encode-lessons, prune, bug farmer |
+| Ted | Ted (2012) | Friday Ops — encode-lessons from `audit/smells.tsv`, prune, bug farmer |
 | Dr Strange | Marvel | Bot Factory & Fleet Operator — creates bots, registry, MCP |
 
 ## How to update bots
@@ -64,7 +64,7 @@ Routine YAML files live in `~/Documents/dev-projects/grokbot-fleet/routines/`. S
 | Evening PR shepherd | Tony / Harvey | Evening local | Draft PR CI + evidence check; spawn Cloud Agents; never merge |
 | PR Proof | The Riddler | After Tony / before Gordon | QA proof loop before Gordon reviews |
 | PR Review Trigger | Gordon | PR opened | Auto-review on new PRs |
-| Friday Ops | Ted | Friday 10:00 AM | Encode-lessons, prune, bug farm |
+| Friday Ops | Ted | Friday 10:00 AM | Encode-lessons from `audit/smells.tsv`, prune, bug farm |
 | Auto-update Fleet | Dr Strange / grokbot-fleet | 6:00 AM daily | Pull latest fleet server code |
 | Weekly Profile Backup | Dr Strange / grokbot-fleet | Sunday 3:00 AM | Snapshot bot profiles |
 
