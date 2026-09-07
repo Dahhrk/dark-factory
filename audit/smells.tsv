@@ -10,3 +10,4 @@ ts	source	workspace	smell	n	action	evidence
 2026-09-07T00:27:23.739Z	local	flashpeek	visual-parity-no-baselines	1	note	tests/visual/baselines has no home pngs
 2026-09-07T00:28:22.104Z	local	dark-factory	gap-matrix-stale	2	encode	GAP-MATRIX 7 Sep restamp
 2026-09-07T00:28:22.374Z	local	dark-factory	grok-routines-not-live	1	note	11 YAML drafts, fleet MCP not listening
+2026-09-07T00:43:12.300Z	local	kitchen	shell-guard-fail-closed	1	note	git push and gh pr create blocked: hook returned no output; opened https://github.com/Dahhrk/Control-Glass/pull/17 via GitHub
