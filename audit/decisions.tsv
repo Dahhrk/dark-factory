@@ -15,3 +15,4 @@ ts	phase	decision	why	evidence	result
 2026-09-07T01:20+01:00	encode	verify-factory header + SETUP-CLICK prompt	kitchen audit found doctor/header drift and stale Friday paste	verify-factory SKILL.md + SETUP-CLICK.md match ledger and weekly prompt	encoded
 2026-09-07T01:27+01:00	encode	restamp GAP-MATRIX stale cells	grok audit proved 8 bots, YAML drafts not live, Bugbot proven, 4 Glass features	docs/GAP-MATRIX.md 7 Sep	encoded
 2026-09-07T01:31+01:00	encode	close-loop PR opened	kitchen ledger was dirty on main	https://github.com/Dahhrk/dark-factory/pull/19	ready PR; you merge
+2026-09-07T01:34+01:00	setup	automation forms opened not Enabled	agent cannot Enable on the account	SETUP-CLICK three prefills + SETUP-STATUS gate 6	ENABLE still you
