@@ -17,6 +17,12 @@ _(empty)_
 
 ## done
 
+### [done] pstack Pt. 2 supervise recipe (kitchen encode)
+- docs/pstack-pt2-supervise.md + adjacent-craft / public-inventory / github-sources wiring
+- source: https://x.com/i/article/2094940651607715840
+- owner: Harvey; plate: you
+- keep: not Autopilot; not a second router; patterns only
+
 ### [done] Mechanical anti-AI UI + visual parity (agent)
 - Control-Glass: `anti-ai-ui`, `visual-parity`, daylight home, environment.json
 - Kitchen: SELF-IMPROVE + bootstrap anti-ai templates (pending PR)

@@ -30,6 +30,7 @@ Representative set (counts drift; README is source of truth):
 | `/poteto-mode` | Router â†’ playbook |
 | `/setup-pstack` | Model map â†’ `~/.cursor/rules/pstack-models.mdc` |
 | `/how` `/why` `/teach` `/recall` | Understand |
+| Pt. 2 supervise notes | Kitchen encode of research/architect/prototype ops — [pstack-pt2-supervise.md](pstack-pt2-supervise.md) |
 | `/architect` `/arena` `/swarm` `/interrogate` | Shape / parallel / review |
 | `/tdd` `/blast-radius` `/no-comments` `/unslop` | Build hygiene |
 | `/create-verification-skill` `/maintain-verification-skill` | Eyes + Feature Map |
