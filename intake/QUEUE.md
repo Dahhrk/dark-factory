@@ -17,6 +17,12 @@ _(empty)_
 
 ## done
 
+### [done] Kargul craft bar (kitchen encode)
+- docs/kargul-craft-bar.md + adjacent-taste wiring; Walter owns product application
+- source: https://kargul.studio · https://x.com/marcelkargul
+- owner: Harvey; plate: you
+- keep: patterns only; not Autopilot; not a hire brief
+
 ### [done] pstack Pt. 2 supervise recipe (kitchen encode)
 - docs/pstack-pt2-supervise.md + adjacent-craft / public-inventory / github-sources wiring
 - source: https://x.com/i/article/2094940651607715840
