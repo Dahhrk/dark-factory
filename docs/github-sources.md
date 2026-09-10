@@ -45,6 +45,7 @@ Start a real product map at **3â€“5** features. The example is ~30 so you c
 
 [How I Use Cursor](how-i-use-cursor.md): she paid for Claude Code, started an orchestrator on top of it, then decided â€œrunning multiple CLIs in a GUI was missing the point.â€ Trust is the point. Noodle (Mar 2026) is that orchestrator, public. pstack (May) is what she shipped after converting. If you find yourself wrapping more CLIs, stop and run `/create-verification-skill` on the product instead.
 
+
 ## Public essays (X Articles)
 
 | Source | What it is | Kitchen use |
