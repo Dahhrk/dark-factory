@@ -55,6 +55,16 @@ If using his engineering set: run `/setup-matt-pocock-skills` once in that repo 
 | Deepen modules | Dune + Matt-style survey after trust |
 | Autopilot / overnight | [TRUST-NEXT.md](TRUST-NEXT.md) only |
 
+## pstack Pt. 2 — supervise someone smarter than you
+
+Public operating notes from [@poteto Pt. 2](https://x.com/i/article/2094940651607715840): indirect restatement, `/teach`/`/how`/`/why`, architect + prototype before multi-unit waves. **Not** a second OS. Full recipe: [pstack-pt2-supervise.md](pstack-pt2-supervise.md).
+
+| Need | Reach for |
+|------|-----------|
+| Default align / build / verify | `/poteto-mode` |
+| Noisy intake / ambiguous bug | [pstack-pt2-supervise.md](pstack-pt2-supervise.md) |
+| Matt craft patterns | sections above |
+
 ## Related
 
 - [adjacent-taste.md](adjacent-taste.md)
