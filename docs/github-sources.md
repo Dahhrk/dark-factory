@@ -44,3 +44,11 @@ Start a real product map at **3â€“5** features. The example is ~30 so you c
 ## Noodle vs pstack (so you do not rebuild the pickaxe)
 
 [How I Use Cursor](how-i-use-cursor.md): she paid for Claude Code, started an orchestrator on top of it, then decided â€œrunning multiple CLIs in a GUI was missing the point.â€ Trust is the point. Noodle (Mar 2026) is that orchestrator, public. pstack (May) is what she shipped after converting. If you find yourself wrapping more CLIs, stop and run `/create-verification-skill` on the product instead.
+
+
+## Public essays (X Articles)
+
+| Source | What it is | Kitchen use |
+|--------|------------|-------------|
+| [Complete Guide to pstack Pt. 2](https://x.com/i/article/2094940651607715840) | Supervise-smarter-than-you: indirect prompt, teach/how/why, architect + prototype | Encode only — [pstack-pt2-supervise.md](pstack-pt2-supervise.md). Not kitchen OS. |
+| [Pt. 1 (verification)](https://x.com/poteto/status/2094457600259842065) | Verification foundation | Feature Maps + Riddler spine |
