@@ -14,11 +14,11 @@ not a live Cursor integration.
 |--------|---------|
 | `dark-factory-pack` (root) | Meta-plugin. Installing or requiring it pulls the three below. |
 | `factory-baseline` | Draft-PR-only checklist, Done means + Keep handoff, no-secrets screen. |
-| `pstack-converted` | Conversion of the public MIT pstack plugin: `/poteto-mode`, principle-*, verification authoring, review workflows. |
+| `pstack` | Conversion of the public MIT pstack plugin: `/poteto-mode`, principle-*, verification authoring, review workflows. |
 | `cursor-team-kit-converted` | Conversion of the public MIT cursor-team-kit plugin: `deslop`, `verify-this`, `control-cli`, `control-ui`, PR/CI helpers. |
 
 Skills resolve as `/<plugin>:<skill>` — e.g. `/factory-baseline:draft-pr-only`,
-`/pstack-converted:poteto-mode`, `/cursor-team-kit-converted:verify-this`.
+`/pstack:poteto-mode`, `/cursor-team-kit-converted:verify-this`.
 
 ## Install
 
@@ -55,7 +55,7 @@ user-scope managed requirement resolving all four plugins at the same sha.
 
 `!factory` in a Devin prompt expands the house contract: draft PR only, Done
 means + Keep in the PR body, proof before plate. Pair non-trivial work with
-the poteto-shaped align → build → verify loop via `/pstack-converted:poteto-mode`.
+the poteto-shaped align → build → verify loop via `/pstack:poteto-mode`.
 Macros are org playbooks, not repo files — the lane still works if a macro is
 missing.
 
