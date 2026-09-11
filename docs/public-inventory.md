@@ -1,6 +1,6 @@
 > Source archive — public posts/talks. This kitchen is inspired by that work; not affiliated.
 
-# Public inventory (Laurenâ€™s installable stack)
+# Public inventory (Lauren’s installable stack)
 
 What is public. Install from marketplace / GitHub. Do not vendor into this kitchen. Ceiling: [match-ceiling.md](match-ceiling.md).
 
@@ -21,31 +21,31 @@ What is public. Install from marketplace / GitHub. Do not vendor into this kitch
 
 Grok Bot: `grokbot://app/v1/plugin/add?id=9717366`.
 
-## pstack â€” skills you type
+## pstack — skills you type
 
 Representative set (counts drift; README is source of truth):
 
 | Skill | Job |
 |-------|-----|
-| `/poteto-mode` | Router â†’ playbook |
-| `/setup-pstack` | Model map â†’ `~/.cursor/rules/pstack-models.mdc` |
+| `/poteto-mode` | Router → playbook |
+| `/setup-pstack` | Model map → `~/.cursor/rules/pstack-models.mdc` |
 | `/how` `/why` `/teach` `/recall` | Understand |
 | Pt. 2 supervise notes | Kitchen encode of research/architect/prototype ops — [pstack-pt2-supervise.md](pstack-pt2-supervise.md) |
 | `/architect` `/arena` `/swarm` `/interrogate` | Shape / parallel / review |
 | `/tdd` `/blast-radius` `/no-comments` `/unslop` | Build hygiene |
 | `/create-verification-skill` `/maintain-verification-skill` | Eyes + Feature Map |
 | `/show-me-your-work` `/automate-me` `/figure-it-out` `/reflect` | Meta |
-| `/make-bot-ui` | Local UI â†’ webhook â†’ bot â€” [make-bot-ui.md](make-bot-ui.md) |
+| `/make-bot-ui` | Local UI → webhook → bot — [make-bot-ui.md](make-bot-ui.md) |
 
-**Playbooks / principles / agents:** full tables in [pstack-inventory.md](pstack-inventory.md). Ops distill: [pr-workflow.md](pr-workflow.md) Â· [evals.md](evals.md) Â· [visual-parity.md](visual-parity.md) Â· [automate-me.md](automate-me.md).
+**Playbooks / principles / agents:** full tables in [pstack-inventory.md](pstack-inventory.md). Ops distill: [pr-workflow.md](pr-workflow.md) · [evals.md](evals.md) · [visual-parity.md](visual-parity.md) · [automate-me.md](automate-me.md).
 
-**Automations:** [Benny](https://github.com/cursor/plugins/tree/main/pstack/automations/benny) â€” `FOR_AGENTS.md` Â· [benny-line.md](benny-line.md).
+**Automations:** [Benny](https://github.com/cursor/plugins/tree/main/pstack/automations/benny) — `FOR_AGENTS.md` · [benny-line.md](benny-line.md).
 
-## cursor-team-kit â€” skills
+## cursor-team-kit — skills
 
-`deslop`, `control-ui`, `control-cli`, `verify-this`, `loop-on-ci`, `fix-ci`, `review-and-ship`, `make-pr-easy-to-review`, `new-branch-and-pr`, `get-pr-comments`, `run-smoke-tests`, `check-compiler-errors`, `fix-merge-conflicts`, `what-did-i-get-done`, `weekly-review`, `workflow-from-chats`, `thermo-nuclear-code-quality-review`, â€¦
+`deslop`, `control-ui`, `control-cli`, `verify-this`, `loop-on-ci`, `fix-ci`, `review-and-ship`, `make-pr-easy-to-review`, `new-branch-and-pr`, `get-pr-comments`, `run-smoke-tests`, `check-compiler-errors`, `fix-merge-conflicts`, `what-did-i-get-done`, `weekly-review`, `workflow-from-chats`, `thermo-nuclear-code-quality-review`, …
 
-## Noodle â€” cherry-pick design only
+## Noodle — cherry-pick design only
 
 [poteto/noodle](https://github.com/poteto/noodle) is a **separate** Go orchestrator (pre-Cursor). Do **not** install it as her Cursor OS.
 
@@ -72,6 +72,7 @@ Full notes: [adjacent-taste.md](adjacent-taste.md) (look/feel) · [adjacent-grow
 | [emilkowalski/skills](https://github.com/emilkowalski/skills) | Motion / feel |
 | [ericosiu/ai-marketing-skills](https://github.com/ericosiu/ai-marketing-skills) | Patterns only — see [adjacent-growth.md](adjacent-growth.md) |
 | [mattpocock/skills](https://github.com/mattpocock/skills) | Patterns only — see [adjacent-craft.md](adjacent-craft.md) |
+| [Da7-Tech/SureForge](https://github.com/Da7-Tech/SureForge) | Optional named QC mode — see [sureforge.md](sureforge.md) |
 | Kargul studio craft bar | Patterns only — see [kargul-craft-bar.md](kargul-craft-bar.md) / [adjacent-taste.md](adjacent-taste.md) |
 | korallis scaffolding / Factory no-use-effect | Community Dune-*method* fills |
 
