@@ -87,10 +87,12 @@ CLI/Desktop-only today — do not design cloud work that depends on them.
 ## Proof
 
 - `devin plugins list` → four plugins (requires a Devin login; offline
-  proof is the resolved set in `cli/plugins/lock.json`). Shells spawned by
-  agents or CI may not see the interactive login — `auth status` can report
-  "Not logged in" there while a normal terminal is fine. Run the check in a
-  real terminal before assuming auth is broken.
+  proof is the resolved set in `cli/plugins/lock.json`). Agent-spawned shells
+  carry `ACP_BACKEND` and the CLI deliberately hides the account login from
+  them — `auth status` reports "Not logged in" there while a normal terminal
+  is fine. For a read-only check inside an agent shell,
+  `Remove-Item Env:ACP_BACKEND` then rerun; leave account-mutating verbs in a
+  real terminal.
 - `devin plugins info dark-factory-pack` → requireds listed
 - `node scripts/validate-plugins.mjs` in the marketplace repo → green; CI runs
   the same script on every PR
