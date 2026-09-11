@@ -74,6 +74,7 @@ Full notes: [adjacent-taste.md](adjacent-taste.md) (look/feel) · [adjacent-grow
 | [mattpocock/skills](https://github.com/mattpocock/skills) | Patterns only — see [adjacent-craft.md](adjacent-craft.md) |
 | [Da7-Tech/SureForge](https://github.com/Da7-Tech/SureForge) | Optional named QC mode — see [sureforge.md](sureforge.md) |
 | Kargul studio craft bar | Patterns only — see [kargul-craft-bar.md](kargul-craft-bar.md) / [adjacent-taste.md](adjacent-taste.md) |
+| SiteCMD / Brambleworks rails | Patterns only — see [sitecmd-brambleworks-bar.md](sitecmd-brambleworks-bar.md) / [adjacent-taste.md](adjacent-taste.md) |
 | korallis scaffolding / Factory no-use-effect | Community Dune-*method* fills |
 
 ## Cursor builtins she wires

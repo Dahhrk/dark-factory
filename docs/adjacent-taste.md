@@ -45,12 +45,17 @@ Use to bootstrap [dune-method.md](dune-method.md) rules 1–2. Never claim “we
 
 Public encode of [@marcelkargul](https://x.com/marcelkargul) / [kargul.studio](https://kargul.studio) operating patterns: Figma density → selective Rive/AE motion → Next.js polish. **Not** a second OS. Full recipe: [kargul-craft-bar.md](kargul-craft-bar.md). Product application: Walter (ui:yes).
 
+## SiteCMD / Brambleworks rails (deterministic gates)
+
+Public encode of [SiteCMD](https://sitecmd.com) / [Brambleworks post](https://sitecmd.com/blog/senior-software-engineers-perspective-on-building-with-ai) + friend agent test/notify pattern: guardrail bank, hook ladder, local `@sitecmd/cli`, claims→SoT. **Not** Autopilot. Full recipe: [sitecmd-brambleworks-bar.md](sitecmd-brambleworks-bar.md). Harness: Stewie. Wire: Tony. Banned UI list: Walter.
+
 ## Decision
 
 | Need | Reach for |
 |------|-----------|
 | Product UI + proof | verify + visual parity + Design Mode |
 | Studio-density chrome / hero motion budget | [kargul-craft-bar.md](kargul-craft-bar.md) + Walter |
+| Deterministic AI rails / agent test+notify | [sitecmd-brambleworks-bar.md](sitecmd-brambleworks-bar.md) + Stewie |
 | Landing page anti-template | Elaya |
 | Motion / microinteraction jank | Emil |
 | TS agent slop in types | anti-slop |
@@ -61,6 +66,7 @@ Public encode of [@marcelkargul](https://x.com/marcelkargul) / [kargul.studio](h
 ## Related
 
 - [kargul-craft-bar.md](kargul-craft-bar.md)
+- [sitecmd-brambleworks-bar.md](sitecmd-brambleworks-bar.md)
 - [design-notes.md](design-notes.md)
 - [adjacent-growth.md](adjacent-growth.md) — growth / signal patterns (not look)
 - [adjacent-craft.md](adjacent-craft.md) — engineering craft packs (not look)

@@ -24,6 +24,12 @@ _(empty)_
 
 ## done
 
+### [done] SiteCMD / Brambleworks rails (kitchen encode)
+- docs/sitecmd-brambleworks-bar.md + adjacent-taste / public-inventory wiring; P0 → Stewie/Tony
+- source: https://sitecmd.com · https://github.com/brambleworks/SiteCMD · friend verify loop
+- owner: Harvey; plate: you
+- keep: local CLI + guardrails only; not Autopilot; not SaaS gate; main still human plate
+
 ### [done] SureForge optional named mode (kitchen recipe)
 - docs/sureforge.md + adjacent-craft / inventory / github-sources wiring
 - owner: Harvey; plate: you
