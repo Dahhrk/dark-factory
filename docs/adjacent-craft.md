@@ -75,9 +75,21 @@ Instruction-only Agent Skill for heavy multi-step / high-assurance work. **Not**
 | Named heavy QC (standard/full) | [sureforge.md](sureforge.md) |
 | Matt craft patterns | sections above |
 
+
+## Cursor Projects × pstack
+
+Product drop + poteto’s Michelin-kitchen take: persistent coordinator thread + cloud parallel. **Inner** loop only — Harvey outer loop stays. Full map: [cursor-projects-pstack.md](cursor-projects-pstack.md).
+
+| Need | Reach for |
+|------|-----------|
+| Long-lived product wave coordinator | Cursor **Projects** (+ `/poteto-mode`) when spend green |
+| Outer triage / overnight / routing | Harvey + [QUEUE](../intake/QUEUE.md) |
+| Cloud fan-out | On-demand green — see [spend-and-cloud.md](spend-and-cloud.md) |
+
 ## Related
 
 - [sureforge.md](sureforge.md)
+- [cursor-projects-pstack.md](cursor-projects-pstack.md)
 - [adjacent-taste.md](adjacent-taste.md)
 - [adjacent-growth.md](adjacent-growth.md)
 - [dune-method.md](dune-method.md)

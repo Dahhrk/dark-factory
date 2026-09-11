@@ -24,6 +24,12 @@ _(empty)_
 
 ## done
 
+### [done] Cursor Projects × pstack (kitchen encode)
+- docs/cursor-projects-pstack.md + adjacent-craft / public-inventory / github-sources wiring
+- source: https://x.com/cursor_ai/status/2098162488013455784 · https://x.com/poteto/status/2098165460714057863
+- owner: Harvey; plate: you
+- keep: inner coordinator only; not Autopilot; Harvey outer loop stays
+
 ### [done] SiteCMD / Brambleworks rails (kitchen encode)
 - docs/sitecmd-brambleworks-bar.md + adjacent-taste / public-inventory wiring; P0 → Stewie/Tony
 - source: https://sitecmd.com · https://github.com/brambleworks/SiteCMD · friend verify loop

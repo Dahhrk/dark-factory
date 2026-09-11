@@ -75,11 +75,12 @@ Full notes: [adjacent-taste.md](adjacent-taste.md) (look/feel) · [adjacent-grow
 | [Da7-Tech/SureForge](https://github.com/Da7-Tech/SureForge) | Optional named QC mode — see [sureforge.md](sureforge.md) |
 | Kargul studio craft bar | Patterns only — see [kargul-craft-bar.md](kargul-craft-bar.md) / [adjacent-taste.md](adjacent-taste.md) |
 | SiteCMD / Brambleworks rails | Patterns only — see [sitecmd-brambleworks-bar.md](sitecmd-brambleworks-bar.md) / [adjacent-taste.md](adjacent-taste.md) |
+| Cursor Projects × pstack | Inner coordinator map — see [cursor-projects-pstack.md](cursor-projects-pstack.md) |
 | korallis scaffolding / Factory no-use-effect | Community Dune-*method* fills |
 
 ## Cursor builtins she wires
 
-`/loop`, `/goal`, Plan mode (she prefers prototypes), Design Mode, Cloud Agents, `/create-skill`.
+`/loop`, `/goal`, Plan mode (she prefers prototypes), Design Mode, Cloud Agents, **Projects** (persistent coordinator — [cursor-projects-pstack.md](cursor-projects-pstack.md)), `/create-skill`.
 
 ## Not public
 

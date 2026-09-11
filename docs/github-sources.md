@@ -52,6 +52,8 @@ Start a real product map at **3–5** features. The example is ~30 so you can se
 |--------|------------|-------------|
 | [Complete Guide to pstack Pt. 2](https://x.com/i/article/2094940651607715840) | Supervise-smarter-than-you: indirect prompt, teach/how/why, architect + prototype | Encode only — [pstack-pt2-supervise.md](pstack-pt2-supervise.md). Not kitchen OS. |
 | [Pt. 1 (verification)](https://x.com/poteto/status/2094457600259842065) | Verification foundation | Feature Maps + Riddler spine |
+| [Cursor Projects + poteto Michelin take](https://x.com/poteto/status/2098165460714057863) | Projects as persistent coordinator; pstack + Projects = personal software factory | Encode only — [cursor-projects-pstack.md](cursor-projects-pstack.md). Inner loop; not Autopilot. |
+| [Cursor Introducing Projects](https://x.com/cursor_ai/status/2098162488013455784) | Product announcement: always-on coordinator + subagents | Companion source for the map above |
 
 
 ## Adjacent craft (non-poteto)
