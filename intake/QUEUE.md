@@ -11,6 +11,10 @@
 - see: docs/TRUST-NEXT.md
 - owner: you
 
+### [inbox] CSGO Scope private product
+- Factory scaffolded in a private repo. Not built. Autopilot stays blocked until live `/search`.
+- owner: you
+
 ## ready
 
 _(empty)_
