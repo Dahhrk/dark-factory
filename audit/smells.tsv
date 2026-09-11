@@ -16,3 +16,5 @@ ts	source	workspace	smell	n	action	evidence
 2026-09-08T18:58:50.224Z	local	csgo-scope	secret-in-chat-extract	1	note	CSFLOAT_KEY found in local/chat-extract shopping transcript; used ephemerally for prove-search into gitignored .env; operator should rotate if extracts were shared
 2026-09-08T19:03:09.702Z	local	csgo-scope	secret-in-chat	1	note	Discord bot token was pasted in chat earlier; guild id added to gitignored .env; Reset Token still required
 2026-09-09T01:54:20.207Z	local	csgo-scope	seller-stats-mapped	1	note	CSFloat seller.statistics mapped to verified/failed/total gates; npm test 189/189; doctor ok
+2026-09-11T04:33:27.508Z	local	csgo-scope	stacked-base-delete	1	note	gh pr merge --squash --delete-branch on stack parents auto-closed children PRs (#9/#12/#14); reopen refused once base ref deleted. Fix: rebase child + new PR, or retarget before deleting base
+2026-09-11T04:33:27.571Z	local	csgo-scope	powershell-utf16-redirect	1	note	PowerShell > redirect writes UTF-16; git show main:file > tmp broke node matchAll/indexOf (zero hits on present text). Use execSync git show instead
