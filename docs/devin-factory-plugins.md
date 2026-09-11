@@ -15,10 +15,10 @@ not a live Cursor integration.
 | `dark-factory-pack` (root) | Meta-plugin. Installing or requiring it pulls the three below. |
 | `factory-baseline` | Draft-PR-only checklist, Done means + Keep handoff, no-secrets screen. |
 | `pstack` | Conversion of the public MIT pstack plugin: `/poteto-mode`, principle-*, verification authoring, review workflows. |
-| `cursor-team-kit-converted` | Conversion of the public MIT cursor-team-kit plugin: `deslop`, `verify-this`, `control-cli`, `control-ui`, PR/CI helpers. |
+| `cursor-team-kit` | Conversion of the public MIT cursor-team-kit plugin: `deslop`, `verify-this`, `control-cli`, `control-ui`, PR/CI helpers. |
 
 Skills resolve as `/<plugin>:<skill>` — e.g. `/factory-baseline:draft-pr-only`,
-`/pstack:poteto-mode`, `/cursor-team-kit-converted:verify-this`.
+`/pstack:poteto-mode`, `/cursor-team-kit:verify-this`.
 
 ## Install
 
