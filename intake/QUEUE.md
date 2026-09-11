@@ -17,6 +17,11 @@ _(empty)_
 
 ## done
 
+### [done] SureForge optional named mode (kitchen recipe)
+- docs/sureforge.md + adjacent-craft / inventory / github-sources wiring
+- owner: Harvey; plate: you
+- keep: not always-on; not Autopilot; Cloud Agent install deferred (usage)
+
 ### [done] Kargul craft bar (kitchen encode)
 - docs/kargul-craft-bar.md + adjacent-taste wiring; Walter owns product application
 - source: https://kargul.studio · https://x.com/marcelkargul

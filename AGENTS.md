@@ -9,7 +9,7 @@ You are working in the kitchen repo. Product code lives elsewhere unless the use
 5. Intake goes in `intake/QUEUE.md`. Do not silently start Autopilot on the whole queue.
 6. Overnight runs append to `audit/decisions.tsv`. Columns: time, phase, decision, reason, evidence, result.
 7. Repeated review comments become lint/CI/skills, not more prose.
-8. Trivial edits do not get the full factory. Bots coordinate; cloud agents do the work.
+8. Trivial edits do not get the full factory. Bots coordinate; cloud agents do the work. Optional heavy QC: [docs/sureforge.md](docs/sureforge.md) — invoke explicitly; not always-on.
 9. **Storage:** public kitchen vs private products — [docs/storage-layout.md](docs/storage-layout.md). Never put real Feature Maps or secrets in this repo. New apps: `scripts/new-product.ps1`.
 
 This kitchen is inspired by public pstack / agent-factory materials; it is not affiliated with third-party private factories.
