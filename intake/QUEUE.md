@@ -2,6 +2,13 @@
 
 ## inbox
 
+### [inbox] csgo-scope market desk merge
+- see: Dahhrk/csgo-scope `docs/MARKET-DESK.md`
+- Quota-honest Discord market desk: shared CSFloat newest, watch 30/h + dig reserve 40, embeds, top-deals, health/Docker/CI
+- Hard no: auto-buy, multi-key, proxies, session cookies
+- Blocked: Devin quota fixed / session running; still human plate + host; Cursor on-demand optional
+- owner: Tony (build) / you (plate + on-demand)
+
 ### [inbox] Land trust PRs + Enable loops
 - see: docs/STILL-YOU.md
 - Merge Control-Glass UI-trust PR + dark-factory self-improve PR; Enable automations; cloud Build
