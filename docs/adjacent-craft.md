@@ -65,8 +65,19 @@ Public operating notes from [@poteto Pt. 2](https://x.com/i/article/209494065160
 | Noisy intake / ambiguous bug | [pstack-pt2-supervise.md](pstack-pt2-supervise.md) |
 | Matt craft patterns | sections above |
 
+## SureForge (optional named QC)
+
+Instruction-only Agent Skill for heavy multi-step / high-assurance work. **Not** always-on. Full recipe: [sureforge.md](sureforge.md).
+
+| Need | Reach for |
+|------|-----------|
+| Default align / build / verify | `/poteto-mode` |
+| Named heavy QC (standard/full) | [sureforge.md](sureforge.md) |
+| Matt craft patterns | sections above |
+
 ## Related
 
+- [sureforge.md](sureforge.md)
 - [adjacent-taste.md](adjacent-taste.md)
 - [adjacent-growth.md](adjacent-growth.md)
 - [dune-method.md](dune-method.md)
