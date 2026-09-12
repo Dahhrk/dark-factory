@@ -4,7 +4,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const HEADER = "ts\tsource\tworkspace\tsmell\tn\taction\tevidence";
-const SOURCES = new Set(["local", "grok", "cursor-auto"]);
+const SOURCES = new Set(["local", "grok", "cursor-auto", "devin"]);
 const ACTIONS = new Set(["note", "encode"]);
 const SLUG = /^[a-z0-9-]+$/;
 const N_RE = /^[1-9]\d*$/;

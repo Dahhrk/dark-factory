@@ -18,3 +18,4 @@ ts	source	workspace	smell	n	action	evidence
 2026-09-09T01:54:20.207Z	local	csgo-scope	seller-stats-mapped	1	note	CSFloat seller.statistics mapped to verified/failed/total gates; npm test 189/189; doctor ok
 2026-09-11T04:33:27.508Z	local	csgo-scope	stacked-base-delete	1	note	gh pr merge --squash --delete-branch on stack parents auto-closed children PRs (#9/#12/#14); reopen refused once base ref deleted. Fix: rebase child + new PR, or retarget before deleting base
 2026-09-11T04:33:27.571Z	local	csgo-scope	powershell-utf16-redirect	1	note	PowerShell > redirect writes UTF-16; git show main:file > tmp broke node matchAll/indexOf (zero hits on present text). Use execSync git show instead
+2026-09-12T16:30:43.952Z	devin	dark-factory	source-set-missing-devin	1	encode	SOURCES += devin in scripts/close-loop.mjs + template copy
