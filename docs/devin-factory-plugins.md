@@ -100,6 +100,11 @@ org require:
   sessions do not stall on permission prompts.
 - Org required plugins (above) carry the skill pack into every cloud session;
   `@Devin` on a GitHub issue or PR is the spawn path.
+- The factory operating contract itself travels the same way:
+  `factory-baseline/rules/` holds the Devin port of the lane's always-on
+  rules (entry contract, evidence bar, close-loop). Anything that lives only
+  in `~/.cursor/rules/` on your machine is invisible to cloud sessions — if a
+  rule must apply in the cloud, it belongs in a plugin or the repo.
 
 `devin cloud drs` also exists for editor-managed blueprints, sandbox test
 sessions, snapshot builds, and org secrets — it needs `devin.org_id` in
