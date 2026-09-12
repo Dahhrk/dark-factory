@@ -10,12 +10,16 @@ $ErrorActionPreference = "Stop"
 if (-not (Test-Path $TargetRepo)) { throw "TargetRepo not found: $TargetRepo" }
 
 $destCursor = Join-Path $TargetRepo ".cursor"
+$destDevin = Join-Path $TargetRepo ".devin"
 $destRoot = $TargetRepo
 New-Item -ItemType Directory -Force -Path $destCursor | Out-Null
+New-Item -ItemType Directory -Force -Path $destDevin | Out-Null
 
 Copy-Item -Force (Join-Path $PSScriptRoot "BUGBOT.md") (Join-Path $destRoot "BUGBOT.md")
 Copy-Item -Force (Join-Path $PSScriptRoot "dune.md") (Join-Path $destCursor "dune.md")
 Copy-Item -Force (Join-Path $PSScriptRoot "cursor-settings.json") (Join-Path $destCursor "settings.json")
+Copy-Item -Force (Join-Path $PSScriptRoot "devin-blueprint.yaml") (Join-Path $destDevin "blueprint.yaml")
+Copy-Item -Force (Join-Path $PSScriptRoot "devin-config.json") (Join-Path $destDevin "config.json")
 
 $rulesDir = Join-Path $destCursor "rules"
 New-Item -ItemType Directory -Force -Path $rulesDir | Out-Null
@@ -44,7 +48,7 @@ if (Test-Path $agentsSrc) {
   (Get-Content $privateSrc -Raw) -replace '\{\{PRODUCT\}\}', $name | Set-Content -NoNewline (Join-Path $destRoot "PRIVATE.md")
 }
 
-Write-Host "Copied BUGBOT.md, .cursor/dune.md, .cursor/settings.json, .cursor/rules/anti-ai-ui.mdc, gates/*.mjs -> scripts/, AGENTS.md, PRIVATE.md"
+Write-Host "Copied BUGBOT.md, .cursor/dune.md, .cursor/settings.json, .cursor/rules/anti-ai-ui.mdc, gates/*.mjs -> scripts/, .devin/blueprint.yaml, .devin/config.json, AGENTS.md, PRIVATE.md"
 Write-Host "Wired package.json gate scripts when package.json exists. No visual-parity (needs baselines)."
 
 Push-Location $TargetRepo
