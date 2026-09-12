@@ -4,6 +4,8 @@
 # secret-free.
 
 maintenance: |
+  git config user.name "{{GIT_NAME}}"
+  git config user.email "{{GIT_EMAIL}}"
   npm ci
 
 knowledge:
