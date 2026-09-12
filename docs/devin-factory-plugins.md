@@ -84,6 +84,36 @@ Devin Cloud supports rules, skills, hooks (except `session_start` /
 `session_end`), and MCP servers from plugins. Subagent (`agents/`) trees are
 CLI/Desktop-only today — do not design cloud work that depends on them.
 
+## Cloud lane
+
+The Cursor-lane cloud setup ports to three repo-committed artifacts plus the
+org require:
+
+- `.devin/blueprint.yaml` at the repo root — the git-backed environment
+  blueprint. Devin discovers it automatically; `maintenance` mirrors
+  `.cursor/environment.json`'s install (`npm ci` + Playwright), and
+  `knowledge` entries hand the agent the repo's test / lint / build / drive
+  commands and factory rules. `initialize` is for runtimes and system
+  packages; `maintenance` for dependency installs.
+- `.devin/config.json` — committed project config; use it to pre-approve the
+  everyday commands (`npm`, `npx`, `node`, `git`, `gh`, reads) so cloud
+  sessions do not stall on permission prompts.
+- Org required plugins (above) carry the skill pack into every cloud session;
+  `@Devin` on a GitHub issue or PR is the spawn path.
+- The factory operating contract itself travels the same way:
+  `factory-baseline/rules/` holds the Devin port of the lane's always-on
+  rules (entry contract, evidence bar, close-loop). Anything that lives only
+  in `~/.cursor/rules/` on your machine is invisible to cloud sessions — if a
+  rule must apply in the cloud, it belongs in a plugin or the repo.
+
+`devin cloud drs` also exists for editor-managed blueprints, sandbox test
+sessions, snapshot builds, and org secrets — it needs `devin.org_id` in
+`~/.config/devin/config.json` (`%APPDATA%\devin\config.json` on Windows) as a
+nested `"devin": { "org_id": "..." }` object. On a Devin Pro account the DRS
+API answers "Organization not found" for the Codeium team id, so the
+git-backed `blueprint.yaml` is the working path — keep the org-side blueprint
+API for if/when an Enterprise org id is known.
+
 ## Proof
 
 - `devin plugins list` → four plugins (requires a Devin login; offline
