@@ -19,3 +19,4 @@ ts	source	workspace	smell	n	action	evidence
 2026-09-11T04:33:27.508Z	local	csgo-scope	stacked-base-delete	1	note	gh pr merge --squash --delete-branch on stack parents auto-closed children PRs (#9/#12/#14); reopen refused once base ref deleted. Fix: rebase child + new PR, or retarget before deleting base
 2026-09-11T04:33:27.571Z	local	csgo-scope	powershell-utf16-redirect	1	note	PowerShell > redirect writes UTF-16; git show main:file > tmp broke node matchAll/indexOf (zero hits on present text). Use execSync git show instead
 2026-09-12T16:30:43.952Z	devin	dark-factory	source-set-missing-devin	1	encode	SOURCES += devin in scripts/close-loop.mjs + template copy
+2026-09-12T17:28:31.713Z	devin	devin-factory-plugins	gate-self-trip	1	note	3rd time a PR body listing tool names tripped the attribution gate; fix is rewording prose, not loosening the gate
