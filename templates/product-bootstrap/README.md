@@ -16,6 +16,8 @@ For **non-web** products, skip the Vite script — copy only the pieces that app
 | `dune.md` | **Dune** five rules + CI checklist (method only) |
 | `AGENTS.product.md` | â†’ product `AGENTS.md` |
 | `PRIVATE.product.md` | â†’ product `PRIVATE.md` |
+| `devin-blueprint.yaml` | Copied to `.devin/blueprint.yaml` - git-backed Devin cloud env (`npm ci` + knowledge: friend-verify, build, factory rules) |
+| `devin-config.json` | Copied to `.devin/config.json` - pre-approves git/gh/npm/npx/node/reads so sessions do not stall |
 | `install.ps1` | Copies files + optional noodle / anti-slop |
 
 Gate pack (from Control-Glass, kitchen distributes): `anti-ai-ui`, `boundaries`, `dune-footguns`, `file-size`, `bundle-size`, `pr-size`, `a11y`, `commit-lint`, `dead-exports`, `func-length`, `duplicate-code`, `no-barrels`, `import-order`.
