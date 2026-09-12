@@ -1,0 +1,26 @@
+# Devin cloud environment for dark-factory.
+# Public kitchen repo - recipes and ops docs only. No product code, no
+# secrets, no product Feature Maps ever land here.
+
+maintenance: |
+  git config user.name "Dark"
+  git config user.email "32241100+Dahhrk@users.noreply.github.com"
+
+knowledge:
+  - name: rules
+    contents: |
+      Public repo - screen every diff for secrets and product internals
+      before committing. Recipes and templates only.
+      Draft PRs only - the author never merges; a fresh verifier certifies.
+      One verifiable unit per PR with Done means + Keep.
+      Commits author as the repo owner (seeded above) - no AI attribution
+      trailers in messages.
+
+  - name: layout
+    contents: |
+      intake/QUEUE.md is the work queue. audit/smells.tsv is the close-loop
+      ledger (node scripts/close-loop.mjs). docs/ carries the contracts.
+      templates/product-bootstrap/ is the new-product pack - install.ps1
+      stamps a repo with BUGBOT.md, .cursor/, .devin/, gates -> scripts/,
+      close-loop, audit/, docs/SELF-IMPROVE.md, and the factory-gate
+      workflow.
