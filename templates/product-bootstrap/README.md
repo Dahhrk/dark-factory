@@ -19,6 +19,7 @@ For **non-web** products, skip the Vite script — copy only the pieces that app
 | `devin-blueprint.yaml` | Copied to `.devin/blueprint.yaml` - git-backed Devin cloud env (`npm ci` + knowledge: friend-verify, build, factory rules) |
 | `devin-config.json` | Copied to `.devin/config.json` - pre-approves git/gh/npm/npx/node/reads so sessions do not stall |
 | `install.ps1` | Copies files + optional noodle / anti-slop |
+| `PRODUCT-README.md` | 5-bullet spec skeleton. Copy to the product's `README.md` by hand on a fresh repo — install never overwrites a README. The Features list is the whole spec. |
 
 Gate pack (from Control-Glass, kitchen distributes): `anti-ai-ui`, `boundaries`, `dune-footguns`, `file-size`, `bundle-size`, `pr-size`, `a11y`, `commit-lint`, `dead-exports`, `func-length`, `duplicate-code`, `no-barrels`, `import-order`.
 
