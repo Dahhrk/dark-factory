@@ -57,7 +57,15 @@ if (Test-Path $agentsSrc) {
   (Get-Content $privateSrc -Raw) -replace '\{\{PRODUCT\}\}', $name | Set-Content -NoNewline (Join-Path $destRoot "PRIVATE.md")
 }
 
-Write-Host "Copied BUGBOT.md, .cursor/dune.md, .cursor/settings.json, .cursor/rules/anti-ai-ui.mdc, gates/*.mjs -> scripts/, .devin/blueprint.yaml, .devin/config.json, AGENTS.md, PRIVATE.md"
+$auditDir = Join-Path $destRoot "audit"
+$docsDir = Join-Path $destRoot "docs"
+$wfDir = Join-Path $destRoot ".github\workflows"
+New-Item -ItemType Directory -Force $auditDir, $docsDir, $wfDir | Out-Null
+Copy-Item -Force (Join-Path $PSScriptRoot "audit\smells.tsv") (Join-Path $auditDir "smells.tsv")
+Copy-Item -Force (Join-Path $PSScriptRoot "SELF-IMPROVE.product.md") (Join-Path $docsDir "SELF-IMPROVE.md")
+Copy-Item -Force (Join-Path $PSScriptRoot "factory-gate.product.yml") (Join-Path $wfDir "factory-gate.yml")
+
+Write-Host "Copied BUGBOT.md, .cursor/dune.md, .cursor/settings.json, .cursor/rules/anti-ai-ui.mdc, gates/*.mjs -> scripts/, .devin/blueprint.yaml, .devin/config.json, AGENTS.md, PRIVATE.md, audit/smells.tsv, docs/SELF-IMPROVE.md, .github/workflows/factory-gate.yml"
 Write-Host "Wired package.json gate scripts when package.json exists. No visual-parity (needs baselines)."
 
 Push-Location $TargetRepo
