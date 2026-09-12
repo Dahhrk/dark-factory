@@ -102,7 +102,8 @@ org require:
   `@Devin` on a GitHub issue or PR is the spawn path.
 - The factory operating contract itself travels the same way:
   `factory-baseline/rules/` holds the Devin port of the lane's always-on
-  rules (entry contract, evidence bar, close-loop, human authorship).
+  rules (entry contract, evidence bar, close-loop, human authorship,
+  professional commits).
   Anything that lives only in `~/.cursor/rules/` on your machine is
   invisible to cloud sessions — if a rule must apply in the cloud, it
   belongs in a plugin or the repo.
