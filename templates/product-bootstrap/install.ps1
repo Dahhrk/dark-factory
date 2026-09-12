@@ -18,7 +18,16 @@ New-Item -ItemType Directory -Force -Path $destDevin | Out-Null
 Copy-Item -Force (Join-Path $PSScriptRoot "BUGBOT.md") (Join-Path $destRoot "BUGBOT.md")
 Copy-Item -Force (Join-Path $PSScriptRoot "dune.md") (Join-Path $destCursor "dune.md")
 Copy-Item -Force (Join-Path $PSScriptRoot "cursor-settings.json") (Join-Path $destCursor "settings.json")
-Copy-Item -Force (Join-Path $PSScriptRoot "devin-blueprint.yaml") (Join-Path $destDevin "blueprint.yaml")
+$gitName = (git config --global user.name)
+$gitEmail = (git config --global user.email)
+$blueprint = Get-Content (Join-Path $PSScriptRoot "devin-blueprint.yaml") -Raw
+if ($gitName -and $gitEmail) {
+  $blueprint = $blueprint -replace '\{\{GIT_NAME\}\}', $gitName -replace '\{\{GIT_EMAIL\}\}', $gitEmail
+} else {
+  $blueprint = $blueprint -replace '(?m)^  git config user\.name "\{\{GIT_NAME\}\}"\r?\n', '' -replace '(?m)^  git config user\.email "\{\{GIT_EMAIL\}\}"\r?\n', ''
+  Write-Host "WARN: git user.name/user.email not set globally; cloud sessions will use the default commit identity. Set them or edit .devin/blueprint.yaml."
+}
+Set-Content -NoNewline (Join-Path $destDevin "blueprint.yaml") $blueprint
 Copy-Item -Force (Join-Path $PSScriptRoot "devin-config.json") (Join-Path $destDevin "config.json")
 
 $rulesDir = Join-Path $destCursor "rules"

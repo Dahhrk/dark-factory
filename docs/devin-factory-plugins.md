@@ -102,9 +102,27 @@ org require:
   `@Devin` on a GitHub issue or PR is the spawn path.
 - The factory operating contract itself travels the same way:
   `factory-baseline/rules/` holds the Devin port of the lane's always-on
-  rules (entry contract, evidence bar, close-loop). Anything that lives only
-  in `~/.cursor/rules/` on your machine is invisible to cloud sessions — if a
-  rule must apply in the cloud, it belongs in a plugin or the repo.
+  rules (entry contract, evidence bar, close-loop, human authorship).
+  Anything that lives only in `~/.cursor/rules/` on your machine is
+  invisible to cloud sessions — if a rule must apply in the cloud, it
+  belongs in a plugin or the repo.
+
+### Authorship
+
+Everything the lane ships appears under the human's GitHub account:
+
+- Local sessions inherit `~/.gitconfig` and open PRs with the human's `gh`
+  token — already human-authored end to end.
+- Cloud sandboxes default to the agent's git identity; the blueprint's
+  `maintenance` seeds `git config user.name` / `user.email` (use the GitHub
+  noreply address — it attributes to the account without publishing a real
+  email). Commits the session makes carry the human's author from then on.
+- The PR *opener* in cloud is the platform's GitHub App
+  (`devin-ai-integration[bot]`) — that actor is fixed. What shows as
+  "authored by" on each commit inside the PR is the seeded human identity.
+- `factory-baseline/rules/human-authorship.md` is the always-on contract:
+  no `Co-Authored-By` bot trailers, no "Generated with" footers, no AI
+  references in commit messages / PR bodies / file headers.
 
 `devin cloud drs` also exists for editor-managed blueprints, sandbox test
 sessions, snapshot builds, and org secrets — it needs `devin.org_id` in
