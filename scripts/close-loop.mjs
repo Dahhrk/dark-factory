@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -314,14 +314,65 @@ function cmdEncode(ledgerPath, flags) {
   printRow(row);
 }
 
+function cmdHarvest(ledgerPath, flags) {
+  const scanRoot = flags["scan-root"] ? resolve(String(flags["scan-root"])) : join(root, "..");
+  let rows;
+  try {
+    rows = loadLedger(ledgerPath, { createIfMissing: true });
+  } catch (err) {
+    fail(err instanceof Error ? err.message : String(err));
+  }
+  const seen = new Map(rows.map((row, i) => [rowKey(row.workspace, row.smell), i]));
+  let added = 0;
+  let merged = 0;
+  const visit = (dir) => {
+    const candidate = join(dir, "audit", "smells.tsv");
+    if (!existsSync(candidate) || resolve(candidate) === resolve(ledgerPath)) {
+      return;
+    }
+    let external;
+    try {
+      external = loadLedger(candidate, { createIfMissing: false });
+    } catch {
+      return;
+    }
+    for (const row of external) {
+      const idx = seen.get(rowKey(row.workspace, row.smell));
+      if (idx === undefined) {
+        seen.set(rowKey(row.workspace, row.smell), rows.length);
+        rows.push(row);
+        added += 1;
+        continue;
+      }
+      const existing = rows[idx];
+      if (row.action === "encode" || row.n > existing.n || row.ts > existing.ts) {
+        rows[idx] = {
+          ...row,
+          n: Math.max(row.n, existing.n),
+          action: existing.action === "encode" ? "encode" : row.action,
+        };
+        merged += 1;
+      }
+    }
+  };
+  for (const entry of readdirSync(scanRoot, { withFileTypes: true })) {
+    if (entry.isDirectory()) {
+      visit(join(scanRoot, entry.name));
+    }
+  }
+  writeLedger(ledgerPath, rows);
+  process.stdout.write(`harvest: added=${added} merged=${merged} total=${rows.length}\n`);
+}
+
 function usage() {
   fail(
     [
       "usage:",
       "  node scripts/close-loop.mjs doctor",
       "  node scripts/close-loop.mjs status",
-      "  node scripts/close-loop.mjs record --source <local|grok|cursor-auto> --workspace <slug> --smell <slug> --evidence <text>",
+      "  node scripts/close-loop.mjs record --source <local|grok|cursor-auto|devin> --workspace <slug> --smell <slug> --evidence <text>",
       "  node scripts/close-loop.mjs encode --workspace <slug> --smell <slug> --evidence <text>",
+      "  node scripts/close-loop.mjs harvest [--scan-root <dir>]   (kitchen only: pull every repo's audit/smells.tsv into this ledger)",
     ].join("\n"),
   );
 }
@@ -351,6 +402,9 @@ switch (command) {
     break;
   case "encode":
     cmdEncode(ledgerPath, flags);
+    break;
+  case "harvest":
+    cmdHarvest(ledgerPath, flags);
     break;
   default:
     usage();
