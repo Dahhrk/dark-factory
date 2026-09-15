@@ -83,6 +83,42 @@ for (const file of readdirSync(profilesDir).filter((f) => f.endsWith('.yaml'))) 
   }
 }
 
+// Event listeners (poll flavor): watch fleet repos for new issues/PRs and
+// queue a context-farm job per signal. Dedupes on event id in state.
+// Grok has push listeners; on this plan the 15-min task polls instead.
+const registry = join(homedir(), 'Projects', 'registry.md');
+let heard = 0;
+if (existsSync(registry)) {
+  const slugs = [...new Set(
+    readFileSync(registry, 'utf8')
+      .split('\n')
+      .map((l) => l.match(/\*\*github:\*\*\s*`([^`]+)`/)?.[1])
+      .filter(Boolean),
+  )];
+  for (const slug of slugs) {
+    let events;
+    try {
+      events = JSON.parse(execSync(`gh api "repos/${slug}/events?per_page=20"`, { encoding: 'utf8', stdio: ['pipe', 'pipe', 'pipe'] }));
+    } catch { continue; }
+    for (const ev of events) {
+      if (!['IssuesEvent', 'PullRequestEvent'].includes(ev.type)) continue;
+      const action = ev.payload?.action;
+      if (action !== 'opened' && action !== 'reopened') continue;
+      const id = `gh:${ev.id}`;
+      if (state[id]) continue;
+      const job = JSON.stringify({
+        ts, bot: 'Harvey Specter', routine: 'event',
+        file: 'automations/devin/routines/context-farm.md',
+        signal: { repo: slug, type: ev.type, id: ev.id },
+      });
+      appendFileSync(join(inboxDir, 'harvey-specter.jsonl'), job + '\n');
+      state[id] = 1;
+      heard++;
+    }
+  }
+}
+if (heard) appendFileSync(logFile, `${ts}\tHarvey Specter\tevent-listen\tpoll\t${heard} signal(s) queued\n`);
+
 if (!existsSync(dirname(stateFile))) mkdirSync(dirname(stateFile), { recursive: true });
 writeFileSync(stateFile, JSON.stringify(state, null, 2));
-console.log(ran ? `fleetd: ${ran} routine(s) fired` : 'fleetd: nothing due');
+console.log(ran || heard ? `fleetd: ${ran} routine(s) fired, ${heard} signal(s) heard` : 'fleetd: nothing due');
