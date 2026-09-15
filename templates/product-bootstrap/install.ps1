@@ -27,7 +27,7 @@ if ($gitName -and $gitEmail) {
   $blueprint = $blueprint -replace '(?m)^  git config user\.name "\{\{GIT_NAME\}\}"\r?\n', '' -replace '(?m)^  git config user\.email "\{\{GIT_EMAIL\}\}"\r?\n', ''
   Write-Host "WARN: git user.name/user.email not set globally; cloud sessions will use the default commit identity. Set them or edit .devin/blueprint.yaml."
 }
-Set-Content -NoNewline (Join-Path $destDevin "blueprint.yaml") $blueprint
+[IO.File]::WriteAllText((Join-Path $destDevin "blueprint.yaml"), $blueprint)
 Copy-Item -Force (Join-Path $PSScriptRoot "devin-config.json") (Join-Path $destDevin "config.json")
 
 $rulesDir = Join-Path $destCursor "rules"
@@ -53,8 +53,8 @@ $agentsSrc = Join-Path $PSScriptRoot "AGENTS.product.md"
 $privateSrc = Join-Path $PSScriptRoot "PRIVATE.product.md"
 if (Test-Path $agentsSrc) {
   $name = Split-Path $TargetRepo -Leaf
-  (Get-Content $agentsSrc -Raw) -replace '\{\{PRODUCT\}\}', $name | Set-Content -NoNewline (Join-Path $destRoot "AGENTS.md")
-  (Get-Content $privateSrc -Raw) -replace '\{\{PRODUCT\}\}', $name | Set-Content -NoNewline (Join-Path $destRoot "PRIVATE.md")
+  [IO.File]::WriteAllText((Join-Path $destRoot "AGENTS.md"), ((Get-Content $agentsSrc -Raw) -replace '\{\{PRODUCT\}\}', $name))
+  [IO.File]::WriteAllText((Join-Path $destRoot "PRIVATE.md"), ((Get-Content $privateSrc -Raw) -replace '\{\{PRODUCT\}\}', $name))
 }
 
 $auditDir = Join-Path $destRoot "audit"
