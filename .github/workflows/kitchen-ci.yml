@@ -38,6 +38,8 @@ jobs:
           head -n1 audit/decisions.tsv | grep -qx $'ts\tphase\tdecision\twhy\tevidence\tresult'
           test -f audit/smells.tsv
           head -n1 audit/smells.tsv | grep -qx $'ts\tsource\tworkspace\tsmell\tn\taction\tevidence'
+      - name: Ledger rows well-formed
+        run: node scripts/close-loop.mjs doctor
       - name: No 0.0.0.0 listen binds in handoff server
         run: |
           set -euo pipefail

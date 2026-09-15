@@ -24,5 +24,7 @@ ts	source	workspace	smell	n	action	evidence
 2026-09-14T23:50:46.422Z	devin	ifn-teamspeak-plugins	scanner-no-cpp	1	encode	verified on current scanner: scan.mjs SRC covers cpp/cxx/hpp; ran on ifn_teamspeak_plugins -> 4 files scanned with findings; stale record from older cache
 2026-09-14T23:51:56.081Z	devin	ifn-teamspeak-plugins	scanner-no-cpp	1	encode	scan.mjs SRC regex now covers c/cpp/cxx/h/hpp/hxx + printf/cout/cerr in debug-leftovers; committed in devin-factory-plugins e5005b9 (feat/self-improve-loop), live cache patched
 2026-09-15T00:00:11.093Z	devin	devin-factory-plugins	lane-rule-drift	1	note	close-loop.md gained row-ships-with-commit + harvest lines in the plugin but Cursor close-loop.mdc stayed stale until hand-ported; sync-factory-rules only mirrors the 3 neutral rules
-fix	install-ps51-nonewline	install.ps1 Set-Content -NoNewline rejected by Windows PowerShell 5.1 param binding - replaced with IO.File.WriteAllText; found on first factory-init run
-fix	gate-self-trip	attribution gate tripped on own PR prose 6x - regex banned bare lane names; now requires authorship verbs, strips lane artifacts, model names still banned
+2026-09-15T20:30:00.000Z	local	dark-factory	install-ps51-nonewline	1	encode	install.ps1 Set-Content -NoNewline rejected by Windows PowerShell 5.1 param binding - replaced with IO.File.WriteAllText; found on first factory-init run
+2026-09-15T21:05:00.000Z	local	dark-factory	gate-self-trip	6	encode	attribution gate tripped on own PR prose 6x - regex banned bare lane names; now requires authorship verbs, strips lane artifacts
+2026-09-15T20:07:34.479Z	devin	dark-factory	decisions-bom	1	encode	close-loop.mjs decision subcommand appends via utf8 writeFileSync and strips BOM on read
+2026-09-15T23:00:44.660Z	local	dark-factory	spawn-enoent-crash	1	note	node spawn on missing DEVIN_ACP_BIN crashed fleetd via unhandled error event instead of rejecting; fixed with proc.on(error) in acp-run.mjs

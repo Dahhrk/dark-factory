@@ -2,3 +2,8 @@ ts	bot	routine	kind	result
 2026-09-15T19:37:43.034Z	Harvey Specter	context-farm	session	queued
 2026-09-15T19:37:43.034Z	Harvey Specter	needs-you	script	ok
 2026-09-15T19:37:43.034Z	Harvey Specter	morning-briefing	session	queued
+2026-09-15T19:52:22.495Z	Harvey Specter	event-listen	poll	21 signal(s) queued
+2026-09-15T20:08:02.212Z	Harvey Specter	event-listen	poll	2 signal(s) queued
+2026-09-15T21:08:02.252Z	Harvey Specter	event-listen	poll	1 signal(s) queued
+2026-09-15T22:50:26.787Z	Harvey Specter	morning-briefing	session	spawned grizzly-gazelle
+2026-09-15T23:03:13.750Z	Fallback Probe	fallback-probe	session	queued: spawn C:/Program Files/Git/nonexistent/devin.exe ENOENT
