@@ -32,6 +32,25 @@ routine file, or reference it: "run `automations/devin/routines/<name>.md`".
 Windows scheduled tasks (needs-you sweep, ledger harvest, plugin sync).
 Those cover mornings even when no session is running.
 
+## The fleet (our own Grok Bot layer)
+
+`fleet/` is the bot roster + scheduler + message bus:
+
+- `fleet/profiles/*.yaml` - bot profiles (name, role, routine schedule).
+  Same roster shape as grokbot-fleet; YAML lives here since there is no MCP.
+- `fleetd.mjs` - the scheduler. A Windows task (`DarkFactoryFleet`, every
+  15 min) fires it. `kind: script` routines execute locally (free, no LLM);
+  `kind: session` routines append a job row to `fleet/inbox/<bot>.jsonl`.
+- `fleet/inbox/*.jsonl` - the SendToAgent/channel equivalent: queued session
+  jobs. Tracked in git so cloud sessions can see them.
+- `fleet/log.tsv` - every fire/drain lands here.
+- `routines/drain-inbox.md` - the pickup playbook: any Devin session on this
+  repo drains the inbox, runs each job's routine file, logs, opens draft PRs.
+
+On a plan with scheduled sessions, schedule `drain-inbox` daily - that is
+the full loop with zero human steps. Without it, the deterministic half
+still runs and the inbox waits for the next session.
+
 ## Routines
 
 | Routine | Grok analog | Cadence | File |
@@ -40,6 +59,7 @@ Those cover mornings even when no session is running.
 | Needs-you sweep | Harvey sweep | morning + mid-afternoon | `routines/needs-you-sweep.md` |
 | Weekly encode | Ted Friday ops | Friday | `routines/weekly-encode.md` |
 | Context farm | Harvey/Ted farm | daily 8:00 | `routines/context-farm.md` |
+| Drain inbox | SendToAgent pickup | on demand / scheduled | `routines/drain-inbox.md` |
 
 ## Contract (same as the rest of the factory)
 
