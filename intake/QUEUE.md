@@ -21,6 +21,12 @@ _(empty)_
 
 ## done
 
+### [done] pstack AMA ops recipe (kitchen encode)
+- docs/pstack-ama-ops.md + adjacent-craft / public-inventory / github-sources / pstack-inventory / new-to-pstack wiring
+- source: https://x.com/poteto/status/2098634643323142286
+- owner: Harvey; plate: you
+- keep: not Autopilot; patterns only; Tony owns /setup-pstack model map
+
 ### [done] SureForge optional named mode (kitchen recipe)
 - docs/sureforge.md + adjacent-craft / inventory / github-sources wiring
 - owner: Harvey; plate: you

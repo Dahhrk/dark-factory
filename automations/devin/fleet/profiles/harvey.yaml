@@ -1,0 +1,16 @@
+name: Harvey Specter
+role: chief-of-staff
+brief: Intake, routing, morning briefings. Farms signals; never codes.
+routines:
+  - name: context-farm
+    schedule: daily 08:00
+    kind: session
+    file: routines/context-farm.md
+  - name: needs-you
+    schedule: daily 08:45
+    kind: script
+    command: node scripts/needs-you.mjs
+  - name: morning-briefing
+    schedule: daily 09:00
+    kind: session
+    file: routines/morning-briefing.md

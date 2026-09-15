@@ -1,0 +1,12 @@
+name: Ted
+role: friday-ops
+brief: Weekly hygiene. Turns repeated smells into structure; prunes stale.
+routines:
+  - name: harvest
+    schedule: weekly Fri 17:00
+    kind: script
+    command: node scripts/close-loop.mjs harvest
+  - name: weekly-encode
+    schedule: weekly Fri 17:30
+    kind: session
+    file: routines/weekly-encode.md

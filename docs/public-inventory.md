@@ -31,6 +31,7 @@ Representative set (counts drift; README is source of truth):
 | `/setup-pstack` | Model map → `~/.cursor/rules/pstack-models.mdc` |
 | `/how` `/why` `/teach` `/recall` | Understand |
 | Pt. 2 supervise notes | Kitchen encode of research/architect/prototype ops — [pstack-pt2-supervise.md](pstack-pt2-supervise.md) |
+| AMA ops notes | Kitchen encode of budget/roles/router Keep — [pstack-ama-ops.md](pstack-ama-ops.md) |
 | `/architect` `/arena` `/swarm` `/interrogate` | Shape / parallel / review |
 | `/tdd` `/blast-radius` `/no-comments` `/unslop` | Build hygiene |
 | `/create-verification-skill` `/maintain-verification-skill` | Eyes + Feature Map |
