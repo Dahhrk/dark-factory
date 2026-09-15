@@ -24,7 +24,9 @@ Also install `/add-plugin cursor-team-kit` (`/deslop`, `control-ui`, `control-cl
 
 Start a **new chat** after `/setup-pstack`. The model rule only applies to new sessions.
 
-Budget / role-split / router Keep from the Sep 2026 AMA: [pstack-ama-ops.md](pstack-ama-ops.md) (prefer `/setup-pstack` over leaving max models everywhere).
+Budget / role-split / router Keep from the Sep 2026 AMA: [pstack-ama-ops.md](pstack-ama-ops.md) (prefer `/setup-pstack` over leaving max models everywhere). Start-0 / selective skills is **onboarding for new bots** — not a mandate to strip this seated factory.
+
+Projects inner map: [cursor-projects-pstack.md](cursor-projects-pstack.md). Livestream watch notes: [pstack-galaxy-livestream.md](pstack-galaxy-livestream.md). External breakdown (no transcript): [pstack-robshocks-breakdown.md](pstack-robshocks-breakdown.md).
 
 ## What each command is for
 

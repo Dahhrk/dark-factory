@@ -2,7 +2,7 @@
 
 Source: [pstack README](https://github.com/cursor/plugins/tree/main/pstack) (counts drift — plugin tree wins). Install: `/add-plugin pstack` + `/add-plugin cursor-team-kit`.
 
-Companion: [public-inventory.md](public-inventory.md) (short), [new-to-pstack.md](new-to-pstack.md), [pr-workflow.md](pr-workflow.md), AMA ops [pstack-ama-ops.md](pstack-ama-ops.md).
+Companion: [public-inventory.md](public-inventory.md) (short), [new-to-pstack.md](new-to-pstack.md), [pr-workflow.md](pr-workflow.md), AMA ops [pstack-ama-ops.md](pstack-ama-ops.md), Projects [cursor-projects-pstack.md](cursor-projects-pstack.md), Galaxy [pstack-galaxy-livestream.md](pstack-galaxy-livestream.md), Rob [pstack-robshocks-breakdown.md](pstack-robshocks-breakdown.md).
 
 ## Entry
 
