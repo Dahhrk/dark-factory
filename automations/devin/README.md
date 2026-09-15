@@ -5,9 +5,19 @@ profiles + scheduled routines over xAI. Devin's equivalent primitives:
 
 | Grok Bot | Devin |
 |---|---|
-| Bot profile (YAML via grokbot-fleet) | Playbook = a routine file in `routines/` (Devin has no bot entity; the routine carries the role contract) |
+| Bot profile (YAML via grokbot-fleet) | Playbook = a routine file in `routines/` + subagent profiles (`pstack:poteto-agent` = engineering persona, `pstack:panelist-*` = review board) |
 | Routine (scheduled YAML) | Scheduled session in app.devin.ai, or a manual session pasting the routine file |
+| Event listeners (GitHub/Slack/webhook wakes) | **No equivalent on this plan** - sessions API is gated; nearest is GitHub Actions + local scheduled tasks |
+| SendToAgent / channels / group chats | Repo artifacts as the message bus: `audit/smells.tsv`, `audit/decisions.tsv`, `intake/QUEUE.md`, `local/` briefings |
+| Memory tiers (agent/user/project) | `AGENTS.md`+`PRIVATE.md` per repo / `~/Projects/registry.md` + Feature Maps / `~/.devin/rules` + always-on plugin rules |
+| Auto Review (risk gate) | `gh` approvals + repo gates (attribution, visibility) + draft-PR contract |
 | Context farm / standup / sweep | The routines below |
+
+## Cost note
+
+Scheduled Devin sessions spend ACUs like any session. Deterministic sweeps
+(needs-you, harvest, plugin sync) run as free local scheduled tasks - a
+session only earns its keep on judgment work (encode, triage, review).
 
 ## How to run a routine
 
