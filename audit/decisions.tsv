@@ -1,4 +1,4 @@
-﻿ts	phase	decision	why	evidence	result
+ts	phase	decision	why	evidence	result
 2026-09-02T21:26+01:00	gate-0	spend cap confirmed	required before Cloud Agent / overnight	user confirmed in Chief of Staff chat	unblocked
 2026-09-02T21:30+01:00	maintain	Engineer one-off maintain dry-run	BOTS.md one-off before daily schedule	Control-Glass/tmp/verify-glass home-idle.png+aria (idle) and mark-ready.png+aria (ready); 2/2 clean; no PR; doctor ok	pass; daily 8am weekdays armed
 2026-09-02T22:56+01:00	maintain	pause Grok Engineer daily maintain	Cursor Automation already owns maintain-verify-glass; do not duplicate	Engineer confirmed pause of 8am weekday routine	paused
@@ -28,3 +28,4 @@
 2026-09-15T21:50+01:00	encode	seat Cursor Projects × pstack map	Dark ordered gap close; inner coordinator only; not Autopilot	https://x.com/cursor_ai/status/2098162488013455784; https://x.com/poteto/status/2098165460714057863; docs/cursor-projects-pstack.md; PR #48 absorb	encoded; human plates; Autopilot still BLOCKED
 2026-09-15T21:50+01:00	encode	seat Galaxy + Rob Shocks thin recipes	Dark ordered AMA ops gap close; watch/alignment only; video not transcribed	https://x.com/poteto/status/2099875666313527436; https://x.com/robshocks/status/2097381547493978562; docs/pstack-galaxy-livestream.md; docs/pstack-robshocks-breakdown.md; PR #48 absorb	encoded; human plates; Autopilot still BLOCKED
 2026-09-15T19:55+01:00	encode	fleet event poll + runtime playbook	no push listeners or spawn API on this plan; 15-min local poll + pinned-session box cover the gap	fleetd heard 21 signals on first run, dedupe armed; routines/fleet-runtime.md	draft PR; human plates
+2026-09-15T20:07:44.443Z	encode	close-loop decision subcommand heals BOM	hand appends on Windows reintroduced UTF-8 BOM after 4ad72f7 strip; kitchen-ci header grep is exact-match	PR 49 visibility fail on merge ref f7d9ffe; smells.tsv rows 27-28 also malformed	one append path for decisions.tsv; strips BOM on read, writes plain utf8

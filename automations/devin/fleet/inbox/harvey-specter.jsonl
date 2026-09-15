@@ -21,3 +21,5 @@
 {"ts":"2026-09-15T19:52:22.495Z","bot":"Harvey Specter","routine":"event","file":"automations/devin/routines/context-farm.md","signal":{"repo":"Dahhrk/gmod-join-clinic","type":"PullRequestEvent","id":"14916688710"}}
 {"ts":"2026-09-15T19:52:22.495Z","bot":"Harvey Specter","routine":"event","file":"automations/devin/routines/context-farm.md","signal":{"repo":"Dahhrk/gmod-workshop-puller","type":"PullRequestEvent","id":"14917412001"}}
 {"ts":"2026-09-15T19:52:22.495Z","bot":"Harvey Specter","routine":"event","file":"automations/devin/routines/context-farm.md","signal":{"repo":"Dahhrk/gmod-workshop-puller","type":"PullRequestEvent","id":"14916690858"}}
+{"ts":"2026-09-15T20:08:02.212Z","bot":"Harvey Specter","routine":"event","file":"automations/devin/routines/context-farm.md","signal":{"repo":"Dahhrk/dark-factory","type":"PullRequestEvent","id":"15096803267"}}
+{"ts":"2026-09-15T20:08:02.212Z","bot":"Harvey Specter","routine":"event","file":"automations/devin/routines/context-farm.md","signal":{"repo":"Dahhrk/harvey-specter","type":"PullRequestEvent","id":"15097426748"}}
