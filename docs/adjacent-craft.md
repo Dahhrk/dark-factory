@@ -65,6 +65,17 @@ Public operating notes from [@poteto Pt. 2](https://x.com/i/article/209494065160
 | Noisy intake / ambiguous bug | [pstack-pt2-supervise.md](pstack-pt2-supervise.md) |
 | Matt craft patterns | sections above |
 
+## pstack AMA ops (budget / roles / router)
+
+Public operating notes from [@poteto AMA](https://x.com/poteto/status/2098634643323142286): `/setup-pstack` for spend, Composer/Grok/Fable role split, `/poteto-mode` auto router, trust compaction, evals. **Not** Autopilot unlock. Full recipe: [pstack-ama-ops.md](pstack-ama-ops.md).
+
+| Need | Reach for |
+|------|-----------|
+| Token / model / budget setup | [pstack-ama-ops.md](pstack-ama-ops.md) |
+| Supervise / noisy intake | [pstack-pt2-supervise.md](pstack-pt2-supervise.md) |
+| Default align / build / verify | `/poteto-mode` |
+| Overnight / Autopilot | [TRUST-NEXT.md](TRUST-NEXT.md) only |
+
 ## SureForge (optional named QC)
 
 Instruction-only Agent Skill for heavy multi-step / high-assurance work. **Not** always-on. Full recipe: [sureforge.md](sureforge.md).
@@ -77,6 +88,7 @@ Instruction-only Agent Skill for heavy multi-step / high-assurance work. **Not**
 
 ## Related
 
+- [pstack-ama-ops.md](pstack-ama-ops.md)
 - [sureforge.md](sureforge.md)
 - [adjacent-taste.md](adjacent-taste.md)
 - [adjacent-growth.md](adjacent-growth.md)

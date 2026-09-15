@@ -24,6 +24,8 @@ Also install `/add-plugin cursor-team-kit` (`/deslop`, `control-ui`, `control-cl
 
 Start a **new chat** after `/setup-pstack`. The model rule only applies to new sessions.
 
+Budget / role-split / router Keep from the Sep 2026 AMA: [pstack-ama-ops.md](pstack-ama-ops.md) (prefer `/setup-pstack` over leaving max models everywhere).
+
 ## What each command is for
 
 | Command | Job |
