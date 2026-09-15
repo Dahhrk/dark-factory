@@ -32,6 +32,9 @@ Representative set (counts drift; README is source of truth):
 | `/how` `/why` `/teach` `/recall` | Understand |
 | Pt. 2 supervise notes | Kitchen encode of research/architect/prototype ops — [pstack-pt2-supervise.md](pstack-pt2-supervise.md) |
 | AMA ops notes | Kitchen encode of budget/roles/router Keep — [pstack-ama-ops.md](pstack-ama-ops.md) |
+| Cursor Projects × pstack | Inner coordinator map — [cursor-projects-pstack.md](cursor-projects-pstack.md) |
+| Galaxy livestream | Watch / steal map — [pstack-galaxy-livestream.md](pstack-galaxy-livestream.md) |
+| Rob Shocks PStack | Alignment only (no transcript) — [pstack-robshocks-breakdown.md](pstack-robshocks-breakdown.md) |
 | `/architect` `/arena` `/swarm` `/interrogate` | Shape / parallel / review |
 | `/tdd` `/blast-radius` `/no-comments` `/unslop` | Build hygiene |
 | `/create-verification-skill` `/maintain-verification-skill` | Eyes + Feature Map |
@@ -75,6 +78,8 @@ Full notes: [adjacent-taste.md](adjacent-taste.md) (look/feel) · [adjacent-grow
 | [mattpocock/skills](https://github.com/mattpocock/skills) | Patterns only — see [adjacent-craft.md](adjacent-craft.md) |
 | [Da7-Tech/SureForge](https://github.com/Da7-Tech/SureForge) | Optional named QC mode — see [sureforge.md](sureforge.md) |
 | Kargul studio craft bar | Patterns only — see [kargul-craft-bar.md](kargul-craft-bar.md) / [adjacent-taste.md](adjacent-taste.md) |
+| Cursor Projects × pstack | Inner coordinator map — see [cursor-projects-pstack.md](cursor-projects-pstack.md) |
+| Galaxy / Rob Shocks | Thin watch+alignment — [pstack-galaxy-livestream.md](pstack-galaxy-livestream.md) · [pstack-robshocks-breakdown.md](pstack-robshocks-breakdown.md) |
 | korallis scaffolding / Factory no-use-effect | Community Dune-*method* fills |
 
 ## Cursor builtins she wires

@@ -53,6 +53,10 @@ Start a real product map at **3–5** features. The example is ~30 so you can se
 | [Complete Guide to pstack Pt. 2](https://x.com/i/article/2094940651607715840) | Supervise-smarter-than-you: indirect prompt, teach/how/why, architect + prototype | Encode only — [pstack-pt2-supervise.md](pstack-pt2-supervise.md). Not kitchen OS. |
 | [Pt. 1 (verification)](https://x.com/poteto/status/2094457600259842065) | Verification foundation | Feature Maps + Riddler spine |
 | [pstack AMA (Sep 2026)](https://x.com/poteto/status/2098634643323142286) | Budget, role split, `/poteto-mode` router, compaction, evals | Encode only — [pstack-ama-ops.md](pstack-ama-ops.md). Not Autopilot. |
+| [Cursor Projects + poteto Michelin take](https://x.com/poteto/status/2098165460714057863) | Projects as persistent coordinator; pstack + Projects = personal software factory | Encode only — [cursor-projects-pstack.md](cursor-projects-pstack.md). Inner loop; not Autopilot. |
+| [Cursor Introducing Projects](https://x.com/cursor_ai/status/2098162488013455784) | Product announcement: always-on coordinator + subagents | Companion source for the Projects map |
+| [Galaxy livestream nudge](https://x.com/poteto/status/2099875666313527436) | Speedrun building a company in 3 days with Grok Bot | Watch / steal — [pstack-galaxy-livestream.md](pstack-galaxy-livestream.md). Not Autopilot. |
+| [Rob Shocks PStack breakdown](https://x.com/robshocks/status/2097381547493978562) | ~13m video / 1000+ PRs framing | Alignment only (video not transcribed) — [pstack-robshocks-breakdown.md](pstack-robshocks-breakdown.md). |
 
 
 ## Adjacent craft (non-poteto)

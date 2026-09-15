@@ -67,7 +67,7 @@ Public operating notes from [@poteto Pt. 2](https://x.com/i/article/209494065160
 
 ## pstack AMA ops (budget / roles / router)
 
-Public operating notes from [@poteto AMA](https://x.com/poteto/status/2098634643323142286): `/setup-pstack` for spend, Composer/Grok/Fable role split, `/poteto-mode` auto router, trust compaction, evals. **Not** Autopilot unlock. Full recipe: [pstack-ama-ops.md](pstack-ama-ops.md).
+Public operating notes from [@poteto AMA](https://x.com/poteto/status/2098634643323142286): `/setup-pstack` for spend, Composer/Grok/Fable role split, `/poteto-mode` auto router, trust compaction, evals. **Not** Autopilot unlock. Full recipe: [pstack-ama-ops.md](pstack-ama-ops.md). Companions: [cursor-projects-pstack.md](cursor-projects-pstack.md) · [pstack-galaxy-livestream.md](pstack-galaxy-livestream.md) · [pstack-robshocks-breakdown.md](pstack-robshocks-breakdown.md).
 
 | Need | Reach for |
 |------|-----------|
@@ -75,6 +75,26 @@ Public operating notes from [@poteto AMA](https://x.com/poteto/status/2098634643
 | Supervise / noisy intake | [pstack-pt2-supervise.md](pstack-pt2-supervise.md) |
 | Default align / build / verify | `/poteto-mode` |
 | Overnight / Autopilot | [TRUST-NEXT.md](TRUST-NEXT.md) only |
+
+## Cursor Projects × pstack
+
+Product drop + poteto’s Michelin-kitchen take: persistent coordinator thread + cloud parallel. **Inner** loop only — Harvey outer loop stays. Full map: [cursor-projects-pstack.md](cursor-projects-pstack.md).
+
+| Need | Reach for |
+|------|-----------|
+| Long-lived product wave coordinator | Cursor **Projects** (+ `/poteto-mode`) when spend green |
+| Outer triage / overnight / routing | Harvey + [QUEUE](../intake/QUEUE.md) |
+| Cloud fan-out | On-demand green — see [spend-and-cloud.md](spend-and-cloud.md) |
+
+## Galaxy livestream + Rob Shocks (thin)
+
+Watch / alignment only — not Autopilot. [pstack-galaxy-livestream.md](pstack-galaxy-livestream.md) · [pstack-robshocks-breakdown.md](pstack-robshocks-breakdown.md).
+
+| Need | Reach for |
+|------|-----------|
+| Livestream inspiration (Grok Bot speedrun) | [pstack-galaxy-livestream.md](pstack-galaxy-livestream.md) |
+| External PStack breakdown (no transcript) | [pstack-robshocks-breakdown.md](pstack-robshocks-breakdown.md) |
+| Budget / roles / router Keep | [pstack-ama-ops.md](pstack-ama-ops.md) |
 
 ## SureForge (optional named QC)
 
@@ -89,6 +109,9 @@ Instruction-only Agent Skill for heavy multi-step / high-assurance work. **Not**
 ## Related
 
 - [pstack-ama-ops.md](pstack-ama-ops.md)
+- [cursor-projects-pstack.md](cursor-projects-pstack.md)
+- [pstack-galaxy-livestream.md](pstack-galaxy-livestream.md)
+- [pstack-robshocks-breakdown.md](pstack-robshocks-breakdown.md)
 - [sureforge.md](sureforge.md)
 - [adjacent-taste.md](adjacent-taste.md)
 - [adjacent-growth.md](adjacent-growth.md)
