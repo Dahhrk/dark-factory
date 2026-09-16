@@ -187,3 +187,7 @@ skills.sh — no service to build:
 - Routines silent-unless-meaningful; spend visible in the ledger per turn.
 - Smallest correct diff; thin shims over platform features — Outposts, MCP,
   and schedules are platform features, we do not rebuild them.
+- Human authorship on everything that ships: commits land under Dark, no
+  AI attribution or tool names in commits/PRs/comments, no em dash in
+  commit messages — carried in `haunt` AGENTS.md + blueprint knowledge so
+  cloud sessions see it too.
