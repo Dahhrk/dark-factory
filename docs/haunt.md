@@ -6,7 +6,8 @@ hardware we own. Grok Bot is the shape we clone; the difference is the
 ghosts are ours, the shelf is a marketplace, and the brain is swappable.
 
 Working name: **haunt**. Product repo: `Dahhrk/haunt` (private).
-Marketplace: `Dahhrk/haunt-packs` (public registry). The old working name
+Marketplace: `Dahhrk/haunt-packs` (private registry — flipped
+2026-09-16). The old working name
 `nightshift` is retired — renamed before Phase 1 while the outpost label
 was still free to move.
 
@@ -163,7 +164,7 @@ skills.sh — no service to build:
 8. **Graveyard + conjure** — `haunt-packs` registry repo (index.json +
    pack schema), `haunt add`, conjure wizard, pass-on publish flow, `grok`
    medium for grokbot-fleet profiles. Done means: raise a pack from the
-   public registry into the roster and séance it; conjure a new specter in
+   registry into the roster and séance it; conjure a new specter in
    the app and pass it on as a registry PR.
 
 ## Open items / human gates
@@ -182,8 +183,8 @@ skills.sh — no service to build:
 ## Keep (invariants)
 
 - Draft PRs only; humans plate. No Autopilot.
-- No secrets, tokens, org IDs, or product internals in the public kitchen
-  or the public `haunt-packs` registry — packs carry personas, never creds.
+- No secrets, tokens, org IDs, or product internals in the public kitchen.
+  `haunt-packs` is private — packs carry personas, never creds regardless.
 - Routines silent-unless-meaningful; spend visible in the ledger per turn.
 - Smallest correct diff; thin shims over platform features — Outposts, MCP,
   and schedules are platform features, we do not rebuild them.
