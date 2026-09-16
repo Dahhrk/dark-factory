@@ -4,6 +4,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const HEADER = "ts\tsource\tworkspace\tsmell\tn\taction\tevidence";
+const DECISIONS_HEADER = "ts\tphase\tdecision\twhy\tevidence\tresult";
 const SOURCES = new Set(["local", "grok", "cursor-auto", "devin"]);
 const ACTIONS = new Set(["note", "encode"]);
 const SLUG = /^[a-z0-9-]+$/;
@@ -180,6 +181,14 @@ function requireEvidence(value) {
   return sanitizeEvidence(value);
 }
 
+function requireField(name, value) {
+  const text = sanitizeEvidence(value);
+  if (!text) {
+    fail(`missing --${name}`);
+  }
+  return text;
+}
+
 function findRow(rows, workspace, smell) {
   const key = rowKey(workspace, smell);
   return rows.findIndex((row) => rowKey(row.workspace, row.smell) === key);
@@ -245,11 +254,26 @@ function printRow(row) {
   process.stdout.write(`${formatRow(row)}\n`);
 }
 
-function cmdDoctor(ledgerPath) {
+function cmdDoctor(ledgerPath, decisionsPath) {
   try {
     loadLedger(ledgerPath, { createIfMissing: false });
   } catch (err) {
-    fail(`doctor: ${err instanceof Error ? err.message : String(err)}`);
+    fail(`doctor smells: ${err instanceof Error ? err.message : String(err)}`);
+  }
+  if (existsSync(decisionsPath)) {
+    const raw = readFileSync(decisionsPath, "utf8");
+    const lines = (raw.charCodeAt(0) === 0xfeff ? raw.slice(1) : raw).split(/\r?\n/);
+    while (lines.length > 0 && lines[lines.length - 1] === "") {
+      lines.pop();
+    }
+    if (lines.length === 0 || lines[0] !== DECISIONS_HEADER) {
+      fail("doctor decisions: bad header");
+    }
+    for (let i = 1; i < lines.length; i += 1) {
+      if (lines[i].split("\t").length !== 6) {
+        fail(`doctor decisions: line ${i + 1}: expected 6 tab fields`);
+      }
+    }
   }
   process.stdout.write("ok\n");
 }
@@ -364,6 +388,32 @@ function cmdHarvest(ledgerPath, flags) {
   process.stdout.write(`harvest: added=${added} merged=${merged} total=${rows.length}\n`);
 }
 
+function cmdDecision(decisionsPath, flags) {
+  const fields = [
+    nowTs(),
+    requireSlug("phase", flags.phase),
+    requireField("decision", flags.decision),
+    requireField("why", flags.why),
+    requireField("evidence", flags.evidence),
+    requireField("result", flags.result),
+  ];
+  let rows = [];
+  if (existsSync(decisionsPath)) {
+    const raw = readFileSync(decisionsPath, "utf8");
+    rows = (raw.charCodeAt(0) === 0xfeff ? raw.slice(1) : raw).split(/\r?\n/);
+    while (rows.length > 0 && rows[rows.length - 1] === "") {
+      rows.pop();
+    }
+    if (rows.length === 0 || rows[0] !== DECISIONS_HEADER) {
+      fail("bad audit/decisions.tsv header");
+    }
+    rows = rows.slice(1);
+  }
+  mkdirSync(dirname(decisionsPath), { recursive: true });
+  writeFileSync(decisionsPath, [DECISIONS_HEADER, ...rows, fields.join("\t")].join("\n") + "\n", "utf8");
+  process.stdout.write(`${fields.join("\t")}\n`);
+}
+
 function usage() {
   fail(
     [
@@ -372,6 +422,7 @@ function usage() {
       "  node scripts/close-loop.mjs status",
       "  node scripts/close-loop.mjs record --source <local|grok|cursor-auto|devin> --workspace <slug> --smell <slug> --evidence <text>",
       "  node scripts/close-loop.mjs encode --workspace <slug> --smell <slug> --evidence <text>",
+      "  node scripts/close-loop.mjs decision --phase <slug> --decision <text> --why <text> --evidence <text> --result <text>",
       "  node scripts/close-loop.mjs harvest [--scan-root <dir>]   (kitchen only: pull every repo's audit/smells.tsv into this ledger)",
     ].join("\n"),
   );
@@ -388,10 +439,11 @@ if (!root) {
   fail("factory root not found (walk up for audit/ + docs/SELF-IMPROVE.md, or pass --factory-root)");
 }
 const ledgerPath = join(root, "audit", "smells.tsv");
+const decisionsPath = join(root, "audit", "decisions.tsv");
 
 switch (command) {
   case "doctor":
-    cmdDoctor(ledgerPath);
+    cmdDoctor(ledgerPath, decisionsPath);
     break;
   case "status":
     cmdStatus(ledgerPath);
@@ -402,6 +454,9 @@ switch (command) {
     break;
   case "encode":
     cmdEncode(ledgerPath, flags);
+    break;
+  case "decision":
+    cmdDecision(decisionsPath, flags);
     break;
   case "harvest":
     cmdHarvest(ledgerPath, flags);
