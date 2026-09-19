@@ -16,7 +16,7 @@ Full ceiling: [match-ceiling.md](match-ceiling.md). Map: [global-vs-private.md](
 | **GitHub** + `gh` CLI | Ship PRs. |
 | **Bugbot** on the product repo | Soft layer 3 ΓÇö still useful; hard CI is stronger. |
 | Optional: **Slack**, **Linear**, **X**, **Graphite/Origin**, **Tailscale** | Benny / outer loop / stacks / Make Bot UI pages. |
-| Models | From Cursor. No separate ΓÇ£Fable sub.ΓÇ¥ `/setup-pstack` picks what you can access. |
+| Models | From Cursor. No separate ΓǣFable sub.Γǥ `/setup-pstack` picks what you can access. |
 
 Machine: Cursor, Git, `gh`, your app runtime (Node/etc.).
 
@@ -126,7 +126,7 @@ Personal `-mode` on top of pstack ([automate-me.md](automate-me.md)). Ours is `/
 - Scale with a local worktree farm (Pt. 1: use Cloud Agents).
 - Start Autopilot on day one.
 - Accept markdown-only verify.
-- Fork pstack/noodle ΓÇ£to keep them updatedΓÇ¥ ΓÇö marketplace + `npx skills add` instead.
+- Fork pstack/noodle Γǣto keep them updatedΓǥ ΓÇö marketplace + `npx skills add` instead.
 - Expect 1000 PRs from plugins alone.
 
 ## Related

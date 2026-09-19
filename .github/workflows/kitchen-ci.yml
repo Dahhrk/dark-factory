@@ -40,6 +40,8 @@ jobs:
           head -n1 audit/smells.tsv | grep -qx $'ts\tsource\tworkspace\tsmell\tn\taction\tevidence'
       - name: Ledger rows well-formed
         run: node scripts/close-loop.mjs doctor
+      - name: Mojibake check
+        run: node scripts/check-mojibake.mjs
       - name: No 0.0.0.0 listen binds in handoff server
         run: |
           set -euo pipefail
