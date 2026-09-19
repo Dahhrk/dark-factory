@@ -20,7 +20,7 @@ Copy-Item -Force (Join-Path $PSScriptRoot "dune.md") (Join-Path $destCursor "dun
 Copy-Item -Force (Join-Path $PSScriptRoot "cursor-settings.json") (Join-Path $destCursor "settings.json")
 $gitName = (git config --global user.name)
 $gitEmail = (git config --global user.email)
-$blueprint = Get-Content (Join-Path $PSScriptRoot "devin-blueprint.yaml") -Raw
+$blueprint = Get-Content (Join-Path $PSScriptRoot "devin-blueprint.yaml") -Raw -Encoding UTF8
 if ($gitName -and $gitEmail) {
   $blueprint = $blueprint -replace '\{\{GIT_NAME\}\}', $gitName -replace '\{\{GIT_EMAIL\}\}', $gitEmail
 } else {
@@ -53,8 +53,8 @@ $agentsSrc = Join-Path $PSScriptRoot "AGENTS.product.md"
 $privateSrc = Join-Path $PSScriptRoot "PRIVATE.product.md"
 if (Test-Path $agentsSrc) {
   $name = Split-Path $TargetRepo -Leaf
-  [IO.File]::WriteAllText((Join-Path $destRoot "AGENTS.md"), ((Get-Content $agentsSrc -Raw) -replace '\{\{PRODUCT\}\}', $name))
-  [IO.File]::WriteAllText((Join-Path $destRoot "PRIVATE.md"), ((Get-Content $privateSrc -Raw) -replace '\{\{PRODUCT\}\}', $name))
+  [IO.File]::WriteAllText((Join-Path $destRoot "AGENTS.md"), ((Get-Content $agentsSrc -Raw -Encoding UTF8) -replace '\{\{PRODUCT\}\}', $name))
+  [IO.File]::WriteAllText((Join-Path $destRoot "PRIVATE.md"), ((Get-Content $privateSrc -Raw -Encoding UTF8) -replace '\{\{PRODUCT\}\}', $name))
 }
 
 $auditDir = Join-Path $destRoot "audit"

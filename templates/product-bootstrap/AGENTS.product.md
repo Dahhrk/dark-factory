@@ -1,6 +1,6 @@
-# Agents ΓÇö {{PRODUCT}}
+# Agents — {{PRODUCT}}
 
-Private product. Kitchen is `dark-factory` ΓÇö do not invent product work there.
+Private product. Kitchen is `dark-factory` — do not invent product work there.
 
 1. Start non-trivial work with `/poteto-mode`. Done means a checkable control CLI / UI / test result.
 2. Prefer the project `control-*` CLI from `/create-verification-skill`. Maintain daily with `/maintain-verification-skill`.

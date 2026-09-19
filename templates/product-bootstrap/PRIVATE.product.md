@@ -1,4 +1,4 @@
-# PRIVATE ΓÇö {{PRODUCT}}
+# PRIVATE — {{PRODUCT}}
 
 **Default remote: private.** Track B product + agent eyes.
 
@@ -7,7 +7,7 @@ Do not publish as-is. Scrub Feature Map selectors and secrets before any OSS twi
 ## Lives here
 
 - App source
-- `.cursor/skills/verify-*` ΓÇö control CLI + Feature Map
+- `.cursor/skills/verify-*` — control CLI + Feature Map
 - `BUGBOT.md`, `.cursor/dune.md`, CI
 
 ## Does not live here
