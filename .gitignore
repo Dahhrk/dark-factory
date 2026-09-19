@@ -13,6 +13,9 @@ worktrees/
 local/*
 !local/.gitkeep
 
+# Fleet probe-run artifacts (screenshots, captured state)
+automations/devin/fleet/bots/
+
 # OS / editor
 .DS_Store
 Thumbs.db
