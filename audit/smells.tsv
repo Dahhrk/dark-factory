@@ -43,3 +43,6 @@ ts	source	workspace	smell	n	action	evidence
 2026-09-19T01:41:01.773Z	local	dark-factory	paired-pr-content-drift	1	note	drift tolerance covered missing files only; paired PRs editing the same twin file still deadlocked - fixed by comparing against peer PR head content
 2026-09-19T01:46:55.324Z	local	haunt	exec-bit-drop-repeat	1	note	add-runner.sh + 2 more .sh files found at 100644 on main - second occurrence of Windows exec-bit loss; git ls-files -s check added to factory-gate everywhere
 2026-09-19T01:46:55.402Z	local	dark-factory	stacked-base-delete	1	note	deleting stacked PR base auto-closes children; merge-queue guardrail added
+2026-09-19T01:58:20.000Z	local	dark-factory	gate-copies-hand-synced	1	note	5 factory-gate copies diverged silently (haunt runs-on knob); sync-gates.mjs canonicalizes kitchen->siblings, weekly routine opens PRs
+2026-09-19T01:58:20.101Z	local	dark-factory	pack-mirror-manual	1	note	twin-pack skill edits hand-copied each batch; sync-packs.mjs mirrors newer side per file, weekly routine opens laggard PR
+2026-09-19T01:58:20.175Z	local	dark-factory	fleetd-task-disabled	1	note	DarkFactoryFleet scheduled task exists but Disabled - routine machinery + schedule are dead code until enabled; surfaced for human decision (Autopilot-off posture)
