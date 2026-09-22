@@ -1,11 +1,11 @@
-# Haunt — host your own ghost bots
+# Open-Bot — host your own ghost bots
 
 A self-hosted roster of named agents — **ghost bots** — each able to think
 (a session through a pluggable brain) and act (a shared Linux box) on
 hardware we own. Grok Bot is the shape we clone; the difference is the
 ghosts are ours, the shelf is a marketplace, and the brain is swappable.
 
-Working name: **haunt**. Product repo: `Dahhrk/haunt` (private).
+Name: **open-bot** (renamed from haunt, 2026-09-22). Product repo: `Dahhrk/open-bot` (private).
 Marketplace: `Dahhrk/haunt-packs` (private registry — flipped
 2026-09-16). The old working name
 `nightshift` is retired — renamed before Phase 1 while the outpost label
@@ -15,7 +15,7 @@ was still free to move.
 
 | Concept | Name |
 |---------|------|
-| The product | **haunt** — where the specters live |
+| The product | **open-bot** — where the specters live |
 | A bot | **specter** / ghost bot — ghosts in the machine; Harvey Specter lineage |
 | A session / thread | **séance** — summon a specter and converse |
 | The driver | **medium** — devin-outpost, devin-acp, grok, any ACP CLI |
@@ -49,7 +49,7 @@ was still free to move.
 | Worker auth surface | `devin worker start --outpost <name>`; token via `DEVIN_OUTPOSTS_TOKEN` (outposts-machine-scope PAT) else saved worker token else CLI-login bootstrap; `--acceptor-id` + `--cache-dir` persist under `~/.devin` |
 
 Note: the probe's outpost was created as `nightshift` before the rename —
-cosmetic only. The Deployment bootstraps `haunt` as a fresh outpost; the old
+cosmetic only. The Deployment bootstraps `open-bot` as a fresh outpost; the old
 one can be retired via the Fleet API when convenient.
 
 ## Architecture
@@ -59,7 +59,7 @@ our app (Next.js — grimoire rail, séances, approvals, computer panel)
         │  our broker: séances via v3 API, monitor via Devin MCP,
         │  events via Fleet API watch, ledgers on PVC
         ▼
-POST /v3/sessions { prompt, platform:"haunt", devin_mode,
+POST /v3/sessions { prompt, platform:"open-bot", devin_mode,
                     max_acu_limit, tags:[specter-slug], playbook_id }
         ▼
 Devin queue ──► outpost worker (Deployment on worker-02)
@@ -77,7 +77,7 @@ backend, registered once, any specter can use it:
 
 | Medium | What it is | Status |
 |--------|-----------|--------|
-| `devin-outpost` | Cloud session, `platform:"haunt"`, claimed by our worker; shows in app.devin.ai natively | verified end-to-end modulo the `cog_` key |
+| `devin-outpost` | Cloud session, `platform:"open-bot"`, claimed by our worker; shows in app.devin.ai natively | verified end-to-end modulo the `cog_` key |
 | `devin-acp` | `devin acp` child per séance; tools run wherever the process lives | verified in-pod |
 | `grok` | xAI API, or a bridge into grokbot-fleet profiles — our existing personas become raisable specters | open |
 | `acp-*` | Any CLI that speaks ACP (claude-code et al.) via the OpenMausBot `customAcp` pattern | open |
@@ -95,7 +95,7 @@ skills.sh — no service to build:
   medium, defaults: `devin_mode`, `max_acu_limit`, silence rules, routine
   templates, channel templates) + persona markdown + optional medium plugin.
 - `haunt-packs` repo holds `index.json` + one dir per pack. Raise =
-  `haunt add author/pack` → pack lands on the roster PVC; publish = a PR to
+  `open-bot add author/pack` → pack lands on the roster PVC; publish = a PR to
   the registry repo.
 - **Conjure** wizard in the app: name, medium, persona, wake doors → writes
   a pack to the grimoire; "pass on" opens the registry PR.
@@ -138,12 +138,12 @@ skills.sh — no service to build:
 
 1. **API key + last hop** *(user step + verify)* — create a `cog_`/`apk_user_`
    key at app.devin.ai/settings/api-keys. Done means: `POST /v3/sessions` with
-   `platform:"haunt"` queues an entry our worker claims; file written by the
+   `platform:"open-bot"` queues an entry our worker claims; file written by the
    session is readable in the pod.
-2. **`haunt` namespace + PVC + worker Deployment** — debian:12 + install.sh
+2. **`open-bot` namespace + PVC + worker Deployment** — debian:12 + install.sh
    (probe-verified), token as k8s Secret, pinned to worker-02. Done means:
    pod restarts rejoin the queue; outpost `active_claims` reflects it.
-   *(drafted: haunt PR #2)*
+   *(drafted: open-bot PR #2)*
 3. **fleet-box image** — Xvfb/Chromium/noVNC(+box-agent) + PVC mounts.
    Done means: noVNC serves the desktop in a browser; a file written via the
    desktop survives pod reschedule.
@@ -162,7 +162,7 @@ skills.sh — no service to build:
 7. **Connectors** — Telegram/Slack channel for mobile talk; optional Grok
    bridge later. Done means: message a specter from a phone, get its reply.
 8. **Graveyard + conjure** — `haunt-packs` registry repo (index.json +
-   pack schema), `haunt add`, conjure wizard, pass-on publish flow, `grok`
+   pack schema), `open-bot add`, conjure wizard, pass-on publish flow, `grok`
    medium for grokbot-fleet profiles. Done means: raise a pack from the
    registry into the roster and séance it; conjure a new specter in
    the app and pass it on as a registry PR.
@@ -176,7 +176,7 @@ skills.sh — no service to build:
   is re-running `devin auth login`.
 - Which worker node is physically the Ryzen — pin the box there
   (deploy/ pins `k8s-worker-02`; confirm that IS the Ryzen).
-- Retire the legacy `nightshift` outpost once `haunt` is live.
+- Retire the legacy `nightshift` outpost once `open-bot` is live.
 - Pack schema freeze — first conjure defines `pack.yaml` for real.
 - Bot GitHub identity — user account vs a service account for PR authorship.
 
@@ -190,5 +190,5 @@ skills.sh — no service to build:
   and schedules are platform features, we do not rebuild them.
 - Human authorship on everything that ships: commits land under Dark, no
   AI attribution or tool names in commits/PRs/comments, no em dash in
-  commit messages — carried in `haunt` AGENTS.md + blueprint knowledge so
+  commit messages — carried in `open-bot` AGENTS.md + blueprint knowledge so
   cloud sessions see it too.
