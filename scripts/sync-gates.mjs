@@ -19,7 +19,7 @@ const BRANCH = 'chore/gate-sync';
 const args = new Set(process.argv.slice(2));
 const canon = readFileSync(join(here, REL), 'utf8');
 const norm = (s) => s.replace(/\r\n/g, '\n');
-// runs-on is a per-repo knob (haunt needs the self-hosted runner);
+// runs-on is a per-repo knob (open-bot needs the self-hosted runner);
 // compare with it masked and preserve the target's own value on stamp.
 const RUNS_ON = /^(\s+runs-on:\s*).+$/m;
 const comparable = (s) => norm(s).replace(RUNS_ON, '$1<repo>');
@@ -29,7 +29,7 @@ const stampFor = (targetPath) => {
   return m ? canon.replace(RUNS_ON, m[0].replace(/\r/g, '')) : canon;
 };
 
-const repos = (process.env.FACTORY_REPOS || 'devin-factory-plugins,plug-factory,haunt')
+const repos = (process.env.FACTORY_REPOS || 'devin-factory-plugins,plug-factory,open-bot')
   .split(',').map((n) => ({ name: n.trim(), root: join(homedir(), 'Projects', n.trim()) }));
 
 const run = (cmd, cwd) => execSync(cmd, { cwd, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
