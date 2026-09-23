@@ -14,7 +14,7 @@ Audit date: **7 Sep 2026**. Labels per [evidence-standard.md](evidence-standard.
 | Dune rule 1 blessed path | five rules doc | `sand/dune` | `new-feature.mjs` scaffold (**VERIFIED**) | OK for current size | — |
 | Dune rule 2 forbidden deps | — | dependency graph CI | `check-boundaries` + probe (**VERIFIED**) | Trivially green with 1 feature; no app/framework split yet | P1 |
 | Dune rule 3 one writer | — | Client/Host nouns | prose only in `dune.md` | Not mechanised | P2 |
-| Dune footgun bans | anti-slop | ban `useEffect`, comments, `any` | `no-explicit-any` + anti-slop + anti-ai-ui (**VERIFIED**) | No `useEffect` ban; no comment ban (workshop emphasises both) | P1 |
+| Dune footgun bans | anti-slop | ban `useEffect`, comments, `any` | `no-explicit-any` + anti-slop + anti-ai-ui; factory code defaults cover comment ban via `smallest-correct-diff` / `code-quality-bar` and required `/no-comments` + `/deslop` before ready (**VERIFIED** in baseline + kitchen docs) | No `useEffect` ban remains (workshop still emphasises it) | P1 |
 | Soft review / Bugbot | BUGBOT.md pattern | Bugbot on Glass | BUGBOT files + comments on Control-Glass PRs (**VERIFIED**, SETUP-STATUS) | Keep enabled | — |
 | Authors ≠ certifiers | babysit / shipping playbooks | fresh Cloud verifier | Written in 5 docs | All merges self-merged, 0 reviews (**VERIFIED**) — largest method gap | P1 |
 | Narrow PRs | opening-a-pr playbook | Pretext Virt slice | PRs mostly small (**VERIFIED**) | Some merges before review fixes; cleanup PRs | — |

@@ -23,7 +23,7 @@ Fleet babysit vocabulary (Working / Watching CLEAN ladder / Ready ≠ merge): [f
 
 - Worktree off main; one writer per branch  
 - Commit liberally; rebase into small ordered commits before PR  
-- Before commit: `/deslop` (team-kit), `/no-comments`  
+- Before ready: `/no-comments` and `/deslop` (team-kit) are required. See [factory-code-defaults.md](factory-code-defaults.md)  
 - Titles: Conventional Commits `type(scope): subject` ΓÇö imperative, no trailing period  
 - Body sections (drop if empty): **Why**, **Scope**, **Tradeoffs**, **Blast Radius**, **Verification** — not “Summary / Test plan” boilerplate. Attach screenshots/video when they prove a claim. **Visual proof:** real product chrome / hosted artifact you (or Riddler) open yourself; captions and mocks ≠ proof; put media in the PR body, not committed into the branch ([fleet-board.md](fleet-board.md))  
 - Forge: `gh` default; Prefer **Origin** if `origin` resolves the repo. **Never require Graphite (`gt`)**  

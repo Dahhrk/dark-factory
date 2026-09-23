@@ -11,8 +11,11 @@ Repos: `~/Projects/devin-factory-plugins` (Devin packs) and
 
 1. Structural check, both directions:
    `node scripts/drift-check.mjs ~/Projects/plug-factory` in
-   devin-factory-plugins, and the reverse in plug-factory. Any FAIL line is
-   real drift — fix it this run.
+   devin-factory-plugins, and the reverse in plug-factory once
+   `scripts/drift-check.mjs` exists there (or set `PLUG_FACTORY_REPO`).
+   Devin CI may use `PLUG_FACTORY_TOKEN` / `PLUG_FACTORY_READ_TOKEN` for the
+   private twin; without it, CI falls back to public `Dahhrk/plugins` with a
+   warning. Any FAIL line is real drift. Fix it this run.
 2. Content check, both directions: same commands with `--content`.
    Triage each warning:
    - Platform adaptation (`.devin/` vs `.cursor/` paths, `rules/pstack-models.md`
