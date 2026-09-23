@@ -51,3 +51,6 @@ ts	source	workspace	smell	n	action	evidence
 2026-09-21T03:48:05.527Z	devin	pterodactyl-k8s	configmap-shell-unparsed	1	note	entrypoint.patched.sh had unbalanced quote in php -r block; pod crash-looped on rollout because ConfigMap was never syntax-checked. Fix: bash -n before kubectl apply of any shell ConfigMap.
 2026-09-22T01:49:18.701Z	local	dark-factory	secret-in-chat	1	note	TYPESAFE_API_KEY pasted in session chat; stored via setx user env only, kept out of files
 2026-09-22T02:05:56.541Z	local	dark-factory	scope-overreach	1	note	user shared a link asking what the demo was; I built a whole HTML changes-map tool they called bad. Answer the question asked; offer the build, don't assume it
+2026-09-23T17:57:44.376Z	devin	plug-factory	merge-file-crlf	1	note	git merge-file whole-file-conflicted on CRLF vs LF; tr -d '\r' all three inputs first
+2026-09-23T17:57:44.444Z	devin	plug-factory	attribution-model-slugs	1	note	attribution gate regex catches claude-*/gpt-N/anthropic inside PR bodies; describe models as 'Opus 5.5'/'Grok 4.7' not raw slugs
+2026-09-23T17:57:50.305Z	devin	plug-factory	paired-pr-ci-race	1	note	peer-PR drift tolerance needs the twin PR to exist when CI runs; create both PRs first or expect one rerun
