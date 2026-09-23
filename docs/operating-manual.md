@@ -57,7 +57,7 @@ Full checklist with Done means: [setup-everything.md](setup-everything.md).
 3. One product repo: `/create-verification-skill` → a **CLI** (`control-<app>`), not just markdown, plus a Feature Map (four H2s + driving conventions). See [feature-maps.md](feature-maps.md) and Pt. 1.
 4. Daily `/maintain-verification-skill`. Treat it like oncall infra. Skill changes: [evals.md](evals.md).
 5. Dune contract on that repo: conventional path is cheaper than a shortcut; forbidden imports fail CI; one writer per durable value; new work is isolated files; exceptions are architecture PRs. See [dune-method.md](dune-method.md). Optional: [adjacent-taste.md](adjacent-taste.md) · [adjacent-growth.md](adjacent-growth.md) · [adjacent-craft.md](adjacent-craft.md).
-6. Pin `/poteto-mode` as a Custom Mode. Bots coordinate; **cloud agents** do the work. PR ops: [pr-workflow.md](pr-workflow.md).
+6. Pin `/poteto-mode` as a Custom Mode. Bots coordinate; **cloud agents** do the work. PR ops: [pr-workflow.md](pr-workflow.md). Code defaults: [factory-code-defaults.md](factory-code-defaults.md). Twin keep-up: [factory-keep-up.md](factory-keep-up.md).
 7. Cloud environment snapshot that can run the app and record video. Do not scale with local worktree farms.
 8. Outer-loop routines (Slack → repro). Optional [make-bot-ui.md](make-bot-ui.md). Auto-fix only after verify is trustworthy.
 9. One overnight with a predicate, then limited Autopilot.

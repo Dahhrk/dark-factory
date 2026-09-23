@@ -27,11 +27,15 @@ twins agree and no drift is found.
    `docs/language-conventions.md` in the kitchen against
    `plugins/factory-baseline/rules/language-conventions.md` in the plugin
    pack.
-3. Run `scripts/drift-check.mjs` from the Devin plugins tree against the
-   Cursor pack twin checkout in hard-fail mode, every run. The checkout is
-   `PLUG_FACTORY_REPO` or `~/Projects/plug-factory`; that naming stays valid.
-   A missing checkout is a setup failure to fix, not a step to skip. The
-   advisory `--content` pass alone never opens a PR.
+3. Run `scripts/drift-check.mjs` in hard-fail mode every run. Prefer the
+   Devin plugins tree against the Cursor pack twin checkout
+   (`PLUG_FACTORY_REPO` or `~/Projects/plug-factory`). The reverse check can
+   also run from `plug-factory` once its scripts exist, or from the Devin
+   tree with `PLUG_FACTORY_REPO` set. A missing checkout is a setup failure
+   to fix, not a step to skip. The advisory `--content` pass alone never
+   opens a PR. Devin CI uses `secrets.PLUG_FACTORY_TOKEN` (or
+   `PLUG_FACTORY_READ_TOKEN`) when set; otherwise it falls back to public
+   `Dahhrk/plugins` with a warning so the job is not bricked.
 
 ## On unexplained drift
 
@@ -47,6 +51,10 @@ wins, then mirror that choice.
 - Enable Autopilot.
 - Put secrets in the kitchen.
 - Invent evidence.
+
+## Code defaults
+
+Shipping bar for both lanes: [docs/factory-code-defaults.md](factory-code-defaults.md).
 
 ## Pointer
 
