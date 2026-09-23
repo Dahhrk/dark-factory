@@ -14,6 +14,10 @@ routines:
     schedule: weekly Fri 17:20
     kind: script
     command: node scripts/sync-packs.mjs --pr
+  - name: drift-guard
+    schedule: weekly Fri 17:25
+    kind: session
+    file: routines/drift-guard.md
   - name: weekly-encode
     schedule: weekly Fri 17:30
     kind: session
