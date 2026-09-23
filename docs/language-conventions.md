@@ -2,18 +2,21 @@
 
 Standing rules for factory writing and user-facing docs (Dark, 2026-09-23).
 
-## Roles
+## Names
 
-Use professional role titles only:
+Name workstreams with plain nouns only:
 
-- Chief of Staff
-- Engineering Lead
-- Frontend
-- Registry/Fleet
-- Review
+- frontend
+- backend
+- mobile
+- design
+- CI
+- review
 - QA
+- registry
 
-Do not use bot persona names in factory writing or user-facing docs.
+Do not use bot persona names.
+Do not use role titles.
 
 ## Work labels
 
@@ -28,3 +31,7 @@ No em dashes. Use periods, commas, or parentheses.
 ## Keep
 
 Autopilot stays gated until TRUST-NEXT is green. No product secrets in the kitchen.
+
+## Anti-drift
+
+Kitchen (Dahhrk/dark-factory) and Devin plugin pack (Dahhrk/devin-factory-plugins) stay mirrored for shared conventions and overlapping packs/skills/rules. DevinGo app remains Dahhrk/devin-go only (not kitchen, not the plugin pack).
