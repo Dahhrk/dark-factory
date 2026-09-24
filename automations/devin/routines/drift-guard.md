@@ -3,8 +3,9 @@
 Weekly parity audit across the factories — runs Friday before encode so
 structural lessons land in the same sweep.
 
-Repos: `~/Projects/devin-factory-plugins` (Devin packs) and
-`~/Projects/plug-factory` (Cursor packs). Upstream: `cursor-plugins-upstream`
+Repos: `~/Projects/devin-factory-plugins` (Devin packs),
+`~/Projects/plug-factory` (Cursor packs), and `~/Projects/zcode-factory`
+(ZCode/GLM pack). Upstream: `cursor-plugins-upstream`
 (clone of github.com/cursor/plugins).
 
 ## Steps
@@ -16,6 +17,11 @@ Repos: `~/Projects/devin-factory-plugins` (Devin packs) and
    Devin CI may use `PLUG_FACTORY_TOKEN` / `PLUG_FACTORY_READ_TOKEN` for the
    private twin; without it, CI falls back to public `Dahhrk/plugins` with a
    warning. Any FAIL line is real drift. Fix it this run.
+   ZCode twin: `node scripts/drift-check.mjs` inside
+   `~/Projects/zcode-factory` (or `ZCODE_FACTORY_REPO` from a twin
+   checkout). Structural only: manifest, conventions mirrors, skill set.
+   With `DARK_FACTORY_REPO` it also compares the conventions mirror
+   against the kitchen language-conventions headers.
 2. Content check, both directions: same commands with `--content`.
    Triage each warning:
    - Platform adaptation (`.devin/` vs `.cursor/` paths, `rules/pstack-models.md`

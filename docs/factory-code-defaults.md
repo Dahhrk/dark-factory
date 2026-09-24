@@ -1,6 +1,6 @@
 # Factory code defaults
 
-Default shipping bar for Cursor and Devin lanes.
+Default shipping bar for Cursor, Devin, and ZCode lanes.
 
 ## Bar
 
@@ -8,7 +8,7 @@ Default shipping bar for Cursor and Devin lanes.
 - Before marking a PR ready, run `/no-comments` and `/deslop`.
 - For gnarly maintainability, run thermo-nuclear code quality review
   (`cursor-team-kit:thermo-nuclear-code-quality-review` on Cursor; the twin
-  agent on Devin).
+  agent on Devin; manual review on ZCode).
 - No narration comments. Survivors match the Devin baseline
   `smallest-correct-diff` rule: legal/license headers, public-API doc
   contracts, non-obvious behavior forced by an external dependency (mark
@@ -20,6 +20,7 @@ Default shipping bar for Cursor and Devin lanes.
 |------|--------|
 | Devin baseline | `Dahhrk/devin-factory-plugins` `plugins/factory-baseline/rules/smallest-correct-diff.md` and `code-quality-bar.md` |
 | Cursor | `/no-comments` (pstack), `/deslop` and thermo agent (cursor-team-kit) |
+| ZCode | `skills/smallest-correct-diff`, `skills/deslop` in `Dahhrk/zcode-factory` |
 | PR steps | [pr-workflow.md](pr-workflow.md) |
 
 Pointers only. Do not duplicate the full skills here.
