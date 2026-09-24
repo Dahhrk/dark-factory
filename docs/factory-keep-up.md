@@ -8,6 +8,10 @@ Standing routine that keeps the factory repos aligned.
 - Devin plugin pack: `Dahhrk/devin-factory-plugins`.
 - Cursor pack twin: `Dahhrk/plug-factory` (private). Packs live at repo root:
   `pstack/`, `cursor-team-kit/`.
+- ZCode pack twin: `Dahhrk/zcode-factory` (private). Thin ZCode/GLM-5.3
+  plugin: `.zcode-plugin/plugin.json`, `AGENTS.md`, `conventions/`, flat
+  `skills/<name>/SKILL.md`. Carries the conventions mirrors and a small
+  factory skill set, not the full packs.
 
 The twins carry shared conventions and overlapping packs, skills, and rules.
 They stay mirrored.
@@ -22,7 +26,8 @@ twins agree and no drift is found.
 
 ## What runs
 
-1. Refresh all three mains from GitHub, including `Dahhrk/plug-factory`.
+1. Refresh all four mains from GitHub, including `Dahhrk/plug-factory` and
+   `Dahhrk/zcode-factory`.
 2. Compare convention mirrors. At minimum
    `docs/language-conventions.md` in the kitchen against
    `plugins/factory-baseline/rules/language-conventions.md` in the plugin
@@ -36,6 +41,13 @@ twins agree and no drift is found.
    opens a PR. Devin CI uses `secrets.PLUG_FACTORY_TOKEN` (or
    `PLUG_FACTORY_READ_TOKEN`) when set; otherwise it falls back to public
    `Dahhrk/plugins` with a warning so the job is not bricked.
+4. Run the ZCode twin's structural check:
+   `node scripts/drift-check.mjs` inside `Dahhrk/zcode-factory`, or from a
+   twin checkout with `ZCODE_FACTORY_REPO` pointing at it. With
+   `DARK_FACTORY_REPO` set it also compares the conventions mirror's
+   section headers against `docs/language-conventions.md` here. Missing
+   checkout is a setup failure, not a skip. Private CI read uses
+   `ZCODE_FACTORY_TOKEN` (or `ZCODE_FACTORY_READ_TOKEN`) when set.
 
 ## On unexplained drift
 
