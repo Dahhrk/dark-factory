@@ -20,6 +20,11 @@ not a live Cursor integration.
 Skills resolve as `/<plugin>:<skill>` — e.g. `/factory-baseline:draft-pr-only`,
 `/pstack:poteto-mode`, `/cursor-team-kit:verify-this`.
 
+Pack write home is `Dahhrk/plug-factory`. The `pstack` and `cursor-team-kit`
+pack substance is authored there, and this Devin marketplace repo plus the
+ZCode twin (`Dahhrk/zcode-factory`) are mirrors of it, produced by export.
+`factory-baseline` is the exception: it stays Devin-only and is authored here.
+
 ## Install
 
 Personal (Devin Desktop / CLI on your own machine):
