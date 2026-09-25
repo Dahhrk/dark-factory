@@ -8,13 +8,15 @@ Standing routine that keeps the factory repos aligned.
 - Devin plugin pack: `Dahhrk/devin-factory-plugins`.
 - Cursor pack twin: `Dahhrk/plug-factory` (private). Packs live at repo root:
   `pstack/`, `cursor-team-kit/`.
-- ZCode pack twin: `Dahhrk/zcode-factory` (private). Thin ZCode/GLM-5.3
-  plugin: `.zcode-plugin/plugin.json`, `AGENTS.md`, `conventions/`, flat
-  `skills/<name>/SKILL.md`. Carries the conventions mirrors and a small
-  factory skill set, not the full packs.
+- ZCode pack twin: `Dahhrk/zcode-factory` (private). ZCode/GLM-5.3 plugin:
+  `.zcode-plugin/plugin.json`, `AGENTS.md`, `conventions/`, and flat prefixed
+  skills `skills/pstack-<slug>/` and `skills/cursor-team-kit-<slug>/` plus
+  `skills/pack-manifest.json`, exported from plug-factory. The conventions
+  mirrors stay required.
 
 The twins carry shared conventions and overlapping packs, skills, and rules.
-They stay mirrored.
+They stay mirrored. Pack write home is `Dahhrk/plug-factory`: pack substance
+is authored there and exported to the Devin and ZCode twins.
 
 Product repos consume packs only. They do not host factory conventions.
 DevinGo stays `Dahhrk/devin-go` only (not the kitchen, not the plugin pack).
@@ -48,10 +50,21 @@ twins agree and no drift is found.
    section headers against `docs/language-conventions.md` here. Missing
    checkout is a setup failure, not a skip. Private CI read uses
    `ZCODE_FACTORY_TOKEN` (or `ZCODE_FACTORY_READ_TOKEN`) when set.
+5. After any plug pack edit, regenerate the ZCode twin with
+   `node scripts/export-packs.mjs --target zcode` (and the Devin twin with
+   `--target devin` when it is needed), then open mirror PRs on the lagging
+   twins. Never merge without Dark. Pack drift is checked with
+   `skills/pack-manifest.json` plus a nested compare of the exported skill
+   trees. Twin-only adapt files stay on an allowlist so they do not read as
+   drift.
 
 ## On unexplained drift
 
 Open a mirror PR on the lagging twin. Never merge without Dark.
+
+When the drift is in pack substance, fix it in `Dahhrk/plug-factory` first,
+rerun `node scripts/export-packs.mjs --target zcode` (and `--target devin`
+when needed), and mirror the export onto the lagging twins.
 
 When both sides carry conflicting edits, do not pick a winner. Ask which one
 wins, then mirror that choice.
