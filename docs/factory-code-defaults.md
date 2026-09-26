@@ -24,3 +24,11 @@ Default shipping bar for Cursor, Devin, and ZCode lanes.
 | PR steps | [pr-workflow.md](pr-workflow.md) |
 
 Pointers only. Do not duplicate the full skills here.
+
+## Lane-native manifests
+
+Each twin ships its own artifact: Cursor `.cursor-plugin`, Devin
+`.devin-plugin/plugin.json`, ZCode flat skills. See
+[factory-keep-up.md](factory-keep-up.md) Lane-native manifests. Cursor-only
+trees on Devin are a defect; export/mirror must assert before twin PRs.
+
