@@ -15,7 +15,7 @@ Thin kitchen bar for how work lands. Not a Feature Map. Not ISO/DORA.
 | Stack | Bar |
 |-------|-----|
 | Lua / GMod | Facepunch checklist + pack **lua-kit** (`poteto-lua` standing scorecard, `lua-rg-gate` + `lua-hotpath-gate` + `luacheck` + `glualint`) |
-| TS / UI | Pack **typescript-kit** 0.6.0 (`poteto-typescript` standing scorecard, `ts-rg-gate` + `ts-strict-gate` + `ts-runtime-gate` + `ts-oxlint-gate` pinned offline-capable live oxlint + global-fetch/URL/env boundaries + env-schema/typed-parse templates + `ts-kit-selfcheck`) + Control-Glass product gates |
+| TS / UI | Pack **typescript-kit** 0.7.0 (`poteto-typescript` standing scorecard, `ts-rg-gate` + `ts-strict-gate` + `ts-runtime-gate` + `ts-oxlint-gate` type-aware floating/misused promises with pinned oxlint + oxlint-tsgolint + global-fetch/URL/env boundaries + env-schema/typed-parse templates + `ts-kit-selfcheck`) + Control-Glass product gates |
 | Kitchen | Docs only. Point; do not host product CI or Feature Maps here |
 
 Facepunch alignment is Lua-only. Other stacks score CI / trust / size without Facepunch.
