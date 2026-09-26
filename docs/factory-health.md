@@ -6,7 +6,7 @@ Thin kitchen bar for how work lands. Not a Feature Map. Not ISO/DORA.
 
 - **CI green** on the product artifact (or local gate exit 0 when Actions cannot run; note billing/runner).
 - **Reviewable PR**: smallest change that advances Done means; leave open until Dark merges.
-- **Plain PR titles**: user-facing titles and labels are work descriptions only (never `pass N` / `full-pass-N` / `poteto pass`). Encoded in lua-kit `poteto-lua`, typescript-kit `poteto-typescript`, python-kit `poteto-python`, go-kit `poteto-go`, shell-kit `poteto-shell`, rust-kit `poteto-rust`, c-kit `poteto-c`, cpp-kit `poteto-cpp`, java-kit `poteto-java`, csharp-kit `poteto-csharp`, javascript-kit `poteto-javascript`, ruby-kit `poteto-ruby`, php-kit `poteto-php`, swift-kit `poteto-swift`, kotlin-kit `poteto-kotlin`, zig-kit `poteto-zig`, elixir-kit `poteto-elixir`, sql-kit `poteto-sql`, html-kit `poteto-html`, css-kit `poteto-css`, and powershell-kit `poteto-powershell`.
+- **Plain PR titles**: user-facing titles and labels are work descriptions only (never `pass N` / `full-pass-N` / `poteto pass`). Encoded in lua-kit `poteto-lua`, typescript-kit `poteto-typescript`, python-kit `poteto-python`, go-kit `poteto-go`, shell-kit `poteto-shell`, rust-kit `poteto-rust`, c-kit `poteto-c`, cpp-kit `poteto-cpp`, java-kit `poteto-java`, csharp-kit `poteto-csharp`, javascript-kit `poteto-javascript`, ruby-kit `poteto-ruby`, php-kit `poteto-php`, swift-kit `poteto-swift`, kotlin-kit `poteto-kotlin`, zig-kit `poteto-zig`, elixir-kit `poteto-elixir`, sql-kit `poteto-sql`, html-kit `poteto-html`, css-kit `poteto-css`, powershell-kit `poteto-powershell`, and r-kit `poteto-r`.
 - **No secrets** in diffs, logs, or kitchen docs.
 - **Trust boundary** first (auth, net, realm, client input) before micro-opts or polish.
 
@@ -34,6 +34,7 @@ Thin kitchen bar for how work lands. Not a Feature Map. Not ISO/DORA.
 | HTML | Pack **html-kit** 0.1.0 (`poteto-html` standing scorecard, `html-rg-gate` single-walk + `html-hotpath-gate` budget + `html-htmlhint-gate` alt/inline/SRI + accessible_img/external_script_sri templates + `html-kit-selfcheck`) |
 | CSS | Pack **css-kit** 0.1.0 (`poteto-css` standing scorecard, `css-rg-gate` single-walk + `css-hotpath-gate` budget + `css-stylelint-gate` declaration-no-important/selector-max-universal + specificity_over_important/scoped_reset templates + `css-kit-selfcheck`) |
 | PowerShell | Pack **powershell-kit** 0.1.0 (`poteto-powershell` standing scorecard, `ps-rg-gate` single-walk + `ps-hotpath-gate` budget + `ps-pssa-gate` PSAvoidUsingInvokeExpression/PSAvoidUsingWriteHost + no_iex/write_output_not_host/quoted_path templates + `ps-kit-selfcheck`) |
+| R | Pack **r-kit** 0.1.0 (`poteto-r` standing scorecard, `r-rg-gate` single-walk + `r-hotpath-gate` budget + `r-lintr-gate` T_and_F_symbol_linter/undesirable_function_linter + no_attach/true_false_not_tf/no_eval_parse templates + `r-kit-selfcheck`) |
 | Java | Pack **java-kit** 0.1.0 (`poteto-java` standing scorecard, `java-rg-gate` single-walk + `java-hotpath-gate` budget + `java-fmt-gate` + `java-checkstyle-ci-gate` + `java-nullability-gate` + prepared_statement/logger_not_stdout templates + `java-kit-selfcheck`) |
 | Kitchen | Docs only. Point; do not host product CI or Feature Maps here |
 
