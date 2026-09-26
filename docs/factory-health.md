@@ -6,7 +6,7 @@ Thin kitchen bar for how work lands. Not a Feature Map. Not ISO/DORA.
 
 - **CI green** on the product artifact (or local gate exit 0 when Actions cannot run; note billing/runner).
 - **Reviewable PR**: smallest change that advances Done means; leave open until Dark merges.
-- **Plain PR titles**: user-facing titles and labels are work descriptions only (never `pass N` / `full-pass-N` / `poteto pass`). Encoded in lua-kit `poteto-lua`, typescript-kit `poteto-typescript`, python-kit `poteto-python`, go-kit `poteto-go`, shell-kit `poteto-shell`, rust-kit `poteto-rust`, c-kit `poteto-c`, cpp-kit `poteto-cpp`, java-kit `poteto-java`, csharp-kit `poteto-csharp`, and javascript-kit `poteto-javascript`.
+- **Plain PR titles**: user-facing titles and labels are work descriptions only (never `pass N` / `full-pass-N` / `poteto pass`). Encoded in lua-kit `poteto-lua`, typescript-kit `poteto-typescript`, python-kit `poteto-python`, go-kit `poteto-go`, shell-kit `poteto-shell`, rust-kit `poteto-rust`, c-kit `poteto-c`, cpp-kit `poteto-cpp`, java-kit `poteto-java`, csharp-kit `poteto-csharp`, javascript-kit `poteto-javascript`, and ruby-kit `poteto-ruby`.
 - **No secrets** in diffs, logs, or kitchen docs.
 - **Trust boundary** first (auth, net, realm, client input) before micro-opts or polish.
 
@@ -24,6 +24,7 @@ Thin kitchen bar for how work lands. Not a Feature Map. Not ISO/DORA.
 | C++ | Pack **cpp-kit** 0.1.0 (`poteto-cpp` standing scorecard, `cpp-rg-gate` single-walk + `cpp-hotpath-gate` budget + `cpp-fmt-gate` + `cpp-warn-gate` + `cpp-tidy-ci-gate` + unique_ptr_new/static_cast templates + `cpp-kit-selfcheck`) |
 | C# | Pack **csharp-kit** 0.1.0 (`poteto-csharp` standing scorecard, `csharp-rg-gate` single-walk + `csharp-hotpath-gate` budget + `csharp-fmt-gate` + `csharp-analyzers-gate` + `csharp-nullable-gate` + parameterized_command/logger_not_console templates + `csharp-kit-selfcheck`) |
 | JavaScript | Pack **javascript-kit** 0.1.0 (`poteto-javascript` standing scorecard, `js-rg-gate` single-walk + `js-hotpath-gate` budget + `js-fmt-gate` + `js-eslint-flat-gate` + async_fs_read/safe_object_merge templates + `javascript-kit-selfcheck`; distinct from typescript-kit) |
+| Ruby | Pack **ruby-kit** 0.1.0 (`poteto-ruby` standing scorecard, `ruby-rg-gate` single-walk + `ruby-hotpath-gate` budget + `ruby-fmt-gate` + `ruby-rubocop-performance-gate` + parameterized_where/allowlisted_dispatch templates + `ruby-kit-selfcheck`) |
 | Java | Pack **java-kit** 0.1.0 (`poteto-java` standing scorecard, `java-rg-gate` single-walk + `java-hotpath-gate` budget + `java-fmt-gate` + `java-checkstyle-ci-gate` + `java-nullability-gate` + prepared_statement/logger_not_stdout templates + `java-kit-selfcheck`) |
 | Kitchen | Docs only. Point; do not host product CI or Feature Maps here |
 
