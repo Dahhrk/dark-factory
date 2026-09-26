@@ -18,3 +18,5 @@ Do not put Lua product CI into kitchen workflows. Point here only.
 Lean public GMod tips stay in [lean-public-tip.md](lean-public-tip.md). Skip Vite bootstrap for Lua addons ([storage-layout.md](storage-layout.md)).
 
 Factory health (CI / review / trust; Facepunch only on Lua): [factory-health.md](factory-health.md).
+
+Delivery labels: PR titles are plain work descriptions only (`poteto-lua` standing rule; lua-kit 0.2.7).
