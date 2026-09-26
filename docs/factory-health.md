@@ -6,7 +6,7 @@ Thin kitchen bar for how work lands. Not a Feature Map. Not ISO/DORA.
 
 - **CI green** on the product artifact (or local gate exit 0 when Actions cannot run; note billing/runner).
 - **Reviewable PR**: smallest change that advances Done means; leave open until Dark merges.
-- **Plain PR titles**: user-facing titles and labels are work descriptions only (never `pass N` / `full-pass-N` / `poteto pass`). Encoded in lua-kit `poteto-lua`, typescript-kit `poteto-typescript`, python-kit `poteto-python`, go-kit `poteto-go`, shell-kit `poteto-shell`, rust-kit `poteto-rust`, c-kit `poteto-c`, and cpp-kit `poteto-cpp`.
+- **Plain PR titles**: user-facing titles and labels are work descriptions only (never `pass N` / `full-pass-N` / `poteto pass`). Encoded in lua-kit `poteto-lua`, typescript-kit `poteto-typescript`, python-kit `poteto-python`, go-kit `poteto-go`, shell-kit `poteto-shell`, rust-kit `poteto-rust`, c-kit `poteto-c`, cpp-kit `poteto-cpp`, and java-kit `poteto-java`.
 - **No secrets** in diffs, logs, or kitchen docs.
 - **Trust boundary** first (auth, net, realm, client input) before micro-opts or polish.
 
@@ -22,8 +22,9 @@ Thin kitchen bar for how work lands. Not a Feature Map. Not ISO/DORA.
 | Rust | Pack **rust-kit** 0.1.0 (`poteto-rust` standing scorecard, `rust-rg-gate` single-walk + `rust-hotpath-gate` budget + `rust-fmt-gate` + `rust-clippy-gate` + `rust-test-ci-gate` + unsafe_boundary/ffi_extern templates + `rust-kit-selfcheck`) |
 | C | Pack **c-kit** 0.1.0 (`poteto-c` standing scorecard, `c-rg-gate` single-walk + `c-hotpath-gate` budget + `c-fmt-gate` + `c-warn-gate` + `c-san-ci-gate` + `c-malloc-gate` + bounded_string/malloc_check templates + `c-kit-selfcheck`) |
 | C++ | Pack **cpp-kit** 0.1.0 (`poteto-cpp` standing scorecard, `cpp-rg-gate` single-walk + `cpp-hotpath-gate` budget + `cpp-fmt-gate` + `cpp-warn-gate` + `cpp-tidy-ci-gate` + unique_ptr_new/static_cast templates + `cpp-kit-selfcheck`) |
+| Java | Pack **java-kit** 0.1.0 (`poteto-java` standing scorecard, `java-rg-gate` single-walk + `java-hotpath-gate` budget + `java-fmt-gate` + `java-checkstyle-ci-gate` + `java-nullability-gate` + prepared_statement/logger_not_stdout templates + `java-kit-selfcheck`) |
 | Kitchen | Docs only. Point; do not host product CI or Feature Maps here |
 
 Facepunch alignment is Lua-only. Other stacks score CI / trust / size without Facepunch.
 
-See also [lua.md](lua.md), [python.md](python.md), [go.md](go.md), [shell.md](shell.md), [rust.md](rust.md), [c.md](c.md), [pr-workflow.md](pr-workflow.md), [evidence-standard.md](evidence-standard.md).
+See also [lua.md](lua.md), [python.md](python.md), [go.md](go.md), [shell.md](shell.md), [rust.md](rust.md), [c.md](c.md), [cpp.md](cpp.md), [java.md](java.md), [pr-workflow.md](pr-workflow.md), [evidence-standard.md](evidence-standard.md).
