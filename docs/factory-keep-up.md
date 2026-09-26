@@ -70,7 +70,7 @@ twins agree and no drift is found.
    `ZCODE_FACTORY_TOKEN` (or `ZCODE_FACTORY_READ_TOKEN`) when set.
 5. After any plug pack edit, regenerate the ZCode twin with
    `node scripts/export-packs.mjs --target zcode` (and the Devin twin with
-   `--target devin` when it is needed), then open mirror PRs on the lagging
+   `--target devin` when it is needed), assert lane-native manifests on every kit, then open mirror PRs on the lagging
    twins. Never merge without Dark. Pack drift is checked with
    `skills/pack-manifest.json` plus a nested compare of the exported skill
    trees. Twin-only adapt files stay on an allowlist so they do not read as
