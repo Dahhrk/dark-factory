@@ -7,10 +7,10 @@ Standing routine that keeps the factory repos aligned.
 - Kitchen: `Dahhrk/dark-factory`.
 - Devin plugin pack: `Dahhrk/devin-factory-plugins`.
 - Cursor pack twin: `Dahhrk/plug-factory` (private). Packs live at repo root:
-  `pstack/`, `cursor-team-kit/`, `lua-kit/`, `typescript-kit/`, `python-kit/`.
+  `pstack/`, `cursor-team-kit/`, `lua-kit/`, `typescript-kit/`, `python-kit/`, `go-kit/`.
 - ZCode pack twin: `Dahhrk/zcode-factory` (private). ZCode/GLM-5.3 plugin:
   `.zcode-plugin/plugin.json`, `AGENTS.md`, `conventions/`, and flat prefixed
-  skills `skills/pstack-<slug>/`, `skills/cursor-team-kit-<slug>/`, `skills/lua-kit-<slug>/`, `skills/typescript-kit-<slug>/`, and `skills/python-kit-<slug>/` plus
+  skills `skills/pstack-<slug>/`, `skills/cursor-team-kit-<slug>/`, `skills/lua-kit-<slug>/`, `skills/typescript-kit-<slug>/`, `skills/python-kit-<slug>/`, and `skills/go-kit-<slug>/` plus
   `skills/pack-manifest.json`, exported from plug-factory. The conventions
   mirrors stay required.
 
