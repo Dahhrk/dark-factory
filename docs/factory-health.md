@@ -6,7 +6,7 @@ Thin kitchen bar for how work lands. Not a Feature Map. Not ISO/DORA.
 
 - **CI green** on the product artifact (or local gate exit 0 when Actions cannot run; note billing/runner).
 - **Reviewable PR**: smallest change that advances Done means; leave open until Dark merges.
-- **Plain PR titles**: user-facing titles and labels are work descriptions only (never `pass N` / `full-pass-N` / `poteto pass`). Encoded in lua-kit `poteto-lua`, typescript-kit `poteto-typescript`, python-kit `poteto-python`, go-kit `poteto-go`, shell-kit `poteto-shell`, rust-kit `poteto-rust`, c-kit `poteto-c`, cpp-kit `poteto-cpp`, java-kit `poteto-java`, csharp-kit `poteto-csharp`, javascript-kit `poteto-javascript`, ruby-kit `poteto-ruby`, php-kit `poteto-php`, swift-kit `poteto-swift`, and kotlin-kit `poteto-kotlin`.
+- **Plain PR titles**: user-facing titles and labels are work descriptions only (never `pass N` / `full-pass-N` / `poteto pass`). Encoded in lua-kit `poteto-lua`, typescript-kit `poteto-typescript`, python-kit `poteto-python`, go-kit `poteto-go`, shell-kit `poteto-shell`, rust-kit `poteto-rust`, c-kit `poteto-c`, cpp-kit `poteto-cpp`, java-kit `poteto-java`, csharp-kit `poteto-csharp`, javascript-kit `poteto-javascript`, ruby-kit `poteto-ruby`, php-kit `poteto-php`, swift-kit `poteto-swift`, kotlin-kit `poteto-kotlin`, and zig-kit `poteto-zig`.
 - **No secrets** in diffs, logs, or kitchen docs.
 - **Trust boundary** first (auth, net, realm, client input) before micro-opts or polish.
 
@@ -28,6 +28,7 @@ Thin kitchen bar for how work lands. Not a Feature Map. Not ISO/DORA.
 | PHP | Pack **php-kit** 0.1.0 (`poteto-php` standing scorecard, `php-rg-gate` single-walk + `php-hotpath-gate` budget + `php-fmt-gate` + `php-stan-gate` + parameterized_query/safe_unserialize templates + `php-kit-selfcheck`) |
 | Swift | Pack **swift-kit** 0.1.0 (`poteto-swift` standing scorecard, `swift-rg-gate` single-walk + `swift-hotpath-gate` budget + `swift-fmt-gate` + `swift-lint-gate` + optional_bind/safe_pointer templates + `swift-kit-selfcheck`) |
 | Kotlin | Pack **kotlin-kit** 0.1.0 (`poteto-kotlin` standing scorecard, `kotlin-rg-gate` single-walk + `kotlin-hotpath-gate` budget + `kotlin-fmt-gate` + `kotlin-detekt-gate` + optional_bind/prepared_statement templates + `kotlin-kit-selfcheck`) |
+| Zig | Pack **zig-kit** 0.1.0 (`poteto-zig` standing scorecard, `zig-rg-gate` single-walk + `zig-hotpath-gate` budget + `zig-fmt-gate` + `zig-build-test-gate` + try_alloc/error_return templates + `zig-kit-selfcheck`) |
 | Java | Pack **java-kit** 0.1.0 (`poteto-java` standing scorecard, `java-rg-gate` single-walk + `java-hotpath-gate` budget + `java-fmt-gate` + `java-checkstyle-ci-gate` + `java-nullability-gate` + prepared_statement/logger_not_stdout templates + `java-kit-selfcheck`) |
 | Kitchen | Docs only. Point; do not host product CI or Feature Maps here |
 
