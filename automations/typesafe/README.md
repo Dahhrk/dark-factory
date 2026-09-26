@@ -36,3 +36,7 @@ Raw questions file shape:
 Choice/score answers carry `probabilities` + `confidence` — branch on
 confidence in code, escalate low-confidence to a human or a full agent.
 Docs: docs.typesafe.ai.
+
+## Name note (Jev-Mem)
+
+Academic **Jev-Mem** (agentic memory, System-One controller) is a different project from TypeSafe Jev. Kitchen research pointer: [docs/jev-mem-research.md](../../docs/jev-mem-research.md). Do not treat this caller as a memory store.

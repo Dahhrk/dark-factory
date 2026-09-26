@@ -63,5 +63,6 @@ Start a real product map at **3–5** features. The example is ~30 so you can se
 
 | Repo | What it is | Kitchen use |
 |------|------------|-------------|
+| [Jev-Mem paper note](https://x.com/omarsar0/status/2103603205821366311) | System-One-controlled agentic memory (academic) | Research only — [jev-mem-research.md](jev-mem-research.md). Distinct from TypeSafe Jev. |
 | [Da7-Tech/SureForge](https://github.com/Da7-Tech/SureForge) | Instruction-only QC skill: tiers, READY/REPAIR/BLOCKED, independent review | Optional named mode — [sureforge.md](sureforge.md). Not kitchen OS. |
 

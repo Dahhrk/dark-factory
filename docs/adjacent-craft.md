@@ -96,6 +96,17 @@ Watch / alignment only — not Autopilot. [pstack-galaxy-livestream.md](pstack-g
 | External PStack breakdown (no transcript) | [pstack-robshocks-breakdown.md](pstack-robshocks-breakdown.md) |
 | Budget / roles / router Keep | [pstack-ama-ops.md](pstack-ama-ops.md) |
 
+
+## Jev-Mem research (public X encode)
+
+Academic agentic memory (System-One controller). **Distinct from** TypeSafe Jev judge. Research note only — [jev-mem-research.md](jev-mem-research.md). No memory handlers this pass.
+
+| Need | Reach for |
+|------|-----------|
+| Cheap PR/smell judgments | `automations/typesafe/` |
+| Jev-Mem paper disambiguation | [jev-mem-research.md](jev-mem-research.md) |
+| Overnight / Autopilot | [TRUST-NEXT.md](TRUST-NEXT.md) only |
+
 ## SureForge (optional named QC)
 
 Instruction-only Agent Skill for heavy multi-step / high-assurance work. **Not** always-on. Full recipe: [sureforge.md](sureforge.md).
@@ -113,6 +124,7 @@ Instruction-only Agent Skill for heavy multi-step / high-assurance work. **Not**
 - [pstack-galaxy-livestream.md](pstack-galaxy-livestream.md)
 - [pstack-robshocks-breakdown.md](pstack-robshocks-breakdown.md)
 - [sureforge.md](sureforge.md)
+- [jev-mem-research.md](jev-mem-research.md)
 - [adjacent-taste.md](adjacent-taste.md)
 - [adjacent-growth.md](adjacent-growth.md)
 - [dune-method.md](dune-method.md)
