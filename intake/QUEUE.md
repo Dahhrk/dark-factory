@@ -1,5 +1,17 @@
 # Intake queue
 
+## Attention
+
+25 Sep 2026 morning plate. Overnight did not run. Autopilot not started.
+
+- [landed] Kitchen keep-up: zcode twin, self-hosted runner CI, and triple-pack-mirror docs merged last night. Ledger `2026-09-24T22:07` · [dark-factory#75](https://github.com/Dahhrk/dark-factory/pull/75) · [#76](https://github.com/Dahhrk/dark-factory/pull/76) · [#77](https://github.com/Dahhrk/dark-factory/pull/77) · [#78](https://github.com/Dahhrk/dark-factory/pull/78)
+- [landed] morning-catchup: this weekday automation is Enabled and fired. Kitchen ready still empty; no product repo named
+- [blocked] Control-Glass TRUST-NEXT overnight: no `overnight` or `wake` row on/after 24 Sep. Last trust-shaped unit is still `2026-09-07T01:42+01:00`. Flashpeek 4 Sep does not count. [TRUST-NEXT.md](../docs/TRUST-NEXT.md) · [SETUP-STATUS.md](../docs/SETUP-STATUS.md) gate 7
+- [blocked] Autopilot / Benny / Orchestrate: still off until a Control-Glass overnight you would merge by hand. [STILL-YOU.md](../docs/STILL-YOU.md)
+- [needs you] Land trust PRs + Enable remaining loops: merge the Control-Glass UI-trust PR and kitchen self-improve leftovers; confirm maintain-verify-glass and encode-lessons-weekly are Enabled, not only Saved. [STILL-YOU.md](../docs/STILL-YOU.md)
+- [needs you] First overnight: one small Control-Glass task, draft PR, decision-log rows, you merge or kill in the morning. Inbox owner: you
+- [needs you] CSGO Scope: private product is scaffolded, not built. Autopilot stays blocked until live `/search`
+
 ## inbox
 
 ### [inbox] Land trust PRs + Enable loops
