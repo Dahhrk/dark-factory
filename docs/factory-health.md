@@ -41,6 +41,7 @@ Thin kitchen bar for how work lands. Not a Feature Map. Not ISO/DORA.
 | Objective-C | Pack **objc-kit** 0.1.0 (`poteto-objc` standing scorecard, `objc-rg-gate` single-walk + `objc-hotpath-gate` budget + `objc-fmt-gate` clang-format + no_nslog/no_perform_selector/no_manual_retain templates + `objc-kit-selfcheck`) |
 | COBOL | Pack **cobol-kit** 0.1.0 (`poteto-cobol` standing scorecard, `cobol-rg-gate` single-walk + `cobol-hotpath-gate` budget + `cobol-cobc-gate` cobc wiring + no_goto/no_alter/checked_accept/end_if templates + `cobol-kit-selfcheck`) |
 | Delphi / Object Pascal | Pack **delphi-kit** 0.1.0 (`poteto-delphi` standing scorecard, `delphi-rg-gate` single-walk + `delphi-hotpath-gate` budget + `delphi-fpc-gate` fpc/lazbuild + no_goto/no_with/checked_getmem/no_writeln_lib templates + `delphi-kit-selfcheck`) |
+| Visual Basic .NET | Pack **vbnet-kit** 0.1.0 (`poteto-vbnet` standing scorecard, `vbnet-rg-gate` single-walk + `vbnet-hotpath-gate` budget + `vbnet-dotnet-gate` dotnet/vbproj + no_on_error_resume_next/option_strict_on/logger_not_console templates + `vbnet-kit-selfcheck`) |
 | Java | Pack **java-kit** 0.1.0 (`poteto-java` standing scorecard, `java-rg-gate` single-walk + `java-hotpath-gate` budget + `java-fmt-gate` + `java-checkstyle-ci-gate` + `java-nullability-gate` + prepared_statement/logger_not_stdout templates + `java-kit-selfcheck`) |
 | Kitchen | Docs only. Point; do not host product CI or Feature Maps here |
 
