@@ -44,6 +44,7 @@ Thin kitchen bar for how work lands. Not a Feature Map. Not ISO/DORA.
 | Visual Basic .NET | Pack **vbnet-kit** 0.1.0 (`poteto-vbnet` standing scorecard, `vbnet-rg-gate` single-walk + `vbnet-hotpath-gate` budget + `vbnet-dotnet-gate` dotnet/vbproj + no_on_error_resume_next/option_strict_on/logger_not_console templates + `vbnet-kit-selfcheck`) |
 | Slint | Pack **slint-kit** 0.1.0 (`poteto-slint` standing scorecard, `slint-rg-gate` single-walk + `slint-hotpath-gate` budget + `slint-cargo-gate` slint/Cargo + no_debug_slint/as_weak_callback/safe_callback_host templates + `slint-kit-selfcheck`) |
 | WebAssembly | Pack **wasm-kit** 0.1.0 (`poteto-wasm` standing scorecard, `wasm-rg-gate` single-walk + `wasm-hotpath-gate` budget + `wasm-tools-gate` wat/wasm tooling + no_debug_wat/bounded_memory_grow/no_host_eval_import templates + `wasm-kit-selfcheck`) |
+| Google Apps Script | Pack **apps-script-kit** 0.1.0 (`poteto-apps-script` standing scorecard, `apps-script-rg-gate` single-walk + `apps-script-hotpath-gate` budget + `apps-script-clasp-gate` clasp/appsscript + no_eval/no_logger_log/no_getui_in_webapp/onopen_menu/lock_concurrent_write templates + `apps-script-kit-selfcheck`) |
 | Java | Pack **java-kit** 0.1.0 (`poteto-java` standing scorecard, `java-rg-gate` single-walk + `java-hotpath-gate` budget + `java-fmt-gate` + `java-checkstyle-ci-gate` + `java-nullability-gate` + prepared_statement/logger_not_stdout templates + `java-kit-selfcheck`) |
 | Kitchen | Docs only. Point; do not host product CI or Feature Maps here |
 
