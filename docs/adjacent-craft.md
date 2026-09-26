@@ -96,6 +96,18 @@ Watch / alignment only — not Autopilot. [pstack-galaxy-livestream.md](pstack-g
 | External PStack breakdown (no transcript) | [pstack-robshocks-breakdown.md](pstack-robshocks-breakdown.md) |
 | Budget / roles / router Keep | [pstack-ama-ops.md](pstack-ama-ops.md) |
 
+
+## Thin harness + assistant speed (public X encode)
+
+Public adjacent craft (non-poteto): Garry Tan thin-harness / fat-skills; Cerebras + companion bake-off on assistant speed. **Encode only** — not Autopilot. Full recipes: [thin-harness-fat-skills.md](thin-harness-fat-skills.md) · [assistant-speed-harness.md](assistant-speed-harness.md).
+
+| Need | Reach for |
+|------|-----------|
+| Fat tools / mega prompt vs skills | [thin-harness-fat-skills.md](thin-harness-fat-skills.md) |
+| Slow agent: parallelize + skill procedures | [assistant-speed-harness.md](assistant-speed-harness.md) |
+| Budget / roles / router Keep | [pstack-ama-ops.md](pstack-ama-ops.md) |
+| Overnight / Autopilot | [TRUST-NEXT.md](TRUST-NEXT.md) only |
+
 ## SureForge (optional named QC)
 
 Instruction-only Agent Skill for heavy multi-step / high-assurance work. **Not** always-on. Full recipe: [sureforge.md](sureforge.md).
@@ -113,6 +125,8 @@ Instruction-only Agent Skill for heavy multi-step / high-assurance work. **Not**
 - [pstack-galaxy-livestream.md](pstack-galaxy-livestream.md)
 - [pstack-robshocks-breakdown.md](pstack-robshocks-breakdown.md)
 - [sureforge.md](sureforge.md)
+- [thin-harness-fat-skills.md](thin-harness-fat-skills.md)
+- [assistant-speed-harness.md](assistant-speed-harness.md)
 - [adjacent-taste.md](adjacent-taste.md)
 - [adjacent-growth.md](adjacent-growth.md)
 - [dune-method.md](dune-method.md)
