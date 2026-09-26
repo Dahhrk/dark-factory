@@ -1,10 +1,10 @@
 # Adjacent craft packs (not pstack core)
 
-Engineering discipline skills people mix with pstack. Complementary â€” **not** a second factory OS. Look/feel â†’ [adjacent-taste.md](adjacent-taste.md). Growth â†’ [adjacent-growth.md](adjacent-growth.md).
+Engineering discipline skills people mix with pstack. Complementary � **not** a second factory OS. Look/feel �  [adjacent-taste.md](adjacent-taste.md). Growth �  [adjacent-growth.md](adjacent-growth.md).
 
 ## mattpocock/skills
 
-Source: [mattpocock/skills](https://github.com/mattpocock/skills) Â· install via Claude plugin or `npx skills@latest add mattpocock/skills` (pick skills; keep editable copies if you want to hack).
+Source: [mattpocock/skills](https://github.com/mattpocock/skills) · install via Claude plugin or `npx skills@latest add mattpocock/skills` (pick skills; keep editable copies if you want to hack).
 
 Thesis: small composable skills beat mega-process frameworks (GSD / BMAD / Spec-Kit). Fixes misalignment, verbosity, missing feedback loops, and agent-accelerated entropy.
 
@@ -12,12 +12,12 @@ Thesis: small composable skills beat mega-process frameworks (GSD / BMAD / Spec-
 
 | Pattern | What it is | Where it lands here | When |
 |---------|------------|---------------------|------|
-| **`CONTEXT.md` + domain grilling** | Project glossary: preferred term + `_Avoid_` synonyms; ADRs for hard decisions. Agents speak one word instead of twenty. | Product repo root `CONTEXT.md` (or extend Feature Map **Language** section). Built by grilling, not by dumping a dictionary up front. | When Control-Glass (or any app) jargon outgrows Feature Map alone â€” e.g. â€œmaterialization cascadeâ€ vs a paragraph of filesystem prose |
-| **Deep-module survey** | Periodic scan for â€œlots of behavior behind a small interfaceâ€ opportunities (`/improve-codebase-architecture`). Survey, not rescue. | Pair with [dune-method.md](dune-method.md) + Feature Map; present candidates, human picks one | After [TRUST-NEXT.md](TRUST-NEXT.md) overnight is green; every few days on a dirty product tree, not instead of trust |
+| **`CONTEXT.md` + domain grilling** | Project glossary: preferred term + `_Avoid_` synonyms; ADRs for hard decisions. Agents speak one word instead of twenty. | Product repo root `CONTEXT.md` (or extend Feature Map **Language** section). Built by grilling, not by dumping a dictionary up front. | When Control-Glass (or any app) jargon outgrows Feature Map alone � e.g. �Smaterialization cascade⬝ vs a paragraph of filesystem prose |
+| **Deep-module survey** | Periodic scan for �Slots of behavior behind a small interface⬝ opportunities (`/improve-codebase-architecture`). Survey, not rescue. | Pair with [dune-method.md](dune-method.md) + Feature Map; present candidates, human picks one | After [TRUST-NEXT.md](TRUST-NEXT.md) overnight is green; every few days on a dirty product tree, not instead of trust |
 | **Session handoff compact** | Collapse a long chat into a handoff doc another agent can continue (`/handoff`) | Kitchen: keep using decision rows in `audit/decisions.tsv` for overnight; product: optional handoff file in `local/` if chats span agents | When context is fat across agent hops |
-| **Selective install** | Take 1â€“3 skills; run setup once per repo if using his tracker/triage wiring | Product repos only. Never as kitchen OS. | Optional after overnight |
+| **Selective install** | Take 1�3 skills; run setup once per repo if using his tracker/triage wiring | Product repos only. Never as kitchen OS. | Optional after overnight |
 
-### Already covered â€” do not duplicate
+### Already covered � do not duplicate
 
 | Matt skill | Ours |
 |------------|------|
@@ -26,19 +26,19 @@ Thesis: small composable skills beat mega-process frameworks (GSD / BMAD / Spec-
 | `/code-review` | Gordon + Bugbot + product `BUGBOT.md` |
 | `/prototype` | Prototype playbook |
 | `/implement` + `/to-tickets` / wayfinder | Intake queue + Cloud Agents + Feature Map slices |
-| `/ask-matt` router | `/poteto-mode` â€” one entry, not a second router |
+| `/ask-matt` router | `/poteto-mode` � one entry, not a second router |
 
 ### Skip forever (for this factory)
 
 - Install the **whole** set alongside pstack (double routers, double triage state machines).
-- Replace `/poteto-mode` with `/ask-matt` or Mattâ€™s issue-tracker triage as Cos.
+- Replace `/poteto-mode` with `/ask-matt` or Matt�"s issue-tracker triage as Cos.
 - Block Control-Glass overnight or Autopilot unlock on Matt skills.
-- Copy his Linear/GitHub triage label machine into the kitchen â€” we already have intake + fleet-board.
+- Copy his Linear/GitHub triage label machine into the kitchen � we already have intake + fleet-board.
 
 ### Optional install (product, after trust)
 
 ```bash
-# Pick only what you need â€” e.g. grill-with-docs, handoff, improve-codebase-architecture
+# Pick only what you need � e.g. grill-with-docs, handoff, improve-codebase-architecture
 npx skills@latest add mattpocock/skills
 ```
 
@@ -55,7 +55,7 @@ If using his engineering set: run `/setup-matt-pocock-skills` once in that repo 
 | Deepen modules | Dune + Matt-style survey after trust |
 | Autopilot / overnight | [TRUST-NEXT.md](TRUST-NEXT.md) only |
 
-## pstack Pt. 2 â€” supervise someone smarter than you
+## pstack Pt. 2 � supervise someone smarter than you
 
 Public operating notes from [@poteto Pt. 2](https://x.com/i/article/2094940651607715840): indirect restatement, `/teach`/`/how`/`/why`, architect + prototype before multi-unit waves. **Not** a second OS. Full recipe: [pstack-pt2-supervise.md](pstack-pt2-supervise.md).
 
@@ -67,7 +67,7 @@ Public operating notes from [@poteto Pt. 2](https://x.com/i/article/209494065160
 
 ## pstack AMA ops (budget / roles / router)
 
-Public operating notes from [@poteto AMA](https://x.com/poteto/status/2098634643323142286): `/setup-pstack` for spend, Composer/Grok/Fable role split, `/poteto-mode` auto router, trust compaction, evals. **Not** Autopilot unlock. Full recipe: [pstack-ama-ops.md](pstack-ama-ops.md). Companions: [cursor-projects-pstack.md](cursor-projects-pstack.md) Â· [pstack-galaxy-livestream.md](pstack-galaxy-livestream.md) Â· [pstack-robshocks-breakdown.md](pstack-robshocks-breakdown.md).
+Public operating notes from [@poteto AMA](https://x.com/poteto/status/2098634643323142286): `/setup-pstack` for spend, Composer/Grok/Fable role split, `/poteto-mode` auto router, trust compaction, evals. **Not** Autopilot unlock. Full recipe: [pstack-ama-ops.md](pstack-ama-ops.md). Companions: [cursor-projects-pstack.md](cursor-projects-pstack.md) · [pstack-galaxy-livestream.md](pstack-galaxy-livestream.md) · [pstack-robshocks-breakdown.md](pstack-robshocks-breakdown.md).
 
 | Need | Reach for |
 |------|-----------|
@@ -76,19 +76,19 @@ Public operating notes from [@poteto AMA](https://x.com/poteto/status/2098634643
 | Default align / build / verify | `/poteto-mode` |
 | Overnight / Autopilot | [TRUST-NEXT.md](TRUST-NEXT.md) only |
 
-## Cursor Projects Ã— pstack
+## Cursor Projects � pstack
 
-Product drop + potetoâ€™s Michelin-kitchen take: persistent coordinator thread + cloud parallel. **Inner** loop only â€” Harvey outer loop stays. Full map: [cursor-projects-pstack.md](cursor-projects-pstack.md).
+Product drop + poteto�"s Michelin-kitchen take: persistent coordinator thread + cloud parallel. **Inner** loop only � Harvey outer loop stays. Full map: [cursor-projects-pstack.md](cursor-projects-pstack.md).
 
 | Need | Reach for |
 |------|-----------|
 | Long-lived product wave coordinator | Cursor **Projects** (+ `/poteto-mode`) when spend green |
 | Outer triage / overnight / routing | Harvey + [QUEUE](../intake/QUEUE.md) |
-| Cloud fan-out | On-demand green â€” see [spend-and-cloud.md](spend-and-cloud.md) |
+| Cloud fan-out | On-demand green � see [spend-and-cloud.md](spend-and-cloud.md) |
 
 ## Galaxy livestream + Rob Shocks (thin)
 
-Watch / alignment only â€” not Autopilot. [pstack-galaxy-livestream.md](pstack-galaxy-livestream.md) Â· [pstack-robshocks-breakdown.md](pstack-robshocks-breakdown.md).
+Watch / alignment only � not Autopilot. [pstack-galaxy-livestream.md](pstack-galaxy-livestream.md) · [pstack-robshocks-breakdown.md](pstack-robshocks-breakdown.md).
 
 | Need | Reach for |
 |------|-----------|
@@ -99,7 +99,7 @@ Watch / alignment only â€” not Autopilot. [pstack-galaxy-livestream.md](pst
 
 ## Thin harness + assistant speed (public X encode)
 
-Public adjacent craft (non-poteto): Garry Tan thin-harness / fat-skills; Cerebras + companion bake-off on assistant speed. **Encode only** â€” not Autopilot. Full recipes: [thin-harness-fat-skills.md](thin-harness-fat-skills.md) Â· [assistant-speed-harness.md](assistant-speed-harness.md).
+Public adjacent craft (non-poteto): Garry Tan thin-harness / fat-skills; Cerebras + companion bake-off on assistant speed. **Encode only** � not Autopilot. Full recipes: [thin-harness-fat-skills.md](thin-harness-fat-skills.md) · [assistant-speed-harness.md](assistant-speed-harness.md).
 
 | Need | Reach for |
 |------|-----------|
