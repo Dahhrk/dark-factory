@@ -33,4 +33,4 @@ Thin kitchen bar for how work lands. Not a Feature Map. Not ISO/DORA.
 
 Facepunch alignment is Lua-only. Other stacks score CI / trust / size without Facepunch.
 
-See also [lua.md](lua.md), [python.md](python.md), [go.md](go.md), [shell.md](shell.md), [rust.md](rust.md), [c.md](c.md), [cpp.md](cpp.md), [java.md](java.md), [csharp.md](csharp.md), [javascript.md](javascript.md), [ruby.md](ruby.md), [php.md](php.md), [swift.md](swift.md), [kotlin.md](kotlin.md), [pr-workflow.md](pr-workflow.md), [evidence-standard.md](evidence-standard.md).
+See also [lua.md](lua.md), [python.md](python.md), [go.md](go.md), [shell.md](shell.md), [rust.md](rust.md), [c.md](c.md), [cpp.md](cpp.md), [java.md](java.md), [csharp.md](csharp.md), [javascript.md](javascript.md), [ruby.md](ruby.md), [php.md](php.md), [swift.md](swift.md), [kotlin.md](kotlin.md), [zig.md](zig.md), [pr-workflow.md](pr-workflow.md), [evidence-standard.md](evidence-standard.md).
