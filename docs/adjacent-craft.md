@@ -96,6 +96,18 @@ Watch / alignment only — not Autopilot. [pstack-galaxy-livestream.md](pstack-g
 | External PStack breakdown (no transcript) | [pstack-robshocks-breakdown.md](pstack-robshocks-breakdown.md) |
 | Budget / roles / router Keep | [pstack-ama-ops.md](pstack-ama-ops.md) |
 
+
+## Effort dial + prompting deltas (public X encode)
+
+Public adjacent encode: effort as verification budget; prompting deltas for newer coding models. **Encode only**. Full recipe: [effort-and-prompting.md](effort-and-prompting.md).
+
+| Need | Reach for |
+|------|-----------|
+| Effort / reasoning level for a task | [effort-and-prompting.md](effort-and-prompting.md) |
+| Outcome + check shape | [prompting-model.md](prompting-model.md) |
+| Budget / role map | [pstack-ama-ops.md](pstack-ama-ops.md) |
+| Overnight / Autopilot | [TRUST-NEXT.md](TRUST-NEXT.md) only |
+
 ## SureForge (optional named QC)
 
 Instruction-only Agent Skill for heavy multi-step / high-assurance work. **Not** always-on. Full recipe: [sureforge.md](sureforge.md).
@@ -113,6 +125,7 @@ Instruction-only Agent Skill for heavy multi-step / high-assurance work. **Not**
 - [pstack-galaxy-livestream.md](pstack-galaxy-livestream.md)
 - [pstack-robshocks-breakdown.md](pstack-robshocks-breakdown.md)
 - [sureforge.md](sureforge.md)
+- [effort-and-prompting.md](effort-and-prompting.md)
 - [adjacent-taste.md](adjacent-taste.md)
 - [adjacent-growth.md](adjacent-growth.md)
 - [dune-method.md](dune-method.md)

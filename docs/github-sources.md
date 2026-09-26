@@ -63,5 +63,7 @@ Start a real product map at **3–5** features. The example is ~30 so you can se
 
 | Repo | What it is | Kitchen use |
 |------|------------|-------------|
+| [Spending your effort](https://x.com/trq212/status/2103576349499855160) | Effort dial, Terminal-Bench takeaways, verify loop | Encode only — [effort-and-prompting.md](effort-and-prompting.md). |
+| [Opus 5.5 prompting masterclass](https://x.com/sairahul1/status/2103430801866240278) | Effort defaults, checklist, time budget, settled answers | Encode only — same page; skip vendor-UI-only tips. |
 | [Da7-Tech/SureForge](https://github.com/Da7-Tech/SureForge) | Instruction-only QC skill: tiers, READY/REPAIR/BLOCKED, independent review | Optional named mode — [sureforge.md](sureforge.md). Not kitchen OS. |
 
