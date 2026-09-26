@@ -63,5 +63,7 @@ Start a real product map at **3–5** features. The example is ~30 so you can se
 
 | Repo | What it is | Kitchen use |
 |------|------------|-------------|
+| [Thin Harness, Fat Skills](https://x.com/garrytan/status/2042925773300908103) | Thin harness, fat skills, resolvers, latent vs deterministic | Encode only — [thin-harness-fat-skills.md](thin-harness-fat-skills.md). Not kitchen OS. |
+| [20x faster Grok bot](https://x.com/cerebras/status/2103506859709858175) + [bake-off](https://x.com/MilksandMatcha/status/2103508158690058592) | Parallel checks, skill procedures, faster inference | Encode only — [assistant-speed-harness.md](assistant-speed-harness.md). Not vendor Keep. |
 | [Da7-Tech/SureForge](https://github.com/Da7-Tech/SureForge) | Instruction-only QC skill: tiers, READY/REPAIR/BLOCKED, independent review | Optional named mode — [sureforge.md](sureforge.md). Not kitchen OS. |
 
