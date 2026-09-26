@@ -67,5 +67,6 @@ Start a real product map at **3�5** features. The example is ~30 so you can s
 | [20x faster Grok bot](https://x.com/cerebras/status/2103506859709858175) + [bake-off](https://x.com/MilksandMatcha/status/2103508158690058592) | Parallel checks, skill procedures, faster inference | Encode only  [assistant-speed-harness.md](assistant-speed-harness.md). Not vendor Keep. |
 | [Spending your effort](https://x.com/trq212/status/2103576349499855160) | Effort dial, Terminal-Bench takeaways, verify loop | Encode only  [effort-and-prompting.md](effort-and-prompting.md). |
 | [Opus 5.5 prompting masterclass](https://x.com/sairahul1/status/2103430801866240278) | Effort defaults, checklist, time budget, settled answers | Encode only  same page; skip vendor-UI-only tips. |
+| [Jev-Mem paper note](https://x.com/omarsar0/status/2103603205821366311) | System-One-controlled agentic memory (academic) | Research only — [jev-mem-research.md](jev-mem-research.md). Distinct from TypeSafe Jev. |
 | [Da7-Tech/SureForge](https://github.com/Da7-Tech/SureForge) | Instruction-only QC skill: tiers, READY/REPAIR/BLOCKED, independent review | Optional named mode � [sureforge.md](sureforge.md). Not kitchen OS. |
 
