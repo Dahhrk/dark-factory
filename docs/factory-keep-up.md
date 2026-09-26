@@ -34,10 +34,30 @@ Cursor-only tree as valid Devin (or ZCode) content.
 
 Cursor-only trees on Devin are a defect. Export and mirror must assert the
 lane-native manifest exists for every kit before opening twin PRs. Prefer
-`scripts/export-devin-plugin-manifests.mjs` (Devin) and
-`scripts/export-packs.mjs` (plug-factory targets) so regenerations stay
-consistent. Layout differences across twins are expected; missing an entire
-kit is not.
+`scripts/export-devin-plugin-manifests.mjs --assert` (Devin: create
+missing manifests, then fail if any `plugins/<kit>/.devin-plugin/plugin.json`
+is still absent) and `scripts/export-packs.mjs` (plug-factory targets) so
+regenerations stay consistent. Creating without asserting is not enough.
+Layout differences across twins are expected; missing an entire kit is not.
+
+## Kitchen doc write path (Windows)
+
+PowerShell `Set-Content` / `Out-File` double-encodes UTF-8. Kitchen docs with
+em dashes then fail the visibility mojibake gate (`adjacent-craft.md` and
+friends). Do not use those cmdlets for kitchen markdown.
+
+- Write with Node: `fs.writeFileSync(path, text, "utf8")` (or equivalent).
+- Repair double-encoded UTF-8 with `node scripts/check-mojibake.mjs --fix`,
+  or a latin1 roundtrip (`Buffer.from(text, "latin1").toString("utf8")`) when
+  the checker is not handy.
+- Conflict merges of docs: union sections (keep thin-harness, effort, and Jev
+  material), then run the mojibake check before push.
+
+## Kit shell exec bits
+
+Tracked `*.sh` in kits must be git mode `100755`. After adding shell
+templates, run `git update-index --chmod=+x -- <paths>` before commit.
+Attribution and exec-bit gates fail on `100644` shell scripts.
 
 ## Cadence
 
@@ -89,6 +109,8 @@ wins, then mirror that choice.
 
 ## Never
 
+- Block encode on CloudAgent when Cursor cloud on-demand is
+  exhausted. Prefer Criminal/local `gh` merge for kitchen encode PRs.
 - Merge without Dark.
 - Post publicly outside the PR.
 - Enable Autopilot.

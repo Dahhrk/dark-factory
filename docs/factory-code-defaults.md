@@ -30,5 +30,10 @@ Pointers only. Do not duplicate the full skills here.
 Each twin ships its own artifact: Cursor `.cursor-plugin`, Devin
 `.devin-plugin/plugin.json`, ZCode flat skills. See
 [factory-keep-up.md](factory-keep-up.md) Lane-native manifests. Cursor-only
-trees on Devin are a defect; export/mirror must assert before twin PRs.
+trees on Devin are a defect; export/mirror must assert before twin PRs (`scripts/export-devin-plugin-manifests.mjs --assert` on Devin).
 
+## Windows kitchen writes
+
+Never PowerShell `Set-Content` for kitchen docs. Use Node UTF-8 writes.
+Run `node scripts/check-mojibake.mjs` before push after conflict merges.
+Tracked kit `*.sh` files must be git `100755` (`git update-index --chmod=+x`).
