@@ -47,3 +47,5 @@ DevinGo app remains `Dahhrk/devin-go` only (not kitchen, not a pack twin).
 
 The keep-up routine that checks this mirror is described in
 [docs/factory-keep-up.md](factory-keep-up.md).
+
+Each twin must ship lane-native manifests (Cursor `.cursor-plugin`, Devin `.devin-plugin`, ZCode flat skills); Cursor-only trees on Devin are a defect.

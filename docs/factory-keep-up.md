@@ -21,6 +21,24 @@ is authored there and exported to the Devin and ZCode twins.
 Product repos consume packs only. They do not host factory conventions.
 DevinGo stays `Dahhrk/devin-go` only (not the kitchen, not the plugin pack).
 
+## Lane-native manifests
+
+Each twin must ship its own lane-native plugin artifact. Do not treat a
+Cursor-only tree as valid Devin (or ZCode) content.
+
+| Twin | Required artifact |
+|------|-------------------|
+| `plug-factory` (Cursor) | `.cursor-plugin/plugin.json` (packs at repo root) |
+| `devin-factory-plugins` (Devin) | `plugins/<kit>/.devin-plugin/plugin.json` |
+| `zcode-factory` (ZCode) | flat skills layout (`skills/<kit>-<slug>/`, pack manifest) |
+
+Cursor-only trees on Devin are a defect. Export and mirror must assert the
+lane-native manifest exists for every kit before opening twin PRs. Prefer
+`scripts/export-devin-plugin-manifests.mjs` (Devin) and
+`scripts/export-packs.mjs` (plug-factory targets) so regenerations stay
+consistent. Layout differences across twins are expected; missing an entire
+kit is not.
+
 ## Cadence
 
 Weekdays, 10:30 AM Europe/London. Silent when clean: no report when the
@@ -52,7 +70,7 @@ twins agree and no drift is found.
    `ZCODE_FACTORY_TOKEN` (or `ZCODE_FACTORY_READ_TOKEN`) when set.
 5. After any plug pack edit, regenerate the ZCode twin with
    `node scripts/export-packs.mjs --target zcode` (and the Devin twin with
-   `--target devin` when it is needed), then open mirror PRs on the lagging
+   `--target devin` when it is needed), assert lane-native manifests on every kit, then open mirror PRs on the lagging
    twins. Never merge without Dark. Pack drift is checked with
    `skills/pack-manifest.json` plus a nested compare of the exported skill
    trees. Twin-only adapt files stay on an allowlist so they do not read as
