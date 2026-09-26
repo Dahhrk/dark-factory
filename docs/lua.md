@@ -16,3 +16,5 @@ Coding bar lives in pack **lua-kit** (plug-factory / plugins twin), not in this 
 Do not put Lua product CI into kitchen workflows. Point here only.
 
 Lean public GMod tips stay in [lean-public-tip.md](lean-public-tip.md). Skip Vite bootstrap for Lua addons ([storage-layout.md](storage-layout.md)).
+
+Factory health (CI / review / trust; Facepunch only on Lua): [factory-health.md](factory-health.md).
