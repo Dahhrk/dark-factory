@@ -14,7 +14,7 @@ Thin kitchen bar for how work lands. Not a Feature Map. Not ISO/DORA.
 
 | Stack | Bar |
 |-------|-----|
-| Lua / GMod | Facepunch checklist + pack **lua-kit** (`poteto-lua` standing scorecard, `lua-rg-gate` + `lua-hotpath-gate`) |
+| Lua / GMod | Facepunch checklist + pack **lua-kit** (`poteto-lua` standing scorecard, `lua-rg-gate` + `lua-hotpath-gate` + `luacheck` + `glualint`) |
 | TS / UI | Existing Control-Glass gates (product repos) |
 | Kitchen | Docs only. Point; do not host product CI or Feature Maps here |
 
