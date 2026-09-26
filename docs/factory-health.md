@@ -6,7 +6,7 @@ Thin kitchen bar for how work lands. Not a Feature Map. Not ISO/DORA.
 
 - **CI green** on the product artifact (or local gate exit 0 when Actions cannot run; note billing/runner).
 - **Reviewable PR**: smallest change that advances Done means; leave open until Dark merges.
-- **Plain PR titles**: user-facing titles and labels are work descriptions only (never `pass N` / `full-pass-N` / `poteto pass`). Encoded in lua-kit `poteto-lua`, typescript-kit `poteto-typescript`, python-kit `poteto-python`, go-kit `poteto-go`, and shell-kit `poteto-shell`.
+- **Plain PR titles**: user-facing titles and labels are work descriptions only (never `pass N` / `full-pass-N` / `poteto pass`). Encoded in lua-kit `poteto-lua`, typescript-kit `poteto-typescript`, python-kit `poteto-python`, go-kit `poteto-go`, shell-kit `poteto-shell`, and rust-kit `poteto-rust`.
 - **No secrets** in diffs, logs, or kitchen docs.
 - **Trust boundary** first (auth, net, realm, client input) before micro-opts or polish.
 
@@ -19,8 +19,9 @@ Thin kitchen bar for how work lands. Not a Feature Map. Not ISO/DORA.
 | Python | Pack **python-kit** 0.1.0 (`poteto-python` standing scorecard, `py-rg-gate` single-walk + `py-hotpath-gate` budget + `py-ruff-gate` E/F/B + `py-typing-gate` + `py-test-gate` + env_schema/typed_parse templates + `py-kit-selfcheck`) |
 | Go | Pack **go-kit** 0.1.0 (`poteto-go` standing scorecard, `go-rg-gate` single-walk + `go-hotpath-gate` budget + `go-fmt-gate` + `go-vet-gate` + `go-race-ci-gate` + `go-golangci-gate` bodyclose/errcheck + ctx_errgroup/http_close templates + `go-kit-selfcheck`) |
 | Shell | Pack **shell-kit** 0.1.0 (`poteto-shell` standing scorecard, `sh-rg-gate` single-walk + `sh-hotpath-gate` budget + `sh-shellcheck-gate` + `sh-fmt-gate` + `sh-strict-gate` + `sh-test-gate` + safe_temp/quoted_expand/test_edge templates + `sh-kit-selfcheck`) |
+| Rust | Pack **rust-kit** 0.1.0 (`poteto-rust` standing scorecard, `rust-rg-gate` single-walk + `rust-hotpath-gate` budget + `rust-fmt-gate` + `rust-clippy-gate` + `rust-test-ci-gate` + unsafe_boundary/ffi_extern templates + `rust-kit-selfcheck`) |
 | Kitchen | Docs only. Point; do not host product CI or Feature Maps here |
 
 Facepunch alignment is Lua-only. Other stacks score CI / trust / size without Facepunch.
 
-See also [lua.md](lua.md), [python.md](python.md), [go.md](go.md), [shell.md](shell.md), [pr-workflow.md](pr-workflow.md), [evidence-standard.md](evidence-standard.md).
+See also [lua.md](lua.md), [python.md](python.md), [go.md](go.md), [shell.md](shell.md), [rust.md](rust.md), [pr-workflow.md](pr-workflow.md), [evidence-standard.md](evidence-standard.md).
