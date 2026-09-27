@@ -10,6 +10,14 @@ Account and forge notes that sit beside pstack. Distilled from Pt. 1, workshop t
 - First build slow; later runs from snapshot  
 - **Self-Hosted Machines** (Cursor, Sep 2026): agent loop stays in Cursor; tools can run on **My Machines** (`agent worker start`) or sandbox pools (Modal, E2B, Lambda, …). Moves **compute**, not model billing. Solo default: My Machines if needed; skip AWS/Modal pools until trust + spend allow. Docs: [cursor.com/blog/self-hosted-machines](https://cursor.com/blog/self-hosted-machines).
 
+### Current kitchen / twin posture
+
+Cursor Cloud Agents from Grok Bot are **usage-blocked** until Dark enables
+on-demand. Factory kitchen and twin **doc** PRs prefer `gh` on the box plus
+self-hosted Actions runners / local executors (see [factory-keep-up.md](factory-keep-up.md)
+runner reboot + Cloud Agents sections). Autopilot / overnight fleet stay
+gated by [TRUST-NEXT.md](TRUST-NEXT.md). Do not enable Autopilot from encode.
+
 ## Spend
 
 Workshop token honesty: lab-feeling pools are not a template. **Do not copy the spend.** Set an **on-demand spend cap** before Autopilot. Reframe cost as ROI: hire someone vs make the repo naive-agent-safe. Cost–intelligence sweet spot, not biggest model.
