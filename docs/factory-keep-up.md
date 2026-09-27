@@ -24,20 +24,22 @@ After plug pack edits, regenerate lane dumps with
 `exports/claude` and `exports/chatgpt` (full pack substance from plug-factory,
 hand stubs preserved). Open a draft PR on that kitchen when the dump drifts.
 
-Product repos consume packs only. They do not host factory conventions.
-DevinGo stays `Dahhrk/devin-go` only (not the kitchen, not the plugin pack).
+Product repos consume packs only. They do not host factory conventions. Product repos
+still never merge without Dark. DevinGo stays `Dahhrk/devin-go` only (not the
+kitchen, not the plugin pack).
 
 ## Export ownership after plug write
 
 Write-home is `Dahhrk/plug-factory`. After any **substantive** pack or kit write
 there (new kit, skill body change, convention mirror change, version bump that
-carries substance), someone must re-export and open mirror PRs. Do not leave
-export as tribal knowledge.
+carries substance), the plug-factory `pr-merged` keep-up sync routine triggers
+on-demand keep-up. The same-day run includes weekends. It re-exports and opens
+mirror/re-export PRs so export is not left as tribal knowledge.
 
 | Who | When | What |
 |-----|------|------|
-| Weekday Factory Drift keep-up | Scheduled weekday run (see Cadence) | Full pack sync: Devin + ZCode hard-check twins, plus Claude + ChatGPT lane-native dumps |
-| On-demand keep-up (outer loop) | Right after a substantive plug write, if Drift has not run yet | Same exports; open draft mirror PRs on lagging homes |
+| Weekday Factory Drift keep-up | Safety-net full check at about 10:30 Europe/London on weekdays | Full pack sync: Devin + ZCode hard-check twins, plus Claude + ChatGPT lane-native dumps |
+| On-demand keep-up (outer loop) | Same day, including weekends, whenever a substantive plug-factory pack or kit write lands; triggered by the plug-factory `pr-merged` keep-up sync routine | Same exports; open mirror/re-export PRs on lagging homes |
 
 Commands (from a plug-factory checkout that has `scripts/export-packs.mjs`):
 
@@ -45,19 +47,19 @@ Commands (from a plug-factory checkout that has `scripts/export-packs.mjs`):
 2. `node scripts/export-packs.mjs --target zcode`
 3. `node scripts/export-packs.mjs --target claude` into `Dahhrk/claude-factory`
 4. `node scripts/export-packs.mjs --target chatgpt` into `Dahhrk/chatgpt-factory`
-5. Open draft mirror PRs on any home that drifted. Never merge without Dark.
+5. Factory Drift opens mirror/re-export PRs on any home that drifted.
 
 A plug write that only touches docs or CI with no pack substance may skip export;
 when unsure, run Drift / export and let clean trees stay silent.
 
-## Kitchen peers (Claude + ChatGPT) — five-lane substance-parity
+## Kitchen peers (Claude + ChatGPT): five-lane substance-parity
 
 Five lanes stay substance-parity: Cursor (`plug-factory`) + Devin (`devin-factory-plugins`) + ZCode (`zcode-factory`) + Claude + ChatGPT.
 
 Claude and ChatGPT are **separate** kitchen peers (former mono `Dahhrk/claude-chatgpt-factory` deleted 2026-09-27):
 
-- `Dahhrk/claude-factory` (private) — Claude lane only (Projects / skills / prompts). Full kitchen peer to this repo; **not** a pack twin.
-- `Dahhrk/chatgpt-factory` (private) — ChatGPT lane only (Custom GPTs / custom instructions / projects). Full kitchen peer to this repo; **not** a pack twin.
+- `Dahhrk/claude-factory` (private), Claude lane only (Projects / skills / prompts). Full kitchen peer to this repo; **not** a pack twin.
+- `Dahhrk/chatgpt-factory` (private), ChatGPT lane only (Custom GPTs / custom instructions / projects). Full kitchen peer to this repo; **not** a pack twin.
 
 Pack substance mirrors via **lane-native exports** into each peer. Do **not** run pack hard-check (`drift-check.mjs` / export-packs compare) against either kitchen peer.
 
@@ -65,7 +67,8 @@ Shared kitchen conventions **must** stay in sync with this kitchen: `docs/langua
 
 Weekday Factory Drift includes **full pack sync** on both peers via those lane-native exports (plus convention compare). Pack hard-check stays on pack twins only.
 
-On unexplained drift: open a draft PR on the lagging home; never merge without Dark.
+On unexplained drift, Factory Drift opens a mirror/re-export PR on the lagging
+home.
 
 Former mono `Dahhrk/claude-chatgpt-factory` was deleted 2026-09-27 (Dark). Not in the keep-up set. Do not recreate without Dark.
 
@@ -112,8 +115,9 @@ Attribution and exec-bit gates fail on `100644` shell scripts.
 
 ## Cadence
 
-Weekdays, 10:30 AM Europe/London. Silent when clean: no report when the
-twins agree and no drift is found.
+Weekday Factory Drift at about 10:30 Europe/London remains the safety-net full
+check. It is silent when clean: no report when the twins agree and no drift is
+found.
 
 ## What runs
 
@@ -147,14 +151,19 @@ twins agree and no drift is found.
    twins. Also regenerate Claude/ChatGPT dumps into
    `Dahhrk/claude-factory` with `--target claude` and `Dahhrk/chatgpt-factory`
    with `--target chatgpt`
-   when pack substance changed. Never merge without Dark. Pack drift is checked with
+   when pack substance changed. Factory Drift opens mirror/re-export PRs; Harvey
+   Specter (outer loop) merges factory kit, twin, kitchen, and authorized keep-up
+   PRs when CI is green under the standing auto-merge rule. Autopilot and the
+   overnight fleet stay off until `TRUST-NEXT.md` is green and Dark enables them.
+   Pack drift is checked with
    `skills/pack-manifest.json` plus a nested compare of the exported skill
    trees. Twin-only adapt files stay on an allowlist so they do not read as
    drift.
 
 ## On unexplained drift
 
-Open a mirror PR on the lagging twin. Never merge without Dark.
+Factory Drift opens a mirror/re-export PR on the lagging twin. Harvey Specter
+(outer loop) merges it when CI is green under the standing auto-merge rule.
 
 When the drift is in pack substance, fix it in `Dahhrk/plug-factory` first,
 rerun `node scripts/export-packs.mjs --target zcode` (and `--target devin`
@@ -226,9 +235,11 @@ Spend and pool detail: [spend-and-cloud.md](spend-and-cloud.md).
 - Block encode on CloudAgent when Cursor cloud on-demand is
   exhausted. Prefer box `gh` + self-hosted runners / local executors for
   kitchen and twin encode PRs.
-- Merge without Dark.
+- Merge product repos without Dark.
+- Enable Autopilot or the overnight fleet before `TRUST-NEXT.md` is green and
+  Dark enables them.
 - Post publicly outside the PR.
-- Enable Autopilot.
+- Invent Autopilot.
 - Put secrets in the kitchen.
 - Invent evidence.
 
