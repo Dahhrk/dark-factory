@@ -106,6 +106,19 @@ Public adjacent craft (non-poteto): Garry Tan thin-harness / fat-skills; Cerebra
 | Fat tools / mega prompt vs skills | [thin-harness-fat-skills.md](thin-harness-fat-skills.md) |
 | Slow agent: parallelize + skill procedures | [assistant-speed-harness.md](assistant-speed-harness.md) |
 | Budget / roles / router Keep | [pstack-ama-ops.md](pstack-ama-ops.md) |
+| Memory hygiene / stacked rules | [assistant-memory-hygiene.md](assistant-memory-hygiene.md) |
+| Graph vs chain / multi-agent cost | [assistant-graph-vs-chain.md](assistant-graph-vs-chain.md) |
+| Overnight / Autopilot | [TRUST-NEXT.md](TRUST-NEXT.md) only |
+
+## Assistant memory hygiene + graph vs chain (public X encode)
+
+Public adjacent encode: memory as discrete notes with human-gated cleanup; harness vs loop vs graph vs chain. **Encode only** - not Autopilot. Full recipes: [assistant-memory-hygiene.md](assistant-memory-hygiene.md) · [assistant-graph-vs-chain.md](assistant-graph-vs-chain.md).
+
+| Need | Reach for |
+|------|-----------|
+| Stale / stacked memory rules | [assistant-memory-hygiene.md](assistant-memory-hygiene.md) |
+| Graph vs chain vs dashboard | [assistant-graph-vs-chain.md](assistant-graph-vs-chain.md) |
+| Slow agent: parallelize + skill procedures | [assistant-speed-harness.md](assistant-speed-harness.md) |
 | Overnight / Autopilot | [TRUST-NEXT.md](TRUST-NEXT.md) only |
 
 ## Effort dial + prompting deltas (public X encode)
@@ -149,6 +162,8 @@ Instruction-only Agent Skill for heavy multi-step / high-assurance work. **Not**
 - [effort-and-prompting.md](effort-and-prompting.md)
 - [thin-harness-fat-skills.md](thin-harness-fat-skills.md)
 - [assistant-speed-harness.md](assistant-speed-harness.md)
+- [assistant-memory-hygiene.md](assistant-memory-hygiene.md)
+- [assistant-graph-vs-chain.md](assistant-graph-vs-chain.md)
 - [adjacent-taste.md](adjacent-taste.md)
 - [adjacent-growth.md](adjacent-growth.md)
 - [dune-method.md](dune-method.md)

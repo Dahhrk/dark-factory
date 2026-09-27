@@ -47,6 +47,8 @@ Thesis: assistant slowness is often **harness + discovery**, not only model qual
 - [why-throughput.md](why-throughput.md)
 - [spend-and-cloud.md](spend-and-cloud.md)
 - [workshop-grok-bot.md](workshop-grok-bot.md)
+- [assistant-graph-vs-chain.md](assistant-graph-vs-chain.md)
+- [assistant-memory-hygiene.md](assistant-memory-hygiene.md)
 - [adjacent-craft.md](adjacent-craft.md)
 
 ## Harvey operating defaults (encode 2026-09-27)
