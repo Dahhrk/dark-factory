@@ -94,6 +94,25 @@ is still absent) and `scripts/export-packs.mjs` (plug-factory targets) so
 regenerations stay consistent. Creating without asserting is not enough.
 Layout differences across twins are expected; missing an entire kit is not.
 
+## Factory-init Step 0 (self-provision)
+
+Each coding lane's onboard skill (or kitchen doc) starts with **Step 0**:
+detect missing packs, install from the Dahhrk home with **lane-native**
+commands, and **fail closed** when `gh` has no Dahhrk org access. Auth
+stays the human's job; do not invent or store credentials.
+
+| Home | Where Step 0 lives | Install path |
+|------|--------------------|--------------|
+| `devin-factory-plugins` | `plugins/factory-baseline/skills/factory-init` | `devin plugins install -y Dahhrk/devin-factory-plugins` |
+| `plug-factory` | `cursor-team-kit/skills/factory-init` | `/add-plugin pstack` + `/add-plugin cursor-team-kit` (marketplace; write home `Dahhrk/plug-factory`) |
+| `zcode-factory` | `skills/factory-init` | Clone `Dahhrk/zcode-factory` and install the `.zcode-plugin` from that checkout |
+| `claude-factory` | `docs/factory-init.md` | Clone kitchen; seat `exports/` into Claude Project / skills / prompts |
+| `chatgpt-factory` | `docs/factory-init.md` | Clone kitchen; seat `exports/` into Custom GPT / Project |
+
+Done means for a bare session: one prompt seats packs, finds the kitchen
+clone path, and continues onboard. Draft-PR-only and Autopilot-off stay
+unchanged.
+
 ## Kitchen doc write path (Windows)
 
 PowerShell `Set-Content` / `Out-File` double-encodes UTF-8. Kitchen docs with
