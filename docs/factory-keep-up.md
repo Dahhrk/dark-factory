@@ -111,7 +111,9 @@ stays the human's job; do not invent or store credentials.
 
 Done means for a bare session: one prompt seats packs, finds the kitchen
 clone path, and continues onboard. Draft-PR-only and Autopilot-off stay
-unchanged.
+unchanged. Factory-init also seats language kits across lanes: census
+extensions, vendor kit gates into the product, and install or attach the
+kit with lane-native commands (see each home's factory-init skill or doc).
 
 ## Kitchen doc write path (Windows)
 
