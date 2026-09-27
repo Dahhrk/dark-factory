@@ -4,7 +4,7 @@ This kitchen is **inspired by** public pstack / Cursor agent-factory materials. 
 
 | Layer | What it is | Our match |
 |-------|------------|-----------|
-| **Public OS** | Cursor marketplace **`pstack`** + **`cursor-team-kit`** | Same plugins — do not vendor |
+| **Public OS** | Cursor marketplace **`pstack`** + **`cursor-team-kit`** + language **`*-kit`** packs | Same plugins - do not vendor |
 | **Public teaching** | Essays, workshops, guides | **`dark-factory/docs/`** (source archive + recipes) |
 | **Public examples** | verification-skill-example (Atlas), noodle, Benny *pack* in pstack | **`examples/`** + **`templates/product-bootstrap/`**; Benny via pstack when Slack is real |
 | **Global prefs** | Model map / habits | `~/.cursor/rules/` + user factory rule |
@@ -12,7 +12,7 @@ This kitchen is **inspired by** public pstack / Cursor agent-factory materials. 
 | **Private ops** | Slack + Grok Bot routines + Cloud Agents + secrets | `automations/*` staged; you enable |
 
 ```text
-PUBLIC OS        →  pstack + cursor-team-kit   (marketplace)
+PUBLIC OS        →  pstack + cursor-team-kit + language *-kit packs   (marketplace)
 PUBLIC TEACHING  →  dark-factory              (this repo)
 PUBLIC EXAMPLES  →  examples + templates
 PRIVATE PRODUCT  →  ~/Projects/Control-Glass  (and other apps)
