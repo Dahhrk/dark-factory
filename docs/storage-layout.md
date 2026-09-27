@@ -6,7 +6,7 @@ How the public pstack / agent-factory stack is stored in the wild, and how **thi
 
 | Layer | Store | Updates |
 |-------|--------|---------|
-| Public OS | Cursor marketplace (`pstack`, `cursor-team-kit`) | Plugin auto-update — do not vendor |
+| Public OS | Cursor marketplace (`pstack`, `cursor-team-kit`, language `*-kit` packs) | Plugin auto-update - do not vendor |
 | Public teaching | X / LinkedIn / grokbot.sh / `github.com/poteto/*` | Essays, Atlas *example*, noodle skills, Benny *pack* |
 | Global prefs | `~/.cursor/rules/` (e.g. model map) | Once per machine |
 | Private product | Private git remote(s) | Real `control-*`, Feature Map, Dune CI, app code |
@@ -22,6 +22,7 @@ How the public pstack / agent-factory stack is stored in the wild, and how **thi
 ~/.cursor/plugins/...     PUBLIC OS (marketplace cache)
   pstack/
   cursor-team-kit/
+  *-kit/                  (language packs from Dahhrk/plugins)
 
 ~/Projects/dark-factory/  PUBLIC KITCHEN (safe to publish)
   docs/                   distill / OS recreate
