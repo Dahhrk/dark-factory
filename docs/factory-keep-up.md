@@ -31,7 +31,7 @@ DevinGo stays `Dahhrk/devin-go` only (not the kitchen, not the plugin pack).
 
 Five lanes stay substance-parity: Cursor (`plug-factory`) + Devin (`devin-factory-plugins`) + ZCode (`zcode-factory`) + Claude + ChatGPT.
 
-Claude and ChatGPT are **separate** kitchen peers (split from deprecated mono `Dahhrk/claude-chatgpt-factory`):
+Claude and ChatGPT are **separate** kitchen peers (former mono `Dahhrk/claude-chatgpt-factory` deleted 2026-09-27):
 
 - `Dahhrk/claude-factory` (private) — Claude lane only (Projects / skills / prompts). Full kitchen peer to this repo; **not** a pack twin.
 - `Dahhrk/chatgpt-factory` (private) — ChatGPT lane only (Custom GPTs / custom instructions / projects). Full kitchen peer to this repo; **not** a pack twin.
@@ -44,7 +44,7 @@ Weekday Factory Drift includes **full pack sync** on both peers via those lane-n
 
 On unexplained drift: open a draft PR on the lagging home; never merge without Dark.
 
-Deprecated mono `Dahhrk/claude-chatgpt-factory` is a redirect stub only (not in the keep-up set). Ask Harvey before delete; no force-delete without Dark.
+Former mono `Dahhrk/claude-chatgpt-factory` was deleted 2026-09-27 (Dark). Not in the keep-up set. Do not recreate without Dark.
 
 
 ## Lane-native manifests
