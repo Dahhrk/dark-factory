@@ -18,6 +18,12 @@ The twins carry shared conventions and overlapping packs, skills, and rules.
 They stay mirrored. Pack write home is `Dahhrk/plug-factory`: pack substance
 is authored there and exported to the Devin and ZCode twins.
 
+Claude + ChatGPT kitchen: `Dahhrk/claude-chatgpt-factory`. Not a nested
+pack twin. After plug pack edits, regenerate lane dumps with
+`node scripts/export-packs.mjs --target claude` and `--target chatgpt` into
+`exports/claude` and `exports/chatgpt` (full pack substance from plug-factory,
+hand stubs preserved). Open a draft PR on that kitchen when the dump drifts.
+
 Product repos consume packs only. They do not host factory conventions.
 DevinGo stays `Dahhrk/devin-go` only (not the kitchen, not the plugin pack).
 
@@ -105,7 +111,9 @@ twins agree and no drift is found.
 5. After any plug pack edit, regenerate the ZCode twin with
    `node scripts/export-packs.mjs --target zcode` (and the Devin twin with
    `--target devin` when it is needed), assert lane-native manifests on every kit, then open mirror PRs on the lagging
-   twins. Never merge without Dark. Pack drift is checked with
+   twins. Also regenerate Claude/ChatGPT dumps into
+   `Dahhrk/claude-chatgpt-factory` with `--target claude` and `--target chatgpt`
+   when pack substance changed. Never merge without Dark. Pack drift is checked with
    `skills/pack-manifest.json` plus a nested compare of the exported skill
    trees. Twin-only adapt files stay on an allowlist so they do not read as
    drift.
@@ -116,7 +124,8 @@ Open a mirror PR on the lagging twin. Never merge without Dark.
 
 When the drift is in pack substance, fix it in `Dahhrk/plug-factory` first,
 rerun `node scripts/export-packs.mjs --target zcode` (and `--target devin`
-when needed), and mirror the export onto the lagging twins.
+when needed; `--target claude` / `--target chatgpt` for the Claude/ChatGPT
+kitchen dumps), and mirror the export onto the lagging homes.
 
 When both sides carry conflicting edits, do not pick a winner. Ask which one
 wins, then mirror that choice.
