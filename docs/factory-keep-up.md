@@ -21,6 +21,15 @@ is authored there and exported to the Devin and ZCode twins.
 Product repos consume packs only. They do not host factory conventions.
 DevinGo stays `Dahhrk/devin-go` only (not the kitchen, not the plugin pack).
 
+## Kitchen peer (Claude + ChatGPT)
+
+- `Dahhrk/claude-chatgpt-factory` (private; formerly `chat-factory`) is a **full kitchen peer** to this repo, not a pack twin.
+- Export targets: Claude (Projects / skills / prompts) and ChatGPT (Custom GPTs / custom instructions / projects).
+- Shared kitchen conventions **must** stay in sync with this kitchen: `docs/language-conventions.md`, `docs/naming.md`, `audit/decisions.tsv` shape, `intake/QUEUE.md` shape, poteto-mode / Done means.
+- Weekday Factory Drift includes convention drift on this peer. Pack hard-check (`drift-check.mjs`) stays on pack twins only.
+- On unexplained convention drift: open a draft PR on the lagging kitchen; never merge without Dark.
+
+
 ## Lane-native manifests
 
 Each twin must ship its own lane-native plugin artifact. Do not treat a
@@ -66,8 +75,9 @@ twins agree and no drift is found.
 
 ## What runs
 
-1. Refresh all four mains from GitHub, including `Dahhrk/plug-factory` and
-   `Dahhrk/zcode-factory`.
+1. Refresh pack-twin mains from GitHub (`dark-factory`, `devin-factory-plugins`,
+   `plug-factory`, `zcode-factory`) plus kitchen peer `claude-chatgpt-factory` for
+   convention compare only.
 2. Compare convention mirrors. At minimum
    `docs/language-conventions.md` in the kitchen against
    `plugins/factory-baseline/rules/language-conventions.md` in the plugin
