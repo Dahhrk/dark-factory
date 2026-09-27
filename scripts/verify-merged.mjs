@@ -15,8 +15,9 @@ const opt = (name) => {
 };
 const pr = opt("pr");
 const repo = opt("repo");
+const remote = opt("remote") || "origin";
 if (!pr) {
-  console.error("usage: node scripts/verify-merged.mjs --pr <number> [--repo owner/name]");
+  console.error("usage: node scripts/verify-merged.mjs --pr <number> [--repo owner/name] [--remote name]");
   process.exit(2);
 }
 
@@ -44,7 +45,7 @@ const ensure = (sha, refspec) => {
   try {
     git(["cat-file", "-e", sha]);
   } catch {
-    git(["fetch", "origin", refspec]);
+    git(["fetch", remote, refspec]);
   }
 };
 ensure(mergeSha, info.baseRefName);
@@ -68,7 +69,7 @@ if (parents.length >= 2) {
   }
 }
 
-const remoteTip = git(["ls-remote", "origin", `refs/heads/${info.headRefName}`]).split("\t")[0];
+const remoteTip = git(["ls-remote", remote, `refs/heads/${info.headRefName}`]).split("\t")[0];
 if (remoteTip) {
   ensure(remoteTip, info.headRefName);
   const ahead = spawnSync("git", ["merge-base", "--is-ancestor", headSha, remoteTip]).status === 0;
