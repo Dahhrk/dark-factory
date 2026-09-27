@@ -232,6 +232,11 @@ Spend and pool detail: [spend-and-cloud.md](spend-and-cloud.md).
 - Put secrets in the kitchen.
 - Invent evidence.
 
+
+## Harness contracts
+
+Handoff, receipt, autonomy, and failure-to-infra: [harness/README.md](harness/README.md).
+
 ## Code defaults
 
 Shipping bar for both lanes: [docs/factory-code-defaults.md](factory-code-defaults.md).

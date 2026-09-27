@@ -62,6 +62,7 @@ Non-trivial product work: outcome + Done means + Keep. Green build ≠ done. Mat
 | [docs/storage-layout.md](docs/storage-layout.md) | Disk paths |
 | [docs/SETUP-STATUS.md](docs/SETUP-STATUS.md) | Gate board |
 | [docs/TRUST-NEXT.md](docs/TRUST-NEXT.md) | Trust overnight before Autopilot |
+| [docs/harness/](docs/harness/README.md) | Task contract, run receipt, autonomy checklist, failure-to-infra |
 | [docs/triage-subscribe.md](docs/triage-subscribe.md) | Outer-loop triage recipe (fail closed without Slack) |
 | [docs/spend-and-cloud.md](docs/spend-and-cloud.md) | Caps, Cursor Models, self-hosted workers |
 | [examples/](examples/) | Public examples (Atlas-style) |
