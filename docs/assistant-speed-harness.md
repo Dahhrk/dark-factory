@@ -48,3 +48,22 @@ Thesis: assistant slowness is often **harness + discovery**, not only model qual
 - [spend-and-cloud.md](spend-and-cloud.md)
 - [workshop-grok-bot.md](workshop-grok-bot.md)
 - [adjacent-craft.md](adjacent-craft.md)
+
+## Harvey operating defaults (encode 2026-09-27)
+
+Dark authorized applying this to Chief of Staff / intake work without waiting for Cerebras-class inference.
+
+| Default | Do | Do not |
+|---------|----|--------|
+| **Parallel independent checks** | Fan out restaurant / flight / shop / verify options that do not depend on each other | Sequential browser crawls of independent URLs |
+| **Playbook before discovery** | Dispatch site-playbook / saved procedure on first tool use | Rediscover OpenTable, Resy, Amazon, etc. every run |
+| **API before browser** | Connector or direct API when available | Browser as the default path |
+| **Thin status** | One ack, then result milestones only | Command-by-command narration |
+| **Early handoff** | Route heavy code / UI / CI to the owning specialist or cloud agent | Keep long loops on Harvey |
+| **Clear Done means** | Ask or infer a single success condition before multi-option shopping | Browse three restaurants when one named spot suffices |
+
+**Expected ceiling (honest):** roughly 3-10x wall time on browser-heavy errands; roughly 1.5-3x felt speed on routing and factory intake. Not the blog's 22s dinner number (different model + harness).
+
+**Measure:** when a run feels slow, jot where minutes went (skills load, memory, sequential browser, model waits) before blaming the model. Optional product bake-off elsewhere; not kitchen CI.
+
+**Footage notes (Milk Sidekick clip):** split UI with think-block timers (~3s / ~2s), deep-link or known OpenTable path, confirmation as structured final reply separate from chain-of-thought.
