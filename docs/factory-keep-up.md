@@ -19,13 +19,36 @@ They stay mirrored. Pack write home is `Dahhrk/plug-factory`: pack substance
 is authored there and exported to the Devin and ZCode twins.
 
 Claude kitchen: `Dahhrk/claude-factory`. ChatGPT kitchen: `Dahhrk/chatgpt-factory`.
-pack twin. After plug pack edits, regenerate lane dumps with
+After plug pack edits, regenerate lane dumps with
 `node scripts/export-packs.mjs --target claude` and `--target chatgpt` into
 `exports/claude` and `exports/chatgpt` (full pack substance from plug-factory,
 hand stubs preserved). Open a draft PR on that kitchen when the dump drifts.
 
 Product repos consume packs only. They do not host factory conventions.
 DevinGo stays `Dahhrk/devin-go` only (not the kitchen, not the plugin pack).
+
+## Export ownership after plug write
+
+Write-home is `Dahhrk/plug-factory`. After any **substantive** pack or kit write
+there (new kit, skill body change, convention mirror change, version bump that
+carries substance), someone must re-export and open mirror PRs. Do not leave
+export as tribal knowledge.
+
+| Who | When | What |
+|-----|------|------|
+| Weekday Factory Drift keep-up | Scheduled weekday run (see Cadence) | Full pack sync: Devin + ZCode hard-check twins, plus Claude + ChatGPT lane-native dumps |
+| On-demand keep-up (outer loop) | Right after a substantive plug write, if Drift has not run yet | Same exports; open draft mirror PRs on lagging homes |
+
+Commands (from a plug-factory checkout that has `scripts/export-packs.mjs`):
+
+1. `node scripts/export-packs.mjs --target devin` then assert lane-native manifests
+2. `node scripts/export-packs.mjs --target zcode`
+3. `node scripts/export-packs.mjs --target claude` into `Dahhrk/claude-factory`
+4. `node scripts/export-packs.mjs --target chatgpt` into `Dahhrk/chatgpt-factory`
+5. Open draft mirror PRs on any home that drifted. Never merge without Dark.
+
+A plug write that only touches docs or CI with no pack substance may skip export;
+when unsure, run Drift / export and let clean trees stay silent.
 
 ## Kitchen peers (Claude + ChatGPT) — five-lane substance-parity
 
@@ -141,10 +164,68 @@ kitchen dumps), and mirror the export onto the lagging homes.
 When both sides carry conflicting edits, do not pick a winner. Ask which one
 wins, then mirror that choice.
 
+## Runner reboot recovery
+
+Box self-hosted Actions runners die across a Grok Bot computer reboot. Routine
+`factory runners keep-alive` already covers this on a schedule. After a reboot
+(or when CI sits queued with no runner), humans and agents must run:
+
+```bash
+/home/box/ensure-all-factory-runners.sh
+```
+
+That script calls `ensure-running.sh` in each of these six dirs:
+
+| Dir | Typical labels / home |
+|-----|------------------------|
+| `/home/box/actions-runner` | plug-factory |
+| `/home/box/actions-runner-zcode` | zcode-factory |
+| `/home/box/actions-runner-dark-factory` | dark-factory |
+| `/home/box/actions-runner-devin-plugins` | devin-plugins |
+| `/home/box/actions-runner-claude-factory` | claude-factory |
+| `/home/box/actions-runner-chatgpt-factory` | chatgpt-factory |
+
+Do not invent systemd units or cron on this box; keep-alive + the ensure script
+are the recovery path. Cloud `ubuntu-latest` runners may be billing-blocked;
+kitchen and twin CI prefer these self-hosted labels.
+
+## Actions secret inventory (names only)
+
+Names only. Never put values, PATs, or token bodies in this kitchen.
+
+Verified against twin workflow YAML (clone/sync steps). Alternate `*_READ_TOKEN`
+names are accepted by those workflows when the primary is unset.
+
+| Repo | Secrets needed for CI clone/sync | Notes |
+|------|----------------------------------|-------|
+| `Dahhrk/devin-factory-plugins` | `PLUG_FACTORY_TOKEN` (or `PLUG_FACTORY_READ_TOKEN`); `ZCODE_FACTORY_TOKEN` (or `ZCODE_FACTORY_READ_TOKEN`) | `validate.yml` clones private plug-factory and zcode-factory. Falls back / skips with warning if unset. Also uses `GITHUB_TOKEN`. |
+| `Dahhrk/zcode-factory` | `DARK_FACTORY_TOKEN` (or `DARK_FACTORY_READ_TOKEN`) | `drift-check.yml` clones dark-factory for conventions header compare. Structural-only if unset. Also uses `GITHUB_TOKEN`. |
+| `Dahhrk/plug-factory` | none beyond `GITHUB_TOKEN` | `validate.yml` / `sync-from-plugins.yml` use `GITHUB_TOKEN` only (verified). |
+| `Dahhrk/dark-factory` | none beyond `GITHUB_TOKEN` | Kitchen CI / factory-gate; no private twin clone (verified). |
+| `Dahhrk/claude-factory` | none beyond `GITHUB_TOKEN` for current kitchen-ci / factory-gate | Pack sync is lane-native export from plug-factory, not a CI clone of plug. Mark **verify-needed** if a future sync workflow adds a private clone. |
+| `Dahhrk/chatgpt-factory` | none beyond `GITHUB_TOKEN` for current kitchen-ci / factory-gate | Same as claude-factory. Mark **verify-needed** if a future sync workflow adds a private clone. |
+
+Do not invent additional secret names. If a workflow gains a private clone
+step, update this table from the YAML, not from memory.
+
+## Cloud Agents posture (kitchen / twin docs)
+
+Cursor Cloud Agents launched from Grok Bot are currently **usage-blocked**
+until Dark enables on-demand spend. Factory kitchen and twin doc PRs prefer
+`gh` on the box plus the self-hosted runners / local executors above.
+
+- Do **not** block encode waiting for Cloud Agents when on-demand is dry.
+- Autopilot and overnight fleet stay gated by [TRUST-NEXT.md](TRUST-NEXT.md).
+- Do **not** enable Autopilot from keep-up.
+- Do **not** invent pack smells to fill an empty encode.
+
+Spend and pool detail: [spend-and-cloud.md](spend-and-cloud.md).
+
 ## Never
 
 - Block encode on CloudAgent when Cursor cloud on-demand is
-  exhausted. Prefer Criminal/local `gh` merge for kitchen encode PRs.
+  exhausted. Prefer box `gh` + self-hosted runners / local executors for
+  kitchen and twin encode PRs.
 - Merge without Dark.
 - Post publicly outside the PR.
 - Enable Autopilot.
