@@ -18,7 +18,7 @@ The twins carry shared conventions and overlapping packs, skills, and rules.
 They stay mirrored. Pack write home is `Dahhrk/plug-factory`: pack substance
 is authored there and exported to the Devin and ZCode twins.
 
-Claude + ChatGPT kitchen: `Dahhrk/claude-chatgpt-factory`. Not a nested
+Claude kitchen: `Dahhrk/claude-factory`. ChatGPT kitchen: `Dahhrk/chatgpt-factory`.
 pack twin. After plug pack edits, regenerate lane dumps with
 `node scripts/export-packs.mjs --target claude` and `--target chatgpt` into
 `exports/claude` and `exports/chatgpt` (full pack substance from plug-factory,
@@ -27,15 +27,24 @@ hand stubs preserved). Open a draft PR on that kitchen when the dump drifts.
 Product repos consume packs only. They do not host factory conventions.
 DevinGo stays `Dahhrk/devin-go` only (not the kitchen, not the plugin pack).
 
-## Kitchen peer (Claude + ChatGPT) — five-home substance-parity
+## Kitchen peers (Claude + ChatGPT) — five-lane substance-parity
 
-Five homes stay substance-parity: Cursor (`plug-factory`) + Devin (`devin-factory-plugins`) + ZCode (`zcode-factory`) + Claude + ChatGPT.
+Five lanes stay substance-parity: Cursor (`plug-factory`) + Devin (`devin-factory-plugins`) + ZCode (`zcode-factory`) + Claude + ChatGPT.
 
-- `Dahhrk/claude-chatgpt-factory` (private; formerly `chat-factory`) is a **full kitchen peer** to this repo, not a pack twin. It holds the Claude and ChatGPT lanes in one mono repo.
-- Pack substance mirrors via **lane-native exports** into Claude (Projects / skills / prompts) and ChatGPT (Custom GPTs / custom instructions / projects). Do **not** run pack hard-check (`drift-check.mjs` / export-packs compare) against this peer.
-- Shared kitchen conventions **must** stay in sync with this kitchen: `docs/language-conventions.md`, `docs/naming.md`, `audit/decisions.tsv` shape, `intake/QUEUE.md` shape, poteto-mode / Done means.
-- Weekday Factory Drift includes **full pack sync** on this peer via those lane-native exports (plus convention compare). Pack hard-check stays on pack twins only.
-- On unexplained drift: open a draft PR on the lagging home; never merge without Dark.
+Claude and ChatGPT are **separate** kitchen peers (split from deprecated mono `Dahhrk/claude-chatgpt-factory`):
+
+- `Dahhrk/claude-factory` (private) — Claude lane only (Projects / skills / prompts). Full kitchen peer to this repo; **not** a pack twin.
+- `Dahhrk/chatgpt-factory` (private) — ChatGPT lane only (Custom GPTs / custom instructions / projects). Full kitchen peer to this repo; **not** a pack twin.
+
+Pack substance mirrors via **lane-native exports** into each peer. Do **not** run pack hard-check (`drift-check.mjs` / export-packs compare) against either kitchen peer.
+
+Shared kitchen conventions **must** stay in sync with this kitchen: `docs/language-conventions.md`, `docs/naming.md`, `audit/decisions.tsv` shape, `intake/QUEUE.md` shape, poteto-mode / Done means.
+
+Weekday Factory Drift includes **full pack sync** on both peers via those lane-native exports (plus convention compare). Pack hard-check stays on pack twins only.
+
+On unexplained drift: open a draft PR on the lagging home; never merge without Dark.
+
+Deprecated mono `Dahhrk/claude-chatgpt-factory` is a redirect stub only (not in the keep-up set). Ask Harvey before delete; no force-delete without Dark.
 
 
 ## Lane-native manifests
@@ -48,8 +57,8 @@ Cursor-only tree as valid Devin (or ZCode) content.
 | `plug-factory` (Cursor) | `.cursor-plugin/plugin.json` (packs at repo root) |
 | `devin-factory-plugins` (Devin) | `plugins/<kit>/.devin-plugin/plugin.json` |
 | `zcode-factory` (ZCode) | flat skills layout (`skills/<kit>-<slug>/`, pack manifest) |
-| `claude-chatgpt-factory` (Claude) | lane-native Claude exports (Projects / skills / prompts) |
-| `claude-chatgpt-factory` (ChatGPT) | lane-native ChatGPT exports (Custom GPTs / custom instructions / projects) |
+| `claude-factory` (Claude) | lane-native Claude exports (Projects / skills / prompts) |
+| `chatgpt-factory` (ChatGPT) | lane-native ChatGPT exports (Custom GPTs / custom instructions / projects) |
 
 Cursor-only trees on Devin are a defect. Export and mirror must assert the
 lane-native manifest exists for every kit before opening twin PRs. Prefer
@@ -86,8 +95,9 @@ twins agree and no drift is found.
 ## What runs
 
 1. Refresh pack-twin mains from GitHub (`dark-factory`, `devin-factory-plugins`,
-   `plug-factory`, `zcode-factory`) plus kitchen peer `claude-chatgpt-factory` for
-   convention compare and lane-native Claude/ChatGPT export parity (not pack hard-check).
+   `plug-factory`, `zcode-factory`) plus kitchen peers `claude-factory` and
+   `chatgpt-factory` for convention compare and lane-native export parity
+   (not pack hard-check).
 2. Compare convention mirrors. At minimum
    `docs/language-conventions.md` in the kitchen against
    `plugins/factory-baseline/rules/language-conventions.md` in the plugin
@@ -112,7 +122,8 @@ twins agree and no drift is found.
    `node scripts/export-packs.mjs --target zcode` (and the Devin twin with
    `--target devin` when it is needed), assert lane-native manifests on every kit, then open mirror PRs on the lagging
    twins. Also regenerate Claude/ChatGPT dumps into
-   `Dahhrk/claude-chatgpt-factory` with `--target claude` and `--target chatgpt`
+   `Dahhrk/claude-factory` with `--target claude` and `Dahhrk/chatgpt-factory`
+   with `--target chatgpt`
    when pack substance changed. Never merge without Dark. Pack drift is checked with
    `skills/pack-manifest.json` plus a nested compare of the exported skill
    trees. Twin-only adapt files stay on an allowlist so they do not read as
