@@ -51,10 +51,14 @@ if ((Test-Path $pkg) -and (Test-Path $wire)) {
 
 $agentsSrc = Join-Path $PSScriptRoot "AGENTS.product.md"
 $privateSrc = Join-Path $PSScriptRoot "PRIVATE.product.md"
+$claudeSrc = Join-Path $PSScriptRoot "CLAUDE.product.md"
 if (Test-Path $agentsSrc) {
   $name = Split-Path $TargetRepo -Leaf
   [IO.File]::WriteAllText((Join-Path $destRoot "AGENTS.md"), ((Get-Content $agentsSrc -Raw -Encoding UTF8) -replace '\{\{PRODUCT\}\}', $name))
   [IO.File]::WriteAllText((Join-Path $destRoot "PRIVATE.md"), ((Get-Content $privateSrc -Raw -Encoding UTF8) -replace '\{\{PRODUCT\}\}', $name))
+  if (Test-Path $claudeSrc) {
+    [IO.File]::WriteAllText((Join-Path $destRoot "CLAUDE.md"), ((Get-Content $claudeSrc -Raw -Encoding UTF8) -replace '\{\{PRODUCT\}\}', $name))
+  }
 }
 
 $auditDir = Join-Path $destRoot "audit"
@@ -65,7 +69,7 @@ Copy-Item -Force (Join-Path $PSScriptRoot "audit\smells.tsv") (Join-Path $auditD
 Copy-Item -Force (Join-Path $PSScriptRoot "SELF-IMPROVE.product.md") (Join-Path $docsDir "SELF-IMPROVE.md")
 Copy-Item -Force (Join-Path $PSScriptRoot "factory-gate.product.yml") (Join-Path $wfDir "factory-gate.yml")
 
-Write-Host "Copied BUGBOT.md, .cursor/dune.md, .cursor/settings.json, .cursor/rules/anti-ai-ui.mdc, gates/*.mjs -> scripts/, .devin/blueprint.yaml, .devin/config.json, AGENTS.md, PRIVATE.md, audit/smells.tsv, docs/SELF-IMPROVE.md, .github/workflows/factory-gate.yml"
+Write-Host "Copied BUGBOT.md, .cursor/dune.md, .cursor/settings.json, .cursor/rules/anti-ai-ui.mdc, gates/*.mjs -> scripts/, .devin/blueprint.yaml, .devin/config.json, AGENTS.md, CLAUDE.md, PRIVATE.md, audit/smells.tsv, docs/SELF-IMPROVE.md, .github/workflows/factory-gate.yml"
 Write-Host "Wired package.json gate scripts when package.json exists. No visual-parity (needs baselines)."
 
 Push-Location $TargetRepo

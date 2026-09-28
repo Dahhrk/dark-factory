@@ -26,9 +26,17 @@ Do not label work as Phase N, Slice N, Section N, Wave N, Wave A/B/C, or any sim
 
 In chat, docs, PR titles, and commit titles: use plain work descriptions (what changed), not wave/phase/slice/section labels.
 
+## Prose system
+
+Default writing system is [orwell-prose](orwell-prose.md) (rules 1-12). Positive
+rules that build voice. Apply before delivering docs, PRs, commits, chat
+reports, and landing copy. `unslop` is a secondary pattern gate, not the
+main system. Project `AGENTS.md` / `CLAUDE.md` may override voice.
+
 ## Punctuation
 
-No em dashes. Use periods, commas, or parentheses.
+No em dashes. Use periods, commas, or parentheses. This is a secondary gate
+under orwell-prose, not the writing system itself.
 
 ## Keep
 
