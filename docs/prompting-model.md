@@ -2,6 +2,8 @@
 
 **VERIFIED** in pstack guide + playbooks: state the **outcome** and the **check**. Let the workflow choose the ceremony.
 
+**Default:** every non-trivial ask is a one-shot task. Vague one-liners go through poteto-prompt into this shape, then poteto-mode. Agents start on that route automatically. See [one-shot-task.md](one-shot-task.md). Kitchen `done_when` on the [task contract](harness/task-contract.md) is the same idea as Done means.
+
 ## Shape
 
 ```text
