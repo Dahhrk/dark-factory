@@ -23,4 +23,4 @@ Craft ideas here track public harness essays (thin loop, evidence, encode repeat
 
 ## Related
 
-[operating-manual.md](../operating-manual.md) · [quality-ladder.md](../quality-ladder.md) · [SELF-IMPROVE.md](../SELF-IMPROVE.md) · [language-conventions.md](../language-conventions.md)
+[one-shot-task.md](../one-shot-task.md) (default entry; Done means ≡ `done_when`) · [prompting-model.md](../prompting-model.md) · [operating-manual.md](../operating-manual.md) · [quality-ladder.md](../quality-ladder.md) · [SELF-IMPROVE.md](../SELF-IMPROVE.md) · [language-conventions.md](../language-conventions.md)

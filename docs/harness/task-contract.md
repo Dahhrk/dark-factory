@@ -12,7 +12,7 @@ Fill the template before work starts. Incomplete contracts stay in inbox.
 | `inputs` | Paths, PRs, URLs, ledgers, or prior receipts the agent must read. |
 | `constraints` | Keep lines: Autopilot off, no secrets, spend cap, draft-only, and so on. |
 | `deliverable` | What lands: files, PR, receipt, QUEUE update. |
-| `done_when` | Checkable predicate (command, CI, artifact, or ledger row). |
+| `done_when` | Checkable predicate (command, CI, artifact, or ledger row). Same idea as poteto **Done means**; see [one-shot-task.md](../one-shot-task.md). |
 | `approval_required` | What needs Dark (or named owner) before acting. Empty only when nothing irreversible. |
 
 ## YAML example
