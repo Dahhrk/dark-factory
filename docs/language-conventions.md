@@ -28,10 +28,11 @@ In chat, docs, PR titles, and commit titles: use plain work descriptions (what c
 
 ## Prose system
 
-Default writing system is [orwell-prose](orwell-prose.md) (rules 1-12). Positive
-rules that build voice. Apply before delivering docs, PRs, commits, chat
-reports, and landing copy. `unslop` is a secondary pattern gate, not the
-main system. Project `AGENTS.md` / `CLAUDE.md` may override voice.
+Default writing system is [orwell-prose](orwell-prose.md) (rules 1-12), same
+contract shape as one-shot-task. Agents apply automatically on every prose
+path; do not wait to be asked. Positive rules that build voice. `unslop` is
+a secondary pattern gate, not the main system. Project `AGENTS.md` /
+`CLAUDE.md` may override voice.
 
 ## Punctuation
 
