@@ -74,5 +74,7 @@ first.
 
 - [language-conventions.md](language-conventions.md) (names, work labels, no em dash)
 - [one-shot-task.md](one-shot-task.md)
+- [figma-from-system.md](figma-from-system.md)
+- [product-debate.md](product-debate.md)
 - plug-factory `cursor-team-kit/skills/orwell-prose/SKILL.md`
 - pstack `unslop` (secondary pattern gate) and `technical-writing` (doc structure)
