@@ -44,6 +44,8 @@ unless Dark has already greened them with evidence. Do not invent Autopilot.
 
 - [prompting-model.md](prompting-model.md)
 - [orwell-prose.md](orwell-prose.md) (default writing system for prose surfaces)
+- [figma-from-system.md](figma-from-system.md) (default for ui:yes / Figma work)
+- [product-debate.md](product-debate.md) (default for new product ideas before encode)
 - [harness/task-contract.md](harness/task-contract.md)
 - [factory-keep-up.md](factory-keep-up.md)
 - plug-factory `cursor-team-kit/skills/one-shot-task/SKILL.md`
