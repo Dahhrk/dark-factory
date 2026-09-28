@@ -3,7 +3,7 @@
 Private product. Kitchen is `dark-factory` - do not invent product work there.
 
 1. Default: every non-trivial ask is a one-shot task. Vague -> `/poteto-prompt` -> `/poteto-mode`. Structured -> `/poteto-mode` with Done means + Keep. Until-X on Cursor -> autonomous-run + built-in `/loop`. Agents start here automatically; `/one-shot-task` names the contract only. Done means a checkable control CLI / UI / test result.
-2. Prose: every docs, PR, commit, chat report, and landing line runs through `orwell-prose` (rules 1-12) before delivery. Positive writing rules, not a ban list. `unslop` and no-em-dash stay secondary. This file or `CLAUDE.md` may override voice. Agents apply automatically; `/orwell-prose` names the contract.
+2. Default: every prose surface is orwell-prose (docs, PRs, commits, chat reports, landing copy; rules 1-12). Agents apply before delivery; do not wait to be asked. `/orwell-prose` names the contract (same shape as one-shot-task). `unslop` and no-em-dash stay secondary. This file or `CLAUDE.md` may override voice.
 3. Prefer the project `control-*` CLI from `/create-verification-skill`. Maintain daily with `/maintain-verification-skill`.
 4. One verifiable unit per PR. Author does not merge on own verdict.
 5. Respect `.cursor/dune.md` and `BUGBOT.md`.

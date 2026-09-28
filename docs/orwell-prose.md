@@ -4,8 +4,10 @@ Default plain-writing system for every non-code prose surface across factory
 lanes: docs, README, PR text, commit messages, chat reports, landing copy,
 session notes.
 
-Agents apply it before delivering prose. Typing `/orwell-prose` is optional;
-the skill in `cursor-team-kit` names the contract.
+Default behavior for every non-code prose surface. Do not wait for the
+human to type `/orwell-prose`. Agents apply rules 1-12 before delivering
+prose. The skill in `cursor-team-kit` names the contract. Same shape as
+one-shot-task: agents start here automatically on every prose path.
 
 Govern prose only. Never rewrite code or technical terms where precision
 needs them. Prefer everyday English only where the meaning survives.
