@@ -78,3 +78,7 @@ first.
 - [product-debate.md](product-debate.md)
 - plug-factory `cursor-team-kit/skills/orwell-prose/SKILL.md`
 - pstack `unslop` (secondary pattern gate) and `technical-writing` (doc structure)
+- [outcome-repeat-back.md](outcome-repeat-back.md)
+- [results-not-homework.md](results-not-homework.md)
+- [fleet-orchestrate.md](fleet-orchestrate.md)
+- [teach-to-skill.md](teach-to-skill.md)

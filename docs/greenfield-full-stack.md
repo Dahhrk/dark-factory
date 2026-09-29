@@ -46,3 +46,4 @@ with evidence. Do not invent Autopilot. Do not self-merge.
 - [figma-from-system.md](figma-from-system.md)
 - [product-debate.md](product-debate.md)
 - plug-factory `pstack/skills/poteto-mode/playbooks/greenfield-full-stack.md`
+- [fleet-orchestrate.md](fleet-orchestrate.md) (sibling opt-in multi-workstream playbook)

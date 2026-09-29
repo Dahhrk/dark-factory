@@ -50,3 +50,7 @@ unless Dark has already greened them with evidence. Do not invent Autopilot.
 - [harness/task-contract.md](harness/task-contract.md)
 - [factory-keep-up.md](factory-keep-up.md)
 - plug-factory `cursor-team-kit/skills/one-shot-task/SKILL.md`
+- [outcome-repeat-back.md](outcome-repeat-back.md)
+- [results-not-homework.md](results-not-homework.md)
+- [fleet-orchestrate.md](fleet-orchestrate.md)
+- [teach-to-skill.md](teach-to-skill.md)
