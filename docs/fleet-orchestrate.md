@@ -38,3 +38,5 @@ with evidence. Do not invent Autopilot. Do not self-merge.
 - plug-factory `cursor-team-kit/skills/fleet-orchestrate/SKILL.md`
 - plug-factory `pstack/skills/poteto-mode/playbooks/fleet-orchestrate.md`
 - [leave-machine-clean.md](leave-machine-clean.md)
+- [routine-by-default.md](routine-by-default.md)
+- [harness-not-training.md](harness-not-training.md)

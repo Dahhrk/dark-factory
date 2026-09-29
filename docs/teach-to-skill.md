@@ -23,3 +23,5 @@ with evidence. Do not invent Autopilot. Do not self-merge.
 - [results-not-homework.md](results-not-homework.md)
 - plug-factory `cursor-team-kit/skills/teach-to-skill/SKILL.md`
 - [leave-machine-clean.md](leave-machine-clean.md)
+- [routine-by-default.md](routine-by-default.md)
+- [harness-not-training.md](harness-not-training.md)

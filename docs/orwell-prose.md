@@ -83,3 +83,5 @@ first.
 - [fleet-orchestrate.md](fleet-orchestrate.md)
 - [teach-to-skill.md](teach-to-skill.md)
 - [leave-machine-clean.md](leave-machine-clean.md)
+- [routine-by-default.md](routine-by-default.md)
+- [harness-not-training.md](harness-not-training.md)
