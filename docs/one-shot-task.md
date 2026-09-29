@@ -54,3 +54,4 @@ unless Dark has already greened them with evidence. Do not invent Autopilot.
 - [results-not-homework.md](results-not-homework.md)
 - [fleet-orchestrate.md](fleet-orchestrate.md)
 - [teach-to-skill.md](teach-to-skill.md)
+- [leave-machine-clean.md](leave-machine-clean.md)

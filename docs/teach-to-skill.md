@@ -22,3 +22,4 @@ with evidence. Do not invent Autopilot. Do not self-merge.
 - [outcome-repeat-back.md](outcome-repeat-back.md)
 - [results-not-homework.md](results-not-homework.md)
 - plug-factory `cursor-team-kit/skills/teach-to-skill/SKILL.md`
+- [leave-machine-clean.md](leave-machine-clean.md)

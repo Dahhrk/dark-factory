@@ -29,3 +29,4 @@ with evidence. Do not invent Autopilot. Do not self-merge.
 - [fleet-orchestrate.md](fleet-orchestrate.md)
 - [teach-to-skill.md](teach-to-skill.md)
 - plug-factory `cursor-team-kit/skills/outcome-repeat-back/SKILL.md`
+- [leave-machine-clean.md](leave-machine-clean.md)

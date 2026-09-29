@@ -82,3 +82,4 @@ first.
 - [results-not-homework.md](results-not-homework.md)
 - [fleet-orchestrate.md](fleet-orchestrate.md)
 - [teach-to-skill.md](teach-to-skill.md)
+- [leave-machine-clean.md](leave-machine-clean.md)
