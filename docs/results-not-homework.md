@@ -23,3 +23,4 @@ with evidence. Do not invent Autopilot. Do not self-merge.
 - [outcome-repeat-back.md](outcome-repeat-back.md)
 - [fleet-orchestrate.md](fleet-orchestrate.md)
 - plug-factory `cursor-team-kit/skills/results-not-homework/SKILL.md`
+- [leave-machine-clean.md](leave-machine-clean.md)
