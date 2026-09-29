@@ -30,3 +30,5 @@ with evidence. Do not invent Autopilot. Do not self-merge.
 - [teach-to-skill.md](teach-to-skill.md)
 - plug-factory `cursor-team-kit/skills/outcome-repeat-back/SKILL.md`
 - [leave-machine-clean.md](leave-machine-clean.md)
+- [routine-by-default.md](routine-by-default.md)
+- [harness-not-training.md](harness-not-training.md)
