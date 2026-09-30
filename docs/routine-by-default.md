@@ -35,3 +35,7 @@ with evidence. Do not invent Autopilot. Do not self-merge.
 - [leave-machine-clean.md](leave-machine-clean.md)
 - [harness-not-training.md](harness-not-training.md)
 - plug-factory `cursor-team-kit/skills/routine-by-default/SKILL.md`
+- [software-factory-gates.md](software-factory-gates.md)
+- [design-eng.md](design-eng.md)
+- [design-control-loop.md](design-control-loop.md)
+- [improve-agents-md.md](improve-agents-md.md)
