@@ -57,3 +57,7 @@ unless Dark has already greened them with evidence. Do not invent Autopilot.
 - [leave-machine-clean.md](leave-machine-clean.md)
 - [routine-by-default.md](routine-by-default.md)
 - [harness-not-training.md](harness-not-training.md)
+- [software-factory-gates.md](software-factory-gates.md)
+- [design-eng.md](design-eng.md)
+- [design-control-loop.md](design-control-loop.md)
+- [improve-agents-md.md](improve-agents-md.md)

@@ -14,6 +14,10 @@ You are working in the kitchen repo. Product code lives elsewhere unless the use
 10. Default: when an ask is recurring, scheduled, "let me know when", or about to be re-asked, create or update a routine/automation. See [docs/routine-by-default.md](docs/routine-by-default.md).
 11. Default: capability / agent / bot / AI product work ships harnesses, evals, and delivery paths, not frontier training. Train only when Dark explicitly asks. See [docs/harness-not-training.md](docs/harness-not-training.md).
 12. Default: falsifiable "done" claims and substance merge claims need fresh `verify-this` evidence before ship. Recap is not evidence. Builds and self-reports are not evidence.
+13. Default: non-trivial multi-file feature work passes `software-factory-gates` (Product, Architecture, Program Design, Build Order) with explicit user approval at each gate before implementation. Trivial one-liners skip. See [docs/software-factory-gates.md](docs/software-factory-gates.md).
+14. Default: UI and animation work applies `design-eng` taste and runs `review-animations` before ship. Vague motion feedback applies `animation-vocabulary` first. See [docs/design-eng.md](docs/design-eng.md).
+15. Default: new agent loop, overnight automation, or feedback-driven system applies `design-control-loop` (sensor/controller/actuator/disturbances) before implementation. See [docs/design-control-loop.md](docs/design-control-loop.md).
+16. Default: AGENTS.md drift or rewrite applies `improve-agents-md` for structured instruction blocks. See [docs/improve-agents-md.md](docs/improve-agents-md.md).
 13. One verifiable unit per commit. Isolate writers (worktree locally, or a cloud agent). Prefer Cloud Agents for scale — not a 20-worktree farm.
 14. Product repos need a **control CLI** (`/create-verification-skill`), not markdown-only verify. Maintain it daily.
 15. Intake goes in `intake/QUEUE.md`. Do not silently start Autopilot on the whole queue.
