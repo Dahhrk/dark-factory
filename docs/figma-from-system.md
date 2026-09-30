@@ -31,6 +31,7 @@ with evidence. Do not invent Autopilot. Do not self-merge.
 - [one-shot-task.md](one-shot-task.md)
 - [orwell-prose.md](orwell-prose.md)
 - [product-debate.md](product-debate.md)
+- [refactor-first.md](refactor-first.md)
 - plug-factory `cursor-team-kit/skills/figma-from-system/SKILL.md`
 - [outcome-repeat-back.md](outcome-repeat-back.md)
 - [results-not-homework.md](results-not-homework.md)
