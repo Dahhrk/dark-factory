@@ -18,6 +18,7 @@ You are working in the kitchen repo. Product code lives elsewhere unless the use
 14. Default: UI and animation work applies `design-eng` taste and runs `review-animations` before ship. Vague motion feedback applies `animation-vocabulary` first. See [docs/design-eng.md](docs/design-eng.md).
 15. Default: new agent loop, overnight automation, or feedback-driven system applies `design-control-loop` (sensor/controller/actuator/disturbances) before implementation. See [docs/design-control-loop.md](docs/design-control-loop.md).
 16. Default: AGENTS.md drift or rewrite applies `improve-agents-md` for structured instruction blocks. See [docs/improve-agents-md.md](docs/improve-agents-md.md).
+17. Default: non-trivial behavior changes in existing modules follow refactor-first (behavior-preserving cleanup with tests green, then the change on the clean structure). Never both in one unverifiable diff. See [docs/refactor-first.md](docs/refactor-first.md).
 13. One verifiable unit per commit. Isolate writers (worktree locally, or a cloud agent). Prefer Cloud Agents for scale — not a 20-worktree farm.
 14. Product repos need a **control CLI** (`/create-verification-skill`), not markdown-only verify. Maintain it daily.
 15. Intake goes in `intake/QUEUE.md`. Do not silently start Autopilot on the whole queue.

@@ -35,4 +35,5 @@ with evidence. Do not invent Autopilot. Do not self-merge.
 - [software-factory-gates.md](software-factory-gates.md)
 - [improve-agents-md.md](improve-agents-md.md)
 - [one-shot-task.md](one-shot-task.md)
+- [refactor-first.md](refactor-first.md)
 - plug-factory `cursor-team-kit/skills/design-control-loop/SKILL.md`

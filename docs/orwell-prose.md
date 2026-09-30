@@ -76,6 +76,7 @@ first.
 - [one-shot-task.md](one-shot-task.md)
 - [figma-from-system.md](figma-from-system.md)
 - [product-debate.md](product-debate.md)
+- [refactor-first.md](refactor-first.md)
 - plug-factory `cursor-team-kit/skills/orwell-prose/SKILL.md`
 - pstack `unslop` (secondary pattern gate) and `technical-writing` (doc structure)
 - [outcome-repeat-back.md](outcome-repeat-back.md)

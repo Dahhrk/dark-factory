@@ -35,6 +35,7 @@ with evidence. Do not invent Autopilot. Do not self-merge.
 - [greenfield-full-stack.md](greenfield-full-stack.md) (sibling opt-in playbook)
 - [outcome-repeat-back.md](outcome-repeat-back.md)
 - [results-not-homework.md](results-not-homework.md)
+- [refactor-first.md](refactor-first.md)
 - plug-factory `cursor-team-kit/skills/fleet-orchestrate/SKILL.md`
 - plug-factory `pstack/skills/poteto-mode/playbooks/fleet-orchestrate.md`
 - [leave-machine-clean.md](leave-machine-clean.md)

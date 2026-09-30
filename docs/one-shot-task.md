@@ -49,6 +49,7 @@ unless Dark has already greened them with evidence. Do not invent Autopilot.
 - [greenfield-full-stack.md](greenfield-full-stack.md) (opt-in poteto playbook for greenfield full-stack one-shots; not a Default)
 - [harness/task-contract.md](harness/task-contract.md)
 - [factory-keep-up.md](factory-keep-up.md)
+- [refactor-first.md](refactor-first.md)
 - plug-factory `cursor-team-kit/skills/one-shot-task/SKILL.md`
 - [outcome-repeat-back.md](outcome-repeat-back.md)
 - [results-not-homework.md](results-not-homework.md)
