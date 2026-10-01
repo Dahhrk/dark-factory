@@ -2,11 +2,11 @@
 
 ## Attention
 
-28 Sep 2026 morning plate. Last night was kitchen keep-up, not a Control-Glass overnight. Autopilot not started.
+30 Sep 2026 morning plate. Last night was kitchen keep-up, not a Control-Glass overnight. Autopilot not started.
 
-- [landed] Kitchen keep-up last night: factory-init notes, close-loop `verify-merged`, python-kit 0.2.0, one-shot-task default. [dark-factory#158](https://github.com/Dahhrk/dark-factory/pull/158) · [#159](https://github.com/Dahhrk/dark-factory/pull/159) · [#160](https://github.com/Dahhrk/dark-factory/pull/160) · [#161](https://github.com/Dahhrk/dark-factory/pull/161) · [#163](https://github.com/Dahhrk/dark-factory/pull/163). No open kitchen PRs left.
-- [landed] morning-catchup: Enabled and fired 28 Sep 09:15 UTC. Kitchen `ready` still empty; no product repo named
-- [blocked] Control-Glass TRUST-NEXT overnight: no `overnight` or `wake` row after the 25 Sep catch-up. Last trust-shaped unit is still `2026-09-07T01:42+01:00`. Flashpeek 4 Sep does not count. [TRUST-NEXT.md](../docs/TRUST-NEXT.md) · [SETUP-STATUS.md](../docs/SETUP-STATUS.md) gate 7
+- [landed] Kitchen keep-up last night: leave-machine-clean Day-1 default, routine-by-default + harness-not-training, shell-kit 0.2.0 `read -r`. [dark-factory#173](https://github.com/Dahhrk/dark-factory/pull/173) · [#174](https://github.com/Dahhrk/dark-factory/pull/174) · [#175](https://github.com/Dahhrk/dark-factory/pull/175). Tuesday plate [#172](https://github.com/Dahhrk/dark-factory/pull/172) is still draft and not on main.
+- [landed] morning-catchup: Enabled and fired 30 Sep 09:09 UTC. Kitchen `ready` still empty; no product repo named
+- [blocked] Control-Glass TRUST-NEXT overnight: no `overnight` or `wake` row on main after the 28 Sep catch-up. Last trust-shaped unit is still `2026-09-07T01:42+01:00`. Flashpeek 4 Sep does not count. [TRUST-NEXT.md](../docs/TRUST-NEXT.md) · [SETUP-STATUS.md](../docs/SETUP-STATUS.md) gate 7
 - [blocked] Autopilot / Benny / Orchestrate: still off until a Control-Glass overnight you would merge by hand. [STILL-YOU.md](../docs/STILL-YOU.md)
 - [needs you] First overnight: one small Control-Glass task, draft PR, decision-log rows, you merge or kill. Inbox owner: you
 - [needs you] Enable remaining loops: confirm maintain-verify-glass and encode-lessons-weekly are Enabled, not only Saved. morning-catchup is Enabled (this run). [STILL-YOU.md](../docs/STILL-YOU.md)
