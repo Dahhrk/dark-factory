@@ -22,7 +22,12 @@ with evidence. Do not invent Autopilot. Do not self-merge.
 - [one-shot-task.md](one-shot-task.md)
 - [outcome-repeat-back.md](outcome-repeat-back.md)
 - [fleet-orchestrate.md](fleet-orchestrate.md)
+- [refactor-first.md](refactor-first.md)
 - plug-factory `cursor-team-kit/skills/results-not-homework/SKILL.md`
 - [leave-machine-clean.md](leave-machine-clean.md)
 - [routine-by-default.md](routine-by-default.md)
 - [harness-not-training.md](harness-not-training.md)
+- [software-factory-gates.md](software-factory-gates.md)
+- [design-eng.md](design-eng.md)
+- [design-control-loop.md](design-control-loop.md)
+- [improve-agents-md.md](improve-agents-md.md)
