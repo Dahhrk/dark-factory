@@ -2,14 +2,17 @@
 
 ## Attention
 
-30 Sep 2026 morning plate. Last night was kitchen keep-up, not a Control-Glass overnight. Autopilot not started.
+4 Oct 2026 morning plate. Saturday night produced no new land. Autopilot not started.
 
-- [landed] Kitchen keep-up last night: leave-machine-clean Day-1 default, routine-by-default + harness-not-training, shell-kit 0.2.0 `read -r`. [dark-factory#173](https://github.com/Dahhrk/dark-factory/pull/173) · [#174](https://github.com/Dahhrk/dark-factory/pull/174) · [#175](https://github.com/Dahhrk/dark-factory/pull/175). Tuesday plate [#172](https://github.com/Dahhrk/dark-factory/pull/172) is still draft and not on main.
-- [landed] 29 Sep keep-up batch: orwell-prose default, figma-from-system + product-debate, greenfield-full-stack recipe, go-kit 0.2.0, Day 1 ops defaults. [dark-factory#165](https://github.com/Dahhrk/dark-factory/pull/165) · [#166](https://github.com/Dahhrk/dark-factory/pull/166) · [#167](https://github.com/Dahhrk/dark-factory/pull/167) · [#168](https://github.com/Dahhrk/dark-factory/pull/168) · [#169](https://github.com/Dahhrk/dark-factory/pull/169) · [#170](https://github.com/Dahhrk/dark-factory/pull/170) · [#171](https://github.com/Dahhrk/dark-factory/pull/171). Prior plate [#164](https://github.com/Dahhrk/dark-factory/pull/164).
-- [landed] morning-catchup: Enabled and fired 30 Sep 09:09 UTC (prior: 29 Sep 09:12 UTC). Kitchen `ready` still empty; no product repo named
-- [blocked] Control-Glass TRUST-NEXT overnight: no `overnight` or `wake` row on main after the 28 Sep catch-up. Last trust-shaped unit is still `2026-09-07T01:42+01:00`. Flashpeek 4 Sep does not count. [TRUST-NEXT.md](../docs/TRUST-NEXT.md) · [SETUP-STATUS.md](../docs/SETUP-STATUS.md) gate 7
+- [landed] Saturday night after 3 Oct 09:03 UTC: no new kitchen PR. Last merge on main is still c-kit 0.2.0 at 2 Oct 01:15 UTC. [dark-factory#181](https://github.com/Dahhrk/dark-factory/pull/181)
+- [landed] Keep-up since the 30 Sep plate on main: cursor-team-kit 1.9.0 Day-1 skill lineages, cursor-team-kit 1.10.0 refactor-first + inference-perf, rust-kit 0.2.0 Mutex/RwLock poison, c-kit 0.2.0 strtol-family parse. [#177](https://github.com/Dahhrk/dark-factory/pull/177) · [#178](https://github.com/Dahhrk/dark-factory/pull/178) · [#179](https://github.com/Dahhrk/dark-factory/pull/179) · [#181](https://github.com/Dahhrk/dark-factory/pull/181)
+- [landed] Prior morning plates now on main: 29 Sep [#172](https://github.com/Dahhrk/dark-factory/pull/172) and 30 Sep [#176](https://github.com/Dahhrk/dark-factory/pull/176). 1 Oct [#180](https://github.com/Dahhrk/dark-factory/pull/180), 2 Oct [#182](https://github.com/Dahhrk/dark-factory/pull/182), and 3 Oct [#183](https://github.com/Dahhrk/dark-factory/pull/183) are still draft
+- [landed] morning-catchup: Enabled and fired 4 Oct 09:01 UTC (also 1 Oct, 2 Oct, and 3 Oct). Kitchen `ready` still empty; no product repo named
+- [blocked] Control-Glass TRUST-NEXT overnight: no `overnight` row after `2026-09-07T01:42+01:00`. Catch-up `wake` rows on main stop at 30 Sep. Flashpeek 4 Sep does not count. [TRUST-NEXT.md](../docs/TRUST-NEXT.md) · [SETUP-STATUS.md](../docs/SETUP-STATUS.md) gate 7
 - [blocked] Autopilot / Benny / Orchestrate: still off until a Control-Glass overnight you would merge by hand. [STILL-YOU.md](../docs/STILL-YOU.md)
+- [blocked] Friday encode-lessons-weekly: no kitchen row or PR after 2 Oct 15:00 UTC. Not proven Enabled from this kitchen
 - [needs you] First overnight: one small Control-Glass task, draft PR, decision-log rows, you merge or kill. Inbox owner: you
+- [needs you] Plates [#180](https://github.com/Dahhrk/dark-factory/pull/180), [#182](https://github.com/Dahhrk/dark-factory/pull/182), and [#183](https://github.com/Dahhrk/dark-factory/pull/183): merge or kill. This 4 Oct plate supersedes them
 - [needs you] Enable remaining loops: confirm maintain-verify-glass and encode-lessons-weekly are Enabled, not only Saved. morning-catchup is Enabled (this run). [STILL-YOU.md](../docs/STILL-YOU.md)
 - [needs you] CSGO Scope: private product is scaffolded, not built. Autopilot stays blocked until live `/search`
 
