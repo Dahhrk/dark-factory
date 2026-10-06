@@ -15,6 +15,10 @@ SoT for us: `intake/QUEUE.md` + GitHub PRs (+ optional Notion empty DB later). D
 | **Done** | **Merged only.** Agent finished ≠ Done. User said “done” ≠ merged unless they clearly mean merge |
 | **Cancelled** | Abandoned |
 
+## Day-end rule
+
+Every row ends the day either settled (**Done** or **Cancelled**) or still live (**Running**, meaning Working with an agent active on it, or **Watching**). Ready for review and Holding count as Watching while they name who or what they wait on. Anything else, such as Working with nothing running or Holding with no named blocker, gets settled or cancelled before the evening shepherd closes.
+
 Never invent “Waiting for merge” or “Waiting for Bugbot” as stages — those are **Watching**.
 
 ## CLEAN (one tick)

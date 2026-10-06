@@ -32,6 +32,15 @@ pstack can spawn several frontier agents per task — use when a plausible diff 
 
 Public MTS product demo cited Cursorbench-style numbers: a fast Cursor-family model in the same quality band as a max frontier judge at roughly **~1/6 the $/task** (speaker claim — not an audited ledger). Use it as a **bias toward Cursor Models for day work**, not as a license to spawn fleets. Workshop line still holds: hunt the sweet spot, do not copy lab spend. Source pointer: [YT A63sedG-p5Q](https://www.youtube.com/watch?v=A63sedG-p5Q) · workshop tokens in [workshop-grok-bot.md](workshop-grok-bot.md).
 
+## CI placement
+
+- Local CI and verify run on the box while they fit. When a run maxes out the box's cores or RAM (load pinned at core count, swap in use, other agents stalling), move that job to GitHub Actions, Blacksmith or Depot instead of stacking more work on the box. Hosted runners cost money, so check the spend cap above before moving a job.
+- Be picky about when CI runs:
+  - Use path filters, so a docs-only change does not start the full build and test matrix.
+  - Keep required checks and optional checks separate. Required checks stay small and fast; optional checks report but never block merge.
+  - Fire expensive checks (e2e, load, long matrices, video proof) only on an intentional trigger: a label, a manual dispatch, the merge queue, or a schedule. Not on every push.
+- Pairs with `leave-machine-clean` (prefer remote for heavy verify).
+
 ## Bugbot
 
 - Soft layer 3 ([dune-method.md](dune-method.md) four layers)  

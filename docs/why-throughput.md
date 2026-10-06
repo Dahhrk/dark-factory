@@ -8,6 +8,8 @@
 
 Narrow PRs → lower review cost, lower conflict probability, simpler verification, easier rollback ([pr-workflow.md](pr-workflow.md)).
 
+Ship rule: if a revert would take more than about 15 seconds, the change is reshaped or split before it merges ([harness/autonomy-checklist.md](harness/autonomy-checklist.md), item 11).
+
 ### 2. Parallel ownership
 
 Independent branches / Cloud VMs remove filesystem and process contention. The human is not the scheduler across ten terminals ([how-i-use-cursor.md](how-i-use-cursor.md)).
