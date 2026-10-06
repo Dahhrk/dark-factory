@@ -48,6 +48,7 @@ Product-demo pattern (public MTS interview, [YT A63sedG-p5Q](https://www.youtube
 - **Do:** List **boarded** draft PRs (see [fleet-board.md](fleet-board.md)). For each: Stage Working vs Watching, whether last tick was CLEAN, CI/Bugbot/security, whether visual proof is a real hosted artifact. Prefer `spawn a cloud agent` or **reply on the existing** agent for that PR stream — one agent per PR; bot stays coordinator.
 - **Write:** Advance Watching 1/3→3/3 only on consecutive CLEAN ticks; Ready for review → Riddler/Gordon queue. At most one new inbox row per stuck PR. Never merge. Never Autopilot-full until [TRUST-NEXT.md](TRUST-NEXT.md) is green.
 - **Keep:** Authors do not certify themselves. Agent finished ≠ Done. Done = merged only.
+- **Day end:** every boarded row ends the day settled (Done or Cancelled) or still Running or Watching. Settle or cancel anything else before closing ([fleet-board.md](fleet-board.md), Day-end rule).
 
 ## Routine: morning briefing
 

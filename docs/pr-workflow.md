@@ -30,6 +30,7 @@ Fleet babysit vocabulary (Working / Watching CLEAN ladder / Ready ≠ merge): [f
 - Prefer **five narrow PRs** to one fat one. Stacks = base-branch chain (child targets parent)  
 - **One cloud agent per PR stream** — steer/reply for CI and re-proof; fresh launch only for a new task or rewrite ([fleet-board.md](fleet-board.md))  
 - Open **ready**, never draft (cloud tools often default draft — set `draft: false` / `gh pr ready`)  
+- CI placement: heavy CI or verify that maxes out the box moves to GitHub Actions, Blacksmith or Depot; path filters, separate required and optional checks, and expensive checks only on intentional triggers ([spend-and-cloud.md](spend-and-cloud.md), CI placement)  
 - Opening a PR does **not** start babysit. Finish the stack, then babysit once. **Board-first:** queue/board row before dig or launch.  
 
 ## Babysit (merge-ready, does **not** merge)
